@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
+import React, { PropTypes} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import "./index.global.css";
+import "./highlight.global.css";
+import Container from "./components/Container";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+const App = (props) => (
+      <Container>
+        <Header />
+        <Content>
+            { props.children }
+        </Content>
+        <Footer />
+      </Container>
+)
+
+
+App.propTypes = {
+    children: PropTypes.node,
+    params: PropTypes.object
 }
 
 export default App;

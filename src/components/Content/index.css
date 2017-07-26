@@ -1,0 +1,13 @@
+.content {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+_:ms-lang(x) .content {
+    display: -ms-flebox;
+    -ms-flex-direction: column;
+    -ms-flex: 1 1 auto;
+    align-items: stretch;
+}
