@@ -69,9 +69,8 @@ export default class Header extends Component {
                                     <Link to='/' className="logo">
                                         <Svg 
                                             svg={Logo} 
-                                            draggable='false'
                                             height="100px"
-                                            width="180px"                            
+                                            width="180px"
                                             />
                                     </Link>
                                 </div>
@@ -80,7 +79,7 @@ export default class Header extends Component {
                                         <div className={`bar ${openClass}`}/>
                                     </div>
                                 </div>
-                                <nav className={`navRight} ${mobileNav}`}>
+                                <nav className={`navRight ${mobileNav}`}>
                                     <ul className="navItems">
                                         <li className="navItem">
                                             <a href={'/get-help'} className="link">
