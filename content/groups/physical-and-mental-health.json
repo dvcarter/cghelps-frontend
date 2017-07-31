@@ -1,0 +1,57 @@
+{
+  "physical-and-mental-health": {
+    "title": "Physical and Mental Health",
+    "layout": "Groups",
+    "hero": "/assets/health.jpg",
+    "route": "/resources/physical-and-mental-health",
+    "groupOpts": [
+      {
+        "subtitle": "Workshops, Classes, & Support groups",
+        "sub": {
+          "subsubtitle": "Coming Soon",
+          "description": null
+        }
+      },
+      {
+        "sub": {
+          "subsubtitle": null,
+          "description": null
+        }
+      },
+      {
+        "sub": {
+          "subsubtitle": null,
+          "description": null
+        }
+      },
+      {
+        "sub": {
+          "subsubtitle": null,
+          "description": null
+        }
+      },
+      {
+        "subtitle": "Reading Materials",
+        "sub": {
+          "subsubtitle": "Coming Soon",
+          "description": null
+        }
+      },
+      {
+        "sub": {
+          "subsubtitle": null,
+          "description": null
+        }
+      },
+      {
+        "subtitle": "Wellness Services",
+        "sub": {
+          "subsubtitle": "Coming Soon",
+          "description": null
+        }
+      }
+    ],
+    "preview": "",
+    "basename": "physical-and-mental-health"
+  }
+}

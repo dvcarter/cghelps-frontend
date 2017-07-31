@@ -1,0 +1,8 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "layout": "Contact",
+    "preview": "contact us using the form below",
+    "basename": "contact"
+  }
+}

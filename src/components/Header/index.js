@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from "react"
-import { Link } from "react-router-link"
+import { BrowserRouter as Link } from "react-router-dom"
 // import MediaQuery from "react-responsive"
 import Svg from "react-svg-inline"
 import Logo from "./cg-logo.svg"
@@ -82,9 +82,9 @@ export default class Header extends Component {
                                 <nav className={`navRight ${mobileNav}`}>
                                     <ul className="navItems">
                                         <li className="navItem">
-                                            <a href={'/get-help'} className="link">
+                                            <Link to='/get-help' className="link">
                                                 {"Get Help"}
-                                            </a>
+                                            </Link>
                                             <ul className="subNavItems">
                                                 <li>
                                                     <a href={'/get-help/chat-with-us'} className="link">

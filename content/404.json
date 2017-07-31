@@ -1,0 +1,8 @@
+{
+  "404": {
+    "layout": "PageError",
+    "route": "404.html",
+    "preview": "<!---\n  Content here not used, see ``src/layouts/PageError``\n  …",
+    "basename": "404"
+  }
+}
