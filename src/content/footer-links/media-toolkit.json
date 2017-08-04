@@ -1,0 +1,9 @@
+{
+  "media-toolkit": {
+    "title": "Media Toolkit",
+    "layout": "FootLink",
+    "route": "/media-toolkit",
+    "preview": "this is the media toolkit",
+    "basename": "media-toolkit"
+  }
+}

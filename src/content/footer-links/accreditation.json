@@ -1,0 +1,9 @@
+{
+  "accreditation": {
+    "title": "Accreditation",
+    "layout": "SmallFootLink",
+    "route": "/accreditation",
+    "preview": "<div style=\"display: flex; justify-content: center;align-items: …",
+    "basename": "accreditation"
+  }
+}

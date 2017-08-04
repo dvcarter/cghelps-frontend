@@ -1,0 +1,9 @@
+{
+  "fundraising": {
+    "title": "Fundraising",
+    "layout": "Contact",
+    "hero": "/assets/bonding.jpg",
+    "preview": "",
+    "basename": "fundraising"
+  }
+}

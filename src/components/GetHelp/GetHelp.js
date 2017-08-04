@@ -5,18 +5,17 @@ import './findHelper.js'
 
 export default class GetHelp extends Component {
     render() {
-        const { getHelp } = this.props;
         return ( 
                 <div>
                     <div className={styles.title}>
                             <h1> Help is here</h1>
                     </div>
                     <div className={ styles.holdMoreTex}>
-                        {getHelp.map((getHelp) => (
-                            <MoreText getHelp={getHelp} key={getHelp.id}/>
+                        {this.props.dataGetter.map((getHelp) => (
+
+                            <MoreText getHelp={getHelp} key={getHelp.id} />
                         ))}
                     </div>
-                    <img className={styles.imgs} src={getHelp.image} />
                 </div>
                )
     }

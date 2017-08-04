@@ -1,0 +1,9 @@
+{
+  "copyright": {
+    "title": "Copyright",
+    "layout": "SmallFootLink",
+    "route": "/copyright",
+    "preview": "<div style=\"height:100%;width:100%;margin-bottom: 200px;\">\nAll …",
+    "basename": "copyright"
+  }
+}

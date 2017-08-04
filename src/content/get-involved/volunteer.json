@@ -1,0 +1,9 @@
+{
+  "volunteer": {
+    "title": "Volunteer Today",
+    "layout": "Contact",
+    "hero": "/assets/groupvolunteer.jpg",
+    "preview": "&nbsp;If you would like to learn about volunteer opportunities,  …",
+    "basename": "volunteer"
+  }
+}

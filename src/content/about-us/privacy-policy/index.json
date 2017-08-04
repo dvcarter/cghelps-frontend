@@ -1,0 +1,9 @@
+{
+  "index": {
+    "title": "Terms of Service",
+    "layout": "FootLink",
+    "route": "/terms-of-service",
+    "preview": "<div style=\"height:2000px;width:100%;padding: 20px; margin-bottom: …",
+    "basename": "index"
+  }
+}

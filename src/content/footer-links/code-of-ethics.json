@@ -1,0 +1,9 @@
+{
+  "code-of-ethics": {
+    "title": "Code of Ethics",
+    "layout": "FootLink",
+    "route": "/code-of-ethics",
+    "preview": "<div style=\"height:2000px;width:100%; padding: 10px; margin-bottom: …",
+    "basename": "code-of-ethics"
+  }
+}
