@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from "react"
-import { Link } from "react-router-link"
+import { BrowserRouter as Router, Link } from "react-router-dom"
 // import MediaQuery from "react-responsive"
 import Svg from "react-svg-inline"
 import Logo from "./cg-logo.svg"
@@ -57,6 +57,7 @@ export default class Header extends Component {
         const openClass = ( sideNavOpen ) ? "animate" : ''
         const containerStyle = ( fullWidth ) ? "fullWidth" : ''
         return (
+            <div>
                 <header className="header">
                         <div className="supHeader">
                             Do you need help? We're here for you 24 / 7.&nbsp;  
@@ -67,11 +68,7 @@ export default class Header extends Component {
                             <div className="navWrapper containerStyle">
                                 <div className="navLeft">
                                     <Link to='/' className="logo">
-                                        <Svg 
-                                            svg={Logo} 
-                                            height="100px"
-                                            width="180px"
-                                            />
+                                        Logo goes here
                                     </Link>
                                 </div>
                                 <div ref='toggle' onClick={this.handleClick} className="toggle">
@@ -82,9 +79,9 @@ export default class Header extends Component {
                                 <nav className={`navRight ${mobileNav}`}>
                                     <ul className="navItems">
                                         <li className="navItem">
-                                            <a href={'/get-help'} className="link">
+                                            <Link to='/get-help' className="link">
                                                 {"Get Help"}
-                                            </a>
+                                            </Link>
                                             <ul className="subNavItems">
                                                 <li>
                                                     <a href={'/get-help/chat-with-us'} className="link">
@@ -97,9 +94,9 @@ export default class Header extends Component {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <Link to='/get-help/faq' className="link">
+                                                    <a href='/get-help/faq' className="link">
                                                         {"Frequently Asked Questions"}
-                                                    </Link>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -205,6 +202,7 @@ export default class Header extends Component {
                             </div>
                         </div>
                 </header>
+            </div>
         )
     }
 }

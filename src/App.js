@@ -1,32 +1,13 @@
 import React, {Component, PropTypes} from 'react';
-import logo from './logo.svg';
-import "./index.global.css";
-import "./highlight.global.css";
-import Container from "./components/Container";
-import Header from "./components/Header";
-import Content from "./components/Content";
-import Footer from "./components/Footer";
+import { connect } from "react-redux";
+import Main from "./Main";
 
-
-class App extends Component { 
-    render() {
-        return (
-            <Container>
-                <Header />
-                <Content>
-                    <div>
-                    </div>
-                </Content>
-                <Footer />
-            </Container>
-        )
+function mapStateToProps(state) {
+    return {
+        getHelpOpts: state.getHelpOptsInfo
     }
 }
 
-
-App.propTypes = {
-    children: PropTypes.node,
-    params: PropTypes.object
-}
+const App = connect(mapStateToProps)(Main);
 
 export default App;

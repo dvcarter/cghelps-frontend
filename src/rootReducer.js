@@ -1,8 +1,10 @@
 import {combineReducers} from "redux";
 import posts from "./postReducer";
+import getHelpOptsReducer from "./getHelpOptsReducer";
 
 const rootReducer = combineReducers({
-    posts
+    posts,
+    getHelpOptsInfo: getHelpOptsReducer,
 })
 
 export default rootReducer;
