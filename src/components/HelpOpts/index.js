@@ -3,13 +3,14 @@ import styles from './HelpOpts.css'
 
 class HelpOpts extends Component {
         render() {
+            const {getHelpOpts} = this.props;
             return (
     
                 <div className={styles.bigHolder}>
                     <div className= {styles.title}> Get Help</div>
                     {/* <hr className={styles.topline} /> */}
                     <div className= {styles.help}>
-                        { this.props.getHelpOpts.map((helps, i) => (
+                        { getHelpOpts.map((helps, i) => (
                             <div className={styles.options}>
                                 <img className={styles.svgClass} src={helps.image} />
                                 <div className={styles.subtitle}> {helps.title}</div>

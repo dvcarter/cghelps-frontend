@@ -7,14 +7,23 @@ class HomePage extends Component {
 
             <div>
                 <p> This is the homepage </p>
-                        <div>
+                 <div className="bigHolder">
+                    <div className="title"> Get Help</div>
+                    {/* <hr className={styles.topline} /> */}
+                    <div className="help">
                         {/*<HelpOpts dataGetter={this.props}/>*/}
-                        {this.props.dataGetter.getHelpOpts.map((item, i) => {
-                                return (
-                                    <div> {item.description}</div>
-                                )
-                                                                }) }
-                        </div>
+                         { this.props.dataGetter.getHelpOpts.map((helps, i) => (
+                            <div className="options">
+                                <img className="svgClass" src={helps.image} />
+                                <div className="subtitle"> {helps.title}</div>
+                                <div className="descriptions"> {helps.description}</div>
+                                <a href={helps.btn.link}>
+                                    <button className="button">{helps.btn.label}</button>
+                                </a>
+                            </div>
+                        ))} 
+                    </div>
+                </div>
             </div>
         )
     }
