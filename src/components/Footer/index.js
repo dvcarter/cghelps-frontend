@@ -1,39 +1,39 @@
 import React from "react"
 
-import "./index.css"
+import styles from "./index.css"
 import FaceBook from "./facebook-logo.png"
 import LinkedIn from "./linkedin-logo.png"
 import Twitter from "./twitter-logo.png"
 
 
 const Footer = () => (
-  <footer className="footer">
-    <div className="footerItems">
-        <div className="socialItems">
-            <div className="footText"></div>
+  <footer className={ styles.footer }>
+    <div className={styles.footerItems}>
+        <div className={styles.socialItems}>
+            <div className={styles.footText}></div>
             {<a 
                 href={'https://www.facebook.com/commongroundhelps/'}
-                className="socialItem">
+                className={styles.socialItem}>
                     <span><img src={FaceBook}/></span>
             </a>
             } 
             { <a
                 href={'https://www.linkedin.com/company/commongroundhelps'}
-                className="socialItem">
+                className={styles.socialItem}>
                     <span><img src={LinkedIn}/></span>
             </a>
             }
             { <a
                 href={'https://twitter.com/cghelps'}
-                className="socialItem">
+                className={styles.socialItem}>
                     <span><img src={Twitter}/></span>
             </a>
             }
         </div>
-        <div className="greatDivide" />
+        <div className={styles.greatDivide} />
     </div>
-    <div className="accreditation">
-        <div className="column1">
+    <div className={styles.accreditation}>
+        <div className={styles.column1}>
             <p>
                 <h4><strong>Subscribe to our Newsletter</strong></h4>
                 Sign-up to have our quarterly communications delivered right to your inbox
@@ -52,7 +52,7 @@ const Footer = () => (
         
         
         </div>
-        <div className="column2">
+        <div className={styles.column2}>
             <p>
                 <h4><strong>Contact Information</strong></h4>
                 To reach our administrative office,
@@ -62,7 +62,7 @@ const Footer = () => (
         
         
         </div>
-        <div className="column3">
+        <div className={styles.column3}>
             {/*<a
                 href="/media-toolkit"
                 className={styles.columnLinks}>
@@ -70,32 +70,37 @@ const Footer = () => (
             </a>*/}
             {<a
                 href="/accreditation"
-                className="columnLinks">
+                className={styles.columnLinks}>
                     Accreditation
             </a>}
             {<a 
                 href="/contact"
-                className="columnLinks">
+                className={styles.columnLinks}>
                     Contact
             </a>}
             {<a
                 href="/code-of-ethics"
-                className="columnLinks">
+                className={styles.columnLinks}>
                     Code of Ethics
             </a>}
             {<a
                 href="/terms-of-service"
-                className="columnLinks">
+                className={styles.columnLinks}>
                     Terms of Service
             </a>}
             {<a
                 href="/privacy-policy"
-                className="columnLinks">
+                className={styles.columnLinks}>
                     MSHMIS Privacy Policy
             </a>}
             {<a
+                href="https://www.1800runaway.org/"
+                className={styles.columnLinks}>
+                    National Runaway Safeline
+             </a>}
+            {<a
                 href="/copyright"
-                className="columnLinks">
+                className={styles.columnLinks}>
                     Copyright
             </a>}
         </div>

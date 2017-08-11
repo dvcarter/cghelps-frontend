@@ -13,7 +13,7 @@ import Logo from "./cg-logo.svg"
 
 // import styles from "./index.css"
 import handleClickAway from "./handleClickAway.js"
-import "./header.css"
+import styles from  "./header.css"
 
 
 const propTypes = {
@@ -53,82 +53,82 @@ export default class Header extends Component {
     render() {
         const { fullWidth } = this.props
         const { sideNavOpen } = this.state
-        const mobileNav = ( sideNavOpen ) ? "open" : ''
-        const openClass = ( sideNavOpen ) ? "animate" : ''
-        const containerStyle = ( fullWidth ) ? "fullWidth" : ''
+        const mobileNav = ( sideNavOpen ) ? styles.open : ''
+        const openClass = ( sideNavOpen ) ? styles.animate : ''
+        const containerStyle = ( fullWidth ) ? styles.fullWidth : ''
         return (
             <div>
-                <header className="header">
-                        <div className="supHeader">
+                <header className={styles.header}>
+                        <div className={styles.supHeader}>
                             Do you need help? We're here for you 24 / 7.&nbsp;  
                             <span>Call <strong><a href="tel:18002311127">1.800.231.1127</a></strong></span>
                         </div>
-                        <div className="bumper"/>
-                        <div className="navFixed">
-                            <div className="navWrapper containerStyle">
-                                <div className="navLeft">
-                                    <Link to='/' className="logo">
+                        <div className={styles.bumper}/>
+                        <div className={styles.navFixed}>
+                            <div className={`${styles.navWrapper} ${containerStyle}`}>
+                                <div className={styles.navLeft}>
+                                    <Link to='/' className={styles.logo}>
                                         Logo goes here
                                     </Link>
                                 </div>
-                                <div ref='toggle' onClick={this.handleClick} className="toggle">
-                                    <div className="ham">
-                                        <div className={`bar ${openClass}`}/>
+                                <div ref='toggle' onClick={this.handleClick} className={styles.toggle}>
+                                    <div className={styles.ham}>
+                                        <div className={`${styles.bar} ${openClass}`}/>
                                     </div>
                                 </div>
-                                <nav className={`navRight ${mobileNav}`}>
-                                    <ul className="navItems">
-                                        <li className="navItem">
-                                            <Link to='/get-help' className="link">
+                                <nav className={`${styles.navRight} ${mobileNav}`}>
+                                    <ul className={styles.navItems}>
+                                        <li className={styles.navItem}>
+                                            <Link to='/get-help' className={styles.link}>
                                                 {"Get Help"}
                                             </Link>
-                                            <ul className="subNavItems">
+                                            <ul className={styles.subNavItems}>
                                                 <li>
-                                                    <a href={'/get-help/chat-with-us'} className="link">
+                                                    <a href={'/get-help/chat-with-us'} className={styles.link}>
                                                         {"Chat"}
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href={'/get-help/visit'} className="link">
+                                                    <a href={'/get-help/visit'} className={styles.link}>
                                                         {"Visit"}
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href='/get-help/faq' className="link">
+                                                    <a href='/get-help/faq' className={styles.link}>
                                                         {"Frequently Asked Questions"}
                                                     </a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li className="navItem">
-                                            <Link to='/get-involved' className="link">
+                                        <li className={styles.navItem}>
+                                            <Link to='/get-involved' className={styles.link}>
                                                 {"Get Involved"}
                                             </Link>
-                                            <ul className="subNavItems">
+                                            <ul className={styles.subNavItems}>
                                                 <li>
-                                                    <Link to='/get-involved/crisis-to-hope' className="link">
+                                                    <Link to='/get-involved/crisis-to-hope' className={styles.link}>
                                                         {"Crisis to Hope"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/get-involved/volunteer' className="link">
+                                                    <Link to='/get-involved/volunteer' className={styles.link}>
                                                         {"Volunteer"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/get-involved/sponsorships' className="link">
+                                                    <Link to='/get-involved/sponsorships' className={styles.link}>
                                                         {"Sponsorships"}
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li className="navItem">
-                                            <Link to='/resources' className="link">
+                                        <li className={styles.navItem}>
+                                            <Link to='/resources' className={styles.link}>
                                                 {"Resources"}
                                             </Link>
-                                            <ul className="subNavItems">
+                                            <ul className={styles.subNavItems}>
                                                 <li>
-                                                    <Link to='/resources/suicide-prevention' className="link">
+                                                    <Link to='/resources/suicide-prevention' className={styles.link}>
                                                         {"Suicide Prevention"}
                                                     </Link>
                                                 </li>
@@ -139,59 +139,59 @@ export default class Header extends Component {
                                                     </Link>
                                                 </li> */}
                                                 <li>
-                                                    <Link to='/resources/youth-and-family' className="link">
+                                                    <Link to='/resources/youth-and-family' className={styles.link}>
                                                         {"Youth & Family Support"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/resources/victims-of-crime' className="link">
+                                                    <Link to='/resources/victims-of-crime' className={styles.link}>
                                                         {"Victims of Crime support"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/resources/physical-and-mental-health' className="link">
+                                                    <Link to='/resources/physical-and-mental-health' className={styles.link}>
                                                         {"Physical & Mental Health support"}
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li className="navItem">
-                                            <Link to='/donate' className="link">
+                                        <li className={styles.navItem}>
+                                            <Link to='/donate' className={styles.link}>
                                                 {"Donate"}
                                             </Link>
                                         </li>
-                                        <li className="navItem">
-                                            <Link to='/about-us' className="link">
+                                        <li className={styles.navItem}>
+                                            <Link to='/about-us' className={styles.link}>
                                                 {"About Us"}
                                             </Link>
-                                            <ul className="subNavItems">
+                                            <ul className={styles.subNavItems}>
                                                 <li>
-                                                    <Link to='/about-us/our-story' className="link">
+                                                    <Link to='/about-us/our-story' className={styles.link}>
                                                         {'Our Story'}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/about-us/visit-us-today' className="link">
+                                                    <Link to='/about-us/visit-us-today' className={styles.link}>
                                                         {"Locations"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/get-help' className="link">
+                                                    <Link to='/get-help' className={styles.link}>
                                                         {"Programs & Services"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/posts' className="link">
+                                                    <Link to='/posts' className={styles.link}>
                                                         {"News & Events"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/about-us/#Careers' className="link">
+                                                    <Link to='/about-us/#Careers' className={styles.link}>
                                                         {"Careers"}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/about-us/governance' className="link">
+                                                    <Link to='/about-us/governance' className={styles.link}>
                                                         {"Governance & Leadership"}
                                                     </Link>
                                                 </li>
