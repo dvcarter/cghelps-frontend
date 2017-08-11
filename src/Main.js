@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import "./index.global.css";
 import "./highlight.global.css";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import Container from "./components/Container";
 import Header from "./components/Header";
 import Content from "./components/Content";
@@ -16,7 +17,13 @@ import Donate from "./components/Donate";
 import AboutUs from "./components/AboutUs";
 import Posts from "./components/Posts";
 import Footer from "./components/Footer";
+
 import {selectGetHelpOptsInfo} from "./selectors/getHelpOptsSelectors";
+import {selectGetHelpInfo} from "./selectors/getHelpSelectors";
+import {selectGetInvolvedInfo} from "./selectors/getInvolvedSelectors";
+import {selectResourceInfo} from "./selectors/resourceSelectors";
+import {selectDonateInfo} from "./selectors/donateSelectors";
+import {selectAboutInfo} from "./selectors/aboutSelectors";
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -35,11 +42,23 @@ const PropsRoute = ({ component, ...rest}) => {
 
 const mapState = (state) => ({
     getHelpOptsInfo : selectGetHelpOptsInfo(state),
+    getHelpInfo: selectGetHelpInfo(state),
+    getInvolvedInfo: selectGetInvolvedInfo(state),
+    resourceInfo: selectResourceInfo(state),
+    donateInfo: selectDonateInfo(state),
+    aboutInfo: selectAboutInfo(state),
 });
 
 class App extends Component { 
     render() {
-        const { getHelpOptsInfo } = this.props;
+        const { 
+            getHelpOptsInfo,
+            getHelpInfo,
+            getInvolvedInfo,
+            resourceInfo,
+            donateInfo,
+            aboutInfo
+        } = this.props;
         const { getHelpOpts } = getHelpOptsInfo;
 
         return (
@@ -49,12 +68,12 @@ class App extends Component {
                 <Content>
                     <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo}>
                     </PropsRoute>
-                    <Route path="/get-help" component={GetHelp}/>
-                    <Route path="/get-involved" component={GetInvolved}/>
-                    <Route path="/resources" component={Resources} />
-                    <Route path="/donate" component={Donate} />
-                    <Route path="/about-us" component={AboutUs} />
-                    <Route path="/posts" component={Posts} />
+                    <PropsRoute path="/get-help" component={GetHelp} dataGetter={getHelpInfo} />
+                    <PropsRoute path="/get-involved" component={GetInvolved} dataGetter={getInvolvedInfo} />
+                    <PropsRoute path="/resources" component={Resources} dateGetter={resourceInfo} />
+                    <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}/>
+                    <PropsRoute path="/about-us" component={AboutUs} dataGetter={aboutInfo}/>
+                    <PropsRoute path="/posts" component={Posts} />
                 </Content>
                 <Footer />
             </Container>

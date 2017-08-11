@@ -1,0 +1,491 @@
+@media only screen and  (max-width: 575px) {
+    .title {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        margin: 0 0 -20px 0;
+    }
+
+    h2.subtitle {
+        font-weight: 700;
+        font-size: 150%;
+        color: #482864;
+    }
+
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+        height: auto; 
+        width: 100%;
+        /*background-color: #dfe3ee;*/
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        text-align: left;
+        /*background-color: #f7f7f7;*/
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 0.25px solid #dfe3ee;
+    }
+    .imgs {
+        width: 50px;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .topics {
+        width: 100%;
+        height: 100%;
+    }
+
+    .holder:first-child:first-child a.onlybtn {
+        white-space: nowrap;
+        width: 40%;
+        margin-top: 100px;
+        border: none;
+        border-radius: 8px;
+        background-color: #8b0000;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.75vh;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align:center;
+    }
+    .holder:first-child:first-child a.onlybtn:before {
+        content: "Call";
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .title {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+   h2.subtitle {
+       font-weight: 700;
+       font-size: 150%;
+       color: #482864;
+   }
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+        height: auto;
+        width: 100%;
+        /*background-color: #dfe3ee;*/
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        text-align: left;
+        /* background-color: #f7f7f7; */
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 0.25px solid #dfe3ee;
+    }
+    .imgs {
+        width: 100%;
+        height: auto;
+    }
+    .topics {
+        height: 100%;
+        width: 100%;
+        margin-right: 55px;
+    }
+    .holder:first-child:first-child a.onlybtn {
+        white-space: nowrap;
+        width:250px;
+        border: none;
+        border-radius: 8px;
+        background-color: #8b0000;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.75vh;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
+    .holder:first-child:first-child a.onlybtn:before {
+        content: "Call";
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .title {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+    }
+   
+    h2.subtitle {
+        font-weight: 700;
+        font-size: 150%;
+        color: #482864;
+    }
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+        height: auto;
+        width: 100%;
+        /* background-color: #dfe3ee; */
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: flex-start;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        /*background-color: #f7f7f7;*/
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 0.25px solid #dfe3ee;
+    }
+    .imgs {
+        width: 70%;
+        height: auto;
+    }
+    .topics {
+        margin-right: 65px;
+    }
+    .holder:first-child:first-child a.onlybtn {
+        white-space: nowrap;
+        width:250px;
+        border: none;
+        border-radius: 8px;
+        background-color: #8b0000;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.75vh;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+    }
+    .holder:first-child:first-child a.onlybtn:before {
+        content: "Call 1-800-231-1127";
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .title {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-algin-items: center;
+    }
+    h2.subtitle {
+        font-weight: 700;
+        font-size: 150%;
+        color: #482864;
+    }
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: flex-start;
+        -wbekit-justify-content: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        height: auto;
+        width: 100%;
+        /*background-color: #dfe3ee; */
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        text-align: left;
+        /* background-color: #f7f7f7; */
+        height: auto;
+        width: 100%;
+        margin: 15px 15px 0 15px;
+        padding: 20px;
+        border-bottom: 0.25px solid #dfe3ee;
+    }
+    .imgs {
+        width: 60%;
+        height: auto;
+        margin-left: 30px;
+    }
+    .topics {
+        height: 100%;
+        width: 100%;
+        margin: 0 30px 0 0;
+    }
+    .holdMoreText {
+        height: 100%;
+        width: 100%;
+    }
+    .moreText {
+        width: 110%;
+        height: auto;
+    }
+    .holder:first-child:first-child a.onlybtn {
+        white-space: nowrap;
+        width: 40%;
+        border: none;
+        border-radius: 8px;
+        background-color: #8b0000;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.75vh;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
+    .holder:first-child:first-child a.onlybtn:before {
+        content: "Call 1-800-231-1127";
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .title {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
+   h2.subtitle {
+        font-weight: 700;
+        font-size: 150%;
+        color: #482864;
+    }
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        height: auto;
+        width: 100%;
+        /*background-color: #dfe3ee;*/
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align:flex-start;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        text-align: left;
+        /* background-color: #f7f7f7;*/
+        /*height: 75%;*/
+        width: 100%;
+        /*margin: 5px 15px -100px 15px;*/
+        padding: 20px;
+        border-bottom: 0.25px solid #dfe3ee;
+    }
+    _:ms-lang(x), .options {
+        height: 75%;
+    }
+    .imgs {
+        width: 50%;
+        height: auto;
+        margin-left: 50px;
+    }
+
+    .topics {
+        height: 100%;
+        width: 70%;
+    }
+    .holdMoreText {
+        height: 100%;
+        width: 100%;
+    }
+    .moreText {
+        width: 150%;
+        height: auto;
+    }
+    .holder:nth-child(1):nth-child(1) a.onlybtn {
+        white-space: nowrap;
+        width: 25%;
+        margin-top: 5px;
+        margin-lefT: 60px;
+        border: none;
+        border-radius: 8px;
+        background-color: #8b0000;
+        color: white;
+        text-decoration: none;
+        padding: 5px 1px;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        font-size: 1.25vh;
+    }
+
+    .holder:first-child:first-child a.onlybtn:before {
+        content: "Call 1-800-231-1127";
+    }
+    .holder:nth-child(2):nth-child(2) a.onlybtn {
+        margin: 0 0 0 120px;
+    }
+    .holder:nth-child(3):nth-child(3) a.onlybtn {
+        width: 15%;
+        margin: 0 0 0 120px;
+    }
+}
+
+.learnMore {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.holder:first-child:first-child a img {
+    display: none;
+}
+.holder:first-child:first-child a.onlybtn:hover {
+    background-color: #ab162b;
+}
+
+.holder:nth-child(2):nth-child(2):nth-child(2)  h2.subtitle {
+    color: #ab162b;
+}
+.holder:nth-child(2):nth-child(2):nth-child(2)  h3 {
+    color: #ab162b;
+}
+
+h3 {
+    color: #482864;
+}
+.holder *:nth-child(3) {
+    border-bottom: none;
+}
+
+.makeRed {
+    background-color: red;
+}
+
+.makeBlue {
+    background-color: blue;
+}
+
+.makeGreen {
+    background-color: green;
+}
+
+.makeYellow {
+    background-color: yellow;
+}

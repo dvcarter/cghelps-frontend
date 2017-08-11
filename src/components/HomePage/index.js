@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import HelpOpts from "../HelpOpts";
+import  "../HelpOpts/HelpOpts.css";
 
 class HomePage extends Component {
     render() {
