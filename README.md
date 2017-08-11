@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Do List
 ### frontend
+[frontend repo](https://github.com/dvcarter/cghelps-frontend)
 - Finish converting md from phenomic version of site to json
 - Build components for remaining pages
 - Set up routing for remaining pages
@@ -12,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Resolve path issue with links from wp-api slugs
 
 ### backend
+[backend repo](https://github.com/dvcarter/cghelps-backend)
 - Set up Hero field
 - Move Wordpress headless cms to production.
 - Secure API access
