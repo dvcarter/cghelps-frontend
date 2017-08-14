@@ -5,10 +5,18 @@ import onlineChatWhite from "../assets/OnlineChat_white.png"
 import SeekHelp from "../assets/seekhelp.jpg"
 
 const getHelpOpts = [
-      {
-        hero: SeekHelp,
+      { hero: SeekHelp, 
         heroTitle: "We listen. We care. We help.",
         heroSubtitle: "At Common Ground, we're dedicated to helping people move from crisis to hope.",
+        name: null,
+        title: null,
+        description: null,
+        image: null,
+        btn: {
+            link: undefined
+        }
+      },
+      {
         name: "call-helps",
         title: "CALL",
         description: "Are you facing a crisis? Call us for free and confidential counseling, information, and referrals",

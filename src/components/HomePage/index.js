@@ -30,7 +30,7 @@ class HomePage extends Component {
                     {/* <hr className={styles.topline} /> */}
                     <div className={styles.help}>
                         {/*<HelpOpts dataGetter={this.props}/>*/}
-                         { this.props.dataGetter.getHelpOpts.map((helps, i) => (
+                         { this.props.dataGetter.getHelpOpts.filter(helps => helps.name !== null).map((helps, i) => (
                             <div className={styles.options}>
                                 <img className={styles.svgClass} src={helps.image} />
                                 <div className={styles.subtitle}> {helps.title}</div>
