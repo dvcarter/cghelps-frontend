@@ -16,6 +16,7 @@ import Resources from "./components/Resources";
 import Donate from "./components/Donate";
 import AboutUs from "./components/AboutUs";
 import Posts from "./components/Posts";
+import Post from "./components/Post";
 import Footer from "./components/Footer";
 
 import {selectGetHelpOptsInfo} from "./selectors/getHelpOptsSelectors";
@@ -74,6 +75,7 @@ class App extends Component {
                     <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}/>
                     <PropsRoute path="/about-us" component={AboutUs} dataGetter={aboutInfo}/>
                     <PropsRoute path="/posts" component={Posts} />
+                    <PropsRoute path="/posts/:slug" component={Post} />
                 </Content>
                 <Footer />
             </Container>

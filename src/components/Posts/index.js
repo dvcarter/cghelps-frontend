@@ -15,7 +15,7 @@ class Posts extends Component {
         <div>
             <p> This is where the posts go </p>
             <div>
-                <PostList posts={this.props.posts} />
+            <PostList posts={this.props.posts} />
             </div>
         </div>
 
