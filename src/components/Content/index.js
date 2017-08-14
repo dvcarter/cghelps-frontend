@@ -1,11 +1,27 @@
 import React, { PropTypes } from "react"
 
 import "./index.css"
+import styles from "./page.css"
 
 const Content = (props) => (
   <div className="content">
-    { props.children }
-  </div>
+       {/* <div
+          className={ styles.hero }
+        >
+          <div className={ styles.header }>
+            <div className={ styles.wrapper }>
+              <h1 className={ styles.heading }>This is where the Hero Goes</h1>
+            </div>
+          </div>
+        </div>*/}
+      <div className={ styles.wrapper + " " + styles.pageContent }>
+        <div className={ styles.body }>
+          {
+            props.children
+          }
+        </div>
+      </div>
+    </div> 
 )
 
 Content.propTypes = {

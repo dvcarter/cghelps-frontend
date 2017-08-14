@@ -2,9 +2,13 @@ import redPhone from "../assets/Call_White_Red.png"
 import personPurple from "../assets/InPerson_White_purple.png"
 import chatWhitePurple from "../assets/Chate_White_purple.png"
 import onlineChatWhite from "../assets/OnlineChat_white.png"
+import SeekHelp from "../assets/seekhelp.jpg"
 
 const getHelpOpts = [
       {
+        hero: SeekHelp,
+        heroTitle: "We listen. We care. We help.",
+        heroSubtitle: "At Common Ground, we're dedicated to helping people move from crisis to hope.",
         name: "call-helps",
         title: "CALL",
         description: "Are you facing a crisis? Call us for free and confidential counseling, information, and referrals",
