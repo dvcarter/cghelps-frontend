@@ -1,12 +1,12 @@
 import React from "react"
 import styles from "./index.css"
 
-const NoMatch = ({ location }) => (
+const Accreditation = () => (
         <div className={styles.noPlace}>
             <div className={styles.noMatch}>
-                <h2> I'm afraid <code>{location.pathname}</code> doesn't appear to exist </h2>
+                <h2> Can we ever know someone's pain?</h2>
             </div>
         </div>
 )
 
-export default NoMatch
+export default Accreditation

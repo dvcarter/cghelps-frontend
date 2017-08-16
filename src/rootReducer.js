@@ -1,4 +1,5 @@
 import {combineReducers} from "redux";
+import { reducer as formReducer } from "redux-form";
 import posts from "./postReducer";
 import getHelpOptsReducer from "./getHelpOptsReducer";
 import getHelpReducer from "./getHelpReducer";
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
     getInvolvedInfo: getInvolvedReducer,
     resourceInfo: resourceReducer,
     donateInfo: donateReducer,
-    aboutInfo: aboutUsReducer
+    aboutInfo: aboutUsReducer,
+    form: formReducer
 })
 
 export default rootReducer;

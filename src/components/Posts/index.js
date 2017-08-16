@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import { BrowserRouter as Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 import * as actions from "../../postActions";
 import PostList from "../PostList";
 import Post from "../Post";
+import styles from "./index.css";
 
 class Posts extends Component {
     componentWillMount() {
@@ -14,15 +15,15 @@ class Posts extends Component {
 
     render() {
         return (
-        <div>
-            <h2> This is where posts go </h2>
-            <Switch>
-                <Route exact path='/posts' component={PostList} />
-                <Route path='/posts/:slug' component={Post} />
-            </Switch>
-            <PostList posts={this.props.posts}/>
-        </div>
-
+        <Router>
+            <div className={styles.posts}>
+                <Switch>
+                    <Route exact path='/posts' component={PostList} />
+                    <Route path='/posts/:slug' component={Post} />
+                </Switch>
+                <PostList posts={this.props.posts}/>
+            </div>
+        </Router>
         )
     }
 }

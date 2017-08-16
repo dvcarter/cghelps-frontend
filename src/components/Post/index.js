@@ -4,13 +4,15 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actions from "../../postActions";
 
-const Post = (props) => {
+const Post = () => {
+    const {items=[]} = this.props;
+    const i = this.props.params.id;
         return (
             <div> 
                 <p> another phrase </p>
-                    <div key ={props.post.id}>
+                    <div key={i}>
                         something here
-                           <div> <img src={props.post.acf.hero.sizes.thumbnail}/></div>
+                           <div> <img src={items[i].acf.hero.sizes.thumbnail}/></div>
                     </div>
             </div>
         )
