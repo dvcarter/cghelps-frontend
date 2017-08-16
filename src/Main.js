@@ -17,6 +17,7 @@ import Donate from "./components/Donate";
 import AboutUs from "./components/AboutUs";
 import Posts from "./components/Posts";
 import Post from "./components/Post";
+import NoMatch from "./components/NoMatch";
 import Footer from "./components/Footer";
 
 import {selectGetHelpOptsInfo} from "./selectors/getHelpOptsSelectors";
@@ -67,15 +68,20 @@ class App extends Component {
             <Container>
                 <Header />
                 <Content>
-                    <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo}>
-                    </PropsRoute>
+                    <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo} />
                     <PropsRoute path="/get-help" component={GetHelp} dataGetter={getHelpInfo} />
                     <PropsRoute path="/get-involved" component={GetInvolved} dataGetter={getInvolvedInfo} />
                     <PropsRoute path="/resources" component={Resources} dataGetter={resourceInfo} />
                     <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}/>
                     <PropsRoute path="/about-us" component={AboutUs} dataGetter={aboutInfo}/>
                     <PropsRoute path="/posts" component={Posts} />
-                    <PropsRoute path="/posts/:slug" component={Post} />
+                    {/*<PropsRoute path="/accreditation" component={Accreditation} />
+                    <PropsRoute path="/contact" component={Contact} />
+                    <PropsRoute path="/code-of-ethics" component={LargeText}/>
+                    <PropsRoute path="/t-o-s" component={LargeText} />
+                    <PropsRoute path="/copyright" component={Copyright} /> */}
+
+                    <PropsRoute component={NoMatch}/>
                 </Content>
                 <Footer />
             </Container>

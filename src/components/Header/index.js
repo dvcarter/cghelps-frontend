@@ -68,7 +68,12 @@ export default class Header extends Component {
                             <div className={`${styles.navWrapper} ${containerStyle}`}>
                                 <div className={styles.navLeft}>
                                     <Link to='/' className={styles.logo}>
-                                        Logo goes here
+                                        <Svg
+                                            svg={Logo}
+                                            draggable='false'
+                                            height="100px"
+                                            width="180px"
+                                        />
                                     </Link>
                                 </div>
                                 <div ref='toggle' onClick={this.handleClick} className={styles.toggle}>

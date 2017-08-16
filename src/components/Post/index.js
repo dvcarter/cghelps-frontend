@@ -4,36 +4,18 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actions from "../../postActions";
 
-class Post extends Component {
-    componentWillMount() {
-        this.props.actions.loadPosts();
-    }
-
-    render() {
-        const i = this.props.posts;
+const Post = (props) => {
         return (
             <div> 
-                <p> This is where posts go </p>
-                    <div key ={i}>
+                <p> another phrase </p>
+                    <div key ={props.post.id}>
                         something here
+                           <div> <img src={props.post.acf.hero.sizes.thumbnail}/></div>
                     </div>
             </div>
         )
     }
-}
 
-function mapStateToProps(state, ownProps) {
-    return {
-        posts: state.posts
-    }
-}
 
-function mapDispatchToProps(dispatch) {
-    return { actions: bindActionCreators(actions, dispatch)}
-}
 
-Post.propTypes = {
-    posts: PropTypes.array.isRequired,
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Post)
+export default Post

@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import { BrowserRouter as Route, Switch} from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 import * as actions from "../../postActions";
 import PostList from "../PostList";
+import Post from "../Post";
 
 class Posts extends Component {
     componentWillMount() {
@@ -13,10 +15,12 @@ class Posts extends Component {
     render() {
         return (
         <div>
-            <p> This is where the posts go </p>
-            <div>
-            <PostList posts={this.props.posts} />
-            </div>
+            <h2> This is where posts go </h2>
+            <Switch>
+                <Route exact path='/posts' component={PostList} />
+                <Route path='/posts/:slug' component={Post} />
+            </Switch>
+            <PostList posts={this.props.posts}/>
         </div>
 
         )

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import styles from "./index.css";
+import { Link } from "react-router-dom";
 
 const PostList = ( {posts} ) => {
     return (
@@ -15,7 +16,9 @@ const PostList = ( {posts} ) => {
                             <div className={styles.topics}>
                                 <h3 className={styles.subtitle}>{post.title.rendered}</h3>
                                 <div className={styles.description}>{post.content.rendered}</div>
-                                <a className={styles.resourcer} href={`/posts/${post.slug}`}> {post.slug}</a>
+                                <Link to={`/posts/${post.slug}`} className={styles.resourcer}>
+                                    {post.slug}
+                                </Link>
                             </div>
                         </div>
                     )}
