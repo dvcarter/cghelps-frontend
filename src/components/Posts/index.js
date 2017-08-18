@@ -8,20 +8,36 @@ import PostList from "../PostList";
 import Post from "../Post";
 import styles from "./index.css";
 
+const renderMergedProps = (component, ...rest) => {
+    const finalProps = Object.assign({}, ...rest);
+    return (
+            React.createElement(component, finalProps)
+    );  
+}
+
+const PropsRoute = ({ component, ...rest}) => { 
+    return (
+            <Route {...rest} render={routeProps => {
+                return renderMergedProps(component, routeProps, rest);
+            }}/>
+    );  
+}
+
+
 class Posts extends Component {
     componentWillMount() {
         this.props.actions.loadPosts();
     }
 
     render() {
+        const posts = this.props.posts
         return (
         <Router>
             <div className={styles.posts}>
                 <Switch>
-                    <Route exact path='/posts' component={PostList} />
-                    <Route path='/posts/:slug' component={Post} />
+                    <PropsRoute exact path='/posts' component={PostList} posts={posts} />
+                    <PropsRoute path='/posts/:slug' component={Post} posts={posts}/> 
                 </Switch>
-                <PostList posts={this.props.posts}/>
             </div>
         </Router>
         )
