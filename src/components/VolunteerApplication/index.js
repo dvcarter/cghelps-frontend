@@ -1,21 +1,25 @@
 import React from "react"
 import { connect } from "react-redux"
 import { Field, reduxForm, formValueSelector } from "redux-form"
-
+import styles from "./index.css"
+//import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const { DOM: {input, select, textarea} } = React
+
 
 let VolunteerApplication = props => {
     const { handleSubmit, hasRightSelection } = props
     return (
-            <form onSubmit={ handleSubmit }>
+            <form onSubmit={ handleSubmit } className={styles.formFit}>
                 {/* Form Body */}
-                <div>
-                    <label htmlFor="firstName">First Name*</label>
-                    <Field name="firstName" component="input" type="text" />
-                </div>
-                <div>
-                    <label htmlFor="lastName">Last Name*</label>
-                    <Field name="lastName" component="input" type="text" />
+                <div className="row">
+                    <div className="form-group">
+                        <label htmlFor="firstName" className="col-form-label">First Name*</label>
+                        <Field name="firstName" component="input" type="text" placeholder="First Name"/>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="lastName" className="col-form-label">Last Name*</label>
+                        <Field name="lastName" component="input" type="text" placeholder="Last Name"/>
+                    </div>
                 </div>
                 <div> 
                     <label htmlFor="email">Email*</label>
@@ -193,19 +197,39 @@ let VolunteerApplication = props => {
                     <p> Which type of crisis intervention and emotional support work interests you?
                         Select all that apply? </p>
                     <div>
-                        <Field name="volunteerArea" component="input" type="radio" value="telephone"/>
+                        <Field 
+                            name="Telephone" 
+                            id="volunteerArea"
+                            component="input" 
+                            type="checkbox" 
+                            value="telephone"/>
                         <label>Telephone</label>
                     </div>
                     <div>
-                        <Field name="volunteerArea" component="input" type="radio" value="chat" />
+                        <Field 
+                            name="Chat" 
+                            id="volunteerArea"
+                            component="input" 
+                            type="checkbox" 
+                            value="chat" />
                         <label>Chat</label>
                     </div>
                     <div>
-                        <Field name="volunteerArea" component="input" type="radio" value="text" />
+                        <Field 
+                            name="Text" 
+                            id="volunteerArea"
+                            component="input" 
+                            type="checkbox" 
+                            value="text" />
                         <label>Text</label>
                     </div>
                     <div>
-                        <Field name="volunteerArea" component="input" type="radio" value="face-to-face"/>
+                        <Field 
+                            name="Face-to-Face"
+                            id="volunteerArea"
+                            component="input" 
+                            type="checkbox" 
+                            value="face-to-face"/>
                         <label>Face-to-Face</label>
                     </div>
                 </div>
@@ -249,6 +273,131 @@ let VolunteerApplication = props => {
                     <div>
                         <Field name="previousCounselingWorkExplanation" component="textarea" />
                     </div>
+                </div>
+                <div>
+                    <p> Please briefly summarize your primary reasons for applying to this program
+                        and tell us what you hope to gain. </p>
+                    <Field name="reasonsForApplying" component="textarea" />
+                </div>
+                <div>
+                    <p> Do you have particularly strong feelings about any of these issues? 
+                        Select all that apply </p>
+                    <div>
+                        <Field
+                            name="issueInterest0"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />  
+                        <label htmlFor="issueInterest"> Abortion </label>
+                    </div>
+                    <div>
+                        <Field
+                            name="issueInterest1"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />
+                        <label htmlFor="issueInterest"> Domestic Violence </label>
+                    </div>
+                    <div>
+                        <Field
+                            name="issueInterest2"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />
+                        <label htmlFor="issueInterest"> LGBTQ </label>
+                    </div>
+                    <div>
+                        <Field
+                            name="issueInterest3"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />
+                        <label htmlFor="issueInterest"> Religion </label>
+                    </div>
+                    <div>
+                        <Field
+                            name="issueInterest4"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />
+                        <label htmlFor="issueInterest"> Sexual Assault </label>
+                    </div>
+                    <div>
+                        <Field
+                            name="issueInterest5"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />
+                        <label htmlFor="issueInterest"> Substance Abuse </label>
+                    </div>
+                    <div>
+                        <Field
+                            name="issueInterest6"
+                            id="issueInterest"
+                            component="input"
+                            type="checkbox"
+                        />
+                        <label htmlFor="issueInterest"> Suicide </label>
+                    </div>
+                </div>
+                <div>
+                    <p> Please briefly describe your feelings about each issue you selected above.
+                        Can you remain objective while interacting with someone who is currently
+                        facing any of these issues?
+                    </p>
+                    <Field name="objectivityQuestion" component="textarea" />
+                </div>
+                <div>
+                    <p> Have you recently experienced a significant loss or trauma? </p>
+                    <div>
+                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="no" />
+                        <label> No </label>
+                    </div>
+                    <div>
+                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" />
+                        <label> Yes <span> If yes, please describe.</span> </label>
+                    </div>
+                    <Field name="traumaQuestion" component="textarea" />
+                </div>
+                <div>
+                    <p> Are you currently attending counseling/therapy? </p>
+                    <div>
+                        <Field name="attendingCounseling" component="input" type="radio" value="no" />
+                        <label> No </label>
+                    </div>
+                    <div>
+                        <Field name="attendingCounseling" component="input" type="radio" value="yes" />
+                        <label> Yes <span> If yes, have you discussed your potential involvement at Common
+                        Ground with your therapist? </span> </label>
+                    </div>
+                    <Field name="counselingQuestioning" component="textarea" />
+                </div>
+                <div>
+                    <p> What do you think would be easiest for you about working in crisis intervention? </p>
+                    <Field name="easistPartCrisisIntervention" component="textarea" />
+                </div>
+                <div>
+                    <p> What do you think would be most difficult for you about working in crisis intervention? </p>
+                    <Field name="hardestPartCrisiIntervention" component="textarea" />
+                </div>
+                <div>
+                    <p> Crisis intervention work can be stressful. What causes stress in your life, and how do you
+                        cope?</p>
+                    <Field name="difficultQualities" component="textarea" />
+                </div>
+                <div>
+                    <p> What positive qualities do you bring to Common Ground? </p>
+                    <Field name="positiveQualities" component="textarea" />
+                </div>
+                <div>
+                    <p> Please tell us about any volunteer experience and/or special skills you have to offer. </p>
+                    <Field name="volunteerExperience" component="textarea" />
                 </div>
                 {(hasRightSelection === "face-to-face") &&
                     <div>
