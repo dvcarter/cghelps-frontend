@@ -384,20 +384,20 @@ let VolunteerApplication = props => {
                 </div>
                 <div>
                     <p> What do you think would be most difficult for you about working in crisis intervention? </p>
-                    <Field name="hardestPartCrisiIntervention" component="textarea" />
+                    <Field name="hardestPartCrisiIntervention" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> Crisis intervention work can be stressful. What causes stress in your life, and how do you
                         cope?</p>
-                    <Field name="difficultQualities" component="textarea" />
+                    <Field name="difficultQualities" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> What positive qualities do you bring to Common Ground? </p>
-                    <Field name="positiveQualities" component="textarea" />
+                    <Field name="positiveQualities" component="textarea" className={styles.boxWidth}/>
                 </div>
                 <div>
                     <p> Please tell us about any volunteer experience and/or special skills you have to offer. </p>
-                    <Field name="volunteerExperience" component="textarea" />
+                    <Field name="volunteerExperience" component="textarea" className={styles.boxWidth}/>
                 </div>
                 {(hasRightSelection === "face-to-face") &&
                     <div>

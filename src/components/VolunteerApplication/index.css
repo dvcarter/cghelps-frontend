@@ -3,3 +3,10 @@
     height: 100%;
     margin: 200px 0 200px 0;
 }
+
+.boxWidth {
+    min-height: 200px;
+    max-height: 500px;
+    min-width: 500px;
+    max-width: 800px;
+}
