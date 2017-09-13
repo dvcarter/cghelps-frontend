@@ -7,6 +7,7 @@ import * as actions from "../../postActions";
 import PostList from "../PostList";
 import Post from "../Post";
 import styles from "./index.css";
+import ScrollToTop from "../ScrollToTop";
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -33,7 +34,8 @@ class Posts extends Component {
     render() {
             return (
                 <Router>
-                <div className={styles.posts}>
+                <ScrollToTop>
+                    <div className={styles.posts}>
                     <Switch>
                             <PropsRoute exact path='/posts' component={PostList} posts={this.props.posts} /> 
                             {/* <Route path='/posts/:slug' component={Post} {...this.props} /> */}
@@ -42,6 +44,7 @@ class Posts extends Component {
                                 )} />
                     </Switch>
                 </div>
+            </ScrollToTop>
             </Router>
             )
     }

@@ -10,11 +10,14 @@ import configureStore from "./configureStore";
 const store = configureStore();
 store.dispatch(loadPosts());
 
+
 const router = (
         <BrowserRouter>
-            <App />
+                <App />
         </BrowserRouter>
 )
+
+
 
 const rootEl = document.getElementById('root');
 
