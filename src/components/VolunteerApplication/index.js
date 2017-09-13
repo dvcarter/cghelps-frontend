@@ -235,7 +235,7 @@ let VolunteerApplication = props => {
                 </div>
                 <div>
                     <p> Do you have personal and/or professional knowledge of topics such as domestic violence, mental health, suicide prevention, substance abuse, etc.? If so, please explain. </p>
-                    <Field name="professionalKnowledge" component="textarea" />
+                    <Field name="professionalKnowledge" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     
@@ -249,14 +249,14 @@ let VolunteerApplication = props => {
                             <Field name="quidProQuoValidation" component="input" type="radio" value="yes" />
                             <label> Yes  <span> if yes, please explain</span> </label>
                         </div>
-                        <Field name="quidProQuo" component="textarea" />
+                        <Field name="quidProQuo" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> Why are you interested in doing crisis intervention work at Common Ground? Please 
                     describe yourself and tell us what motivates you. Share a brief statement of your general
                     outlook on life, as well as any events you feel have significantly impacted your
                     personal development. (Do not provide a lengthy personal history.) </p>
-                    <Field name="motivation" component="textarea" />
+                    <Field name="motivation" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> Have you ever worked in crisis intervention or any type of counseling/therapy program
@@ -271,13 +271,13 @@ let VolunteerApplication = props => {
                             trainee program </label>
                     </div>
                     <div>
-                        <Field name="previousCounselingWorkExplanation" component="textarea" />
+                        <Field name="previousCounselingWorkExplanation" component="textarea" className={styles.boxWidth} />
                     </div>
                 </div>
                 <div>
                     <p> Please briefly summarize your primary reasons for applying to this program
                         and tell us what you hope to gain. </p>
-                    <Field name="reasonsForApplying" component="textarea" />
+                    <Field name="reasonsForApplying" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> Do you have particularly strong feelings about any of these issues? 
@@ -351,7 +351,7 @@ let VolunteerApplication = props => {
                         Can you remain objective while interacting with someone who is currently
                         facing any of these issues?
                     </p>
-                    <Field name="objectivityQuestion" component="textarea" />
+                    <Field name="objectivityQuestion" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> Have you recently experienced a significant loss or trauma? </p>
@@ -363,7 +363,7 @@ let VolunteerApplication = props => {
                         <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" />
                         <label> Yes <span> If yes, please describe.</span> </label>
                     </div>
-                    <Field name="traumaQuestion" component="textarea" />
+                    <Field name="traumaQuestion" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> Are you currently attending counseling/therapy? </p>
@@ -376,11 +376,11 @@ let VolunteerApplication = props => {
                         <label> Yes <span> If yes, have you discussed your potential involvement at Common
                         Ground with your therapist? </span> </label>
                     </div>
-                    <Field name="counselingQuestioning" component="textarea" />
+                    <Field name="counselingQuestioning" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> What do you think would be easiest for you about working in crisis intervention? </p>
-                    <Field name="easistPartCrisisIntervention" component="textarea" />
+                    <Field name="easistPartCrisisIntervention" component="textarea" className={styles.boxWidth} />
                 </div>
                 <div>
                     <p> What do you think would be most difficult for you about working in crisis intervention? </p>

@@ -1,8 +1,12 @@
 import personBlue from "../assets/InPerson_Blue.png"
 import marker from "../assets/marker.png"
+import GetHelp from "../assets/gethelp.jpg"
 
 const getHelp = [
       {
+        hero: GetHelp,
+        heroTitle: "A title here",
+        heroSubtitle: "This is a subtitle",
         name: "call-helper",
         id: 1,
         subtitle: "Coping with a Crisis",

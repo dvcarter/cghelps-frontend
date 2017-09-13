@@ -28,19 +28,22 @@ class Posts extends Component {
     componentWillMount() {
         this.props.actions.loadPosts();
     }
+    
 
     render() {
-        const posts = this.props.posts
-        return (
-        <Router>
-            <div className={styles.posts}>
-                <Switch>
-                    <PropsRoute exact path='/posts' component={PostList} posts={posts} />
-                    <PropsRoute path='/posts/:slug' component={Post} posts={posts}/> 
-                </Switch>
-            </div>
-        </Router>
-        )
+            return (
+                <Router>
+                <div className={styles.posts}>
+                    <Switch>
+                            <PropsRoute exact path='/posts' component={PostList} posts={this.props.posts} /> 
+                            {/* <Route path='/posts/:slug' component={Post} {...this.props} /> */}
+                            <Route path={`${this.props.match.url}/:slug`} render={(props) => (
+                                <Post {...this.props} {...props} />
+                                )} />
+                    </Switch>
+                </div>
+            </Router>
+            )
     }
 }
 

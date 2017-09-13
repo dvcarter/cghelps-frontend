@@ -1,38 +1,41 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Link, Router, Route, Switch } from "react-router-dom"
 import PropTypes from "prop-types"
 import styles from './GetInvolved.css'
+import GetInvolvedOpts from "../../components/GetInvolvedOpts"
+import Volunteer from "../../components/VolunteerApplication"
+
+const renderMergedProps = (component, ...rest) => {
+    const finalProps = Object.assign({}, ...rest);
+    return (
+            React.createElement(component, finalProps)
+    );  
+}
+
+const PropsRoute = ({ component, ...rest}) => { 
+    return (
+            <Route {...rest} render={routeProps => {
+                return renderMergedProps(component, routeProps, rest);
+            }}/>
+    );  
+}
+
 
 class GetInvolved extends Component {
     render() {
-        
+        const getInvolved = this.props.dataGetter.getInvolved
         return (
-                <div>
-                    <div className={styles.title}>
-                        Give a Hand
-                    </div>
-                    <div className={styles.holder}>
-                        {this.props.dataGetter.getInvolved.map((involver) => (
-                            <div className={styles.options}>
-                                <img className={styles.imgs} src={involver.image}/>
-                                <div className={styles.topics}>
-                                    <h3 className={styles.subtitle}> {involver.subtitle} </h3>
-                                    <div className={styles.description}>{involver.description} </div>
-                                </div>
-                                <a href={involver.btn.link}>
-                                    <button className={styles.button}>
-                                        {involver.btn.label}
-                                    </button>
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                <Route>
+                    <Switch>
+                        <PropsRoute exact path="/get-involved" component={GetInvolvedOpts} getInvolved={getInvolved} />
+                        <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
+                    </Switch>
+                </Route>
         )
     }
 }
 
 GetInvolved.propTypes = {
-    getInvolved: PropTypes.array.isRequired,
 }
 
 export default GetInvolved

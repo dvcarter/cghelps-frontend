@@ -2,9 +2,13 @@ import helpingHand from "../assets/helpinghand.jpg"
 import youthFamily from "../assets/youthfamily.jpg"
 import seekHelp from "../assets/seekhelp.jpg"
 import health from "../assets/health.jpg"
+import ResourceGroup from "../assets/grouphero.jpg"
 
 const resourceOpts = [
       {
+        hero: ResourceGroup,
+        heroTitle: "A title here",
+        heroSubtitle: "A subtitle here",
         subtitle: "Suicide Prevention & Survivors",
         image: helpingHand,
         description: "Is someone you love at risk? Learn some of the early warning signs, and discover what we can do together to help prevent suicides in our community.",

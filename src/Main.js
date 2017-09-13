@@ -79,7 +79,7 @@ class App extends Component {
                         <PropsRoute path="/about-us" component={AboutUs} dataGetter={aboutInfo}/>
                         <PropsRoute path="/posts" component={Posts} />
                         <PropsRoute path="/accreditation" component={Accreditation} />
-                        <PropsRoute path="/volunteer" component={Volunteer} />
+                        <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
                         {/*<PropsRoute path="/contact" component={Contact} />
                         <PropsRoute path="/code-of-ethics" component={LargeText}/>
                         <PropsRoute path="/t-o-s" component={LargeText} />

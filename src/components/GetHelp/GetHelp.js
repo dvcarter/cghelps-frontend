@@ -2,12 +2,29 @@ import React, { PropTypes, Component } from 'react'
 import styles from './GetHelp.css'
 //import MoreText from './../MoreText'
 import './findHelper.js'
+import sty from "../Content/newPage.css";
 
 export default class GetHelp extends Component {
     render() {
         const { getHelp } = this.props;
+        let getHelp = this.props.dataGetter.getHelp[0];
         return ( 
                 <div>
+                  <div
+                   className={ sty.hero } 
+                    style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
+                 >   
+                        <div className={ sty.header }>
+                            <div className={ sty.wrapper }>
+                                <h1 className={ sty.heading }>{getHelps.heroTitle}</h1>
+                                <div className={ sty.lowerTitleHolder}>
+                                    <h4 className={ sty.lowerTitle}>
+                                        {getHelps.heroSubtitle}
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                     <div className={styles.title}>
                             <h1> Help is here</h1>
                     </div>

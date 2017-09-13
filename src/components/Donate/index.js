@@ -1,11 +1,28 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types"
 import styles from './DonateOpts.css'
+import sty from "../Content/newPage.css"
 
 class Donate extends Component {
     render() {
+        let donate = this.props.dataGetter.donateOpts[0];
         return (
-
+            <div>
+                  <div
+                        className={ sty.hero }
+                        style={ {background: `#111 url(${donate.hero}) 50% 50% / cover`}}
+                    >
+                        <div className={ sty.header }>
+                            <div className={ sty.wrapper }>
+                                <h1 className={ sty.heading }>{donate.heroTitle}</h1>
+                                <div className={ sty.lowerTitleHolder}>
+                                    <h4 className={ sty.lowerTitle}>
+                                        {donate.heroSubtitle}
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             <div className={styles.bigHolder}>
                 <div className= {styles.title}> 3 Easy Ways to Donate</div>
                 <div className= {styles.help}>
@@ -21,6 +38,7 @@ class Donate extends Component {
                     ))}
                 </div>
             </div>
+        </div>
             )
     }
 }

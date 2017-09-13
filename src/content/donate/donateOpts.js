@@ -1,10 +1,13 @@
 import onlineDonate from "../assets/OnlineDonate_white.png"
 import telephoneDonate from "../assets/telephonedonate.png"
 import envelopeDonate from "../assets/envelope.png"
-
+import SeekHelp from "../assets/seekhelp.jpg"
 
 const donateOpts = [
       {
+        hero: SeekHelp,
+        heroTitle: "Donate today title",
+        heroSubtitle: "Donate today subtitle",
         name: "online-donates",
         title: "ONLINE",
         description: "Paypal makes it easy to donate to Common Ground online anytime",
