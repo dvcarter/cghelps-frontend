@@ -21,6 +21,7 @@ import Accreditation from "./components/Accreditation";
 import Volunteer from "./components/VolunteerPage";
 import NoMatch from "./components/NoMatch";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import {selectGetHelpOptsInfo} from "./selectors/getHelpOptsSelectors";
 import {selectGetHelpInfo} from "./selectors/getHelpSelectors";
@@ -70,6 +71,7 @@ class App extends Component {
             <Container>
                 <Header />
                 <Content>
+                    <ScrollToTop>
                     <Switch>
                         <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo} />
                         <PropsRoute path="/get-help" component={GetHelp} dataGetter={getHelpInfo} />
@@ -86,6 +88,7 @@ class App extends Component {
                         <PropsRoute path="/copyright" component={Copyright} /> */}
                         <PropsRoute component={NoMatch} />
                     </Switch>
+                    </ScrollToTop>
                 </Content>
                 <Footer />
             </Container>

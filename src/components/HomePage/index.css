@@ -1,0 +1,16 @@
+.line {
+    width: 70%;
+    height: 1px;
+    border: 0;
+    clear: both;
+    display: block;
+    background-color: #dfe3ee;
+    margin: 10px 0 10px 0;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

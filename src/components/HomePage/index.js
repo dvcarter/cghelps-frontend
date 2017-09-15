@@ -1,10 +1,36 @@
 import React, {Component} from "react";
+import PropTypes from "prop-types";
 import styles from  "../HelpOpts/HelpOpts.css";
 import Hero from "../Hero";
+import LatestPosts from "../LatestPosts";
+import Testimonials from "../Testimonials";
+import Impact from "../Impact";
 import sty from "../Content/newPage.css";
-
+import lineStyles from "./index.css";
 class HomePage extends Component {
+
+/*    constructor(props) {
+       super(props)
+    }
+    
+    componentDidMount() {
+        const { id } = this.props.params
+        this.fetchFirstPost(id)
+    }
+
+    fetchFirstPost = async(id) => {
+        try {
+            const res = await fetch("http://testcommongroundhelps.org/wp-json/wp/v2/posts/?_embed")
+            const postO = await res.json()
+            this.setState({ postsO })
+        } catch (e) {
+            this.setState({ err: e.message })
+        }
+    }
+*/        
     render() {
+
+  //      const postsO = this.props.postsO;
 
         let getHelps = this.props.dataGetter.getHelpOpts[0];
         return (
@@ -41,12 +67,25 @@ class HomePage extends Component {
                             </div>
                         ))} 
                     </div>
+                    <div className={lineStyles.center}>
+                        <div className={lineStyles.line} />
+                    </div>
+                    <LatestPosts />
+                    <div className={lineStyles.center}>
+                        <div className={lineStyles.line}/>
+                    </div>
+                    <Testimonials />
+                    <div className={lineStyles.center}>
+                        <div className={lineStyles.line}/>
+                    </div>
+                    <Impact />
                 </div>
             </div>
         )
     }
 
 }
+
 
 export default HomePage
 
