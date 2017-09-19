@@ -30,10 +30,15 @@
     }
 
     .numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 300px;
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
+        font-size: 15vw;
+        font-weight: 1000;
     }
     .infographic {
         width: 100%;
@@ -74,10 +79,15 @@
     }   
 
     .numbers {
+        display:flex;
+        justify-content: center;
+        align-items: center;
         width: 80%;
         height: 300px;
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
+        font-size: 22vw;
+        font-weight: 1000;
     }   
     .infographic {
         width: 80%;
@@ -118,10 +128,15 @@
     }
 
     .numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80%;
         height: 300px;
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
+        font-size: 22vw;
+        font-weight: 1000;
     }
     .infographic {
         width: 80%;
@@ -161,10 +176,15 @@
     }
 
     .numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 90%;
         height: 300px;
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
+        font-size: 25vw;
+        font-weight: 1000;
     }
     .infographic {
         width: 90%;
@@ -205,10 +225,15 @@
     }
 
     .numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80%;
         height: 200px;
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
+        font-size: 22vw;
+        font-weight: 1000;
     }
     .infographic {
         width: 80%;

@@ -192,12 +192,15 @@
     }   
 
     hr {
+        width: 80%;
         margin: 10px;
     }
     .topline {
+        width: 80%;
         margin-bottom: -15px;
     }
     .bottomline {
+        width: 80%;
         margin-top: -15px;
     }
     /* Safari 9 Hack */
@@ -206,7 +209,7 @@
     }
     .options {
         height: 100%;
-        width: 100%;
+        width: 75%;
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -246,6 +249,7 @@
     }
 
     .svgClass {
+        width: 120px;
         /*opacity: 0.4;
         filter: grayscale(10%);*/
     }
@@ -315,7 +319,7 @@
     }
     .options {
         height: 100%;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -337,6 +341,7 @@
         margin-bottom: 10px;
     }
     .svgClass {
+        width: 120px;
        /* opacity: 0.4;
         filter: grayscale(10%);*/
     }
@@ -565,7 +570,7 @@
             filter: grayscale(10%); */
         }
         .descriptions { 
-            font-size: 2em;
+            font-size: 1.5em;
             height: auto; 
             width: 100%;
             position: relative;
@@ -599,6 +604,7 @@
 
 button:hover {
     background-color: #7a5d94;
+    cursor: pointer;
 }
 
 .help *:nth-child(1) .button, .help *:nth-child(3) .button {
@@ -607,6 +613,7 @@ button:hover {
 
 .help *:nth-child(1) .button:hover, .help *:nth-child(3) .button:hover {
    background-color: #ab162b;
+   cursor: pointer;
 }
 
 .help *:nth-child(4)  {

@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
 import * as actions from "../../postActions";
 import PostList from "../PostList";
-
+import bird from "../../content/assets/ho_spa.jpg";
 {/*class LatestPosts extends Component {
     componentWillMount() {
         this.props.actions.loadPosts();
@@ -25,7 +25,7 @@ const LatestPosts = () => {
                         </Link>
                         <div className={styles.postHolder}>
                             {/* {posts.title.rendered} */}
-                                <div className={styles.standInImg}> image </div>
+                                <img className={styles.standInImg} src={bird} />
                                 <div className={styles.textArea}> 
                                     <h4 className={styles.subtitle}>Subtitle to Come </h4>
                                     <div className={styles.descriptionArea}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   </div>

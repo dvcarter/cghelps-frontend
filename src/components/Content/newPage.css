@@ -112,7 +112,7 @@
     .hero {
     margin: 0 auto;
     height: 65vh;
-    width: 75vw;
+    width: 85vw;
     /* fallback, mainly visible when hero image is loading */
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
@@ -131,17 +131,17 @@
     }  
 }
 
-@media only screen and (min-width: 1200px) {
-   /* .hero {
+@media screen and (min-width: 1200px) {
+   /*.hero {
         margin: 0 auto;
         height: 55vh;
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-    .hero { 
+   .hero { 
         margin: 0 auto;
-        height: 500px;
-        width: 900px;
+        height: 60vh;
+        width: 55vw;
         background-color: var(--colorSecondary);
     }
 

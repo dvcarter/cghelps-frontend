@@ -12,7 +12,10 @@ const Impact = () => {
                     </Link>
                     <div className={styles.infoHolder}>
                         <div className={styles.numbers}> 
-                            the numbers 
+                            88,000
+                        </div>
+                        <div>
+                            Common Ground helps over <strong>88,000</strong> people each year
                         </div>
                         <div className={styles.infographic}> 
                             infographic 
