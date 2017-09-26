@@ -57,13 +57,16 @@ class HomePage extends Component {
                     <div className={styles.help}>
                         {/*<HelpOpts dataGetter={this.props}/>*/}
                          { this.props.dataGetter.getHelpOpts.filter(helps => helps.name !== null).map((helps, i) => (
-                            <div className={styles.options}>
-                                <img className={styles.svgClass} src={helps.image} />
-                                <div className={styles.subtitle}> {helps.title}</div>
-                                <div className={styles.descriptions}> {helps.description}</div>
-                                <a href={helps.btn.link}>
-                                    <button className={styles.button}>{helps.btn.label}</button>
-                                </a>
+                            <div className={styles.optionsHolder}>
+                                <div className={styles.options}>
+                                    <img className={styles.svgClass} src={helps.image} />
+                                    <div className={styles.subtitle}> {helps.title}</div>
+                                    <div className={styles.descriptions}> {helps.description}</div>
+                                    <a href={helps.btn.link}>
+                                        <button className={styles.button}>{helps.btn.label}</button>
+                                    </a>
+                                </div>
+                                <div className={styles.newLine} />
                             </div>
                         ))} 
                     </div>

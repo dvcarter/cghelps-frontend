@@ -8,15 +8,13 @@
 }
 
 .wrapper {
-  display: flex;
+/*  display: flex;
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
   align-self: center;
   -webkit-align-self: center;
-  justify-content: center;
-  height: auto;
-  width: 100%;
+*/  width: 100%;
   max-width: var(--maxWidth);
   /*padding: 1rem 0.75rem;*/
 }
@@ -62,6 +60,15 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
+  .heading {
+      margin: 200px 0 0 0;
+      font-size: 1.25em;
+      background-color: red;
+  }
+  .lowerTitleHolder {
+      padding: 0 20px 0 20px;
+      font-size: 0.75em;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .hero {
@@ -74,6 +81,12 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
+     .heading {
+        margin: 250px 0 0 0;
+    }   
+    .lowerTitleHolder {
+        padding: 0 250px 0 250px;
+    }  
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -87,6 +100,12 @@
         height: 400px;
         width: 800px;
     }
+     .heading {
+        margin: 180px 0 0 0;
+    }   
+    .lowerTitleHolder {
+        padding: 0 250px 0 250px;
+    }  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
@@ -94,7 +113,7 @@
     .hero {
     margin: 0 auto;
     height: 65vh;
-    width: 75vw;
+    width: 85vw;
     /* fallback, mainly visible when hero image is loading */
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
@@ -105,19 +124,25 @@
         var(--colorSecondary) 70%
         );
     }
+     .heading {
+        margin: 290px 0 0 0;
+    }   
+    .lowerTitleHolder {
+        padding: 0 250px 0 250px;
+    }  
 }
 
-@media only screen and (min-width: 1200px) {
-   /* .hero {
+@media screen and (min-width: 1200px) {
+   /*.hero {
         margin: 0 auto;
         height: 55vh;
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-    .hero { 
+   .hero { 
         margin: 0 auto;
-        height: 500px;
-        width: 900px;
+        height: 60vh;
+        width: 55vw;
         background-color: var(--colorSecondary);
     }
 
@@ -129,8 +154,44 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .body {
-        width: 60%;
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper {
+        width: 40%;
+        height: 52.5vh; 
+        margin: -45px 0 0 0;
+    }
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        color: ;
+        background-color: #482864;
+        background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
+    }
+    div.heading {
+        color: #fff;
+    }
+    .textBox {
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 20px;
+    }
+    h1 {
+        margin: 0 0 0 40px;
+    }
+    li {
+        font-size: 12px;
+    }
+    .lowerTitleHolder {
+       /* padding: 0 250px 0 250px;*/
     }
 }
 
@@ -172,11 +233,9 @@
   );*/
 }
 
-.heading {
-  margin: 160px 0 0 0;
-  color: var(--colorNeutralLight);
+.heading, .lowerTitle {
+ color: var(--colorNeutralLight);
   text-shadow:
-    0 0 10px var(--colorPrimaryDark),
     0 0 6px var(--colorNeutralDark),
     0 0 2px var(--colorNeutralDark)
   ;
@@ -195,9 +254,6 @@
 
 .pageContent {
   margin: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .body {
@@ -219,6 +275,25 @@
     max-width: 100%;
   }
 }
-.hero {
-    background-color: #dfe3ee;
+
+.button {
+        margin-top: 100px;
+         white-space: nowrap;
+        width: 200px;
+        margin-left: 30px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #8b0000;
+        padding: 12px 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.25vh;
+        font-weight: bold;
+        transition: background-color 0.5s ease;
+ }
+
+.button:hover {
+        color: #fff;
+        background-color: #8b0000;
 }

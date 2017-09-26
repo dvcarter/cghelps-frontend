@@ -27,7 +27,31 @@
     }
 }
 
+.line {
+    width: 80%;
+    height: 1.25px;
+    border: 0;
+    clear: both;
+    display: block;
+    background-color: #dfe3ee;
+    margin: 10px 0 10px 0;
+
+}
+
+
 @media only screen and (min-width: 1200px) {
+    .bigHolder {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .donationHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
     .help {
         display: flex;
         display: -webkit-flex;
@@ -62,8 +86,10 @@
         text-align: center;
         height: 40px;
         width: 100%;
-        font-size: 200%;
+        font-size: 175%;
         padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
     }
 
     /*hr {
@@ -80,6 +106,14 @@
         max-height: 400px;
         height: 300px;
     }
+      .optionsHolder {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
      .options {
         height: auto;
         width: 100%;
@@ -98,8 +132,18 @@
         padding-bottom: 5px;
         margin: 10px 25px 20px 25px;
         font-size: 1vh;
-        border-bottom: 0.25px solid #dfe3ee;
+        /*border-bottom: 0.25px solid #dfe3ee;*/
     }
+    .newLine {
+            height: 1px;
+            background-color: #dfe3ee;
+            width: 73%;
+         }   
+        _::-webkit-full-page-media, _:future, :root .newLine {
+            height: .0625em;
+            width: 100%;
+            background-color: #dfe3ee;
+        } 
     .gylphs {
         display: flex;
         display: -webkit-flex;
@@ -204,6 +248,15 @@
     _::-webkit-:not(:root:root), .help {
         height: 300px;
     }
+
+    .optionsHolder {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .options {
         height: 100%;
         width: 100%;
@@ -226,9 +279,25 @@
         /*background-color: #f1f2f2;*/
         margin: 10px 25px 5px 25px;
         font-size: 1vh;
-        border-bottom: 0.25px solid #dfe3ee;
+        /*border-bottom: 0.25px solid #dfe3ee;*/
     }
-
+    
+     .newLine {
+        height: 1px;
+        background-color: #dfe3ee;
+        width: 78%;
+        }
+       _::-webkit-:not(:root:root), .newLine {
+            height: .25em;
+            width: 70%;
+            background-color: #dfe3ee;
+        }
+        _::-webkit-full-page-media, _:future, :root .newLine {
+            height: .25em;
+            width: 70%;
+            background-color: #dfe3ee;
+        }
+    
     .glyphs {
         display: flex;
         display: -webkit-flex;
@@ -315,6 +384,31 @@
         height: 250px;
         margin-bottom: 20px;
     }
+    
+     .newLine {
+        height: 1px;
+        background-color: #dfe3ee;
+        width: 75%;
+        }
+       _::-webkit-:not(:root:root), .newLine {
+            height: .25em;
+            width: 70%;
+            background-color: #dfe3ee;
+        }
+        _::-webkit-full-page-media, _:future, :root .newLine {
+            height: .25em;
+            width: 70%;
+            background-color: #dfe3ee;
+        }    
+
+     .optionsHolder {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .options {
         height: 100%;
         width: 100%;
@@ -326,7 +420,7 @@
         /* background-color: #f1f2f2; */ 
         margin: 15px 15px 0 15px;
         font-size: 1vh;
-        border-bottom: 0.25px solid #dfe3ee;
+        /*border-bottom: 0.25px solid #dfe3ee;*/
     }
     .glyphs {
         display: flex;
@@ -607,11 +701,11 @@ button:hover {
     background-color: #7a5d94;
 }
 
-.help *:nth-child(1) .button, .help *:nth-child(3) .button {
+.help *:nth-child(1) .options .button, .help *:nth-child(3) .button {
     background-color: #8b0000;
 }
 
-.help *:nth-child(1) .button:hover, .help *:nth-child(3) .button:hover {
+.help *:nth-child(1) .options .button:hover, .help *:nth-child(3) .button:hover {
    background-color: #ab162b;
 }
 

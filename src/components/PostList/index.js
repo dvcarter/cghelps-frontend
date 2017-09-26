@@ -12,15 +12,16 @@ const PostList = ( {posts} ) => {
                 <div className={styles.holder}>
                     {posts.map((post, index) => 
                         <div className={styles.options} key={post.id}>
-                                <img className={styles.imgs} src={post.acf.hero.sizes.large} alt="nothing here" />
+                            <img className={styles.imgs} src={post.acf.hero.sizes.large} alt="nothing here" />
                             <div className={styles.topics}>
-                                <h3 className={styles.subtitle}>{post.title.rendered}</h3>
-                                <div className={styles.description}>{post.content.rendered}</div>
-                                <Link to={`/posts/${post.slug}`} className={styles.resourcer}>
-                                    {post.slug}
-                                </Link>
+                                    <h3 className={styles.subtitle}>{post.title.rendered}</h3>
+                                    <div className={styles.description} dangerouslySetInnerHTML={{ __html: post.excerpt.rendered.replace(/[\[\]']+/g, '')}} />
+                                    <Link to={`/posts/${post.slug}`} className={styles.resourcer}>
+                                        {post.slug}
+                                    </Link>
                             </div>
-                        </div>
+                        
+                       </div>
                     )}
                 </div>
             </div>

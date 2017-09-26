@@ -1,4 +1,8 @@
-    
+
+
+
+
+
 @media screen and (min-width: 1200px) {
     .bigHolder {
         margin: 0 auto;
@@ -26,22 +30,31 @@
         width: 100%;
     }
 
-    .bigVid, .smallVids {
+    .smallVids {
         height: 300px;
         width: 50%;
         margin: 0 5px 0 5px;
     }
-
+    .bigVid {
+        margin: 0 5px 0 5px;
+    }
     .bigVid {
         background-color: #dfe3ee;
+        height: 200px;
+        width: 50%;
     }
 
-    .bigVid, .vid1, .vid2 {
+    .vid1, .vid2 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         color: #fff;
-        background-color: #000;
+        /*background-color: #000;*/
+    }
+    .bigVid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .vid1, .vid2 {
         background-color: #dfe3ee;
@@ -67,8 +80,8 @@
         width: 40%;
         height: 100%;
     }
-
 }
+
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .bigHolder {
@@ -120,6 +133,15 @@
     }
     .vid1 {
         margin: 0 0 10px 0;
+    }
+
+    .vidArea {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: #000;
+        width: 40%;
+        height: 100%;
     }
 }
 
