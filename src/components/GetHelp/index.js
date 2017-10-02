@@ -33,7 +33,7 @@ export default class GetHelp extends Component {
                         <div className={styles.title}>
                             Help is here
                         </div>
-                        <div className={ styles.holdMoreTex}>
+                        <div className={ styles.holdMoreText}>
                             {getHelp.map((getHelp) => (
                                 <MoreText getHelp={getHelp} key={getHelp.id}/>
                             ))}

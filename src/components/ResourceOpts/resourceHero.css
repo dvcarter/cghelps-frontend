@@ -300,15 +300,11 @@
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) {
-    /*.hero {
+      .hero {
         margin: 0 auto;
-        height: 55vh;
-        width: 55vw;
-    }*/
-    .hero {
-        margin: 0 auto;
-        height: 500px;
-        width: 900px;
+        margin: 0 50px 0 50px;
+        height: 70vh;
+        width: 75vw;
         background-color: var(--colorSecondary);
     }
 }

@@ -1,7 +1,16 @@
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px){
+    .superHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }  
+    
     .bigHolder {
         max-height: 3000px;
+        width: 100%;
     }
 
 }
@@ -884,4 +893,22 @@ button:hover {
 
 .help *:nth-child(4)  {
     border-bottom: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px){
+    .superHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .options {
+    }
+    
+    .bigHolder {
+        max-height: 3000px;
+        width: 100%;
+    }
+
 }
