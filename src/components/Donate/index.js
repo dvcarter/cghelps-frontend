@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import styles from './DonateOpts.css'
 import sty from "./donateHero.css"
 import SustainOpts from "../SustainOpts"
+import MoreWays from "../MoreWays"
+//import SponsorThanks from "../SponsorThanks"
 
 class Donate extends Component {
     render() {
@@ -54,10 +56,13 @@ class Donate extends Component {
                         </div>
                     ))}
                 </div>
+                {this.props.moreInfo}
             </div>
             <SustainOpts />
             <div className={styles.line} />
-            <div className={styles.line} />
+            <MoreWays />
+            {/*<div className={styles.line} />
+            <SponsorThanks />*/}
         </div>
             )
     }

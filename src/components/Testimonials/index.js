@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./index.css";
-import main from "../../content/assets/grupido.jpg";
-import aux1 from "../../content/assets/not_terri.jpg";
-import aux2 from "../../content/assets/terri.jpg";
+//import main from "../../content/assets/grupido.jpg";
+//import aux1 from "../../content/assets/not_terri.jpg";
+//import aux2 from "../../content/assets/terri.jpg";
 
 import YouTube from "../YouTube";
 const Testimonials = () => {

@@ -155,7 +155,6 @@
         display: -webkit-flex;
         justify-content: center;
         -webkit-justify-content: center;
-        align-items: center;
         -webkit-align-items: center;
         width: 100%;
         font-size: 34px;
@@ -298,18 +297,33 @@
         }
 }
 @media only screen and (min-width: 1200px) {
+       .superHolder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }  
         .title {
             display: flex;
             display: -webkit-flex;
+            display: -ms-flexbox;
             justify-content: center;
             -webkit-justify-content: center;
+            -ms-flex-pack: center;
             align-items: center;
             -webkit-align-items: center;
-            font-size: 34px;
-            font-weight: 700;
+            -ms-flex-align: center;
+            text-align: center;
+            height: 30px;
+            width: 90%;
+            font-size: 175%;
+            margin-top: 10px;
             padding-bottom: -40px;
-        }
-
+            color: #333;
+            font-weight: 300;
+        }  
+         
         h3.subtitle {
             font-weight: 500;
             font-size: 150%;

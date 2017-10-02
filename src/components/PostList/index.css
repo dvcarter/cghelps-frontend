@@ -288,6 +288,7 @@
 
 }
 @media only screen and (min-width: 1200px) {
+
         .title {
             display: flex;
             display: -webkit-flex;
@@ -332,27 +333,28 @@
             flex-direction: row;
             -webkit-flex-direction: row;
             /*background-color: #f7f7f7; */
-            height: 200px;
+            height: 10%;
             width: 100%;
             margin: 35px 0px 35px 100px;
             padding: 20px 0px 20px 0px;
             border-bottom: 0.25px solid #dfe3ee;
         }
+        .options:last-of-type {
+            border: none;
+        }
         .imgs {
             height: auto;
-            width: 10%;
+            width: 20%;
         }
         .description {
-            height: 50%;
-            width: 90%;
+            height: 40%;
+            width:  80%;
             padding:  10px 0px 0px 10px;
             margin: 5px 0 5px 0;
         }
         .resourcer {
-            border: 1.5px solid #000;
             border-radius: 5px;
-            padding: 5px;
-            margin: 5px 0px -10px 10px;
+            margin: -10px 0px 0px 10px;
         }
 
 }

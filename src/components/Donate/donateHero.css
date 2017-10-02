@@ -81,12 +81,46 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
-     .heading {
-        margin: 250px 0 0 0;
+        .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
     }   
-    .lowerTitleHolder {
-        padding: 0 250px 0 250px;
-    }  
+    .wrapper {
+        width: 50%;
+        height: 52.5vh; 
+        margin: -45px 0 0 0;
+    }   
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        color: ;
+        background-color: #482864;
+        background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
+    }   
+    div.heading {
+        color: #fff;
+    }   
+    .textBox {
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 20px;
+    }   
+    h1 {
+        margin: 0 0 0 40px;
+        font-size: 150%;
+    }   
+    li {
+        font-size: 12px;
+    }   
+    .button {
+        margin-top: 15px;
+    } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -100,11 +134,45 @@
         height: 400px;
         width: 800px;
     }
-     .heading {
-        margin: 180px 0 0 0;
+        .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
     }   
-    .lowerTitleHolder {
-        padding: 0 250px 0 250px;
+    .wrapper {
+        width: 40%;
+        height: 52.5vh; 
+        margin: -45px 0 0 0;
+    }   
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        color: ;
+        background-color: #482864;
+        background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
+    }   
+    div.heading {
+        color: #fff;
+    }   
+    .textBox {
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 20px;
+    }   
+    h1 {
+        margin: 0 0 0 40px;
+        font-size: 150%;
+    }   
+    li {
+        font-size: 12px;
+    }   
+    .button {
+        margin-top: 25px;
     }  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -117,19 +185,47 @@
     /* fallback, mainly visible when hero image is loading */
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
-    background:
-        radial-gradient(
-        ellipse at 50% 50%,
-        color(var(--colorSecondary) l(+ 10%)) 15%,
-        var(--colorSecondary) 70%
-        );
     }
-     .heading {
-        margin: 290px 0 0 0;
+       .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
     }   
-    .lowerTitleHolder {
-        padding: 0 250px 0 250px;
-    }  
+    .wrapper {
+        width: 40%;
+        height: 52.5vh; 
+        margin: -45px 0 0 0;
+    }   
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        color: ;
+        background-color: #482864;
+        background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
+    }   
+    div.heading {
+        color: #fff;
+    }   
+    .textBox {
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 20px;
+    }   
+    h1 {
+        margin: 0 0 0 40px;
+        font-size: 150%;
+    }   
+    li {
+        font-size: 12px;
+    } 
+    .button {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -141,8 +237,9 @@
     }*/
    .hero { 
         margin: 0 auto;
-        height: 60vh;
-        width: 55vw;
+        margin: 0 50px 0 50px;
+        height: 70vh;
+        width: 75vw;
         background-color: var(--colorSecondary);
     }
 
@@ -192,6 +289,9 @@
     }
     .lowerTitleHolder {
        /* padding: 0 250px 0 250px;*/
+    }
+    .button {
+        margin-top: 100px;
     }
 }
 
@@ -277,7 +377,6 @@
 }
 
 .button {
-        margin-top: 100px;
          white-space: nowrap;
         width: 200px;
         margin-left: 30px;

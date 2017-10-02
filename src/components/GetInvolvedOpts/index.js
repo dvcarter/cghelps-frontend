@@ -1,25 +1,33 @@
-import React, { Component } from 'react'
-import {Link, Route } from "react-router-dom"
-import PropTypes from "prop-types"
+import React from 'react'
 import styles from './GetInvolved.css'
-import sty from "../Content/newPage.css"
+import sty from "./getInvolvedHero.css"
 
 const GetInvolvedOpts = ( {getInvolved} ) => {
         let getInv = getInvolved[0];
         return (
-                <Route>
-                <div>
+                <div className={styles.superHolder}>
                    <div
                         className={ sty.hero } 
                         style={ {background: `#111 url(${getInv.hero}) 50% 50% / cover`}}
                     >   
                         <div className={ sty.header }>
                             <div className={ sty.wrapper }>
-                                <h1 className={ sty.heading }>{getInv.heroTitle}</h1>
-                                <div className={ sty.lowerTitleHolder}>
-                                    <h4 className={ sty.lowerTitle}>
-                                        {getInv.heroSubtitle}
-                                    </h4>
+                                <div className={ sty.heading }>
+                                    <div className={sty.textBox}>
+                                        <div className={sty.purpleTitle}> Get Involved </div>
+                                        <p>
+                                            Take a tour of our Resource & Crisis Center to learn how you can <em> help move people from crisis to hope. </em></p>
+                                        <div className={sty.datePlacement}>
+                                                <ul> 
+                                                    <li> Tour Dates:</li>
+                                                    <li> January 1 </li>
+                                                    <li> January 1 </li>
+                                                    <li> January 1 </li>
+                                                </ul>
+                                        </div>
+                                        <button className={sty.button}><a href="#"> Register for a 'Crisis to Hope' Tour! </a></button>
+                                    </div>
+                                
                                 </div>
                             </div>
                         </div>
@@ -30,7 +38,7 @@ const GetInvolvedOpts = ( {getInvolved} ) => {
                     <div className={styles.holder}>
                         {getInvolved.map((involver) => (
                             <div className={styles.options}>
-                                <img className={styles.imgs} src={involver.image}/>
+                                <img className={styles.imgs} src={involver.image} alt="" />
                                 <div className={styles.topics}>
                                     <h3 className={styles.subtitle}> {involver.subtitle} </h3>
                                     <div className={styles.description}>{involver.description} </div>
@@ -44,7 +52,6 @@ const GetInvolvedOpts = ( {getInvolved} ) => {
                         ))}
                     </div>
                 </div>
-            </Route>
         )
     }
 

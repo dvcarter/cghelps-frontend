@@ -1,10 +1,11 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from "prop-types"
 import styles from './About.css'
 //import OurStory from './ourstory.jpg'
 
 const About = () => {
     return (
-            <div>
+            <div className={styles.bigHolder}>
                 <div className={styles.title}>
                     <h5> About Us</h5>
                 </div>
@@ -39,39 +40,24 @@ const About = () => {
                     <h5> Contact Us  </h5>
                 </div>
                 <div className={styles.aboutText}>
-                    <ul>
-                        <li>
-                            Administration Building
-                            <ul>
-                                <li> 1-248-456-8150</li>
-                            </ul>
-                        </li>
-                        <li> Resource and Crisis Center
-                            <ul>
-                                <li>1-248-451-2600</li>
-                            </ul>
-                        </li>
-                        <li> The Sanctuary 
-                            <ul>
-                                <li> 1-248-547-2260</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div className={styles.aboutDescriptor}>
+                        To reach our administrative staff, please call 248-456-8150 or email <span style={{color: 'red'}}><strong><a href="mailto:akscommonground@commongroundhelps.org">askcommonground@commongroundhelps.org</a></strong></span>
+                    </div>
                 </div>
                 <div className={styles.title}>
                     <h5 id="Careers">Careers </h5>
                 </div>
                 <div className={styles.aboutText}>
-                    <p>
                         Want to help people move from crisis to hope? Join our team at Common Ground. In addition to
                         the rewards of positively impacting your local community, employee benefits include:
                         medical and dental insurance, life insurance, short and long-term disability insurance,
                         flexible spending account, paid time off, paid holidays, training and opportunities for
                         advancement, and retirement savings (403b).
-                    </p>
-                    <a href="http://commongroundhelps.applicantpro.com" className={styles.careerlink}>
+                    <p>
+                        <a href="http://commongroundhelps.applicantpro.com" className={styles.careerlink}>
                         View our current openings >
-                    </a>
+                        </a>
+                    </p>
                 </div>
             </div>
     )

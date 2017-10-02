@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Link, Router, Route, Switch } from "react-router-dom"
-import PropTypes from "prop-types"
-import styles from './GetInvolved.css'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import GetInvolvedOpts from "../../components/GetInvolvedOpts"
 import Volunteer from "../../components/VolunteerApplication"
 
@@ -35,7 +33,5 @@ class GetInvolved extends Component {
     }
 }
 
-GetInvolved.propTypes = {
-}
 
 export default GetInvolved

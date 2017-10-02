@@ -137,7 +137,7 @@
     .newLine {
             height: 1px;
             background-color: #dfe3ee;
-            width: 73%;
+            width: 90%;
          }   
         _::-webkit-full-page-media, _:future, :root .newLine {
             height: .0625em;
@@ -192,6 +192,8 @@
         text-decoration: none;
         display: inline-block;
         font-size: 1.25vh;
+    }
+    .bigHolder {
     }
 }
 

@@ -1,39 +1,45 @@
-import React, { PropTypes, Component } from 'react'
+import React, {  Component } from 'react'
+import PropTypes from "prop-types"
 import styles from './GetHelp.css'
 //import MoreText from './../MoreText'
 import './findHelper.js'
-import sty from "../Content/newPage.css"
+import sty from "./getHelpHero.css"
 
 export default class GetHelp extends Component {
     render() {
-        let getHelps = this.props.dataGetter.getHelp[0];
+        let getHelps = this.props.getHelp[0];
+        const getHelp = this.props.getHelp;
         return ( 
-                <div>
+                <div className={ styles.superHolder} >
                  <div
                    className={ sty.hero } 
                     style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
                  >   
                         <div className={ sty.header }>
                             <div className={ sty.wrapper }>
-                                <h1 className={ sty.heading }>{getHelps.heroTitle}</h1>
-                                <div className={ sty.lowerTitleHolder}>
-                                    <h4 className={ sty.lowerTitle}>
-                                        {getHelps.heroSubtitle}
-                                    </h4>
+                                <div className={ sty.heading }>
+                                    <div className={sty.textBox}>
+                                        <div className={sty.purpleTitle}> Get Help </div>
+                                        <div className={ sty.lowerTitleHolder}>
+                                            Call us at 1.800.231.1127 to get help right away.
+                                            Our Resource & Crisis Helpline is available 24/7.
+                                        </div>
+                                    </div>
                                 </div>
+                                <button className={sty.button}><a href="tel:18002311127">Call Now </a></button>
                             </div>
                         </div>
                     </div>
-                    <div className={styles.title}>
-                            <h1> Help is here</h1>
+                        <div className={styles.title}>
+                            Help is here
+                        </div>
+                        <div className={ styles.holdMoreTex}>
+                            {getHelp.map((getHelp) => (
+                                <MoreText getHelp={getHelp} key={getHelp.id}/>
+                            ))}
+                        </div>
+                        <img className={styles.imgs} src={getHelp.image} alt="" />
                     </div>
-                    <div className={ styles.holdMoreTex}>
-                        {this.props.dataGetter.getHelp.map((getHelp) => (
-                            <MoreText getHelp={getHelp} key={getHelp.id}/>
-                        ))}
-                    </div>
-                    <img className={styles.imgs} src={this.props.dataGetter.getHelp.image} />
-                </div>
                )
     }
 }
@@ -83,7 +89,7 @@ class MoreText extends Component {
                                     }
                                     </div>
                                     <a href={getHelp.getHelp.btn.link} className={styles.onlybtn}>
-                                        <img className={styles.imgs} src={getHelp.getHelp.image}/>
+                                        <img className={styles.imgs} src={getHelp.getHelp.image} alt="" />
                                         {getHelp.getHelp.btn.label}
                                     </a>
                             </div>

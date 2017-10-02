@@ -1,10 +1,7 @@
 import React, {Component} from "react";
-import PropTypes from "prop-types";
 import styles from  "../HelpOpts/HelpOpts.css";
-import Hero from "../Hero";
 import LatestPosts from "../LatestPosts";
 import Testimonials from "../Testimonials";
-import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
 class HomePage extends Component {
@@ -35,18 +32,16 @@ class HomePage extends Component {
         let getHelps = this.props.dataGetter.getHelpOpts[0];
         return (
 
-            <div>
+            <div className={styles.superHolder}>
                  <div
                    className={ sty.hero } 
                     style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
                  >   
                         <div className={ sty.header }>
                             <div className={ sty.wrapper }>
-                                <h1 className={ sty.heading }>{getHelps.heroTitle}</h1>
+                                <div className={ sty.heading }>{getHelps.heroTitle}</div>
                                 <div className={ sty.lowerTitleHolder}>
-                                    <h4 className={ sty.lowerTitle}>
                                         {getHelps.heroSubtitle}
-                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +54,7 @@ class HomePage extends Component {
                          { this.props.dataGetter.getHelpOpts.filter(helps => helps.name !== null).map((helps, i) => (
                             <div className={styles.optionsHolder}>
                                 <div className={styles.options}>
-                                    <img className={styles.svgClass} src={helps.image} />
+                                    <img className={styles.svgClass} src={helps.image} alt="" />
                                     <div className={styles.subtitle}> {helps.title}</div>
                                     <div className={styles.descriptions}> {helps.description}</div>
                                     <a href={helps.btn.link}>
@@ -78,10 +73,12 @@ class HomePage extends Component {
                         <div className={lineStyles.line}/>
                     </div>
                     <Testimonials />
-                    <div className={lineStyles.center}>
-                        <div className={lineStyles.line}/>
-                    </div>
-                    <Impact />
+                    {/* 
+                        <div className={lineStyles.center}>
+                            <div className={lineStyles.line}/>
+                        </div>
+                        <Impact />
+                    */}
                 </div>
             </div>
         )

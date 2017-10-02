@@ -17,7 +17,7 @@ const PostList = ( {posts} ) => {
                                     <h3 className={styles.subtitle}>{post.title.rendered}</h3>
                                     <div className={styles.description} dangerouslySetInnerHTML={{ __html: post.excerpt.rendered.replace(/[\[\]']+/g, '')}} />
                                     <Link to={`/posts/${post.slug}`} className={styles.resourcer}>
-                                        {post.slug}
+                                        Read more >        
                                     </Link>
                             </div>
                         

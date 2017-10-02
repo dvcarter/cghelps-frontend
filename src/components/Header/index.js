@@ -1,17 +1,8 @@
-import React, { PropTypes, Component } from "react"
+import React, { Component } from "react"
 import { BrowserRouter as Router, Link } from "react-router-dom"
-// import MediaQuery from "react-responsive"
+import PropTypes from "prop-types"
 import Svg from "react-svg-inline"
 import Logo from "./cg-logo.svg"
-//import Phone from "./telephone-handle-silhouette.png"
-//import People from "./group-profile-users.png"
-//import Resource from "./plus-button.png"
-//import Menu from "./menu-alt.png"
-
-// import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
-// import gitHubSvg from "../icons/iconmonstr-github-1.svg"
-
-// import styles from "./index.css"
 import handleClickAway from "./handleClickAway.js"
 import styles from  "./header.css"
 
@@ -94,14 +85,14 @@ export default class Header extends Component {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href={'/get-help/visit'} className={styles.link}>
+                                                    <Link to='/visit' className={styles.link}>
                                                         {"Visit"}
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href='/get-help/faq' className={styles.link}>
+                                                    <Link to='/get-help/faq' className={styles.link}>
                                                         {"Frequently Asked Questions"}
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>

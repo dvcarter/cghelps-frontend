@@ -14,19 +14,19 @@ const Footer = () => (
             {<a 
                 href={'https://www.facebook.com/commongroundhelps/'}
                 className={styles.socialItem}>
-                    <span><img src={FaceBook}/></span>
+                    <span><img src={FaceBook} alt="facebook icon"/></span>
             </a>
             } 
             { <a
                 href={'https://www.linkedin.com/company/commongroundhelps'}
                 className={styles.socialItem}>
-                    <span><img src={LinkedIn}/></span>
+                    <span><img src={LinkedIn} alt="linkedIn icon" /></span>
             </a>
             }
             { <a
                 href={'https://twitter.com/cghelps'}
                 className={styles.socialItem}>
-                    <span><img src={Twitter}/></span>
+                    <span><img src={Twitter} alt="twitter icon" /></span>
             </a>
             }
         </div>

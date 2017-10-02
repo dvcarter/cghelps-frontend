@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import * as actions from "../../postActions";
 import {Link} from "react-router-dom";
 import "./findIndexHelper.js";
 import styles from "./index.css"
@@ -21,7 +17,7 @@ class Post extends Component {
                            {/* <h1> { posts[0].title.rendered} </h1> */}
                            </div>
                            <div> 
-                             <img className={styles.imgs} src={post.acf.hero.sizes.large}/>
+                             <img className={styles.imgs} src={post.acf.hero.sizes.large} alt="" />
                              <div className={styles.description} dangerouslySetInnerHTML={{__html:post.content.rendered}} /> 
                              <div> {post.categories} </div>
                            </div>

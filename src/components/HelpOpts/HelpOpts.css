@@ -167,6 +167,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    .superHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
     .help {
         display: flex;
         display: -webkit-flex;
@@ -188,7 +196,8 @@
     _:ms-lang(x), .help {
         margin-bottom: -1px;
     }
-    .title {
+
+     .title {
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -199,11 +208,14 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
         text-align: center;
-        height: 40px;
-        width: 100%;
-        font-size: 200%;
+        height: 30px;
+        width: 90%;
+        font-size: 175%;
+        margin-top: 10px;
         padding-bottom: -40px;
-    }
+        color: #333;
+        font-weight: 300;
+    }   
 
     /*hr {
         margin:1px;
@@ -230,7 +242,7 @@
     }
      .options {
         height: 100%;
-        width: 90%;
+        width: 100%;
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -244,14 +256,14 @@
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         padding-bottom: 5px;
-        margin: 15px 25px 1px 25px;
+        margin: 1px 5px 1px 5px;
         font-size: 1vh;
        /* border-bottom: 0.25px solid #dfe3ee;*/
     }
     .newLine {
         height: 1px;
         background-color: #dfe3ee;
-        width: 70%;
+        width: 73%;
     }
     _::-webkit-:not(:root:root), .newLine {
         height: .25em;
@@ -299,7 +311,7 @@
         margin-right: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
     .button {
         white-space: nowrap;

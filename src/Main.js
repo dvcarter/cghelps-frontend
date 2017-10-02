@@ -1,22 +1,22 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import logo from './logo.svg';
 import "./index.global.css";
 import "./highlight.global.css";
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route,  Switch } from 'react-router-dom';
 
 import Container from "./components/Container";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import HomePage from "./components/HomePage";
-import HelpOpts from "./components/HelpOpts";
-import GetHelp from "./components/GetHelp";
+import GetHelpHolder from "./components/GetHelpHolder";
+import Locations from "./components/Locations";
 import GetInvolved from "./components/GetInvolved";
+import CrisisToHope from "./components/CrisisToHope";
 import Resources from "./components/Resources";
 import Donate from "./components/Donate";
 import AboutUs from "./components/AboutUs";
 import Posts from "./components/Posts";
-import Post from "./components/Post";
 import Accreditation from "./components/Accreditation";
 import Volunteer from "./components/VolunteerPage";
 import NoMatch from "./components/NoMatch";
@@ -25,6 +25,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import {selectGetHelpOptsInfo} from "./selectors/getHelpOptsSelectors";
 import {selectGetHelpInfo} from "./selectors/getHelpSelectors";
+import {selectLocationInfo} from "./selectors/locationsSelectors";
 import {selectGetInvolvedInfo} from "./selectors/getInvolvedSelectors";
 import {selectResourceInfo} from "./selectors/resourceSelectors";
 import {selectDonateInfo} from "./selectors/donateSelectors";
@@ -48,6 +49,7 @@ const PropsRoute = ({ component, ...rest}) => {
 const mapState = (state) => ({
     getHelpOptsInfo : selectGetHelpOptsInfo(state),
     getHelpInfo: selectGetHelpInfo(state),
+    getLocationInfo: selectLocationInfo(state),
     getInvolvedInfo: selectGetInvolvedInfo(state),
     resourceInfo: selectResourceInfo(state),
     donateInfo: selectDonateInfo(state),
@@ -59,12 +61,12 @@ class App extends Component {
         const { 
             getHelpOptsInfo,
             getHelpInfo,
+            getLocationInfo,
             getInvolvedInfo,
             resourceInfo,
             donateInfo,
-            aboutInfo
+            aboutInfo, 
         } = this.props;
-        const { getHelpOpts } = getHelpOptsInfo;
 
         return (
         <Router>
@@ -74,10 +76,14 @@ class App extends Component {
                     <ScrollToTop>
                     <Switch>
                         <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo} />
-                        <PropsRoute path="/get-help" component={GetHelp} dataGetter={getHelpInfo} />
+                        <PropsRoute path="/get-help" component={GetHelpHolder} dataGetter={getHelpInfo} />
+                        <PropsRoute path="/visit" component={Locations} dataGetter={getLocationInfo} />
                         <PropsRoute path="/get-involved" component={GetInvolved} dataGetter={getInvolvedInfo} />
+                        <PropsRoute path="/crisis-to-hope" component={CrisisToHope} dataGetter={getInvolvedInfo} />
                         <PropsRoute path="/resources" component={Resources} dataGetter={resourceInfo} />
-                        <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}/>
+                        <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}>
+                        
+                        </PropsRoute>
                         <PropsRoute path="/about-us" component={AboutUs} dataGetter={aboutInfo}/>
                         <PropsRoute path="/posts" component={Posts} />
                         <PropsRoute path="/accreditation" component={Accreditation} />

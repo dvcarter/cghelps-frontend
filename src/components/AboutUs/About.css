@@ -468,17 +468,24 @@
         }
 }
 @media only screen and (min-width: 1200px) {
+        .bigHolder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            margin-top: 100px;
+        }
+    
+    
         .title {
             display: flex;
             display: -webkit-flex;
-            justify-content: center;
-            -webkit-justify-content: center;
-            align-items: center;
-            -webkit-align-items: center;
             font-size: 34px;
             font-weight: 700;
             margin: 10px 0 -20px 0;
             padding-bottom: -10px;
+            width: 100%;
         }
 
         h3.subtitle {
@@ -592,13 +599,14 @@
         .aboutText {
             height: auto;
             width: 100%;
-            padding: 0 80px;
+            padding: 0 0px;
             margin: 0 0 -20px 0;
         }
 
         .aboutText:last-of-type {
             margin: 0 0 220px 0;
         }
+
 
 
 }

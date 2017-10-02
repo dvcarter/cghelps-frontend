@@ -92,6 +92,14 @@
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+       .superHolder {
+        display: flex;/*
+        justify-content: center;
+        align-items: center;*/
+        flex-direction: column;
+        width: 100%;
+    } 
+
     .title {
         display: flex;
         display: -webkit-flex;
@@ -256,6 +264,15 @@
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .superHolder {
+        display: flex;/*
+        justify-content: center;
+        align-items: center;*/
+        flex-direction: column;
+        width: 100%;
+    }   
+  
+    
     .title {
         display: flex;
         display: -webkit-flex;
@@ -280,6 +297,7 @@
         -webkit-align-items: flex-start;
         height: auto;
         width: 100%;
+        padding: 0 100px 0 100px;
         /*background-color: #dfe3ee; */
     }
     .options {
@@ -342,7 +360,15 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .title {
+      .superHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    } 
+  
+     .title {
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -352,7 +378,17 @@
         align-items: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
-    }
+        text-align: center;
+        height: 30px;
+        width: 90%;
+        font-size: 175%;
+        margin-top: 10px;
+        padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
+    }   
+
+ 
    h2.subtitle {
         font-weight: 700;
         font-size: 150%;
