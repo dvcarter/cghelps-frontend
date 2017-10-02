@@ -28,6 +28,7 @@
         align-items: center;
         flex-direction: row;
         width: 100%;
+        height: auto;
     }
 
     .smallVids {
@@ -40,8 +41,8 @@
     }
     .bigVid {
         background-color: #dfe3ee;
-        height: 200px;
         width: 50%;
+        height: 600px;
     }
 
     .vid1, .vid2 {
