@@ -366,8 +366,10 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+        height: 100%;
     } 
-  
+    _::-webkit-full-page-media, _:future, :root .superHolder { 
+    }
      .title {
         display: flex;
         display: -webkit-flex;
@@ -408,6 +410,14 @@
         width: 100%;
         /*background-color: #dfe3ee;*/
     }
+    _::-webkit-full-page-media, _:future, :root .superHolder { 
+        height: auto;
+        margin-bottom: 600px ;
+
+    }
+    _::-webkit-full-page-media, _:future, :root .holder { 
+        height: auto;
+    }
     .options {
         display: flex;
         display: -webkit-flex;
@@ -429,6 +439,12 @@
         padding: 20px;
         border-bottom: 0.25px solid #dfe3ee;
     }
+     _::-webkit-full-page-media, _:future, :root .options {
+        height: 200px; 
+        height: auto;
+
+             
+    } 
     _:ms-lang(x), .options {
         height: 75%;
     }

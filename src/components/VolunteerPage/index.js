@@ -11,7 +11,6 @@ class VolunteerPage extends Component {
     render() {
         return (
                 <div className={styles.noPlace}>
-                    <h1> Volunteer Application </h1>
                     <VolunteerApplication onSubmit={this.submit} />
                 </div>
         )

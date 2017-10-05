@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./index.css";
-//import main from "../../content/assets/grupido.jpg";
-//import aux1 from "../../content/assets/not_terri.jpg";
-//import aux2 from "../../content/assets/terri.jpg";
-
+import terri from "../../content/assets/terri_thumb.png"
+import paul from "../../content/assets/paul_thumb.png"
 import YouTube from "../YouTube";
 const Testimonials = () => {
 
@@ -24,12 +22,12 @@ const Testimonials = () => {
                                     helped Paul get his life back.</em>
                                 </div>
                                 <div className={styles.vidArea}>
-                                    Time
+                                    <img src={paul} alt="nothing here" className={styles.present} />
                                 </div>
                             </div>
                             <div className={styles.vid2}> 
                                 <div className={styles.vidArea}>
-                                    Time
+                                    <img src={terri} alt="nothing here" className={styles.present}/>
                                 </div>
                                 <div className={styles.textArea}>
                                     <em>Survivors of Suicide Loss

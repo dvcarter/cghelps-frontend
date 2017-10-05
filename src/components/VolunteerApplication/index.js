@@ -9,37 +9,60 @@ const { DOM: {input, select, textarea} } = React
 let VolunteerApplication = props => {
     const { handleSubmit, hasRightSelection } = props
     return (
-            <form onSubmit={ handleSubmit } className={styles.formFit}>
+            <form onSubmit={ handleSubmit((values) => console.log(values)) } className={styles.formFit}>
+            {/* Form Description */}
+                <div className={styles.description}> 
+                    <h1 className={styles.title}> Volunteer Application </h1>
+                    <p>
+                        Thanks for your interest in volunteering at Common Ground. Donating your
+                        time and talent is a fantastic way to show how much you care.
+                        Please share some information about yourself in the application below
+                        and hit "Submit" when you're done. A member of our volunteer coordination
+                        team will contact you shortly to follow up.
+                    </p>
+                    <p>
+                    <em><strong>Volunteering questions? Please call 248.456.8150
+                        or email <span style={{color: 'red'}}><a href="mailto:akscommonground@commongroundhelps.org">askcommonground@commongroundhelps.org</a></span></strong></em>
+                    </p>
+            
+                </div>
+                
                 {/* Form Body */}
-                <div className="row">
-                    <div className="form-group">
+                <div className={styles.row}>
+                    <div className={styles.formGroup}>
                         <label htmlFor="firstName" className="col-form-label">First Name*</label>
                         <Field name="firstName" component="input" type="text" placeholder="First Name"/>
                     </div>
-                    <div className="form-group">
+                    <div className={styles.formGroup}>
                         <label htmlFor="lastName" className="col-form-label">Last Name*</label>
                         <Field name="lastName" component="input" type="text" placeholder="Last Name"/>
                     </div>
                 </div>
-                <div> 
+                <div className={styles.formGroup}> 
                     <label htmlFor="email">Email*</label>
-                    <Field name="email" component="input" type="email" />
+                    <Field name="email" component="input" type="email" placeholder="Email address" />
                 </div>
-                <div>
+                <div className={styles.formGroup}>
                     <label htmlFor="streetAddress">Street Address</label>
-                    <Field name="streetAddress" component="input" type="text" />
+                    <Field name="streetAddress" component="input" type="text" placeholder="Street Address, Apt number" />
                 </div>
-                <div>
-                    <label htmlFor="city">City</label>
-                    <Field name="city" component="input" type="text" />
+                <div className={styles.row}>
+                    <div className={styles.formGroup}>
+                        <label htmlFor="city">City</label>
+                        <Field name="city" component="input" type="text" placeholder="City"/>
+                    </div>
+                    <div className={styles.formGroup}>
+                        <label htmlFor="state">State</label>
+                        <Field name="state" component="input" type="text" placeholder="State"/>
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="state">State</label>
-                    <Field name="state" component="input" type="text" />
-                </div>
-                <div>
+                <div className={styles.formGroup}>
                     <label htmlFor="zipCode">Zip Code</label>
-                    <Field name="zipCode" component="input" type="text" />
+                    <Field name="zipCode" component="input" type="text" placeholder="Zip Code"/>
+                </div>
+                <div className={styles.formGroup}>
+                    <label htmlFor="phone"> Phone </label>
+                    <Field name="phone" component="input" type="text" placeholder="Phone"/>
                 </div>
                 {/* radio button that shows/hides some options here */}
                  <div>
@@ -61,19 +84,19 @@ let VolunteerApplication = props => {
                     <p> Which type of position are you applying for? </p>
                     <div>
                         <Field
-                            name="positionArea"
+                            name="Applying for Volunteer position"
                             component="input"
                             type="radio"
-                            value="volunteer"
+                            value="true"
                         />
                         <label> Volunteer </label>
                     </div>
                     <div>
                         <Field
-                            name="positionArea"
+                            name="Applying for Internship position"
                             component="input"
                             type="radio"
-                            value="internship"
+                            value="true"
                         />
                         <label> Internship </label>
                     </div>
@@ -82,7 +105,7 @@ let VolunteerApplication = props => {
                      <p> What are you available for volunteer assignments? Select all that apply? </p>
                     <div>
                         <Field
-                            name="volunteerTimes0"
+                            name="Weekday Morning Availability"
                             id="volunteerTimes"
                             component="input"
                             type="checkbox"
@@ -91,7 +114,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="volunteerTimes1"
+                            name="Weekday Afternoon availability"
                             id="volunteerTimes"
                             component="input"
                             type="checkbox"
@@ -100,7 +123,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="volunteerTimes2"
+                            name="Weekday evening availability"
                             id="volunteerTimes"
                             component="input"
                             type="checkbox"
@@ -112,7 +135,7 @@ let VolunteerApplication = props => {
                     <p>  What type of work interests you? Check all that apply.* </p>
                     <div>
                         < Field
-                             name="workInterest0"
+                             name="Interest in working on Business Advancement and Donor Relations"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -121,7 +144,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest1"
+                            name="Interest in working on Communications and Marketing"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -130,7 +153,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest2"
+                            name="Interest in working on Community Outreach"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -139,7 +162,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest3"
+                            name="Interest in providing General Help"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -148,7 +171,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest4"
+                            name="Interest in working with the Legal Clinic"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -157,7 +180,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest5"
+                            name="Interest in working as a Lobby Greeter"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -166,7 +189,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest6"
+                            name="Interest in working on Office Work"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -175,7 +198,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest7"
+                            name="Interest in working with the Resource and Crisis Helpline"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -184,7 +207,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="workInterest8"
+                            name="Interest in working with the Runaway and Homeless Youth Programs"
                             id="workInterest"
                             component="input"
                             type="checkbox"
@@ -284,7 +307,7 @@ let VolunteerApplication = props => {
                         Select all that apply </p>
                     <div>
                         <Field
-                            name="issueInterest0"
+                            name="Strong feelings about Abortion issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -293,7 +316,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="issueInterest1"
+                            name="Strong feelings about Domestic Violence issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -302,7 +325,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="issueInterest2"
+                            name="Strong feelings about LGBTQ issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -311,7 +334,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="issueInterest3"
+                            name="Strong feelings about Religious issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -320,7 +343,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="issueInterest4"
+                            name="Strong feelings about Sexual Assault issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -329,7 +352,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="issueInterest5"
+                            name="Strong feelings about Substance Abuse issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -338,7 +361,7 @@ let VolunteerApplication = props => {
                     </div>
                     <div>
                         <Field
-                            name="issueInterest6"
+                            name="Strong feelings about Suicide issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
@@ -412,7 +435,8 @@ let VolunteerApplication = props => {
 
 VolunteerApplication = reduxForm({
     // a unique name for the form
-    form: 'contact'
+    form: 'information',
+    enableReinitialize: true
 })(VolunteerApplication)
 
 const selector = formValueSelector('volunteerApplication')

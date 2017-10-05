@@ -75,11 +75,17 @@
     }
     .vidArea {
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: center;
         background-color: #000;
         width: 40%;
         height: 100%;
+    }
+    img.present {
+        align-self: center;
+        height: 100%;
+        width: 100%;
+        margin: 0 0 1px 0;
     }
 }
 
