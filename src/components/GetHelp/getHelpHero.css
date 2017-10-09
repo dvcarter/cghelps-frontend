@@ -63,7 +63,11 @@
   .heading {
       margin: 200px 0 0 0;
       font-size: 1.25em;
-      background-color: red;
+      color: #fff;
+       background-color: #482864;
+  }
+  .textBox {
+      color: #fff;
   }
   .lowerTitleHolder {
       padding: 0 20px 0 20px;
