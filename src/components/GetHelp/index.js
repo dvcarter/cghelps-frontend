@@ -10,7 +10,7 @@ export default class GetHelp extends Component {
         let getHelps = this.props.getHelp[0];
         const getHelp = this.props.getHelp;
         return ( 
-                <div className={ styles.superHolder} >
+                <div className={ styles.superHolder1} >
                  <div
                    className={ sty.hero1 } 
                     style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
