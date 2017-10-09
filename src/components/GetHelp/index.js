@@ -12,21 +12,21 @@ export default class GetHelp extends Component {
         return ( 
                 <div className={ styles.superHolder} >
                  <div
-                   className={ sty.hero } 
+                   className={ sty.hero1 } 
                     style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
                  >   
-                        <div className={ sty.header }>
-                            <div className={ sty.wrapper }>
-                                <div className={ sty.heading }>
-                                    <div className={sty.textBox}>
-                                        <div className={sty.purpleTitle}> Get Help </div>
-                                        <div className={ sty.lowerTitleHolder}>
+                        <div className={ sty.header1 }>
+                            <div className={ sty.wrapper1 }>
+                                <div className={ sty.heading1 }>
+                                    <div className={sty.textBox1}>
+                                        <div className={sty.purpleTitle1}> Get Help </div>
+                                        <div className={ sty.lowerTitleHolder1}>
                                             Call us at 1.800.231.1127 to get help right away.
                                             Our Resource & Crisis Helpline is available 24/7.
                                         </div>
                                     </div>
                                 </div>
-                                <button className={sty.button}><a href="tel:18002311127">Call Now </a></button>
+                                <button className={sty.button1}><a href="tel:18002311127">Call Now </a></button>
                             </div>
                         </div>
                     </div>
