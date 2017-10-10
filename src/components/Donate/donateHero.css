@@ -7,7 +7,7 @@
 @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
 }
 
-.wrapper {
+.wrapper4 {
 /*  display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -50,7 +50,7 @@
       }
   }
 
-  .hero {
+  .hero4 {
       height: 50vh;
       display: flex;
       display: -webkit-flex;
@@ -60,18 +60,21 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-  .heading {
+  .heading4 {
       margin: 200px 0 0 0;
       font-size: 1.25em;
       background-color: red;
   }
-  .lowerTitleHolder {
+  .lowerTitleHolder4 {
       padding: 0 20px 0 20px;
       font-size: 0.75em;
   }
+  h1 {
+      color: #fff;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .hero {
+    .hero4 {
         display: flex;
         display: -webkit-flex;
         justify-content: right;
@@ -81,19 +84,19 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
-        .header {
+        .header4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper {
+    .wrapper4 {
         width: 50%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
-    .heading {
+    .heading4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -103,10 +106,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
-    div.heading {
+    div.heading4 {
         color: #fff;
     }   
-    .textBox {
+    .textBox4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -114,17 +117,18 @@
     h1 {
         margin: 0 0 0 40px;
         font-size: 150%;
+        color: #fff;
     }   
     li {
         font-size: 12px;
     }   
-    .button {
+    .button4 {
         margin-top: 15px;
     } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .hero {
+    .hero4 {
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
@@ -134,19 +138,19 @@
         height: 400px;
         width: 800px;
     }
-        .header {
+        .header4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper {
+    .wrapper4 {
         width: 40%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
-    .heading {
+    .heading4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -156,10 +160,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
-    div.heading {
+    div.heading4 {
         color: #fff;
     }   
-    .textBox {
+    .textBox4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -167,18 +171,19 @@
     h1 {
         margin: 0 0 0 40px;
         font-size: 150%;
+        color: #fff;
     }   
     li {
         font-size: 12px;
     }   
-    .button {
+    .button4 {
         margin-top: 25px;
     }  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
 
-    .hero {
+    .hero4 {
     margin: 0 auto;
     height: 65vh;
     width: 85vw;
@@ -186,19 +191,19 @@
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
     }
-       .header {
+       .header4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper {
+    .wrapper4 {
         width: 40%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
-    .heading {
+    .heading4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -208,10 +213,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
-    div.heading {
+    div.heading4 {
         color: #fff;
     }   
-    .textBox {
+    .textBox4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -219,11 +224,12 @@
     h1 {
         margin: 0 0 0 40px;
         font-size: 150%;
+        color: #fff;
     }   
     li {
         font-size: 12px;
     } 
-    .button {
+    .button4 {
         margin-top: 50px;
     }
 }
@@ -235,7 +241,7 @@
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-   .hero { 
+   .hero4 { 
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -251,19 +257,19 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .header {
+    .header4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper {
+    .wrapper4 {
         width: 40%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }
-    .heading {
+    .heading4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -273,24 +279,25 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }
-    div.heading {
+    div.heading4 {
         color: #fff;
     }
-    .textBox {
+    .textBox4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
     }
     h1 {
         margin: 0 0 0 40px;
+        color: #fff;
     }
     li {
         font-size: 12px;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder4 {
        /* padding: 0 250px 0 250px;*/
     }
-    .button {
+    .button4 {
         margin-top: 100px;
     }
 }
@@ -302,7 +309,7 @@
         height: 55vh;
         width: 55vw;
     }*/
-      .hero {
+      .hero4 {
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -315,7 +322,7 @@
 }
 
 
-.header {
+.header4 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -334,7 +341,7 @@
   );*/
 }
 
-.heading, .lowerTitle {
+.heading4, .lowerTitle4 {
  color: var(--colorNeutralLight);
   text-shadow:
     0 0 6px var(--colorNeutralDark),
@@ -343,7 +350,7 @@
   letter-spacing: 1px;
 }
 
-.privacyHeading {
+.privacyHeading4 {
     white-space: wrap;
     margin: 20px 0 -300px 0;
     color: black;
@@ -377,7 +384,7 @@
   }
 }
 
-.button {
+.button4 {
          white-space: nowrap;
         width: 200px;
         margin-left: 30px;
@@ -393,7 +400,7 @@
         transition: background-color 0.5s ease;
  }
 
-.button:hover {
+.button4:hover {
         color: #fff;
         background-color: #8b0000;
 }
