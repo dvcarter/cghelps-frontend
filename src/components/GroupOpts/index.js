@@ -8,7 +8,7 @@ const GroupOpts = ({ getGroupInfo }) => {
             <div className={styles.superHolder}>
                 <div 
                     className={sty.hero3}
-                    style={ {background: `#111 url(${getGroupInfo[0].hero}) 50% 50% / cover`}}
+                    style={ {background: `#111 url(${getGroupInfo[0].hero}) -10% -10% / cover no-repeat`} }
                 >
                     <div className={sty.header3}>
                         <div className={sty.wrapper3}>

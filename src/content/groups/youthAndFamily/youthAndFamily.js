@@ -1,5 +1,10 @@
-  const youthAndFamily = [
+import family from "../../assets/youthfamily.jpg"
+
+const youthAndFamily = [
       {
+        "hero": family,
+        "bigTitle": "This is a big title",
+        "lowerTitle": "This is the lower title",
         "subtitle": "Workshops, Classes, & Support Groups",
         "sub": {
           "subsubtitle": "Becoming a Love & Logic Parent®",
@@ -23,14 +28,14 @@
           "subsubtitle": null,
           "description": null
         }
-      },
-      {
-        "subtitle": "Reading Materials",
-        "sub": {
-          "subsubtitle": "Coming Soon",
-          "description": null
-        }
       }
+      //{
+      //  "subtitle": "Reading Materials",
+      //  "sub": {
+      //    "subsubtitle": "Coming Soon",
+      //    "description": null
+      //  }
+      //}
     ]
 
 export default youthAndFamily
