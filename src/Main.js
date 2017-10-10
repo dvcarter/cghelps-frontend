@@ -30,6 +30,11 @@ import {selectGetInvolvedInfo} from "./selectors/getInvolvedSelectors";
 import {selectResourceInfo} from "./selectors/resourceSelectors";
 import {selectDonateInfo} from "./selectors/donateSelectors";
 import {selectAboutInfo} from "./selectors/aboutSelectors";
+import {selectPreventionGroupInfo} from "./selectors/preventionSelectors";
+import {selectYouthGroupInfo} from "./selectors/youthSelectors";
+import {selectVictimGroupInfo} from "./selectors/victimsSelectors";
+import {selectHealthGroupInfo} from "./selectors/healthSelectors";
+
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -54,6 +59,10 @@ const mapState = (state) => ({
     resourceInfo: selectResourceInfo(state),
     donateInfo: selectDonateInfo(state),
     aboutInfo: selectAboutInfo(state),
+    preventionInfo: selectPreventionGroupInfo(state),
+    youthInfo: selectYouthGroupInfo(state),
+    victimInfo: selectVictimGroupInfo(state),
+    healthInfo: selectHealthGroupInfo(state)
 });
 
 class App extends Component { 
@@ -65,7 +74,11 @@ class App extends Component {
             getInvolvedInfo,
             resourceInfo,
             donateInfo,
-            aboutInfo, 
+            aboutInfo,
+            preventionInfo,
+            youthInfo,
+            victimInfo,
+            healthInfo
         } = this.props;
 
         return (
@@ -80,7 +93,7 @@ class App extends Component {
                         <PropsRoute path="/visit" component={Locations} dataGetter={getLocationInfo} />
                         <PropsRoute path="/get-involved" component={GetInvolved} dataGetter={getInvolvedInfo} />
                         <PropsRoute path="/crisis-to-hope" component={CrisisToHope} dataGetter={getInvolvedInfo} />
-                        <PropsRoute path="/resources" component={Resources} dataGetter={resourceInfo} />
+                        <PropsRoute path="/resources" component={Resources} dataGetter={resourceInfo} {...this.props} />
                         <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}>
                         
                         </PropsRoute>

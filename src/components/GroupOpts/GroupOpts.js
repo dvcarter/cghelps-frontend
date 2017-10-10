@@ -1,11 +1,12 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from "prop-types"
 import styles from './GroupOpts.css'
 
-const GroupOpts = ({ groupOpts }) => {
+const GroupOpts = ({ getGroupInfo }) => {
     return (
             <div>
                 <div className={styles.holder}>
-                    {groupOpts.map((grouper) => (
+                    {getGroupInfo.map((grouper) => (
                             <div className={styles.options}>
                                 <h3 className={styles.subtitle}>{grouper.subtitle}</h3>
                                 <div className={styles.topics}>
@@ -20,7 +21,7 @@ const GroupOpts = ({ groupOpts }) => {
 }
 
 GroupOpts.propTypes = {
-    groupOpts: PropTypes.array.isRequired,
+    getGroupInfo: PropTypes.array.isRequired,
 }
 
 export default GroupOpts
