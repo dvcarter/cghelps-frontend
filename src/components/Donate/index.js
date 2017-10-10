@@ -12,13 +12,13 @@ class Donate extends Component {
         return (
             <div className={styles.donationHolder}>
                   <div
-                        className={ sty.hero }
+                        className={ sty.hero4 }
                         style={ {background: `#111 url(${donate.hero}) 50% 50% / cover`}}
                     >
-                        <div className={ sty.header }>
-                            <div className={ sty.wrapper }>
-                                <div className={ sty.heading }>
-                                        <div className={sty.textBox}>
+                        <div className={ sty.header4 }>
+                            <div className={ sty.wrapper4 }>
+                                <div className={ sty.heading4 }>
+                                        <div className={sty.textBox4}>
                                             <h1> Donate </h1>
                                             <ul><em> Your gift can help us:</em>
                                                 <li>
@@ -27,7 +27,7 @@ class Donate extends Component {
                                                 <li> Offer more of our specialized Support Groups </li>
                                                 <li> Add a Resource & Crisis Center location in southern Oakland County </li>
                                             </ul>
-                                            <button className={sty.button}><a href="https://commongroundhelps.z2systems.com/np/clients/commongroundhelps/donation.jsp?campaign=1096&"> Give Now </a></button>
+                                            <button className={sty.button4}><a href="https://commongroundhelps.z2systems.com/np/clients/commongroundhelps/donation.jsp?campaign=1096&"> Give Now </a></button>
                                         </div>
                                      
                                 </div>
