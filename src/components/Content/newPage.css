@@ -10,7 +10,7 @@
 
 }
 
-.wrapper {
+.wrapper_0 {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -53,7 +53,7 @@
       }
   }
     
-        .wrapper {
+        .wrapper_0 {
         display: flex;
         display: -webkit-flex;
         display: -moz-flex;
@@ -69,7 +69,7 @@
         width: 100%;
     }
 
-  .hero {
+  .hero_0 {
       height: 50vh;
       display: flex;
       display: -webkit-flex;
@@ -79,7 +79,7 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-          .heading {
+          .heading_0 {
         width: 100%;
         height: 10%;
         font-size: 150%;
@@ -87,7 +87,7 @@
         color: #fff;
         margin-bottom: 30px;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder_0 {
         margin: 0 auto;
         padding: 0 0 0 0;
         width: 100%;
@@ -97,7 +97,7 @@
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-         .wrapper {
+         .wrapper_0 {
         display: flex;
         display: -webkit-flex;
         display: -moz-flex;
@@ -112,7 +112,7 @@
         height: 100%;
         width: 100%;
     }
-    .hero {
+    .hero_0 {
         display: flex;
         display: -webkit-flex;
         justify-content: right;
@@ -123,7 +123,7 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
-       .heading {
+       .heading_0 {
         width: 100%;
         height: 10%;
         font-size: 250%;
@@ -131,7 +131,7 @@
         color: #fff;
         margin-bottom: 10px;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder_0 {
         margin: 0 auto;
         padding: 0 0 0 0;
         width: 50%;
@@ -140,7 +140,7 @@
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-       .wrapper {
+       .wrapper_0 {
         display: flex;
         display: -webkit-flex;
         display: -moz-flex;
@@ -156,7 +156,7 @@
         width: 100%;
     }
 
-    .hero {
+    .hero_0 {
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
@@ -167,7 +167,7 @@
         width: 800px;
     }
 
-       .heading {
+       .heading_0 {
          width: 100%;
          height: 10%;
          font-size: 200%;
@@ -175,7 +175,7 @@
          color: #fff;
         margin-bottom: 10px;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder_0 {
         margin: 0 auto;
         padding: 0 0 0 0;
         width: 50%;
@@ -184,7 +184,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
-    .wrapper {
+    .wrapper_0 {
         display: flex;
         display: -webkit-flex;
         display: -moz-flex;
@@ -199,7 +199,7 @@
         height: 100%;
         width: 100%;
     }
-    .hero {
+    .hero_0 {
     margin: 0 auto;
     height: 70vh;
     width: 75vw;
@@ -214,14 +214,14 @@
         );
     background-color: red;
     }
-     .heading {
+     .heading_0 {
          width: 100%;
          height: 10%;
          font-size: 200%;
          font-weight: 700;
          color: #fff;
     }   
-    .lowerTitleHolder {
+    .lowerTitleHolder_0 {
         /*padding: 0 50px 0 50px;*/
        margin: 0 auto;
         padding: 0 0 0 0;
@@ -237,14 +237,14 @@
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-    .wrapper {
+    .wrapper_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         height: 100%;
         width: 100%;
     }
-   .hero { 
+   .hero_0 { 
         margin: 0 50px 0 50px;
         /*height: 60vh;*/
         height: 70vh;
@@ -260,14 +260,14 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .heading {
+    .heading_0 {
         width: 100%;
         height: 10%;
         font-size: 250%;
         font-weight: 700;
         color: #fff;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder_0 {
         margin: 0 auto;
         padding: 0 0 0 0;
         width: 50%;
@@ -278,7 +278,7 @@
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) {
-      .hero { 
+      .hero_0 { 
         margin: 0 50px 0 50px;
         /*height: 60vh;*/
         height: 70vh;
@@ -291,7 +291,7 @@
 }
 
 
-.header {
+.header_0 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -310,7 +310,7 @@
   );*/
 }
 
-.heading, .lowerTitle {
+.heading_0, .lowerTitle_0 {
  color: var(--colorNeutralLight);
   text-shadow:
     0 0 6px var(--colorNeutralDark),
@@ -352,6 +352,6 @@
     max-width: 100%;
   }
 }
-.heading {
+.heading_0 {
     color: #fff
 }

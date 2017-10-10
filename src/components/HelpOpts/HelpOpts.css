@@ -176,7 +176,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .superHolder {
+    .superHolder_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -341,7 +341,7 @@
 
 /* Wide */
 @media only screen and (min-width: 992px) and (max-width: 1199px){
-       .superHolder {
+       .superHolder_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -953,7 +953,7 @@ button:hover {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px){
-    .superHolder {
+    .superHolder_0 {
         display: flex;
         justify-content: center;
         align-items: center;

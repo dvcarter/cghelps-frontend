@@ -32,15 +32,15 @@ class HomePage extends Component {
         let getHelps = this.props.dataGetter.getHelpOpts[0];
         return (
 
-            <div className={styles.superHolder}>
+            <div className={styles.superHolder_0}>
                  <div
-                   className={ sty.hero } 
+                   className={ sty.hero_0 } 
                     style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
                  >   
-                        <div className={ sty.header }>
-                            <div className={ sty.wrapper }>
-                                <div className={ sty.heading }>{getHelps.heroTitle}</div>
-                                <div className={ sty.lowerTitleHolder}>
+                        <div className={ sty.header_0 }>
+                            <div className={ sty.wrapper_0 }>
+                                <div className={ sty.heading_0 }>{getHelps.heroTitle}</div>
+                                <div className={ sty.lowerTitleHolder_0}>
                                         {getHelps.heroSubtitle}
                                 </div>
                             </div>

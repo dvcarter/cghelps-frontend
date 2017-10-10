@@ -50,7 +50,7 @@
       }
   }
 
-  .hero4 {
+  .hero_4 {
       height: 50vh;
       display: flex;
       display: -webkit-flex;
@@ -60,12 +60,12 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-  .heading4 {
+  .heading_4 {
       margin: 200px 0 0 0;
       font-size: 1.25em;
       background-color: red;
   }
-  .lowerTitleHolder4 {
+  .lowerTitleHolder_4 {
       padding: 0 20px 0 20px;
       font-size: 0.75em;
   }
@@ -74,7 +74,7 @@
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .hero4 {
+    .hero_4 {
         display: flex;
         display: -webkit-flex;
         justify-content: right;
@@ -84,19 +84,19 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
-        .header4 {
+        .header_4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper4 {
+    .wrapper_4 {
         width: 50%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
-    .heading4 {
+    .heading_4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -106,10 +106,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
-    div.heading4 {
+    div.heading_4 {
         color: #fff;
     }   
-    .textBox4 {
+    .textBox_4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -122,13 +122,13 @@
     li {
         font-size: 12px;
     }   
-    .button4 {
+    .button_4 {
         margin-top: 15px;
     } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .hero4 {
+    .hero_4 {
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
@@ -138,19 +138,19 @@
         height: 400px;
         width: 800px;
     }
-        .header4 {
+        .header_4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper4 {
+    .wrapper_4 {
         width: 40%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
-    .heading4 {
+    .heading_4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -160,10 +160,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
-    div.heading4 {
+    div.heading_4 {
         color: #fff;
     }   
-    .textBox4 {
+    .textBox_4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -176,14 +176,14 @@
     li {
         font-size: 12px;
     }   
-    .button4 {
+    .button_4 {
         margin-top: 25px;
     }  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
 
-    .hero4 {
+    .hero_4 {
     margin: 0 auto;
     height: 65vh;
     width: 85vw;
@@ -191,19 +191,19 @@
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
     }
-       .header4 {
+       .header_4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper4 {
+    .wrapper_4 {
         width: 40%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
-    .heading4 {
+    .heading_4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -213,10 +213,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
-    div.heading4 {
+    div.heading_4 {
         color: #fff;
     }   
-    .textBox4 {
+    .textBox_4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -229,7 +229,7 @@
     li {
         font-size: 12px;
     } 
-    .button4 {
+    .button_4 {
         margin-top: 50px;
     }
 }
@@ -241,7 +241,7 @@
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-   .hero4 { 
+   .hero_4 { 
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -257,19 +257,19 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .header4 {
+    .header_4 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper4 {
+    .wrapper_4 {
         width: 40%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }
-    .heading4 {
+    .heading_4 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -279,10 +279,10 @@
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }
-    div.heading4 {
+    div.heading_4 {
         color: #fff;
     }
-    .textBox4 {
+    .textBox_4 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -294,10 +294,10 @@
     li {
         font-size: 12px;
     }
-    .lowerTitleHolder4 {
+    .lowerTitleHolder_4 {
        /* padding: 0 250px 0 250px;*/
     }
-    .button4 {
+    .button_4 {
         margin-top: 100px;
     }
 }
@@ -309,7 +309,7 @@
         height: 55vh;
         width: 55vw;
     }*/
-      .hero4 {
+      .hero_4 {
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -322,7 +322,7 @@
 }
 
 
-.header4 {
+.header_4 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -341,7 +341,7 @@
   );*/
 }
 
-.heading4, .lowerTitle4 {
+.heading_4, .lowerTitle_4 {
  color: var(--colorNeutralLight);
   text-shadow:
     0 0 6px var(--colorNeutralDark),
@@ -350,7 +350,7 @@
   letter-spacing: 1px;
 }
 
-.privacyHeading4 {
+.privacyHeading_4 {
     white-space: wrap;
     margin: 20px 0 -300px 0;
     color: black;
@@ -384,7 +384,7 @@
   }
 }
 
-.button4 {
+.button_4 {
          white-space: nowrap;
         width: 200px;
         margin-left: 30px;
@@ -400,7 +400,7 @@
         transition: background-color 0.5s ease;
  }
 
-.button4:hover {
+.button_4:hover {
         color: #fff;
         background-color: #8b0000;
 }
