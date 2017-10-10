@@ -7,15 +7,15 @@ const GroupOpts = ({ getGroupInfo }) => {
     return (
             <div className={styles.superHolder}>
                 <div 
-                    className={sty.hero}
+                    className={sty.hero3}
                     style={ {background: `#111 url(${getGroupInfo[0].hero}) 50% 50% / cover`}}
                 >
-                    <div className={sty.header}>
-                        <div className={sty.wrapper}>
-                            <div className={sty.heading}>
-                                <div className={sty.textBox}>
-                                    <div className={sty.purpleTitle}> {getGroupInfo[0].bigTitle } </div>
-                                    <div className={sty.lowerTitleHolder}>
+                    <div className={sty.header3}>
+                        <div className={sty.wrapper3}>
+                            <div className={sty.heading3}>
+                                <div className={sty.textBox3}>
+                                    <div className={sty.purpleTitle3}> {getGroupInfo[0].bigTitle } </div>
+                                    <div className={sty.lowerTitleHolder3}>
                                         {getGroupInfo[0].lowerTitle}
                                     </div>
                                 </div>

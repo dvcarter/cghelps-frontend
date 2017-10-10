@@ -232,7 +232,7 @@
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-   .hero { 
+   .hero3 { 
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -248,22 +248,22 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .header {
+    .header3 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper {
+    .wrapper3 {
         width: 100%;
         height: 100%; 
     }
-    .wrapper  {
+    .wrapper3  {
         display: flex;
         align-items: flex-start;
     }
-    .heading {
+    .heading3 {
         /*margin: 270px 0 0 0;*/
         text-align: left;
         display: flex;
@@ -274,10 +274,10 @@
         color: #fff ;
         background-color: #482864;
     }
-    div.heading {
+    div.heading3 {
         color: #fff;
     }
-    .textBox {
+    .textBox3 {
         height: 100%;
         width: 100%;
         text-align: left;
@@ -285,14 +285,14 @@
         padding: 20px;
         font-size: 80%;
     }
-    .purpleTitle {
+    .purpleTitle3 {
         font-size: 175%;
         font-weight: 500;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder3 {
        /* padding: 0 250px 0 250px;*/
     }
-    .button {
+    .button3 {
         align-self: flex-end;
     }
 
@@ -300,7 +300,7 @@
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) {
-      .hero {
+      .hero3 {
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -313,7 +313,7 @@
 }
 
 
-.header {
+.header3 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -332,7 +332,7 @@
   );*/
 }
 
-.heading, .lowerTitle {
+.heading3, .lowerTitle3 {
  color: var(--colorNeutralLight);
   text-shadow:
     0 0 6px var(--colorNeutralDark),
@@ -341,7 +341,7 @@
   letter-spacing: 1px;
 }
 
-.privacyHeading {
+.privacyHeading3 {
     white-space: wrap;
     margin: 20px 0 -300px 0;
     color: black;
@@ -375,7 +375,7 @@
   }
 }
 
-.button {
+.button3 {
          white-space: nowrap;
         width: 200px;
         margin-left: 30px;
@@ -391,7 +391,7 @@
         transition: background-color 0.5s ease;
  }
 
-.button:hover {
+.button3:hover {
         color: #fff;
         background-color: #8b0000;
 }
