@@ -50,7 +50,7 @@
       }
   }
 
-  .hero {
+  .hero1 {
       height: 50vh;
       display: flex;
       display: -webkit-flex;
@@ -60,22 +60,22 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-  .heading {
+  .heading1 {
       margin: 200px 0 0 0;
       font-size: 1.25em;
       color: #fff;
        background-color: #482864;
   }
-  .textBox {
+  .textBox1 {
       color: #fff;
   }
-  .lowerTitleHolder {
+  .lowerTitleHolder1 {
       padding: 0 20px 0 20px;
       font-size: 0.75em;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .hero {
+    .hero1 {
         display: flex;
         display: -webkit-flex;
         justify-content: right;
@@ -85,14 +85,14 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
-        .header {
+        .header1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper {
+    .wrapper1 {
         width: 100%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
@@ -100,7 +100,7 @@
         align-items: flex-start;
     }  
 
-    .heading {
+    .heading1 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -111,7 +111,7 @@
         color: #fff;
         background-color: #482864;
     } 
-    .textBox {
+    .textBox1 {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -120,16 +120,16 @@
         font-size: 60%;
         color: #fff;
     }
-      .purpleTitle {
+      .purpleTitle1 {
         font-size: 150%;
         font-weight: 500;
     } 
-    .button {
+    .button1 {
     } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .hero {
+    .hero1 {
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
@@ -140,20 +140,20 @@
         width: 100%;
     }
 
-    .header {
+    .header1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }  
-    .wrapper {
+    .wrapper1 {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: flex-start;
     }  
-    .heading {
+    .heading1 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -163,7 +163,7 @@
         color: #fff;
         background-color: #482864;
     }  
-    .textBox {
+    .textBox1 {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -172,11 +172,11 @@
         font-size: 60%;
         color: #fff;
     }
-      .purpleTitle {
+      .purpleTitle1 {
         font-size: 150%;
         font-weight: 500;
     }  
-    .button {
+    .button1 {
         align-self: flex-end;
     }
 }
@@ -279,7 +279,7 @@
         width: 40%;
         height: 20%;
         color: #fff ;
-        margin-top: 100px;
+        margin-top: 50px;
         background-color: #482864;
     }
     div.heading1 {
@@ -302,7 +302,7 @@
         width: 100%;
     }
     .button1 {
-        /*align-self: flex-end;*/
+        align-self: flex-end;
          white-space: nowrap;
         margin-top: 600px;
         width: 200px;
@@ -329,7 +329,7 @@
         width: 55vw;
     }*/
 
-     .hero { 
+     .hero1 { 
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -342,7 +342,7 @@
 }
 
 
-.header {
+.header1 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -361,7 +361,7 @@
   );*/
 }
 
-.heading, .lowerTitle {
+.heading1, .lowerTitle1 {
  color: var(--colorNeutralLight);
   text-shadow:
     0 0 6px var(--colorNeutralDark),
@@ -404,7 +404,7 @@
   }
 }
 
-.button {
+.button1 {
          white-space: nowrap;
         width: 200px;
         margin-left: 30px;

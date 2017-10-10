@@ -12,7 +12,7 @@ let VolunteerApplication = props => {
             <form onSubmit={ handleSubmit((values) => console.log(values)) } className={styles.formFit}>
             {/* Form Description */}
                 <div className={styles.description}> 
-                    <h1 className={styles.title}> Volunteer Application </h1>
+                    <h1 className={styles.title_2_2}> Volunteer Application </h1>
                     <p>
                         Thanks for your interest in volunteering at Common Ground. Donating your
                         time and talent is a fantastic way to show how much you care.
