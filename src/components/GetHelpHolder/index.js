@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import { BrowserRouter as  Router, Route, Switch } from "react-router-dom"
 import GetHelp from "../../components/GetHelp"
+import Chat from "../../components/ChatHolder"
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -24,6 +25,7 @@ class GetHelpHolder extends Component {
                <Route>
                     <Switch>
                         <PropsRoute exact path="/get-help" component={GetHelp} getHelp={getHelp} />
+                        <PropsRoute path="/get-help/chat-with-us" component={Chat} />
                     </Switch>
                 </Route>
         )

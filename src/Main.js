@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import HomePage from "./components/HomePage";
 import GetHelpHolder from "./components/GetHelpHolder";
+import Chat from "./components/ChatHolder";
 import Locations from "./components/Locations";
 import GetInvolved from "./components/GetInvolved";
 import CrisisToHope from "./components/CrisisToHope";
@@ -90,6 +91,7 @@ class App extends Component {
                     <Switch>
                         <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo} />
                         <PropsRoute path="/get-help" component={GetHelpHolder} dataGetter={getHelpInfo} />
+                        <PropsRoute path="/get-help/chat-with-us" component={Chat} />
                         <PropsRoute path="/visit" component={Locations} dataGetter={getLocationInfo} />
                         <PropsRoute path="/get-involved" component={GetInvolved} dataGetter={getInvolvedInfo} />
                         <PropsRoute path="/crisis-to-hope" component={CrisisToHope} dataGetter={getInvolvedInfo} />

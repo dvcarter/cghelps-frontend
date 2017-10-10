@@ -1,5 +1,10 @@
-    const victimsOfCrime = [
+import SeekHelp from "../../assets/seekhelp.jpg"
+
+const victimsOfCrime = [
       {
+        "hero": SeekHelp,
+        "bigTitle": "This is a big title",
+        "lowerTitle": "This is the lower title",
         "subtitle": "Support Groups",
         "sub": {
           "subsubtitle": "Survivors of Homicide Support Group",
