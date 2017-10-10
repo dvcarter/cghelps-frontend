@@ -9,6 +9,7 @@ const { DOM: {input, select, textarea} } = React
 let VolunteerApplication = props => {
     const { handleSubmit, hasRightSelection } = props
     return (
+        <div className={styles.formHolder }>
             <form onSubmit={ handleSubmit((values) => console.log(values)) } className={styles.formFit}>
             {/* Form Description */}
                 <div className={styles.description}> 
@@ -430,6 +431,7 @@ let VolunteerApplication = props => {
                 <button type="submit">Submit</button>
                     
             </form>
+        </div>
     )
 }
 
