@@ -16,8 +16,7 @@ import GetInvolved from "./components/GetInvolved";
 import CrisisToHope from "./components/CrisisToHope";
 import Resources from "./components/Resources";
 import Donate from "./components/Donate";
-import AboutUs from "./components/AboutUs";
-import OurStory from "./components/OurStory";
+import AboutUsHolder from "./components/AboutUsHolder";
 import Posts from "./components/Posts";
 import Accreditation from "./components/Accreditation";
 import Volunteer from "./components/VolunteerPage";
@@ -100,8 +99,7 @@ class App extends Component {
                         <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}>
                         
                         </PropsRoute>
-                        <PropsRoute path="/about-us" component={AboutUs} dataGetter={aboutInfo}/>
-                        <PropsRoute path="/our-story" component={OurStory} />
+                        <PropsRoute path="/about-us" component={AboutUsHolder} />>
                         <PropsRoute path="/posts" component={Posts} />
                         <PropsRoute path="/accreditation" component={Accreditation} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
