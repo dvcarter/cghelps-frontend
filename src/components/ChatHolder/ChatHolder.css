@@ -10,10 +10,15 @@
             /*margin-bottom: 400px;*/
     }       
           .title2 {
-              font-size: 275%;
+              text-align: center;
+              font-size: 225%;
               color: #333;
               font-weight: 300;
-        }   
+        }  
+        .maintain {
+            display: block;
+            margin-top: 3px;
+        }
         .availHolder {
             display: flex;
             justify-content: center;

@@ -4,7 +4,7 @@ import styles from "./ChatHolder.css"
 const ChatHolder =() => {
     return (
             <div className={styles.divHolder}>
-                <div className={styles.title2}> Chat </div>
+                <div className={styles.title2}> Chat with a <span className={styles.maintain}> Crisis Counselor </span></div>
                <div className={styles.availHolder}>
                      <div className={styles.iframeHolder}>
                         <iframe id="iCarolMessagingBadge" src="https://webapp.icarol.com/pub/Messaging/StatusBadge.aspx?orgNum=2194&pid=204&cc=en-US&RIF1=291382" frameborder="0" scrolling="no"></iframe>
