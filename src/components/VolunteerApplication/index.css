@@ -6,23 +6,26 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: red;
+    overflow-x: hidden;
 }
 
 .formFit {
     width: 100%;
     height: 100%;
-    margin: 200px 0 200px 0px;
+    margin: 200px 0px 200px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .boxWidth {
-    min-height: 200px;
-    max-height: 500px;
-    min-width: 500px;
-    max-width: 80%;
+    /*min-height: 200px;
+    max-height: 500px;*/
+    /*min-width: 500px;
+    max-width: 80%;*/
+    width: 100%;
+    height: 300px;
 }
 .title_2_2 {
     color: #333;
@@ -32,11 +35,22 @@
 .description {
     width: 100%;
     padding: 20px;
-    margin: 0 -100px 0 -100px;
+    margin: 0 0 0 0;
 
 }
 
+.formProper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px 0 40px;
+    overflow-x: hidden;
+
+}
 .row {
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -48,11 +62,11 @@
 }
 
 .formGroup:first-child, .formGroup:nth-child(5) {
-    width: 25%;
+    width: 50%;
     margin: 0 20px 0 0px;
 }
 .formGroup:nth-child(2), .formGroup:nth-child(6), .formGroup:nth-child(7) {
-    width: 25%;
+    width: 50%;
 }
 
 input[type=text], input[type=email] {

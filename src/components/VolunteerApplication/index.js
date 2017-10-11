@@ -29,6 +29,7 @@ let VolunteerApplication = props => {
                 </div>
                 
                 {/* Form Body */}
+            <div className={styles.formProper}>
                 <div className={styles.row}>
                     <div className={styles.formGroup}>
                         <label htmlFor="firstName" className="col-form-label">First Name*</label>
@@ -429,7 +430,7 @@ let VolunteerApplication = props => {
                     </div>
                 }
                 <button type="submit">Submit</button>
-                    
+            </div>
             </form>
         </div>
     )
