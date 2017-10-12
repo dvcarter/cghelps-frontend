@@ -15,7 +15,7 @@ export default class YouTube extends Component {
            this.props.fs;
 
        return (
-               <div className="container">
+               <div className="container_video">
                 <iframe className="player" type="text/html" width="300em"
                         height="300em"
                         src={videoSrc}
