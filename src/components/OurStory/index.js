@@ -5,18 +5,18 @@ import styles from './OurStory.css'
 
 const OurStory = () => {
     return (
-            <div className={styles.bigHolder}>
+            <div className={styles.bigHolder_5_1}>
             <h2> Our Story </h2>
-                <div className={styles.title}>
+                <div className={styles.title_5_1}>
                     <h5> Past</h5>
                 </div>
-                <div className={styles.aboutText}>
+                <div className={styles.aboutText_5_1}>
                    Common Ground is the product of a 1998 merger of two agencies, Common Ground and The Sanctuary, Inc., that had served Oakland County since the early 1970s. The merger allowed those in the community experiencing a crisis a single source of help. The unified approach to meeting community needs enabled both organizations to expand their services significantly. Common Ground was founded in 1971 by a group of students, parents and community leaders who were concerned about an increase in substance abuse and suicide among young people. United Community Services volunteers began The Sanctuary, Inc. in response to the growing number of runaway youth in Oakland County. The residential counseling program for runaway and homeless youth, ages 10-17, opened in 1974. The program offered youth two weeks in which to resolve the conflicts that led them to leave home. Today, Common Ground is a 24-hour crisis services agency dedicated to helping youths, adults and families in crisis. Through its crisis line and in person, Common Ground provides professional and compassionate service to more than 80,000 people a year. 
                 </div>
-                <div className={styles.title}>
+                <div className={styles.title_5_1}>
                     <h5> Present  </h5>
                 </div>
-                <div className={styles.aboutText}>
+                <div className={styles.aboutText_5_1}>
                     Today, Common Ground is a 24-hour crisis services agency dedicated to helping 
                     youths, adults, and families in crisis. Through our crisis line and in person, we
                     provide professional and compassionate service to more than 80,000 people
@@ -37,10 +37,10 @@ const OurStory = () => {
                     </ul>
                 </div>
 
-                <div className={styles.title}>
+                <div className={styles.title_5_1}>
                     <h5> Future </h5>
                 </div>
-                <div className={styles.aboutText}>
+                <div className={styles.aboutText_5_1}>
                     Our vision for the future is that our efforts will continue to result in 
                     positive changes in people's lives and throughout their communities,
                     which will lead more people to feel safe asking for help. As a result,
