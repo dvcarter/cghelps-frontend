@@ -33,7 +33,7 @@ const getHelpOpts = [
         image: personPurple,
         btn: {
           label: "Find Crisis Center",
-          link: "get-help/visit"
+          link: "visit"
         }
       },
       {

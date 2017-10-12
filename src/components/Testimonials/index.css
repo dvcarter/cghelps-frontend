@@ -17,7 +17,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        /* background-color: blue; */
         height: 400px;
         width: 100%;
     }
@@ -33,16 +32,16 @@
 
     .smallVids_0_2_0 {
         height: 300px;
-        width: 50%;
-        margin: 0 5px 0 5px;
+        width: 45%;
+        margin: 0 5px 0px 5px;
     }
     .bigVid_0_2_0 {
         margin: 0 5px 0 5px;
     }
     .bigVid_0_2_0 {
         background-color: #dfe3ee;
-        width: 50%;
-        height: 600px;
+        width: auto;
+        height: 300px;
     }
 
     .vid1_0_2_0, .vid2_0_2_0 {
@@ -81,11 +80,14 @@
         width: 40%;
         height: 100%;
     }
-    img.present_0_2_0 {
+    .present_0_2_0, .present2_link, .present3_link {
         align-self: center;
         height: 100%;
         width: 100%;
-        margin: 0 0 1px 0;
+    }
+    .present1_0_2_0, .present1_link {
+        height: 100%;
+        width: 100%;
     }
 }
 
