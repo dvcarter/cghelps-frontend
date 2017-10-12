@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.css";
+import {Link} from "react-router-dom";
 import terri from "../../content/assets/terri_thumb.png"
 import paul from "../../content/assets/paul_thumb.png"
 import YouTube from "../YouTube";
@@ -8,7 +9,9 @@ const Testimonials = () => {
     return (
             <div className={styles.bigHolder}> 
                 <div className={styles.holder}>
-                    <h3> Success Stories </h3> 
+                    <Link to="/success-stories">
+                        <h3> Success Stories </h3>
+                    </Link>
                     <div className={styles.vidBox}>
                         <YouTube video="ibq3J5wOrJE" autoplay="0" rel="0" modest="1" fs="1" />
                     {/*<div className={styles.bigVid}>

@@ -9,6 +9,7 @@ import Container from "./components/Container";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import HomePage from "./components/HomePage";
+import Success from "./components/VideoHolder";
 import GetHelpHolder from "./components/GetHelpHolder";
 import Chat from "./components/ChatHolder";
 import Locations from "./components/Locations";
@@ -35,7 +36,7 @@ import {selectPreventionGroupInfo} from "./selectors/preventionSelectors";
 import {selectYouthGroupInfo} from "./selectors/youthSelectors";
 import {selectVictimGroupInfo} from "./selectors/victimsSelectors";
 import {selectHealthGroupInfo} from "./selectors/healthSelectors";
-
+import {selectVideoInfo} from "./selectors/videoSelectors";
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -63,7 +64,8 @@ const mapState = (state) => ({
     preventionInfo: selectPreventionGroupInfo(state),
     youthInfo: selectYouthGroupInfo(state),
     victimInfo: selectVictimGroupInfo(state),
-    healthInfo: selectHealthGroupInfo(state)
+    healthInfo: selectHealthGroupInfo(state),
+    videoInfo: selectVideoInfo(state)
 });
 
 class App extends Component { 
@@ -79,7 +81,8 @@ class App extends Component {
             preventionInfo,
             youthInfo,
             victimInfo,
-            healthInfo
+            healthInfo,
+            videoInfo
         } = this.props;
 
         return (
@@ -90,6 +93,7 @@ class App extends Component {
                     <ScrollToTop>
                     <Switch>
                         <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo} />
+                        <PropsRoute path="/success-stories" component={Success} dataGetter={videoInfo} />
                         <PropsRoute path="/get-help" component={GetHelpHolder} dataGetter={getHelpInfo} />
                         <PropsRoute path="/get-help/chat-with-us" component={Chat} />
                         <PropsRoute path="/visit" component={Locations} dataGetter={getLocationInfo} />
