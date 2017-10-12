@@ -4,7 +4,7 @@
 
 
 @media screen and (min-width: 1200px) {
-    .bigHolder {
+    .bigHolder_0_2_0 {
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -12,7 +12,7 @@
         height: auto;
         width: 100%;
     }
-    .holder {
+    .holder_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,7 +22,7 @@
         width: 100%;
     }
 
-    .vidBox {
+    .vidBox_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,40 +31,40 @@
         height: auto;
     }
 
-    .smallVids {
+    .smallVids_0_2_0 {
         height: 300px;
         width: 50%;
         margin: 0 5px 0 5px;
     }
-    .bigVid {
+    .bigVid_0_2_0 {
         margin: 0 5px 0 5px;
     }
-    .bigVid {
+    .bigVid_0_2_0 {
         background-color: #dfe3ee;
         width: 50%;
         height: 600px;
     }
 
-    .vid1, .vid2 {
+    .vid1_0_2_0, .vid2_0_2_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         color: #fff;
         /*background-color: #000;*/
     }
-    .bigVid {
+    .bigVid_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .vid1, .vid2 {
+    .vid1_0_2_0, .vid2_0_2_0 {
         background-color: #dfe3ee;
         height: 48%;
     }
-    .vid1 {
+    .vid1_0_2_0 {
         margin: 0 0 10px 0;
     }
-    .textArea {
+    .textArea_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -73,7 +73,7 @@
         height: 100%;
         padding: 0 30px 0 30px;
     }
-    .vidArea {
+    .vidArea_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,7 +81,7 @@
         width: 40%;
         height: 100%;
     }
-    img.present {
+    img.present_0_2_0 {
         align-self: center;
         height: 100%;
         width: 100%;
@@ -91,7 +91,7 @@
 
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .bigHolder {
+    .bigHolder_0_2_0 {
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -99,7 +99,7 @@
         height: auto;
         width: 100%;
     }
-    .holder {
+    .holder_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -109,7 +109,7 @@
         width: 100%;
     }
 
-    .vidBox {
+    .vidBox_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -117,32 +117,32 @@
         width: 80%;
     }
 
-    .bigVid, .smallVids {
+    .bigVid_0_2_0, .smallVids_0_2_0 {
         height: 300px;
         width: 50%;
         margin: 0 5px 0 5px;
     }
 
-    .bigVid {
+    .bigVid_0_2_0 {
         background-color: #dfe3ee;
     }
 
-    .bigVid, .vid1, .vid2 {
+    .bigVid_0_2_0, .vid1_0_2_0, .vid2_0_2_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         color: #fff;
         background-color: #000;
     }
-    .vid1, .vid2 {
+    .vid1_0_2_0, .vid2_0_2_0 {
         background-color: #dfe3ee;
         height: 48%;
     }
-    .vid1 {
+    .vid1_0_2_0 {
         margin: 0 0 10px 0;
     }
 
-    .vidArea {
+    .vidArea_0_2_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -153,7 +153,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-      .bigHolder {
+      .bigHolder_0_2_0 {
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -161,7 +161,7 @@
         height: auto;
         width: 100%;
     }   
-    .holder {
+    .holder_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -171,7 +171,7 @@
         width: 100%;
     }   
     
-    .vidBox {
+    .vidBox_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -179,35 +179,35 @@
         width: 80%;
     }   
     
-    .bigVid, .smallVids {
+    .bigVid_0_2_0, .smallVids_0_2_0 {
         height: 300px;
         width: 50%;
         margin: 0 5px 0 5px;
     }   
     
-    .bigVid {
+    .bigVid_0_2_0 {
         background-color: #dfe3ee;
     }   
     
-    .bigVid, .vid1, .vid2 {
+    .bigVid_0_2_0, .vid1_0_2_0, .vid2_0_2_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         color: #fff; 
         background-color: #000;
     }   
-    .vid1, .vid2 {
+    .vid1_0_2_0, .vid2_0_2_0 {
         background-color: #dfe3ee;
         height: 48%;
     }   
-    .vid1 {
+    .vid1_0_2_0 {
         margin: 0 0 10px 0;
     }     
 
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-     .bigHolder {
+     .bigHolder_0_2_0 {
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -215,7 +215,7 @@
         height: auto;
         width: 100%;
     }   
-    .holder {
+    .holder_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -225,7 +225,7 @@
         width: 100%;
     }   
     
-    .vidBox {
+    .vidBox_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -233,35 +233,35 @@
         width: 90%;
     }   
     
-    .bigVid, .smallVids {
+    .bigVid_0_2_0, .smallVids_0_2_0 {
         height: 300px;
         width: 100%;
         margin: 0 5px 0 5px;
     }   
     
-    .bigVid {
+    .bigVid_0_2_0 {
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
     }   
     
-    .bigVid, .vid1, .vid2 {
+    .bigVid_0_2_0, .vid1_0_2_0, .vid2_0_2_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         color: #fff; 
         background-color: #000;
     }   
-    .vid1, .vid2 {
+    .vid1_0_2_0, .vid2_0_2_0 {
         background-color: #dfe3ee;
         height: 48%;
     }   
-    .vid1 {
+    .vid1_0_2_0 {
         margin: 0 0 10px 0;
     }  
 }
 
 @media screen and (max-width: 575px) {
-    .bigHolder { 
+    .bigHolder_0_2_0 { 
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -269,7 +269,7 @@
         height: auto;
         width: 100%;
     }   
-    .holder {
+    .holder_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -279,7 +279,7 @@
         width: 100%;
     }   
     
-    .vidBox {
+    .vidBox_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -287,29 +287,29 @@
         width: 80%;
     }   
     
-    .bigVid, .smallVids {
+    .bigVid_0_2_0, .smallVids_0_2_0 {
         height: 300px;
         width: 100%;
         margin: 0 5px 0 5px;
     }   
     
-    .bigVid {
+    .bigVid_0_2_0 {
         background-color: #dfe3ee;
         margin: 0 0 10px 0;
     }
     
-    .bigVid, .vid1, .vid2 {
+    .bigVid_0_2_0, .vid1_0_2_0, .vid2_0_2_0 {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         color: #fff; 
         background-color: #000;
     }   
-    .vid1, .vid2 {
+    .vid1_0_2_0, .vid2_0_2_0 {
         background-color: #dfe3ee;
         height: 48%;
     }   
-    .vid1 {
+    .vid1_0_2_0 {
         margin: 0 0 10px 0;
     }
 }
