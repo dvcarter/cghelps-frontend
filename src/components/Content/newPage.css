@@ -115,8 +115,8 @@
     .hero_0 {
         display: flex;
         display: -webkit-flex;
-        justify-content: right;
-        -webkit-justify-content: right;
+        justify-content: center;
+        -webkit-justify-content: center;
         margin: 0 auto;
         height: 400px;
         /*height:400px; */
