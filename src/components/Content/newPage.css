@@ -388,11 +388,6 @@
 }
 
 .heading_0, .lowerTitle_0 {
- color: var(--colorNeutralLight);
-  text-shadow:
-    0 0 6px var(--colorNeutralDark),
-    0 0 2px var(--colorNeutralDark)
-  ;
   letter-spacing: 1px;
 }
 
