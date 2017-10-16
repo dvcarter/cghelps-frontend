@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from "prop-types"
 import styles from "./SingleVideo.css"
-import ytStyles from "./SingleYouTube.css"
+import ytSty from "./SingleYouTube.css"
 
 const SingleVideo =({getVideo}) => {
     return (
@@ -39,8 +39,8 @@ class YouTube extends Component {
            this.props.fs;
 
        return (
-               <div className={ytStyles.container_video}>
-                <iframe className={ytStyles.player_video} type="text/html" width="600em"
+               <div className={ytSty.container_video_0_2_1_0}>
+                <iframe className={ytSty.player_video_0_2_1_0} type="text/html" width="600em"
                         height="500em"
                         src={videoSrc}
                         frameBorder="0"
