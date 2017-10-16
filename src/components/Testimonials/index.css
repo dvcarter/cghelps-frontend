@@ -335,14 +335,14 @@
         height: 100%;
         padding: 0 30px 0 30px;
     }
-    .vidArea_0_2_0 {
+   /* .vidArea_0_2_0 {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #000;
         width: 40%;
         height: 100%;
-    }
+    }*/
     /*.present_0_2_0, .present2_link, .present3_link {
         align-self: center;
         height: 100%;
