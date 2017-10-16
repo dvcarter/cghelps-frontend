@@ -12,7 +12,7 @@
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .divHolder_0_2_1_0 {
+    .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,7 +37,7 @@
     }       
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-            .divHolder_0_2_1_0 {
+    .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,7 +49,7 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-        .divHolder_0_2_1_0 {
+    .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -60,7 +60,7 @@
             /*margin-bottom: 400px;*/
     }
     .title_0_2_1_0 {
-           display: flex;
+        display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
         justify-content: center;

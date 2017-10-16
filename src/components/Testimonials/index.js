@@ -5,6 +5,7 @@ import grupido from "../../content/assets/grupido_thumb.png"
 import terri from "../../content/assets/terri_thumb.png"
 import paul from "../../content/assets/paul_thumb.png"
 import YouTube from "../YouTube";
+
 const Testimonials = () => {
 
     return (
