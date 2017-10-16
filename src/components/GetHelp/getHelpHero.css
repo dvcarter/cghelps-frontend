@@ -189,7 +189,6 @@
     height: 65vh;
     width: 85vw;
     /* fallback, mainly visible when hero image is loading */
-    background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
     }
        .header_1_0 {
@@ -335,7 +334,6 @@
         margin: 0 50px 0 50px;
         height: 70vh;
         width: 75vw;
-        background-color: var(--colorSecondary);
     } 
 }
 
@@ -363,11 +361,6 @@
 }
 
 .heading_1_0, .lowerTitle_1_0 {
- color: var(--colorNeutralLight);
-  text-shadow:
-    0 0 6px var(--colorNeutralDark),
-    0 0 2px var(--colorNeutralDark)
-  ;
   letter-spacing: 1px;
 }
 
