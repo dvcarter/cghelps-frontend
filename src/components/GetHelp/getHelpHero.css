@@ -52,7 +52,7 @@
 
   .hero_1_0 {
       height: 60vh;
-      width: 65vw;
+      width: 100%;
       display: flex;
       display: -webkit-flex;
       justify-content: center;
@@ -279,7 +279,7 @@
         width: 40%;
         height: 20%;
         color: #fff ;
-        margin-top: 150px;
+        margin-top: 50px;
         background-color: #482864;
     }
     div.heading_1_0 {
