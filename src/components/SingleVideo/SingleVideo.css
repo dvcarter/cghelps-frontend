@@ -1,5 +1,5 @@
 @media only screen and  (max-width: 575px) {
-     .divHolder_0_2_1 {
+     .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -12,7 +12,7 @@
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .divHolder_0_2_1 {
+      .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,7 +25,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-     .divHolder_0_2_1 {
+     .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,7 +37,7 @@
     }       
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-            .divHolder_0_2_1 {
+            .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,7 +49,7 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-        .divHolder_0_2_1 {
+        .divHolder_0_2_1_0 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -59,7 +59,7 @@
             width: 100%;
             /*margin-bottom: 400px;*/
     }
-    .title_0_2_1 {
+    .title_0_2_1_0 {
            display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -79,11 +79,11 @@
         color: #333;
         font-weight: 300;
     } 
-    .videoGroup_0_2_1 {
+    .videoGroup_0_2_1_0 {
         width: 100%;
         height: auto;
     }
-    .video_0_2_1 {
+    .video_0_2_1_0 {
         width:100%;
         height: auto;
         display: flex;
@@ -91,11 +91,11 @@
         align-items: center;
         flex-direction: row;
     }
-    .videoPt_0_2_1 {
+    .videoPt_0_2_1_0 {
         height: auto;
         margin: 0 0 0 100px;
     }
-    .videoDescription_0_2_1 {
+    .videoDescription_0_2_1_0 {
         width: 35%;
         height: 100%;
         margin: 0 0 0 100px;
