@@ -14,6 +14,7 @@ import donateReducer from "./donateReducer";
 import aboutUsReducer from "./aboutUsReducer";
 import moreReducer from "./moreReducer";
 import videoReducer from "./videoReducer";
+import faqReducer from "./faqReducer";
 
 const rootReducer = combineReducers({
     posts,
@@ -30,6 +31,7 @@ const rootReducer = combineReducers({
     moreInfo: moreReducer,
     aboutInfo: aboutUsReducer,
     videoInfo: videoReducer,
+    faqInfo: faqReducer,
     form: formReducer
 })
 

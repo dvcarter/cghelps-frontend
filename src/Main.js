@@ -37,6 +37,7 @@ import {selectYouthGroupInfo} from "./selectors/youthSelectors";
 import {selectVictimGroupInfo} from "./selectors/victimsSelectors";
 import {selectHealthGroupInfo} from "./selectors/healthSelectors";
 import {selectVideoInfo} from "./selectors/videoSelectors";
+import {selectFaqInfo} from "./selectors/faqSelectors";
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -65,7 +66,8 @@ const mapState = (state) => ({
     youthInfo: selectYouthGroupInfo(state),
     victimInfo: selectVictimGroupInfo(state),
     healthInfo: selectHealthGroupInfo(state),
-    videoInfo: selectVideoInfo(state)
+    videoInfo: selectVideoInfo(state),
+    faqInfo: selectFaqInfo(state)
 });
 
 class App extends Component { 
@@ -82,7 +84,9 @@ class App extends Component {
             youthInfo,
             victimInfo,
             healthInfo,
-            videoInfo
+            videoInfo, 
+            faqInfo
+
         } = this.props;
 
         return (
@@ -94,7 +98,7 @@ class App extends Component {
                     <Switch>
                         <PropsRoute exact path="/" component={HomePage} dataGetter={getHelpOptsInfo} />
                         <PropsRoute path="/success-stories" component={Success} dataGetter={videoInfo} />
-                        <PropsRoute path="/get-help" component={GetHelpHolder} dataGetter={getHelpInfo} />
+                        <PropsRoute path="/get-help" component={GetHelpHolder} dataGetter={getHelpInfo} {...this.props} />
                         <PropsRoute path="/get-help/chat-with-us" component={Chat} />
                         <PropsRoute path="/visit" component={Locations} dataGetter={getLocationInfo} />
                         <PropsRoute path="/get-involved" component={GetInvolved} dataGetter={getInvolvedInfo} />
