@@ -361,18 +361,10 @@
 }
 
 
-.header_4 {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: left;
-  -webkit-justify-content: left;
-  padding: 5rem 0;
-  padding: 10vh 0;
-  text-align: center;
+.linkExtend {
+    width:100%;
+    height: 100%;
 }
-
 .heading_4, .lowerTitle_4 {
   letter-spacing: 1px;
 }

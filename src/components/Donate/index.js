@@ -27,7 +27,7 @@ class Donate extends Component {
                                                 <li> Offer more of our specialized Support Groups </li>
                                                 <li> Add a Resource & Crisis Center location in southern Oakland County </li>
                                             </ul>
-                                            <button className={sty.button_4}><a href="https://commongroundhelps.z2systems.com/np/clients/commongroundhelps/donation.jsp?campaign=1096&"> Give Now </a></button>
+                                            <button className={sty.button_4}><a className={sty.linkExtend} href="https://commongroundhelps.z2systems.com/np/clients/commongroundhelps/donation.jsp?campaign=1096&"> Give Now </a></button>
                                         </div>
                                      
                                 </div>
