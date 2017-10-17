@@ -407,6 +407,17 @@
         margin: 0 0 10px 0;
     }
 
+       .present_0_2_0, .present2_link, .present3_link {
+        align-self: center;
+        height: 100%;
+        width: 100%;
+    }   
+    .present1_0_2_0, .present1_link {
+        height: 100%;
+        width: 100%;
+    }  
+}
+
     .textArea_0_2_0 {
         display: flex;
         justify-content: center;
@@ -424,4 +435,3 @@
         width: 40%;
         height: 100%;
     }
-}
