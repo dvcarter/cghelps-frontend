@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import styles from './GetInvolved.css'
 import sty from "./getInvolvedHero.css"
 
@@ -25,7 +26,7 @@ const GetInvolvedOpts = ( {getInvolved} ) => {
                                                     <li> January 1 </li>
                                                 </ul>
                                         </div>
-                                        <button className={sty.button}><a href="#"> Register for a 'Crisis to Hope' Tour! </a></button>
+                                        <button className={sty.button}><Link to="/get-involved/crisis-to-hope"> Register for a 'Crisis to Hope' Tour! </Link></button>
                                     </div>
                                 
                                 </div>

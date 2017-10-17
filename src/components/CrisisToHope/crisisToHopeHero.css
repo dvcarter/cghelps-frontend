@@ -51,7 +51,7 @@
   }
 
   .hero {
-      height: 50vh;
+      height: 60vh;
       display: flex;
       display: -webkit-flex;
       justify-content: center;
@@ -60,15 +60,69 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-  .heading {
-      margin: 200px 0 0 0;
-      font-size: 1.25em;
-      background-color: red;
-  }
-  .lowerTitleHolder {
-      padding: 0 20px 0 20px;
-      font-size: 0.75em;
-  }
+
+     .wrapper {
+        width: 100%;
+        height: 60vh;
+        margin: -45px 0 0 0;
+    }
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        color: #fff;
+        background-color: #482864;
+        background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
+    }
+
+      div.heading {
+        color: #fff;
+    }  
+    .textBox {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        padding: 20px;
+        height: 100%;
+    }  
+         .purpleTitle {
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .datePlacement {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    ul {
+        list-style-type: none;
+        margin-top: -10px;
+    }  
+    li {
+        font-size: 12px;
+    }  
+    .button {
+        margin-top: 5px;
+        height: auto;
+        width: 225px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #8b0000;
+        padding: 12px 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.15vh;
+        font-weight: bold;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .hero {
@@ -89,7 +143,7 @@
         height: 100%;
     }   
     .wrapper {
-        width: 50%;
+        width: 100%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }   
@@ -111,17 +165,39 @@
         margin: 40px 0 0 0;
         padding: 20px;
     }   
-    h1 {
-        margin: 0 0 0 40px;
+         .purpleTitle {
         font-size: 150%;
+        font-weight: 600;
+    }
+    .datePlacement {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    ul {
+        list-style-type: none;
+        margin-top: -10px;
     }   
     li {
         font-size: 12px;
     }   
     .button {
-        margin-top: 15px;
-    } 
-
+        margin-top: 5px;
+        height: auto;
+        width: 225px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #8b0000;
+        padding: 12px 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.15vh;
+        font-weight: bold;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero {
@@ -132,14 +208,14 @@
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
         height: 400px;
-        width: 800px;
+        width: 100%;
     }
         .header {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
-        height: 100%;
+        height: 50%;
     }   
     .wrapper {
         width: 40%;
@@ -151,8 +227,8 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 100%;
-        color: ;
+        height: 50%;
+        color: #fff;
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
     }   
@@ -161,19 +237,46 @@
     }   
     .textBox {
         text-align: left;
-        margin: 40px 0 0 0;
-        padding: 20px;
+        margin: 15px 0 0 0;
+        padding: 10px;
     }   
     h1 {
         margin: 0 0 0 40px;
         font-size: 150%;
+    }
+     .purpleTitle {
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .datePlacement {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    ul {
+        list-style-type: none;
+        margin-top: -10px;
     }   
     li {
         font-size: 12px;
-    }   
+    }
     .button {
-        margin-top: 25px;
-    }  
+        margin-top: 5px;
+        height: auto;
+        width: 225px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #8b0000;
+        padding: 12px 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.15vh;
+        font-weight: bold;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
@@ -218,13 +321,43 @@
     }   
     h1 {
         margin: 0 0 0 40px;
-        font-size: 150%;
-    }   
+        font-size: 175%;
+    }  
+
+     .purpleTitle {
+        font-size: 200%;
+        font-weight: 600;
+    }
+    .datePlacement {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    ul {
+        list-style-type: none;
+    } 
     li {
         font-size: 12px;
     } 
     .button {
-        margin-top: 50px;
+        margin-top: 25px;
+        width: 150px;
+    }
+    .button {
+        height: auto;
+        width: 225px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #8b0000;
+        padding: 12px 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5vh;
+        font-weight: bold;
     }
 }
 
@@ -259,8 +392,8 @@
         height: 100%;
     }
     .wrapper {
-        margin-top: -15px;
-        height: 61.75vh;
+        margin-top: -25px;
+        height: 62.5vh;
     }
     .heading {
         /*margin: 270px 0 0 0;*/
@@ -309,6 +442,19 @@
         margin-top: 100px;
 
     }
+    .button {
+        height: auto;
+        width: 225px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #8b0000;
+        padding: 12px 40px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5vh;
+        font-weight: bold;
+    }   
 }
 
 
@@ -318,12 +464,65 @@
         height: 55vh;
         width: 55vw;
     }*/
-    .hero {
+     .hero { 
         margin: 0 auto;
-        height: 500px;
-        width: 900px;
+        margin: 0 50px 0 50px;
+        height: 70vh;
+        width: 75vw;
         background-color: var(--colorSecondary);
     }
+     .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 75vw;
+        height: 100%;
+    }
+    .wrapper {
+        margin-top: -15px;
+        height: 61.75vh;
+    }
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        width: 30%;
+        background-color: rgba(72, 40, 100, 0.85);
+    }
+    .textBox {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+    }
+    .purpleTitle {
+        width: 100%;
+        font-size: 200%;
+        font-weight: 600;
+    }
+    .datePlacement {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        font-size: 115%;
+        margin-top: 5px;
+    }
+ 
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:767px ) and (min-width:576px) {
@@ -393,17 +592,6 @@
 }
 
 .button {
-        height: auto;
-        width: 225px;
-        border: none;
-        border-radius: 8px;
-        background-color: #fff;
-        color: #8b0000;
-        padding: 12px 40px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1.5vh;
-        font-weight: bold;
         transition: background-color 0.5s ease;
  }
 

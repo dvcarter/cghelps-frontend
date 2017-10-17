@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import GetInvolvedOpts from "../../components/GetInvolvedOpts"
 import Volunteer from "../../components/VolunteerApplication"
+import CrisisToHope from "../../components/CrisisToHope"
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -27,6 +28,7 @@ class GetInvolved extends Component {
                     <Switch>
                         <PropsRoute exact path="/get-involved" component={GetInvolvedOpts} getInvolved={getInvolved} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
+                        <PropsRoute path="/get-involved/crisis-to-hope" component={CrisisToHope} />
                     </Switch>
                 </Route>
         )
