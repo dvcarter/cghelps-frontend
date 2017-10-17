@@ -4,6 +4,7 @@
   flex-direction: column;
   -webkit-flex-direction: column;
 }
+.body {width: 100%;}
 @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
 
 
