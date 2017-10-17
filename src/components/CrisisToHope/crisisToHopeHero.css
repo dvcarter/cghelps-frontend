@@ -541,18 +541,6 @@
 }
 
 
-.header {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: left;
-  -webkit-justify-content: left;
-  padding: 5rem 0;
-  padding: 10vh 0;
-  text-align: center;
-}
-
 .heading, .lowerTitle {
   letter-spacing: 1px;
 }
