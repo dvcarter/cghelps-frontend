@@ -387,7 +387,6 @@
         margin: 0 50px 0 50px;
         height: 70vh;
         width: 75vw;
-        background-color: var(--colorSecondary);
     }
 
    /*
@@ -400,24 +399,17 @@
     }*/
     .header {
         width: 75vw;
-        height: 100%;
         height: 70vh;
         display: flex;
         display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column;
         justify-content: left;
-        -webkit-justify-content: left;/*
-        padding: 5rem 0;
-        padding: 10vh 0;*/
+        -webkit-justify-content: left;
         text-align: center; 
     }
     .wrapper {
         margin-top: 0px;
-        height: 62.5vh;
-        height: 62.70vh;
-        height: 100%;
-        height: 70vh;
         height: 100%;
     }
     .heading {
@@ -425,8 +417,6 @@
         display: flex;/*
         justify-content: flex-start;
         align-items: flex-start;*/
-        height: 100%;
-        height: 59.95vh;
         height: 100%;
         width: 30%;
         margin-top: 0px;
@@ -437,7 +427,6 @@
         align-items: flex-start;
         flex-direction: column;
         text-align: left;
-        margin: 40px 0 0 0;
         margin-top: 7em;
         padding: 20px;
         height: 100%;
@@ -465,7 +454,8 @@
         margin-top: 5px;
     }
     .lowerTitleHolder {
-       /* padding: 0 250px 0 250px;*/
+        width: 100%;
+        height: auto;
     }
     .button {
         align-self: center;
