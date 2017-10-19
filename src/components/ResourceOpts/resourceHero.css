@@ -30,27 +30,8 @@
   }
 }*/
 @media only screen and (max-width:575px) {
-.body {
-      & a { 
-          color: var(--colorPrimary);
-          transition: all 0.2s;
-          text-decoration: none;
-          border-bottom: 1px solid transparent;
-          
-          &:hover {
-              opacity: 1;
-              color: color(var(--colorPrimary) l(- 5%));
-              border-bottom-color: var(--colorPrimary);
-          }   
-      }
-
-      /* handy for content */
-      & img {
-          max-width: 100%;
-      }
-  }
-
   .hero {
+      width: 100%;
       height: 60vh;
       display: flex;
       display: -webkit-flex;
@@ -82,6 +63,7 @@
         -webkit-justify-content: right;
         margin: 0 auto;
         /*height:400px; */
+        height: 60vh;
         width: 100%;
         background-color: var(--colorSecondary);
     }
