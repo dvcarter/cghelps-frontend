@@ -30,28 +30,9 @@
   }
 }*/
 @media only screen and (max-width:575px) {
-.body {
-      & a { 
-          color: var(--colorPrimary);
-          transition: all 0.2s;
-          text-decoration: none;
-          border-bottom: 1px solid transparent;
-          
-          &:hover {
-              opacity: 1;
-              color: color(var(--colorPrimary) l(- 5%));
-              border-bottom-color: var(--colorPrimary);
-          }   
-      }
-
-      /* handy for content */
-      & img {
-          max-width: 100%;
-      }
-  }
-
   .hero {
       height: 60vh;
+      width: 100%;
       display: flex;
       display: -webkit-flex;
       justify-content: center;
@@ -133,6 +114,7 @@
         margin: 0 auto;
         /*height:400px; */
         width: 100%;
+        height: 500px;
         background-color: var(--colorSecondary);
     }
         .header {
@@ -145,7 +127,7 @@
     .wrapper {
         width: 100%;
         height: 52.5vh; 
-        margin: -45px 0 0 0;
+        margin: 0 0 0 0;
     }   
     .heading {
         /*margin: 270px 0 0 0;*/
@@ -161,9 +143,14 @@
         color: #fff;
     }   
     .textBox {
+          display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
+        height: 100%;
     }   
          .purpleTitle {
         font-size: 150%;
@@ -185,6 +172,7 @@
         font-size: 12px;
     }   
     .button {
+        align-self: center;
         margin-top: 5px;
         height: auto;
         width: 225px;
@@ -290,11 +278,14 @@
     /* fallback when there is no hero image */
     }
        .header {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+         display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: left;
+        -webkit-justify-content: left;
         width: 100%;
         height: 100%;
+        text-align: center;
     }   
     .wrapper {
         width: 40%;
@@ -307,6 +298,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         height: 100%;
+        width: 100%;
         color: ;
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
@@ -318,6 +310,9 @@
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
+        height: 100%;
+        width: 100%;
+        color: #fff;
     }   
     h1 {
         margin: 0 0 0 40px;
