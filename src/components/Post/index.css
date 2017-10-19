@@ -2,3 +2,12 @@
         height: 100%;
         width: 200px;
 }
+
+ .superHolder_Post {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
