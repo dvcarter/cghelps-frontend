@@ -32,26 +32,6 @@
   }
 }*/
 @media only screen and (max-width:575px) {
-.body {
-      & a { 
-          color: var(--colorPrimary);
-          transition: all 0.2s;
-          text-decoration: none;
-          border-bottom: 1px solid transparent;
-          
-          &:hover {
-              opacity: 1;
-              color: color(var(--colorPrimary) l(- 5%));
-              border-bottom-color: var(--colorPrimary);
-          }   
-      }
-
-      /* handy for content */
-      & img {
-          max-width: 100%;
-      }
-  }
-
   .hero {
       height: 50vh;
       display: flex;
@@ -61,6 +41,9 @@
       align-items: center;
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
+  }
+  .body {
+      width: 100%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -73,6 +56,9 @@
         /*height:400px; */
         width: 100%;
         background-color: var(--colorSecondary);
+    }
+    .body {
+        width: 100%;
     }
 
 }
@@ -87,6 +73,9 @@
         height: 400px;
         width: 800px;
     }
+    .body {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
@@ -96,15 +85,19 @@
     height: 65vh;
     width: 75vw;
     /* fallback, mainly visible when hero image is loading */
-    background-color: var(--colorSecondary);
+    /*background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
-    background:
+    /*background:
         radial-gradient(
         ellipse at 50% 50%,
         color(var(--colorSecondary) l(+ 10%)) 15%,
         var(--colorSecondary) 70%
-        );
+        );*/
     }
+        .body {
+            width: 100%;
+        }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -222,3 +215,4 @@
 .hero {
     background-color: #dfe3ee;
 }
+
