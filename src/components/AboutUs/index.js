@@ -29,7 +29,7 @@ const About = () => {
                                 Programs & Services
                             </div>
                         </a>
-                        <a href='/about-us/visit-us-today' className={styles.box}>
+                        <a href='/visit' className={styles.box}>
                             <div className={styles.headline}>
                                 Locations
                             </div>
