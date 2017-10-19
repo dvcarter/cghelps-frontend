@@ -133,6 +133,7 @@
         margin: 0 auto;
         /*height:400px; */
         width: 100%;
+        height: 500px;
         background-color: var(--colorSecondary);
     }
         .header {
@@ -144,8 +145,8 @@
     }   
     .wrapper {
         width: 100%;
-        height: 52.5vh; 
-        margin: -45px 0 0 0;
+        height: 52.5vh;
+        margin: 0 0 0 0;
     }   
     .heading {
         /*margin: 270px 0 0 0;*/
@@ -161,9 +162,14 @@
         color: #fff;
     }   
     .textBox {
+           display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
+        height: 100%;
     }   
          .purpleTitle {
         font-size: 150%;
@@ -185,6 +191,7 @@
         font-size: 12px;
     }   
     .button {
+        align-self: center;
         margin-top: 5px;
         height: auto;
         width: 225px;
@@ -207,16 +214,23 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
+        height: 600px;
         width: 100%;
     }
         .header {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
         width: 100%;
         height: 50%;
-    }   
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: left;
+        -webkit-justify-content: left;
+        padding: 5rem 0;
+        padding: 10vh 0;
+        text-align: center;
+    }
+
     .wrapper {
         width: 40%;
         height: 52.5vh; 
@@ -227,7 +241,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 50%;
+        height: 100%;
         color: #fff;
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
@@ -236,9 +250,15 @@
         color: #fff;
     }   
     .textBox {
+         display: flex;
+        align-items: flex-start;
+        flex-direction: column;
         text-align: left;
         margin: 15px 0 0 0;
         padding: 10px;
+        height: auto;
+        width: 100%;
+        color: #fff;
     }   
     h1 {
         margin: 0 0 0 40px;
@@ -264,6 +284,7 @@
         font-size: 12px;
     }
     .button {
+        align-self: center;
         margin-top: 5px;
         height: auto;
         width: 225px;
@@ -289,13 +310,20 @@
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
     }
-       .header {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+    .header {
         width: 100%;
         height: 100%;
-    }   
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: left;
+        -webkit-justify-content: left;
+        padding: 5rem 0;
+        padding: 10vh 0;
+        text-align: center;
+    }    
+
     .wrapper {
         width: 40%;
         height: 52.5vh; 
@@ -307,6 +335,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         height: 100%;
+        width: 100%;
         color: ;
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
@@ -318,6 +347,9 @@
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
+        height: 100%;
+        width: 100%;
+        color: #fff;
     }   
     h1 {
         margin: 0 0 0 40px;
