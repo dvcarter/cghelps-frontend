@@ -371,6 +371,7 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
+            height: auto;
         }  
         .title {
             display: flex;

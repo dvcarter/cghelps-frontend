@@ -48,10 +48,13 @@
         margin: 0 30px 0 85px;
         padding: 0 10px 0 200px;
         width: 65%;
-    }   
+    } 
     input#mce-EMAIL.email, input#mc-embedded-subscribe.button {
         width: 100%;
-    }   
+    }
+    input#mce-EMAIL {
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 449px) {
     #mc-embedded-subscribe-form {

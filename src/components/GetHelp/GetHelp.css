@@ -409,14 +409,14 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-      .superHolder1 {
+    .superHolder1 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 100%;
         height: 100%;
-    } 
+    }
     _::-webkit-full-page-media, _:future, :root .superHolder { 
     }
      .title {
@@ -459,13 +459,10 @@
         width: 100%;
         /*background-color: #dfe3ee;*/
     }
-    _::-webkit-full-page-media, _:future, :root .superHolder { 
-        height: auto;
-        margin-bottom: 600px ;
-
+    _::-webkit-full-page-media, _:future, :root .superHolder1 { 
+        height: 1200px;
     }
     _::-webkit-full-page-media, _:future, :root .holder { 
-        height: auto;
     }
     .options {
         display: flex;
@@ -511,6 +508,15 @@
         height: 100%;
         width: 100%;
     }
+    
+    _::-webkit-full-page-media, _:future, :root .superHolder1 {
+        height: auto;
+    }
+    _::-webkit-full-page-media, _:future, :root .holder {
+    }
+    _::-webkit-full-page-media, _:future, :root .holdMoreText {
+   }
+
     .moreText {
         width: 150%;
         height: auto;

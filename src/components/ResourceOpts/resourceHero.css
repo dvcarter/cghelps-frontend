@@ -264,6 +264,9 @@
         align-items: flex-start;
         width: 40%;
         height: 25%;
+        height: 7.5em;
+        margin-top: 50px;
+        font-size: 80%;
         color: #fff ;
         background-color: #482864;
     }
