@@ -7,7 +7,7 @@ const PostList = ( {posts} ) => {
     return (
             <div className="postListHolder">
                 <div className={styles.title}>
-                    Posts
+                    News and Events
                 </div>
                 <div className={styles.holder}>
                     {posts.map((post, index) => 
