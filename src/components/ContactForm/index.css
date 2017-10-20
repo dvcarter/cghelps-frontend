@@ -15,7 +15,7 @@
       padding: .5rem .75rem;
       font-size: 1rem;
       line-height: 1.25;
-      color: #55595c;
+      color: #55595c; 
       background-clip: padding-box;
       border: 1px solid rgba(0,0,0,.15);
       border-radius: 2px;
@@ -43,8 +43,8 @@
     font-size: 1rem;
     transition: .2s all;
     color: #007acc;
-    border: 1px solid #007acc;
-    background: rgba(251, 252, 252, 0.2);
+    border: 1px solid #007acc;/*
+    background: rgba(251, 252, 252, 0.2);*/
     width: 6rem;
     cursor: pointer;
   }
@@ -74,21 +74,21 @@
     .buttonContact {
         align-self: center;
         margin-top: 5px;
-        border: none;
+        border: 1px solid #007acc;
         border-radius: 8px;
-        color: white;
+        color: #007acc;
         padding: 15px 20px;
         text-decoration: none;
         display: inline-block;
         font-size: 175%;     
-        background-color: #6f7177;
         width: 40%;
         cursor: pointer;
         transition: 0.3s ease;
     }
 
     .buttonContact:hover {
-        background-color: #585a5f;
+        background-color: #007acc;
+        color: #fff;
     }
 
 .alert {
