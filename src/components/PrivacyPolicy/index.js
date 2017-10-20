@@ -4,20 +4,23 @@ var divSty = {
     height: "100%",
     width:"100%",
     padding: "20px",
-    marginTop: "200px",
+    marginTop: "100px",
     marginBottom: "200px"
 }
 
 var divSty2 = {
-    paddingRight: "20px",
-    paddingLeft:"20px"
+    fontSize: "200%",
+    fontWeight: "300",
+    marginBottom: "20px",
+    display: "flex",
+    justifyContent: "center"
 }
 
 
 const PrivacyPolicy = () => {
   return (
-    <div>
         <div style={divSty}>
+                <div style={divSty2}> Privacy Policy </div>
 <strong>1. Terms</strong>
 <br />
 <ul><li>By accessing the website at <a href="http://www.commongroundhelps.org">http://www.commongroundhelps.org</a>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.
@@ -41,8 +44,6 @@ const PrivacyPolicy = () => {
     <br />
         <li>  If you desire permission to copy or distribute any of the materials or trademarks, please submit a written request to Common Ground, setting forth the number of copies you desire and the intended recipients. Common Ground reserves the right to deny a request for permission or condition the grant of permission upon payment of a fee and/or use of an appropriate  attribution of ownership to Common Ground.
         </li>
-    <li>
-    </li>
     </li>
         </ol>
 
@@ -96,7 +97,6 @@ It is Common Ground's policy to respect your privacy regarding any information w
 Please recognize that, even though Common Ground employs reasonable security measures, any personal or private information that you provide on the internet is subject to an inherent risk of unauthorized access and distribution by third parties. Please limit accordingly the extent that you elect to share any personal or private information with Common Ground over the internet, and please do not upload to or post any information on the Common Ground website that would constitute a private health record.
 We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. Common Ground may change this privacy policy from time to time at Common Ground's sole discretion.
 </li></ul>
-</div>      
   
   
   

@@ -22,6 +22,7 @@ import Posts from "./components/Posts";
 import Accreditation from "./components/Accreditation";
 import Volunteer from "./components/VolunteerPage";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import CodeOfEthics from "./components/CodeOfEthics";
 import NoMatch from "./components/NoMatch";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -113,6 +114,7 @@ class App extends Component {
                         <PropsRoute path="/accreditation" component={Accreditation} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
                         <PropsRoute path="/privacy-policy" component={PrivacyPolicy} />
+                        <PropsRoute path="/code-of-ethics" component={CodeOfEthics} />
                         {/*<PropsRoute path="/contact" component={Contact} />
                         <PropsRoute path="/code-of-ethics" component={LargeText}/>
                         <PropsRoute path="/t-o-s" component={LargeText} />
