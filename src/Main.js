@@ -25,6 +25,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import CodeOfEthics from "./components/CodeOfEthics";
 import Copyright from "./components/Copyright";
 import TermsOfService from "./components/TermsOfService";
+import Contact from "./components/Contact";
 import NoMatch from "./components/NoMatch";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -119,10 +120,7 @@ class App extends Component {
                         <PropsRoute path="/code-of-ethics" component={CodeOfEthics} />
                         <PropsRoute path="/copyright" component={Copyright} />
                         <PropsRoute path="/privacy-policy" component={TermsOfService} />
-                        {/*<PropsRoute path="/contact" component={Contact} />
-                        <PropsRoute path="/code-of-ethics" component={LargeText}/>
-                        <PropsRoute path="/t-o-s" component={LargeText} />
-                        <PropsRoute path="/copyright" component={Copyright} /> */}
+                        <PropsRoute path="/contact" component={Contact} />
                         <PropsRoute component={NoMatch} />
                     </Switch>
                     </ScrollToTop>
