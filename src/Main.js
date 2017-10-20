@@ -115,10 +115,10 @@ class App extends Component {
                         <PropsRoute path="/posts" component={Posts} />
                         <PropsRoute path="/accreditation" component={Accreditation} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
-                        <PropsRoute path="/terms-of-service" component={TermsOfService} />
+                        <PropsRoute path="/terms-of-service" component={PrivacyPolicy} />
                         <PropsRoute path="/code-of-ethics" component={CodeOfEthics} />
                         <PropsRoute path="/copyright" component={Copyright} />
-                        <PropsRoute path="/privacy-policy" component={PrivacyPolicy} />
+                        <PropsRoute path="/privacy-policy" component={TermsOfService} />
                         {/*<PropsRoute path="/contact" component={Contact} />
                         <PropsRoute path="/code-of-ethics" component={LargeText}/>
                         <PropsRoute path="/t-o-s" component={LargeText} />
