@@ -8,8 +8,6 @@ var headerStyle  = {
     justifyContent: "center"
 }
 
-
-
 var divStyle = {
     height: "100%",
     width: "100%",
