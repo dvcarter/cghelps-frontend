@@ -43,7 +43,7 @@ const TermsOfService = () => {
     
     return (
         <div style={divStyle}> 
-                <div style={headerStyle}>Terms of Service  </div>
+                <div style={headerStyle}>Privacy Policy  </div>
                 <div style={linkStyle}><a href="./../assets/MSHMIS_privacy_policy.pdf">Pdf version</a></div>
                 <br />
                 <div style={titleStyle}>Michigan State Homeless Management Information System (MSHMIS) Privacy Notice</div>

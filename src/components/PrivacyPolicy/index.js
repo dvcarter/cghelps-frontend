@@ -20,7 +20,7 @@ var divSty2 = {
 const PrivacyPolicy = () => {
   return (
         <div style={divSty}>
-                <div style={divSty2}> Privacy Policy </div>
+                <div style={divSty2}> Terms of Service </div>
 <strong>1. Terms</strong>
 <br />
 <ul><li>By accessing the website at <a href="http://www.commongroundhelps.org">http://www.commongroundhelps.org</a>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.
