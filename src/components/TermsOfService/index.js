@@ -15,7 +15,7 @@ const TermsOfService = () => {
         width: "100%",
         padding: "10px",
         marginTop: "200px",
-        marginBottom: "1200px"
+        marginBottom: "200px"
     }
 
     var linkStyle = {
