@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from "prop-types"
+import {HashLink as Link} from "react-router-hash-link"
 import styles from './About.css'
 //import OurStory from './ourstory.jpg'
 
@@ -29,9 +30,9 @@ const About = () => {
                                 Programs & Services
                             </div>
                         </a>
-                        <a href='/visit' className={styles.box}>
+                        <a href='/about-us/leadership' className={styles.box}>
                             <div className={styles.headline}>
-                                Locations
+                                Leadership
                             </div>
                         </a>
                     </div>
@@ -43,6 +44,16 @@ const About = () => {
                     <div className={styles.aboutDescriptor}>
                         To reach our administrative staff, please call 248-456-8150 or email <span style={{color: 'red'}}><strong><a href="mailto:akscommonground@commongroundhelps.org">askcommonground@commongroundhelps.org</a></strong></span>
                     </div>
+                </div>
+                <div className={styles.title}>
+                    <h5> Locations </h5>
+                </div>
+                <div className={styles.locationLinks} >
+                    <Link to="/visit#rcc" id={styles.locaLink}> Resource & Crisis Center > </Link>
+                    <Link to="/visit#sanct" id={styles.locaLink}> The Sanctuary > </Link>
+                    <Link to="/visit#admin" id={styles.locaLink}> Administration Building (Legal Clinic) > </Link>
+
+
                 </div>
                 <div className={styles.title}>
                     <h5 id="Careers">Careers </h5>

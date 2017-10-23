@@ -1,0 +1,412 @@
+@media only screen and  (max-width: 575px) {
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        height: 2400px;
+        width: 100%;
+        margin: -40px 0 400px 0;
+        /*background-color: #dfe3ee;*/
+    }
+    .holder h1 {
+        font-weight: 500;
+        color: #000;
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        text-align: left;
+        /*background-color:#f7f7f7;*/
+        height: 900px;
+        width: 100%;
+        padding: 40px 0 10px 0;
+        margin: 20px 15px 45px 15px;
+    }
+
+    .options:nth-child(2) {
+        align-items: center;
+        -webkit-align-items: center;
+        margin-bottom: 200px;
+    }
+
+    .options:nth-child(3) {
+        height: 900px;
+        width: 100%;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        margin-top: 50px;
+    }
+    .boardLeaders {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        width: 70%;
+        height: 20%;
+        padding: 10px;
+        margin: 0 0 5px 0;
+    }
+    .boardPosition {
+        height: auto;
+        width: 35%;
+    }
+    
+    .boardHold {
+        height: auto;
+        width: 65%;
+        margin: 0 10px 0 30px;
+    }
+    .subBoard {
+        padding: 20px;
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        height: 2400px;
+        width: 100%;
+        /*background-color: #dfe3ee;*/
+        margin: -50px 0 80px 0;
+    }
+    .holder h1 {
+        font-weight: 500;
+        color: #000;
+        margin: -70px 0 80px 0;
+    }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        text-align: left;
+        /*background-color: #f7f7f7; */
+        height: 700px;
+        width: 60%;
+        margin: 0 0 20px 0;
+    }
+    .options:nth-child(2) {
+        align-items: center;
+        -webkit-align-items: center;
+    }
+    .options:nth-child(3) {
+        margin: 240px 0 30px 0;
+        height: 900px;
+        width: 100%;
+        padding: 0 10px 0 60px;
+        flex-direction: column;
+    }
+    .boardLeaders {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        height: 20%;
+        padding: 10px;
+        margin: 0 0 20px 0;
+    }
+    .boardPosition {
+        height: auto;
+        width: 35%;
+        margin: 0 20px 0 0;
+    }
+    .boardHold {
+        height: auto;
+        width: 75%;
+        margin: 0 10px 0 30px;
+    }
+    .position {
+        height: auto;
+        width: 70%;
+    }
+    .name {
+        height: auto;
+        width: 100%;
+    }
+    .subBoard {
+        padding: 10px;
+        margin: 0 0 0 40px;
+        height: 80%;
+        width: 45%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        flex-wrap: wrap;
+        height: 1600px;
+        width: 100%;
+        margin: -60px 0 180px 0;
+        /*background-color: #dfe3ee; */
+    }
+    .holder h1 { 
+        font-weight: 500; 
+        color: #000;
+        margin: 0 0 40px 0;
+        }
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        /*background-color: #f7f7f7; */
+        height: 500px;
+        width: 60%;
+        font-size: 1.5vh;
+        margin: 0 0 20px 0;
+    }
+    .options:nth-child(2) {
+        align-items: center;
+        -webkit-align-items: center;
+    }
+    .options:nth-child(3) {
+        height: 900px;
+        width: 100%;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+    }
+    .boardLeaders {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        width: 70%;
+        height: 20%;
+        padding: 20px;
+        margin: 0 0 20px 0;
+    }
+    .boardPosition {
+        height: auto;
+        width: 25%;
+    }
+    .boardHold {
+        height: auto;
+        width: 75%;
+        margin: 0 10px 0 30px;
+    }
+    .position {
+        height: auto;
+        width: 70%;
+    }
+    .name {
+        height: auto;
+        width: 100%;
+    }
+    .subBoard {
+        padding: 10px;
+        margin: 0 0 0 40px;
+        height: 80%;
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .holder {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+            height: 1200px;
+            width: 100%;
+            /*background-color: #dfe3ee;*/
+            margin: -40px 0 180px 0;
+        }
+        .holder h1 {
+            font-weight: 500;
+            color: #000;
+        }
+        .options {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            -webkit-justify-content: center;
+            flex-direction: column;
+            /* background-color: #f7f7f7; */
+            height: 500px;
+            width: 80%;
+            margin: 0 0 20px 0;
+        }
+        .options:nth-child(2) {
+            align-items: center;
+        }
+        .options:nth-child(3) {
+            height: 900px;
+            width: 100%;
+            flex-direction: row;
+        }
+        .boardLeaders {
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            justify-content: center;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            width: 80%;
+            height: 20%;
+            margin: 0 0 0 80px;
+        }
+        .boardPosition {
+            height: auto;
+            width: 25%;
+        }
+        .boardHold {
+            height: auto;
+            width: 75%;
+            margin: 0 10px 0 30px;
+        }
+        .position {
+            height: auto;
+            width: 70%;
+        }
+        .name {
+            height: auto;
+            width: 100%;
+        }
+}
+@media only screen and (min-width: 1200px) {
+        .holder {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            -webkit-justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            -webkit-align-items: center;
+            height: 50%;
+            width: 100%;
+            /*background-color: #dfe3ee;*/
+        }
+    
+        .holder h1 { font-weight: 500; color: #000; }
+        .options {
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            justify-content: center;
+            -webkit-justify-content: center;
+           /* align-items: center;
+            -webkit-align-items: center;*/
+            /*background-color: #f7f7f7; */
+            height: 100%;
+            width: 100%;
+            /*border-bottom: 0.25px solid #dfe3ee;*/
+            font-weight: 200;
+            color: #000;
+            font-size: 1.5vh;
+            margin: 0 0 20px 0;
+        }
+
+        .subOptions {
+            display: flex;
+            flex-direction: row;
+            font-size: 250%;
+            width: 100%;
+        }
+        .boardLeaders {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 70%;
+            height: 10%;
+            padding: 20px;
+            margin: 0 0 20px 0;
+        }
+        .boardPosition {
+            height: auto;
+            width: 25%;
+        }
+        .boardHold {
+            height: auto;
+            width: 75%;
+            margin: 0 10px 0 30px;
+        }
+        .position {
+            height: auto;
+            width: 70%;
+            /*background-color: green;*/
+        }
+        .name {
+            height: auto;
+            width: 100%;
+        }
+
+        .subBoard {
+            padding: 10px;
+            margin: 0 0 0 40px;
+            height: 80%;
+            width: 45%;
+        }
+        .subBoard ul {
+            list-style: none;
+        }
+
+
+
+}
+.button {
+    background-color: #8b0000;
+    font-size: 100%;
+    font-weight: 200;
+    color: white;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #ab162b;
+}
+
+ul.leadership {
+    list-style: none;
+    height: 200px;
+    margin: 0 20px 300px -50px;
+}
+
+ul.leadership li {
+    padding: 5px;
+    font-weight: 100;
+}
+.subBoard ul {
+    list-style: none;
+}
+h1  {
+    color: #555;
+    font-weight: 500;
+}
