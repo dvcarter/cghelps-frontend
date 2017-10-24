@@ -691,7 +691,7 @@ _::-webkit-full-page-media, _:future, :root .optionsHolder {
    }
 
     .optionsHolder {
-        margin-top: -125px;
+        margin-top: -25px;
         height: 400px;
     }
     .options:first-child .image {
@@ -707,7 +707,10 @@ _::-webkit-full-page-media, _:future, :root .optionsHolder {
     .description {
         height: 50%;
     }
+    .subtitle {
 
+        font-weight: 600;
+    }
     @-moz-document url-prefix() {
         .bigHolder {
             margin-top: 60px;
@@ -752,7 +755,7 @@ _::-webkit-full-page-media, _:future, :root .optionsHolder {
         /*position: relative;
         margin-left: 70px;
         margin-right: 20px;*/
-        font-size: 1.25em;
+        font-size: 2em;
         margin-top: -5px;
 
     }
@@ -787,6 +790,10 @@ _::-webkit-full-page-media, _:future, :root .optionsHolder {
               font-size: 100%;
               font-weight: 800;
               color: #333;
+    }
+
+    .options:first-child {
+        margin-top: 10px;
     }
 
 }
