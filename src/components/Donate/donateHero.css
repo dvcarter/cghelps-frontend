@@ -43,6 +43,51 @@
       background-color: var(--colorSecondary);
       margin-bottom: 50px;
   }
+
+    @-moz-document url-prefix() {
+         .hero_4 {
+            height: 80%;
+            width: 100%;
+         }
+
+         .header_4 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+        }      
+        .wrapper_4 {
+            width: 100%;
+            height: 100%; 
+            margin: -45px 0 0 0;
+        }
+
+        .textBox_4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            margin: 10px 0 0 0;
+            padding: 20px;
+            color: #fff;
+            height: 100%;
+        }   
+        .donateH1 {
+            margin: 0 0 20px 0;
+            font-size: 150%;
+            color: #fff;
+        }
+    }   
+    li {
+        font-size: 12px;
+    }   
+    .button_4 {
+        margin-top: 15px;
+    }
+         
+
   .header_4 {
       height: 100%;
       margin-top: 0px;
@@ -54,26 +99,43 @@
       background-color: #482864;
       background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
   }
-  .wrapper_4 {
+
+    @-moz-document url-prefix() {
+        .heading_4 {
+            margin-top: 120px;
+        }
+
+        .heading_4 {
+            height: 100%;
+            margin-top: 120px;
+        }
+
+    }
+    .wrapper_4 {
       height: 100%;
       color: #fff;
-  }
+    }
 
        .textBox_4 {
+        height: 100%;
         text-align: left;
         margin: 50px 0 0 0;
         padding: 10px;
         color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     } 
 
-  .lowerTitleHolder_4 {
-      padding: 0 20px 0 20px;
-      font-size: 0.75em;
-  }
-  .donateH1 {
-      color: #fff;
-  }
-  .button_4 {
+    .lowerTitleHolder_4 {
+          padding: 0 20px 0 20px;
+        font-size: 0.75em;
+    }
+    .donateH1 {
+        color: #fff;
+    }
+    .button_4 {
          white-space: nowrap;
         width: 200px;
         margin-left: 30px;
@@ -87,12 +149,12 @@
         font-size: 1.25vh;
         font-weight: bold;
         transition: background-color 0.5s ease;
- }
+    }
 
-.button_4:hover {
+    .button_4:hover {
         color: #fff;
         background-color: #8b0000;
-}
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .hero_4 {
@@ -115,7 +177,7 @@
     .wrapper_4 {
         width: 50%;
         height: 52.5vh; 
-        margin: -45px 0 0 0;
+        margin: 45px 0 0 0;
     }   
     .heading_4 {
         /*margin: 270px 0 0 0;*/
@@ -131,18 +193,23 @@
         color: #fff;
     }   
     .textBox_4 {
+        height: 100%;
+        width: 100%;
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
         color: #fff;
     }   
     .donateH1 {
-        margin: 0 0 0 40px;
+        margin: 0 0 10px 40px;
         font-size: 150%;
         color: #fff;
-    }   
+    }  
     li {
         font-size: 12px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        font-size: 80%;
     }   
     .button_4 {
         margin-top: 15px;
@@ -157,8 +224,8 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
-        width: 800px;
+        height: 500px;
+        width: 100%;
     }
         .header_4 {
         display: flex;
@@ -170,7 +237,7 @@
     .wrapper_4 {
         width: 40%;
         height: 100%; 
-        margin: -45px 0 0 0;
+        margin: 25px 0 0 0;
     }   
     .heading_4 {
         /*margin: 270px 0 0 0;*/
@@ -186,6 +253,7 @@
         color: #fff;
     }   
     .textBox_4 {
+        height: 100%;
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -197,6 +265,7 @@
     }   
     li {
         font-size: 12px;
+        margin-left: 10px;
     }   
     .button_4 {
         margin-top:15px;
@@ -223,7 +292,7 @@
     .wrapper_4 {
         width: 40%;
         height: 52.5vh; 
-        margin: -45px 0 0 0;
+        margin: 45px 0 0 0;
     }   
     .heading_4 {
         /*margin: 270px 0 0 0;*/
@@ -244,7 +313,7 @@
         padding: 20px;
     }   
     .donateH1 {
-        margin: 0 0 0 40px;
+        margin: 0 0 -10px 40px;
         font-size: 150%;
         color: #fff;
     }   

@@ -645,7 +645,14 @@
         color: #333;
         font-weight: 300;
     } 
-
+        @-moz-document url-prefix() {
+            .title {
+                text-align: center;
+                width: 100%;
+                margin-top: -20px;
+                margin-bottom: 100px;
+            }
+        }
         .subtitle {
             font-size: 275%;
         }
@@ -687,6 +694,20 @@
             font-size: 1vh;
             border-bottom: 0.25px solid #dfe3ee;
         }
+        @-moz-document url-prefix() {
+            .optionsHolder {
+                margin-top: -80px;
+                height: 300px;
+                margin-bottom: 100px;
+            }
+            .options {
+                height: 100%;
+            }
+            .newLine {
+                margin: 0 0 0 0;
+            }
+        }
+
         /* safari 9 hack */
         _::-webkit-:not(:root:root), .help {
             height: 1250px;

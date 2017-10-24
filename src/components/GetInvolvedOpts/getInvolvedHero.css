@@ -196,7 +196,7 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 600px;
+        height: 500px;
         width: 100%;
     }
         .header {
@@ -215,7 +215,7 @@
 
     .wrapper {
         width: 40%;
-        height: 52.5vh; 
+        height: 450px;
         margin: -45px 0 0 0;
     }   
     .heading {
@@ -243,10 +243,10 @@
         color: #fff;
     }   
     h1 {
-        margin: 0 0 0 40px;
-        font-size: 150%;
+        margin: 0 0 -10px 40px;
     }
      .purpleTitle {
+        margin: 20px 0 -10px 0;
         font-size: 150%;
         font-weight: 600;
     }

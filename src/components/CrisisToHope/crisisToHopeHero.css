@@ -195,7 +195,7 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
+        height: 500px;
         width: 100%;
     }
         .header {
@@ -207,8 +207,8 @@
     }   
     .wrapper {
         width: 40%;
-        height: 52.5vh; 
-        margin: -45px 0 0 0;
+        height: 450px; 
+        margin: 45px 0 0 0;
     }   
     .heading {
         /*margin: 270px 0 0 0;*/
@@ -224,8 +224,9 @@
         color: #fff;
     }   
     .textBox {
+        height: 100%;
         text-align: left;
-        margin: 15px 0 0 0;
+        margin: 50px 0 0 0;
         padding: 10px;
     }   
     h1 {

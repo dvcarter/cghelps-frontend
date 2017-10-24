@@ -117,8 +117,8 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
-        width: 800px;
+        height: 450px;
+        width: 100%;
     }
 
       .header {

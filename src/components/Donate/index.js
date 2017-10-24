@@ -20,7 +20,7 @@ class Donate extends Component {
                                 <div className={ sty.heading_4 }>
                                         <div className={sty.textBox_4}>
                                             <h1 className={sty.donateH1}> Donate </h1>
-                                            <ul><em> Your gift can help us:</em>
+                                            <ul className={sty.donateUl}><em> Your gift can help us:</em>
                                                 <li>
                                                     Expand the hours of hour Text and Chat Helpline services
                                                 </li>
