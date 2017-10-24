@@ -7,7 +7,7 @@
 @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
 }
 
-.wrapper3 {
+.wrapper {
 /*  display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -30,28 +30,9 @@
   }
 }*/
 @media only screen and (max-width:575px) {
-.body {
-      & a { 
-          color: var(--colorPrimary);
-          transition: all 0.2s;
-          text-decoration: none;
-          border-bottom: 1px solid transparent;
-          
-          &:hover {
-              opacity: 1;
-              color: color(var(--colorPrimary) l(- 5%));
-              border-bottom-color: var(--colorPrimary);
-          }   
-      }
-
-      /* handy for content */
-      & img {
-          max-width: 100%;
-      }
-  }
-
-  .hero3 {
-      height: 50vh;
+  .hero {
+      width: 100%;
+      height: 60vh;
       display: flex;
       display: -webkit-flex;
       justify-content: center;
@@ -60,45 +41,46 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-  .heading3 {
+  .heading {
       margin: 225px 0 0 0;
       font-size: 1.25em;
       color: #fff;
       background-color: #482864;
   }
-    .textBox3 {
+    .textBox {
         color: white;
     }
-  .lowerTitleHolder3 {
+  .lowerTitleHolder {
       padding: 0 20px 0 20px;
       font-size: 0.75em;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .hero3 {
+    .hero {
         display: flex;
         display: -webkit-flex;
         justify-content: right;
         -webkit-justify-content: right;
         margin: 0 auto;
         /*height:400px; */
+        height: 60vh;
         width: 100%;
         background-color: var(--colorSecondary);
     }
-        .header3 {
+        .header {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper3 {
+    .wrapper {
         width: 50%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }  
 
-      .heading3 {
+      .heading {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -109,7 +91,7 @@
         color: #fff;
         background-color: #482864;
     }
-    .textBox3 {
+    .textBox {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -118,41 +100,41 @@
         font-size: 60%;
         color: #fff;
     }
-      .purpleTitle3 {
+      .purpleTitle {
         font-size: 175%;
         font-weight: 500;
     }
-    .button3 {
+    .button {
         align-self: flex-end;
     } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .hero3 {
+    .hero {
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
-        width: 800px;
+        height: 450px;
+        width: 100%;
     }
 
-      .header3 {
+      .header {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper3 {
+    .wrapper {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: flex-start;
     }
-    .heading3 {
+    .heading {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -162,7 +144,7 @@
         color: #fff;
         background-color: #482864;
     }
-    .textBox3 {
+    .textBox {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -171,7 +153,7 @@
         font-size: 50%;
         color: #fff;
     }
-      .purpleTitle3 {
+      .purpleTitle {
         font-size: 175%;
         font-weight: 500;
     }
@@ -179,7 +161,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
 
-    .hero3 {
+    .hero {
     margin: 0 auto;
     height: 65vh;
     width: 85vw;
@@ -187,20 +169,20 @@
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
     }
-      .header3 {
+      .header {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper3 {
+    .wrapper {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: flex-start;
     }
-    .heading3 {
+    .heading {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -210,7 +192,7 @@
         color: #fff;
         background-color: #482864;
     }
-    .textBox3 {
+    .textBox {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -219,24 +201,24 @@
         font-size: 60%;
         color: #fff;
     }
-      .purpleTitle3 {
+      .purpleTitle {
         font-size: 175%;
         font-weight: 500;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
    /*.hero {
         margin: 0 auto;
         height: 55vh;
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-   .hero3 { 
+   .hero { 
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
-        width: 75vw; 
+        width: 75vw;
         background-color: var(--colorSecondary);
     }
 
@@ -248,22 +230,33 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .header3 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+    .header {
         width: 100%;
         height: 100%;
-    }
-    .wrapper3 {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: left;
+  -webkit-justify-content: left;
+  padding: 5rem 0;
+  padding: 10vh 0;
+  text-align: center;
+  /*background: linear-gradient(
+    to bottom,
+    var(--colorPrimaryDark),
+    color(var(--colorPrimary) a(0.2))
+  );*/
+}
+    .wrapper {
         width: 100%;
         height: 100%; 
     }
-    .wrapper3  {
+    .wrapper  {
         display: flex;
         align-items: flex-start;
     }
-    .heading3 {
+    .heading {
         /*margin: 270px 0 0 0;*/
         text-align: left;
         display: flex;
@@ -271,13 +264,16 @@
         align-items: flex-start;
         width: 40%;
         height: 25%;
+        height: 7.5em;
+        margin-top: 50px;
+        font-size: 80%;
         color: #fff ;
         background-color: #482864;
     }
-    div.heading3 {
+    div.heading {
         color: #fff;
     }
-    .textBox3 {
+    .textBox {
         height: 100%;
         width: 100%;
         text-align: left;
@@ -285,14 +281,14 @@
         padding: 20px;
         font-size: 80%;
     }
-    .purpleTitle3 {
+    .purpleTitle {
         font-size: 175%;
         font-weight: 500;
     }
-    .lowerTitleHolder3 {
+    .lowerTitleHolder {
        /* padding: 0 250px 0 250px;*/
     }
-    .button3 {
+    .button {
         align-self: flex-end;
     }
 
@@ -300,7 +296,7 @@
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) {
-      .hero3 {
+      .hero {
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -313,9 +309,7 @@
 }
 
 
-.header3 {
-  height: 100%;
-  width: 100%;
+.header {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -332,66 +326,7 @@
   );*/
 }
 
-.heading3, .lowerTitle3 {
- color: var(--colorNeutralLight);
-  text-shadow:
-    0 0 6px var(--colorNeutralDark),
-    0 0 2px var(--colorNeutralDark)
-  ;
+.heading, .lowerTitle {
   letter-spacing: 1px;
 }
 
-.privacyHeading3 {
-    white-space: wrap;
-    margin: 20px 0 -300px 0;
-    color: black;
-    letter-spacing: 1px;
-}
-.cta {
-  margin-top: 2rem;
-}
-
-.pageContent {
-  margin: 1rem 0;
-}
-
-.body {
-  & a {
-    color: var(--colorPrimary);
-    transition: all 0.2s;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      opacity: 1;
-      color: color(var(--colorPrimary) l(- 5%));
-      border-bottom-color: var(--colorPrimary);
-    }
-  }
-
-  /* handy for content */
-  & img {
-    max-width: 100%;
-  }
-}
-
-.button3 {
-         white-space: nowrap;
-        width: 200px;
-        margin-left: 30px;
-        border: none;
-        border-radius: 8px;
-        background-color: #fff;
-        color: #8b0000;
-        padding: 12px 40px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1.25vh;
-        font-weight: bold;
-        transition: background-color 0.5s ease;
- }
-
-.button3:hover {
-        color: #fff;
-        background-color: #8b0000;
-}
