@@ -48,7 +48,7 @@ const About = () => {
                 <div className={styles.title}>
                     <h5> Locations </h5>
                 </div>
-                <div className={styles.locationLinks} >
+                <div className={styles.locationLinks} id="Careers">
                     <Link to="/visit#rcc" id={styles.locaLink}> Resource & Crisis Center > </Link>
                     <Link to="/visit#sanct" id={styles.locaLink}> The Sanctuary > </Link>
                     <Link to="/visit#admin" id={styles.locaLink}> Administration Building (Legal Clinic) > </Link>
@@ -56,7 +56,7 @@ const About = () => {
 
                 </div>
                 <div className={styles.title}>
-                    <h5 id="Careers">Careers </h5>
+                    <h5>Careers </h5>
                 </div>
                 <div className={styles.aboutText}>
                         Want to help people move from crisis to hope? Join our team at Common Ground. In addition to

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Link } from "react-router-dom"
+import {HashLink} from "react-router-hash-link"
 import PropTypes from "prop-types"
 import Svg from "react-svg-inline"
 import Logo from "./cg-logo.svg"
@@ -182,9 +183,9 @@ export default class Header extends Component {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to='/about-us/#Careers' className={styles.link}>
+                                                    <HashLink to='/about-us/#Careers' className={styles.link}>
                                                         {"Careers"}
-                                                    </Link>
+                                                    </HashLink>
                                                 </li>
                                                 <li>
                                                     <Link to='/about-us/governance' className={styles.link}>
