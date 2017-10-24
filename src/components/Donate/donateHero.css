@@ -70,7 +70,7 @@
       padding: 0 20px 0 20px;
       font-size: 0.75em;
   }
-  h1 {
+  .donateH1 {
       color: #fff;
   }
   .button_4 {
@@ -136,7 +136,7 @@
         padding: 20px;
         color: #fff;
     }   
-    h1 {
+    .donateH1 {
         margin: 0 0 0 40px;
         font-size: 150%;
         color: #fff;
@@ -190,7 +190,7 @@
         margin: 40px 0 0 0;
         padding: 20px;
     }   
-    h1 {
+    .donateH1 {
         margin: 0 0 10px 40px;
         font-size: 150%;
         color: #fff;
@@ -243,7 +243,7 @@
         margin: 40px 0 0 0;
         padding: 20px;
     }   
-    h1 {
+    .donateH1 {
         margin: 0 0 0 40px;
         font-size: 150%;
         color: #fff;
@@ -315,7 +315,7 @@
         margin: 40px 0 0 0;
         padding: 20px;
     }
-    h1 {
+    .donateH1 {
         margin: 0 0 0 40px;
         color: #fff;
     }

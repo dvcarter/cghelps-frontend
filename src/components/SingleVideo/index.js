@@ -2,11 +2,12 @@ import React, {Component} from 'react'
 import PropTypes from "prop-types"
 import styles from "./SingleVideo.css"
 import ytSty from "./SingleYouTube.css"
+import MediaQuery from "react-responsive"
 
 const SingleVideo =({getVideo}) => {
     return (
             <div className={styles.divHolder_0_2_1_0}>
-                <div className={styles.title_0_2_1_0}> Success Stories </div>
+                <div className={styles.title_0_2_1_0}> {getVideo.title} </div>
                 <div className={styles.videoGroup_0_2_1_0}>
                     <div className={styles.video_0_2_1_0}>
                         <YouTube className={styles.videoPt_0_2_1_0} video={getVideo.video} autoplay="0" rel="0" modest="1" fs="1" />
@@ -40,12 +41,12 @@ class YouTube extends Component {
 
        return (
                <div className={ytSty.container_video_0_2_1_0}>
-                <iframe className={ytSty.player_video_0_2_1_0} type="text/html" width="600em"
-                        height="500em"
-                        src={videoSrc}
-                        frameBorder="0"
-                        allowFullScreen
-                        />  
+                        <iframe className={ytSty.player_video_0_2_1_0} type="text/html" width="100%"
+                            height="100%"
+                            src={videoSrc}
+                            frameBorder="0"
+                            allowFullScreen
+                        />
                 </div>      
         )           
     }       

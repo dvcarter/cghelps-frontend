@@ -9,7 +9,57 @@
             width: 100%;
             /*margin-bottom: 400px;*/
     }       
+    
+      .title_0_2_1_0 {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        text-align: center;
+        height: 30px;
+        width: 90%;
+        font-size: 275%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
+    }   
+    
+     .videoGroup_0_2_1_0 {
+        width: 100%;
+        height: 100%;
+    }   
+    .video_0_2_1_0 {
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
+    .videoPt_0_2_1_0 {
+        width: 40%;
+        height: auto;
+        padding: 20px;
+        margin: 0 0px 0 0px;
+    }
+    .videoDescription_0_2_1_0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        margin: 0 0px 0 0px;
+        font-size: 125%;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .divHolder_0_2_1_0 {
@@ -21,7 +71,58 @@
             height: auto;
             width: 100%;
             /*margin-bottom: 400px;*/
-    }       
+    }      
+
+    .title_0_2_1_0 {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        text-align: center;
+        height: 30px;
+        width: 90%;
+        font-size: 275%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
+    } 
+
+     .videoGroup_0_2_1_0 {
+        width: 100%;
+        height: 100%;
+    }
+    .video_0_2_1_0 {
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+     .videoPt_0_2_1_0 {
+        width: 40%;
+        height: auto;
+        padding: 20px;
+        margin: 0 0px 0 0px;
+    }
+    .videoDescription_0_2_1_0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        margin: 0 0px 0 0px;
+        font-size: 125%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -34,7 +135,58 @@
             height: auto;
             width: 100%;
             /*margin-bottom: 400px;*/
-    }       
+    }      
+
+    .title_0_2_1_0 {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        text-align: center;
+        height: 30px;
+        width: 90%;
+        font-size: 275%;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
+    }
+
+    .videoGroup_0_2_1_0 {
+        width: 100%;
+        height: 100%;
+    }
+    .video_0_2_1_0 {
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+     .videoPt_0_2_1_0 {
+        width: 40%;
+        height: auto;
+        padding: 20px;
+        margin: 0 0px 0 40px;
+    }
+    .videoDescription_0_2_1_0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 100%;
+        padding: 30px;
+        margin: 0 0px 0 40px;
+        font-size: 125%;
+    } 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .divHolder_0_2_1_0 {
@@ -46,6 +198,56 @@
             height: auto;
             width: 100%;
             /*margin-bottom: 400px;*/
+    }
+    
+     .title_0_2_1_0 {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        text-align: center;
+        height: 30px;
+        width: 90%;
+        font-size: 275%;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
+    }
+
+    .videoGroup_0_2_1_0 {
+        width: 100%;
+        height: 100%;
+    }
+    .video_0_2_1_0 {
+        width:100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .videoPt_0_2_1_0 {
+        width: 40%;
+        height: auto;
+        padding: 20px;
+        margin: 0 0px 0 40px;
+    }
+    .videoDescription_0_2_1_0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 100%;
+        height: 500px;
+        margin: 0 0px 0 40px;
+        font-size: 150%;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -92,8 +294,10 @@
         flex-direction: row;
     }
     .videoPt_0_2_1_0 {
+        width: 50%;
         height: auto;
-        margin: 0 0 0 100px;
+        padding: 20px;
+        margin: 0 60px 0 40px;
     }
     .videoDescription_0_2_1_0 {
         display: flex;
@@ -102,7 +306,7 @@
         width: 45%;
         height: 100%;
         height: 500px;
-        margin: 0 0 0 100px;
+        margin: 0 0px 0 40px;
         font-size: 150%;
     }
     
