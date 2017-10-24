@@ -7,7 +7,7 @@
 @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
 }
 
-.wrapper {
+.wrapper3 {
 /*  display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   }
 }*/
 @media only screen and (max-width:575px) {
-  .hero {
+  .hero3 {
       width: 100%;
       height: 60vh;
       display: flex;
@@ -41,22 +41,22 @@
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
   }
-  .heading {
+  .heading3 {
       margin: 225px 0 0 0;
       font-size: 1.25em;
       color: #fff;
       background-color: #482864;
   }
-    .textBox {
+    .textBox3 {
         color: white;
     }
-  .lowerTitleHolder {
+  .lowerTitleHolder3 {
       padding: 0 20px 0 20px;
       font-size: 0.75em;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .hero {
+    .hero3 {
         display: flex;
         display: -webkit-flex;
         justify-content: right;
@@ -67,20 +67,20 @@
         width: 100%;
         background-color: var(--colorSecondary);
     }
-        .header {
+        .header3 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }   
-    .wrapper {
+    .wrapper3 {
         width: 50%;
         height: 52.5vh; 
         margin: -45px 0 0 0;
     }  
 
-      .heading {
+      .heading3 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -91,7 +91,7 @@
         color: #fff;
         background-color: #482864;
     }
-    .textBox {
+    .textBox3 {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -100,17 +100,17 @@
         font-size: 60%;
         color: #fff;
     }
-      .purpleTitle {
+      .purpleTitle3 {
         font-size: 175%;
         font-weight: 500;
     }
-    .button {
+    .button3 {
         align-self: flex-end;
     } 
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .hero {
+    .hero3 {
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
@@ -121,20 +121,20 @@
         width: 100%;
     }
 
-      .header {
+      .header3 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper {
+    .wrapper3 {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: flex-start;
     }
-    .heading {
+    .heading3 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -144,7 +144,7 @@
         color: #fff;
         background-color: #482864;
     }
-    .textBox {
+    .textBox3 {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -153,7 +153,7 @@
         font-size: 50%;
         color: #fff;
     }
-      .purpleTitle {
+      .purpleTitle3 {
         font-size: 175%;
         font-weight: 500;
     }
@@ -161,7 +161,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
 
-    .hero {
+    .hero3 {
     margin: 0 auto;
     height: 65vh;
     width: 85vw;
@@ -169,20 +169,20 @@
     background-color: var(--colorSecondary);
     /* fallback when there is no hero image */
     }
-      .header {
+      .header3 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
         height: 100%;
     }
-    .wrapper {
+    .wrapper3 {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: flex-start;
     }
-    .heading {
+    .heading3 {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
@@ -192,7 +192,7 @@
         color: #fff;
         background-color: #482864;
     }
-    .textBox {
+    .textBox3 {
           height: 100%;
         width: 100%;
         text-align: left;
@@ -201,7 +201,7 @@
         font-size: 60%;
         color: #fff;
     }
-      .purpleTitle {
+      .purpleTitle3 {
         font-size: 175%;
         font-weight: 500;
     }
@@ -214,7 +214,7 @@
         width: 55vw;
         background-color: var(--colorSecondary);
     }*/
-   .hero { 
+   .hero3 { 
         margin: 0 auto;
         margin: 0 50px 0 50px;
         height: 70vh;
@@ -230,7 +230,7 @@
         width: 100%;
         background-color: yellow;
     }*/
-    .header {
+    .header3 {
         width: 100%;
         height: 100%;
   display: flex;
@@ -248,15 +248,15 @@
     color(var(--colorPrimary) a(0.2))
   );*/
 }
-    .wrapper {
+    .wrapper3 {
         width: 100%;
         height: 100%; 
     }
-    .wrapper  {
+    .wrapper3  {
         display: flex;
         align-items: flex-start;
     }
-    .heading {
+    .heading3 {
         /*margin: 270px 0 0 0;*/
         text-align: left;
         display: flex;
@@ -270,10 +270,10 @@
         color: #fff ;
         background-color: #482864;
     }
-    div.heading {
+    div.heading3 {
         color: #fff;
     }
-    .textBox {
+    .textBox3 {
         height: 100%;
         width: 100%;
         text-align: left;
@@ -281,14 +281,14 @@
         padding: 20px;
         font-size: 80%;
     }
-    .purpleTitle {
+    .purpleTitle3 {
         font-size: 175%;
         font-weight: 500;
     }
-    .lowerTitleHolder {
+    .lowerTitleHolder3 {
        /* padding: 0 250px 0 250px;*/
     }
-    .button {
+    .button3 {
         align-self: flex-end;
     }
 
