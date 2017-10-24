@@ -128,7 +128,7 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
+        height: 500px;
         width: 100%;
     }
 
@@ -157,7 +157,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 40%;
+        height: 30%;
         width: 40%;
         color: #fff;
         background-color: #482864;

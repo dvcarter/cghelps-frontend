@@ -644,6 +644,16 @@
          .options:nth-child(3) .contactInfo{
             display: none;
          } 
+
+        _::-webkit-full-page-media, _:future, :root .divHolder_0_2 {
+              height: 600px;  
+       }
+
+        _::-webkit-full-page-media, _:future, :root .videoGroup_0_2 {
+                width: 20em;
+
+        }
+
 }
 .availability {
     padding: 20px;

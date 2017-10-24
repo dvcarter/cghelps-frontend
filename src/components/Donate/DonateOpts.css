@@ -710,8 +710,21 @@
 
         /* safari 9 hack */
         _::-webkit-:not(:root:root), .help {
-            height: 1250px;
+            height: 900px;
         }
+         _::-webkit-full-page-media, _:future, :root .help {
+                         } 
+         _::-webkit-full-page-media, _:future, :root .optionsHolder {
+                         } 
+
+
+         _::-webkit-full-page-media, _:future, :root .newLine {
+                     height: 1px;
+                     background-color: #dfe3ee;
+                     display: block;
+                     margin-top: -10px;
+                     margin-bottom: -10px;
+                         } 
         .glyphs {
             display: flex;
             flex-direction: center;

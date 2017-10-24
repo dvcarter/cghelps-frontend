@@ -16,6 +16,10 @@
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
     }
+
+ _::-webkit-full-page-media, _:future, :root .holder {
+             height: 400px;
+                 } 
     h1 {
         text-align: center;
     }

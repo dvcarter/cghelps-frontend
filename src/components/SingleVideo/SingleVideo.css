@@ -310,5 +310,7 @@
         font-size: 150%;
     }
     
-
+    _::-webkit-full-page-media, _:future, :root .divHolder_0_2_1_0 {
+            height:675px;
+       }
 }

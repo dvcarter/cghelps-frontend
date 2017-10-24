@@ -91,6 +91,9 @@
         color: #fff;
         background-color: #482864;
     }
+    _::-webkit-full-page-media, _:future, :root .heading {
+        height: 17%;
+    }      
     .textBox {
           height: 100%;
         width: 100%;
@@ -117,7 +120,7 @@
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 450px;
+        height: 500px;
         width: 100%;
     }
 
@@ -139,11 +142,16 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 40%;
+        height: 30%;
         width: 40%;
         color: #fff;
         background-color: #482864;
     }
+
+     _::-webkit-full-page-media, _:future, :root .heading {
+                 height: 29%;
+    } 
+
     .textBox {
           height: 100%;
         width: 100%;
@@ -192,6 +200,10 @@
         color: #fff;
         background-color: #482864;
     }
+
+     _::-webkit-full-page-media, _:future, :root .heading {
+                 height: 20%;
+                     } 
     .textBox {
           height: 100%;
         width: 100%;
