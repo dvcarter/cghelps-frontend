@@ -16,8 +16,8 @@ export default class YouTube extends Component {
 
        return (
                <div className="container_video">
-                <iframe className="player" type="text/html" width="300em"
-                        height="300em"
+                <iframe className="player" type="text/html" width="290em"
+                        height="290em"
                         src={videoSrc}
                         frameBorder="0"
                         allowFullScreen

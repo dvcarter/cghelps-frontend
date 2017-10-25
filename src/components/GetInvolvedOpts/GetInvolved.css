@@ -91,6 +91,14 @@
         display: inline-block;
         font-size: 0.25vh;
     }
+
+     _::-webkit-full-page-media, _:future, :root .holder {
+             height: 2000px;
+                 }
+
+     _::-webkit-full-page-media, _:future, :root .title {
+             margin-bottom: -140px;
+                 }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
        .superHolder {
@@ -158,6 +166,7 @@
         margin: 10px 15px 25px 15px;
         border-bottom: 0.25px solid #dfe3ee;
     }
+
     .imgs {
         width: 60%;
         height: auto;
@@ -233,6 +242,21 @@
         margin: 30px 0 180px 0;
         /*background-color: #dfe3ee; */
     }
+     _::-webkit-full-page-media, _:future, :root .holder {;
+        wiidth: 100px;       
+
+         }
+     _::-webkit-full-page-media, _:future, :root .description {
+        width: 70%; 
+    }
+
+     _::-webkit-full-page-media, _:future, :root .button {
+             width: 15em;
+             margin: 0 0 0 -200px;
+             font-size: .75em;
+     
+    }
+
     .options {
         display: flex;
         display: -webkit-flex;

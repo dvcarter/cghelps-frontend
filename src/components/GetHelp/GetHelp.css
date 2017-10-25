@@ -1,5 +1,5 @@
 @media only screen and  (max-width: 575px) {
-    .superHolder {
+    .superHolder1 {
         display: flex;/*
         justify-content: center;
         align-items: center;*/
@@ -460,7 +460,7 @@
         /*background-color: #dfe3ee;*/
     }
     _::-webkit-full-page-media, _:future, :root .superHolder1 { 
-        height: 1200px;
+        /*height: 1200px;*/
     }
     _::-webkit-full-page-media, _:future, :root .holder { 
     }
@@ -480,6 +480,7 @@
         text-align: left;
         /* background-color: #f7f7f7;*/
         /*height: 75%;*/
+        height: auto;
         width: 100%;
         /*margin: 5px 15px -100px 15px;*/
         padding: 20px;
@@ -510,9 +511,11 @@
     }
     
     _::-webkit-full-page-media, _:future, :root .superHolder1 {
-        height: auto;
+        height: calc(100% - 550px);
+        margin-bottom:  500px;
     }
     _::-webkit-full-page-media, _:future, :root .holder {
+       margin-bottom: calc(100%-500px); 
     }
     _::-webkit-full-page-media, _:future, :root .holdMoreText {
    }
@@ -520,6 +523,10 @@
     .moreText {
         width: 150%;
         height: auto;
+    }
+
+    _::-webkit-full-page-media, _:future, :root .moreText {
+        margin-bottom: 200px;
     }
     .holder:nth-child(1):nth-child(1) a.onlybtn {
         white-space: nowrap;

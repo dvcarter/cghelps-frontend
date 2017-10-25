@@ -481,10 +481,19 @@
           margin-top: 100px;
       }
       .video_0_2 {
-          margin: 0 40px 0 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 0 30px 0 30px;
           width: 33%;
           height: 100%;
-          background-color: blue;
+          border: 0.5px solid #dfe3ee;
+          border-radius: 5px;
+      }
+      .video_0_2_ {
+          margin-top: 20px;
+          margin-bottom: -45px;
       }
         .availHolder {
             display: flex;
