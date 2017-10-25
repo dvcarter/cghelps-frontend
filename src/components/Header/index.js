@@ -113,6 +113,11 @@ export default class Header extends Component {
                                                     </Link>
                                                 </li>
                                                 <li>
+                                                    <Link to='/get-involved/fundraising' className={styles.link}>
+                                                        {"Fundraising"}
+                                                    </Link>
+                                                </li>
+                                                <li>
                                                     <Link to='/get-involved/sponsorships' className={styles.link}>
                                                         {"Sponsorships"}
                                                     </Link>
