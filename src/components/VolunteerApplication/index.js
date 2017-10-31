@@ -109,7 +109,7 @@ class VolunteerApplication extends Component {
 
     sendFormData(json) {
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open('POST', 'https://formspree.io/dcarter@commongroundhelps.org', true);
+        xmlhttp.open('POST', 'https://formspree.io/dcarter@cghelps.org', true);
         xmlhttp.setRequestHeader('Accept', 'application/json');
         xmlhttp.setRequestHeader('Content-Type', 'application/json');
 
@@ -411,7 +411,7 @@ class VolunteerApplication extends Component {
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
-                            value="telephone"
+                            value="yes"
                             onChange={this.handleChange.bind(this, 'telephoneInterest')}
                         />
                         <label>Telephone</label>
@@ -422,7 +422,7 @@ class VolunteerApplication extends Component {
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
-                            value="chat" 
+                            value="yes" 
                             onChange={this.handleChange.bind(this, 'chatInterest')}
                         />
                         <label>Chat</label>
@@ -433,7 +433,7 @@ class VolunteerApplication extends Component {
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
-                            value="text" 
+                            value="yes" 
                             onChange={this.handleChange.bind(this, 'textInterest')}
                         />
                         <label>Text</label>
@@ -444,7 +444,7 @@ class VolunteerApplication extends Component {
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
-                            value="face-to-face"
+                            value="yes"
                             onChange={this.handleChange.bind(this, 'faceTofaceInterest')}
                         />
                         <label>Face-to-Face</label>
