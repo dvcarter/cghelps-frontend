@@ -39,7 +39,7 @@ const Accreditation = () => {
         <div style={divStyle}>
             <div style={headerStyle}> Thank you! </div>
             <div>
-                <p> Thank you for expressing interest in joining our team! Someone should be in contact with you in the next free days in order to inform you of application's status </p>
+                <p> Thank you for expressing interest in joining our team! Someone should be in contact with you in the next few days in order to inform you of application's status </p>
             </div>
             <a style={accredStyle} href={"/"}>
                 <h4 style={thanksStyle}>Back to Home Page </h4>
