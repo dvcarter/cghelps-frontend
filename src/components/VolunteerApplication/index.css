@@ -76,3 +76,42 @@ input[type=text], input[type=email] {
     margin: 8px 0;
     box-sizing: border-box;
 }
+
+
+.buttonContact {
+        align-self: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #007acc;
+        border-radius: 8px;
+        color: #007acc;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 150%;    
+        width: 40%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }   
+
+    .buttonContact:hover {
+        background-color: #007acc;
+        color: #fff;
+    }   
+
+
+.alert_info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+}
+.alert_success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+.alert_danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}

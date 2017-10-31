@@ -726,11 +726,11 @@ class VolunteerApplication extends Component {
                         <p> This is a Hat </p>
                     </div>
                 }
-                <input type="submit" value="Send" />
+                <input type="submit" value="Send" className={styles.buttonContact}/>
                     
             </div>
                 { this.state.alert.show &&
-                    <div className={ styles.alert + 'alert-' + this.state.alert.type }>
+                    <div className={ styles.alert_danger }>
                     { this.state.alert.text }
                     </div>
                 }
