@@ -31,12 +31,6 @@ class VolunteerApplication extends Component {
             weekdayMorning: '',
             weekdayAfternoon: '',
             weekdayEvening: '',
-            telephoneInterest: '',
-            chatInterest: '',
-            textInterest: '',
-            faceTofaceInterest: '',
-
-            
             alert: {
                 show: false,
                 type: '',
@@ -65,7 +59,7 @@ class VolunteerApplication extends Component {
                 return;
             }
 
-    const json = JSON.stringify([{
+    const json = JSON.stringify({
         'First Name': this.state.firstName,
         'Last Name' : this.state.lastName,
         'Email': this.state.email,
@@ -97,7 +91,7 @@ class VolunteerApplication extends Component {
         'Interest in working in a face-to-face crisis support role': this.state.faceToFaceInterest,
         _subject: '[Common Ground] Message Received',
          _format: 'plain'
-         }] );
+         } );
 
 
 
