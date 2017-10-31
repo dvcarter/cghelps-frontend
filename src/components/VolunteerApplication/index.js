@@ -109,7 +109,7 @@ class VolunteerApplication extends Component {
 
     sendFormData(json) {
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open('POST', 'https://formspree.io/dcarter@cghelps.org', true);
+        xmlhttp.open('POST', 'https://formspree.io/xqpdkqom', true);
         xmlhttp.setRequestHeader('Accept', 'application/json');
         xmlhttp.setRequestHeader('Content-Type', 'application/json');
 
