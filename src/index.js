@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Router } from "react-router-dom";
 import { createBrowserHistory, createHashHistory } from 'history'
 import { Provider } from "react-redux";
 import './index.css';
 import App from './App';
 import {loadPosts} from "./postActions";
+import { push } from "react-router-redux"
 import configureStore from "./configureStore";
+import { ConnectedRouter } from "react-router-redux"
 
-
-const store = configureStore();
+export const store = configureStore();
 store.dispatch(loadPosts());
+store.dispatch(push("/"));
+
 
 const history = createHashHistory()
 

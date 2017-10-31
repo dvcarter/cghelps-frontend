@@ -8,7 +8,9 @@
         height: 100%;
         margin-top: 150px;
     }  
-     
+     _::-webkit-full-page-media, _:future, :root .superHolder {
+                      height: 2000px;
+                                       }
       .title {
         display: flex;
         display: -webkit-flex;
@@ -119,7 +121,9 @@
         margin-top: 250px;
     }  
 
-
+      _::-webkit-full-page-media, _:future, :root .superHolder {
+                                height: 2000px;
+                                                                       }  
      
       .title {
         display: flex;
@@ -229,6 +233,9 @@
         margin-top: 250px;
     }  
 
+      _::-webkit-full-page-media, _:future, :root .superHolder {
+                                height: 2000px;
+    }  
      
       .title {
         display: flex;
@@ -330,7 +337,11 @@
         height: 100%;
         margin-top: 250px;
     }   
-   
+  
+      _::-webkit-full-page-media, _:future, :root .superHolder {
+                                height: 2000px;
+    }  
+
       .title {
         display: flex;
         display: -webkit-flex;

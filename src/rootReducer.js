@@ -32,7 +32,7 @@ const rootReducer = combineReducers({
     aboutInfo: aboutUsReducer,
     videoInfo: videoReducer,
     faqInfo: faqReducer,
-    form: formReducer
+    form: formReducer,
 })
 
 export default rootReducer;

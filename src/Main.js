@@ -27,6 +27,7 @@ import Copyright from "./components/Copyright";
 import TermsOfService from "./components/TermsOfService";
 import Contact from "./components/Contact";
 import NoMatch from "./components/NoMatch";
+import ThankYou from "./components/ThankYou";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -121,6 +122,7 @@ class App extends Component {
                         <PropsRoute path="/copyright" component={Copyright} />
                         <PropsRoute path="/privacy-policy" component={TermsOfService} />
                         <PropsRoute path="/contact" component={Contact} />
+                        <PropsRoute path="/thank-you" component={ThankYou} />
                         <PropsRoute component={NoMatch} />
                     </Switch>
                     </ScrollToTop>

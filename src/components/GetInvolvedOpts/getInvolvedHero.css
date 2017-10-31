@@ -514,18 +514,23 @@
     .textBox {
         display: flex;
         align-items: flex-start;
+        justify-content: center;
         flex-direction: column;
         text-align: left;
-        margin: 40px 0 0 0;
+        margin: 100px 0 0 0;
         padding: 20px;
         height: 100%;
         width: 100%;
         color: #fff;
     }
-    .purpleTitle {
-        width: 100%;
+    .purpleTitle  {
+        width: 200px;
+        padding: 20px;
         font-size: 200%;
         font-weight: 600;
+    }
+    .purpleTitle p {
+        background-color: red;
     }
     .datePlacement {
         width: 100%;
