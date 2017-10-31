@@ -25,12 +25,12 @@ class VolunteerApplication extends Component {
             state: '',
             zipCode: '',
             phone: '',
-            felonyArea: '',
-            volunteerApply: '',
-            internshipApply: '', 
-            weekdayMorning: '',
-            weekdayAfternoon: '',
-            weekdayEvening: '',
+            felonyArea: 'no',
+            volunteerApply: 'no',
+            internshipApply: 'no', 
+            weekdayMorning: 'no',
+            weekdayAfternoon: 'no',
+            weekdayEvening: 'no',
             alert: {
                 show: false,
                 type: '',
@@ -74,8 +74,6 @@ class VolunteerApplication extends Component {
         'Weekday Morning': this.state.weekdayMorning,
         'Weekday Afternoon': this.state.weekdayAfternoon,
         'Weekday Evening': this.state.weekdayEvening,
-        'Personal or Professional knowledge': this.state.professionalKnowledge,
-        'Seeking Student, Community Service, or any other type of credit': this.state.credit,
         'Interest in working on Business Advancement and Donor relations': this.state.advancementWork,
         'Interest in working on Communications and Marketing': this.state.communicationsWork,
         'Interest in working on Community Outreach': this.state.outreachWork,
@@ -89,6 +87,30 @@ class VolunteerApplication extends Component {
         'Interest in working on online chat crisis line': this.state.chatInterest,
         'Interest in working on telephone based text crisis line': this.state.textInterest,
         'Interest in working in a face-to-face crisis support role': this.state.faceToFaceInterest,
+        'Personal or Professional knowledge': this.state.professionalKnowledge,
+        'Are you seeking student, community service, or any other credit?': this.state.creditValidation,
+        'Seeking Student, Community Service, or any other type of credit': this.state.credit,
+        'Why are you interested in doing crisis intervention at Common Ground?': this.state.motivation,
+        'Have you ever worked in crisis intervention or any type of counseling/therapy program?': this.state.counselingValidation,
+        'Please tell us when and where, and briefly describe the trainee program?': this.state.previousCounselingWork,
+        'Please briefly describe your primary reasons for applying to this program and tell us what you hope to gain': this.state.reasonsForApplying,
+        'Do you have particularly strong feelings about abortion?': this.state.abortionFeelings,
+        'Do you have particularly strong feelings about domestic violence?': this.state.domesticViolenceFeelings,
+        'Do you have particularly strong feelings about LGBTQ issues?': this.state.lGBTQFeelings,
+        'Do you have particularly strong feelings about religious issues?': this.state.religiousFeelings,
+        'Do you have particularly strong feelings about sexual assault?': this.state.sexualAssaultFeelings,
+        'Do you have particularly strong feelings about substance abuse?': this.state.substanceAbuseFeelings,
+        'Do you have particularly strong feelings about suicide?': this.state.suicideFeelings,
+        'Can you remain objective while interacting with someone who is currently facing any of these issues?': this.state.objectivityQuestion,
+        'Have you recently experienced a significant loss or trauma?': this.state.traumaQuestionYN,
+        'If yes, please describe.': this.state.traumaQuestion,
+        'Are tiy currently attending counseling/therapy?': this.state.attendingCounselingYN,
+        'If yes, have you discussed your potential involvement at Common Ground with your therapist?': this.state.attendingCounselingYN,
+        'What do you think would be easiest for you about working in crisis intervention?': this.state.easyCrisisIntervention,
+        'What do you think would be most difficult for you about working in crisis intervention?': this.state.hardCrisisIntervention,
+        'Crisis intervetion work can be stressful. What causes stress in your life, and how do you cope?': this.state.difficultQualities,
+        'What positive qualities do you bring to Common Ground?': this.state.positiveQualities,
+        'Please tell us about any volunteer experience and/or special skills you have to offer.': this.state.volunteerExperience,
         _subject: '[Common Ground] Message Received',
          _format: 'plain'
          } );
@@ -241,7 +263,7 @@ class VolunteerApplication extends Component {
                             name="Applyingposition"
                             component="input"
                             type="radio"
-                            value="true"
+                            value="yes"
                             onChange={this.handleChange.bind(this, 'volunteerApply')}
                         />
                         <label> Volunteer </label>
@@ -251,7 +273,7 @@ class VolunteerApplication extends Component {
                             name="Applyingposition"
                             component="input"
                             type="radio"
-                            value="true"
+                            value="yes"
                             onChange={this.handleChange.bind(this, 'internshipApply')}
                         />
                         <label> Internship </label>
@@ -456,11 +478,15 @@ class VolunteerApplication extends Component {
                     <p> Are you seeking student credit, community service credit, or any other type of 
                         credit in exchange for your volunteer efforts </p>
                         <div>
-                            <Field name="quidProQuoValidation" component="input" type="radio" value="no" />
+                            <Field name="quidProQuoValidation" component="input" type="radio" value="no" 
+                                onChange={this.handleChange.bind(this, "creditValidation")}
+                            />
                             <label> No </label>
                         </div>
                         <div>
-                            <Field name="quidProQuoValidation" component="input" type="radio" value="yes" />
+                            <Field name="quidProQuoValidation" component="input" type="radio" value="yes" 
+                                onChange={this.handleChange.bind(this, "creditValidation")}
+                            />
                             <label> Yes  <span> if yes, please explain</span> </label>
                         </div>
                         <Field name="quidProQuo" component="textarea" className={styles.boxWidth} 
@@ -483,22 +509,32 @@ class VolunteerApplication extends Component {
                     <p> Have you ever worked in crisis intervention or any type of counseling/therapy program
                     ?</p>
                     <div>
-                        <Field name="previousCounselingWork" component="input" type="radio" value="no" />
+                        <Field name="previousCounselingWork" component="input" type="radio" value="no" 
+                            onChange={this.handleChange.bind(this, 'counselingValidation')}
+                        />
                         <label> No </label>
                     </div>
                     <div>
-                        <Field name="previousCounselingWork" component="input" type="radio" value="yes" />
+                        <Field name="previousCounselingWork" component="input" type="radio" value="yes" 
+                            onChange={this.handleChange.bind(this, 'counselingValidation')}
+                        />
                         <label> Yes  If yes, please tell us when and where, briefly describe the 
                             trainee program </label>
                     </div>
                     <div>
-                        <Field name="previousCounselingWorkExplanation" component="textarea" className={styles.boxWidth} />
+                        <Field name="previousCounselingWorkExplanation" component="textarea" className={styles.boxWidth} 
+                            value={this.state.previousCounselingWork}
+                            onChange={this.handleChange.bind(this, 'previousCounselingWork')}
+                        />
                     </div>
                 </div>
                 <div>
                     <p> Please briefly summarize your primary reasons for applying to this program
                         and tell us what you hope to gain. </p>
-                    <Field name="reasonsForApplying" component="textarea" className={styles.boxWidth} />
+                    <Field name="reasonsForApplying" component="textarea" className={styles.boxWidth} 
+                        value={this.state.reasonsForApplying}
+                        onChange={this.handleChange.bind(this, 'reasonsForApplying')}    
+                    />
                 </div>
                 <div>
                     <p> Do you have particularly strong feelings about any of these issues? 
@@ -509,6 +545,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'abortionFeelings')}
                         />  
                         <label htmlFor="issueInterest"> Abortion </label>
                     </div>
@@ -518,6 +556,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'domesticViolenceFeeings')}
                         />
                         <label htmlFor="issueInterest"> Domestic Violence </label>
                     </div>
@@ -527,6 +567,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'lGBTQFeelings')}
                         />
                         <label htmlFor="issueInterest"> LGBTQ </label>
                     </div>
@@ -536,6 +578,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'religiousFeelings')}
                         />
                         <label htmlFor="issueInterest"> Religion </label>
                     </div>
@@ -545,6 +589,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'sexualAssaultFeelings')}
                         />
                         <label htmlFor="issueInterest"> Sexual Assault </label>
                     </div>
@@ -554,6 +600,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'substanceAbuseFeelings')}
                         />
                         <label htmlFor="issueInterest"> Substance Abuse </label>
                     </div>
@@ -563,6 +611,8 @@ class VolunteerApplication extends Component {
                             id="issueInterest"
                             component="input"
                             type="checkbox"
+                            value="yes"
+                            onChange={this.handleChange.bind(this, 'suicideFeelings')}
                         />
                         <label htmlFor="issueInterest"> Suicide </label>
                     </div>
@@ -572,53 +622,85 @@ class VolunteerApplication extends Component {
                         Can you remain objective while interacting with someone who is currently
                         facing any of these issues?
                     </p>
-                    <Field name="objectivityQuestion" component="textarea" className={styles.boxWidth} />
+                    <Field name="objectivityQuestion" component="textarea" className={styles.boxWidth} 
+                        value={this.state.objectivityQuestion}
+                        onChange={this.handleChange.bind(this, 'objectivityQuestion')}
+                    />
                 </div>
                 <div>
                     <p> Have you recently experienced a significant loss or trauma? </p>
                     <div>
-                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="no" />
+                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="no" 
+                            onChange={this.handleChange.bind(this, 'traumaQuestionYN')}
+                        />
                         <label> No </label>
                     </div>
                     <div>
-                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" />
+                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" 
+                            onChange={this.handleChange.bind(this, 'traumaQuestionYN')}
+                        />
                         <label> Yes <span> If yes, please describe.</span> </label>
                     </div>
-                    <Field name="traumaQuestion" component="textarea" className={styles.boxWidth} />
+                    <Field name="traumaQuestion" component="textarea" className={styles.boxWidth} 
+                            value={this.state.traumaQuestion}
+                            onChange={this.handleChange.bind(this, 'traumaQuestion')}
+                        />
                 </div>
                 <div>
                     <p> Are you currently attending counseling/therapy? </p>
                     <div>
-                        <Field name="attendingCounseling" component="input" type="radio" value="no" />
+                        <Field name="attendingCounseling" component="input" type="radio" value="no" 
+                            onChange={this.handleChange.bind(this, 'attendingCounselingYN')}
+                        />
                         <label> No </label>
                     </div>
                     <div>
-                        <Field name="attendingCounseling" component="input" type="radio" value="yes" />
+                        <Field name="attendingCounseling" component="input" type="radio" value="yes" 
+                            onChange={this.handleChange.bind(this, 'attendingCounselingYN')}
+                        />
                         <label> Yes <span> If yes, have you discussed your potential involvement at Common
                         Ground with your therapist? </span> </label>
                     </div>
-                    <Field name="counselingQuestioning" component="textarea" className={styles.boxWidth} />
+                    <Field name="counselingQuestioning" component="textarea" className={styles.boxWidth} 
+                            value={this.state.attendingCounseling}
+                            onChange={this.handleChange.bind(this, 'attendingCounseling')}
+                        />
                 </div>
                 <div>
                     <p> What do you think would be easiest for you about working in crisis intervention? </p>
-                    <Field name="easistPartCrisisIntervention" component="textarea" className={styles.boxWidth} />
+                    <Field name="easistPartCrisisIntervention" component="textarea" className={styles.boxWidth} 
+                        value={this.state.easyCrisisIntervention}
+                        onChange={this.handleChange.bind(this, 'easyCrisisIntervention')}    
+                    />
                 </div>
                 <div>
                     <p> What do you think would be most difficult for you about working in crisis intervention? </p>
-                    <Field name="hardestPartCrisiIntervention" component="textarea" className={styles.boxWidth} />
+                    <Field name="hardestPartCrisiIntervention" component="textarea" className={styles.boxWidth} 
+                        value={this.state.hardCrisisIntervention}
+                        onChange={this.handleChange.bind(this, 'hardCrisisIntervention')}
+                    />
                 </div>
                 <div>
                     <p> Crisis intervention work can be stressful. What causes stress in your life, and how do you
                         cope?</p>
-                    <Field name="difficultQualities" component="textarea" className={styles.boxWidth} />
+                    <Field name="difficultQualities" component="textarea" className={styles.boxWidth} 
+                        value={this.state.difficultQualities}
+                        onChange={this.handleChange.bind(this, 'difficultQualities')}
+                    />
                 </div>
                 <div>
                     <p> What positive qualities do you bring to Common Ground? </p>
-                    <Field name="positiveQualities" component="textarea" className={styles.boxWidth}/>
+                    <Field name="positiveQualities" component="textarea" className={styles.boxWidth}
+                        value={this.state.positiveQualities}
+                        onChange={this.handleChange.bind(this, 'positiveQualities')}
+                    />
                 </div>
                 <div>
                     <p> Please tell us about any volunteer experience and/or special skills you have to offer. </p>
-                    <Field name="volunteerExperience" component="textarea" className={styles.boxWidth}/>
+                    <Field name="volunteerExperience" component="textarea" className={styles.boxWidth}
+                        value={this.state.volunteerExperience}
+                        onChange={this.handleChange.bind(this, 'volunteerExperience')}
+                    />
                 </div>
                 {(hasRightSelection === "face-to-face") &&
                     <div>

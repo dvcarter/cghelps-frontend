@@ -24,8 +24,9 @@
     max-height: 500px;*/
     /*min-width: 500px;
     max-width: 80%;*/
-    width: 100%;
+    min-width: 50vw;
     height: 300px;
+    font-size: 125%;
 }
 .title_2_2 {
     color: #333;
