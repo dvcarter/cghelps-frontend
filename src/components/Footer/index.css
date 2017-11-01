@@ -1064,8 +1064,8 @@
     }
     .footText {
         position: relative;
-        width: 100px;
-        margin: 0 20px 0 150px;
+        width: 110px;
+        margin: 0 20px 0 155px;
         white-space: nowrap;
         font-size: 1.75vh;
     }
@@ -1086,6 +1086,15 @@
         }
         .footText {
            font-size: 9px;
+           width: 18%;
+        }
+        .socialItems {
+            margin-left: -150px;
+            margin-right: -10px;
+        }
+        .socialItem {
+            margin-left: 10px;
+            padding: 0 10px 0 10px;
         }
     }
     .link img {
