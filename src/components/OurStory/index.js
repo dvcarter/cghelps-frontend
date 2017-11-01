@@ -6,7 +6,7 @@ import styles from './OurStory.css'
 const OurStory = () => {
     return (
             <div className={styles.bigHolder_5_1}>
-            <h2> Our Story </h2>
+            <div className={styles.title}> Our Story </div>
                 <div className={styles.title_5_1}>
                     <h5> Past</h5>
                 </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const PostList = ( {posts} ) => {
     return (
-            <div className="postListHolder">
+            <div className={styles.postListHolder}>
                 <div className={styles.title}>
                     News and Events
                 </div>

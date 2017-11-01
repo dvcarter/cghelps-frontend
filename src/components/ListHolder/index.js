@@ -85,26 +85,19 @@ const ListHolder = ({ listHolder }) => {
                             </div>
                             <div className={styles.subBoard}>
                                 <ul>
-                                    <li> Gary Robb </li>
-                                    <li> CPA, Andrews Hooper Pavlik PLC </li>
+                                    <li> Gary Robb,  <em>CPA, Andrews Hooper Pavlik PLC</em> </li>
                                     <br/>
-                                    <li> Tawana Nettles-Robinson </li>
-                                    <li> Executive Director, Trinity Health Care System </li>
+                                    <li> Tawana Nettles-Robinson <em>Executive Director, Trinity Health Care System </em></li>
                                     <br/>
-                                    <li>Chris Ruen</li>
-                                    <li>Community Volunteer</li>
+                                    <li>Chris Ruen, <em>Community Volunteer</em></li>
                                     <br />
-                                    <li>Douglas T. Smith</li>
-                                    <li>Real Estate Development</li>
+                                    <li>Douglas T. Smith, <em>Real Estate Development</em></li>
                                     <br />
-                                    <li>Alexandra Stan</li>
-                                    <li>Attorney</li>
+                                    <li>Alexandra Stan, <em>Attorney</em></li>
                                     <br />
-                                    <li>Kathy Walgren</li>
-                                    <li>President, Nonprofit Leadership Excellence</li>
+                                    <li>Kathy Walgren, <em>President, Nonprofit Leadership Excellence</em></li>
                                     <br />
-                                    <li>Kevin B. Williams</li>
-                                    <li>Court Administrator</li>
+                                    <li>Kevin B. Williams, <em>Court Administrator</em></li>
                                     <br />
                                 </ul>
                             </div>
