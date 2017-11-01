@@ -14,6 +14,7 @@ import donateReducer from "./donateReducer";
 import aboutUsReducer from "./aboutUsReducer";
 import moreReducer from "./moreReducer";
 import videoReducer from "./videoReducer";
+import governanceReducer from "./governanceReducer";
 import faqReducer from "./faqReducer";
 
 const rootReducer = combineReducers({
@@ -32,6 +33,7 @@ const rootReducer = combineReducers({
     aboutInfo: aboutUsReducer,
     videoInfo: videoReducer,
     faqInfo: faqReducer,
+    governanceInfo: governanceReducer,
     form: formReducer,
 })
 

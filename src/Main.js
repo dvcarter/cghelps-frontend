@@ -44,6 +44,7 @@ import {selectVictimGroupInfo} from "./selectors/victimsSelectors";
 import {selectHealthGroupInfo} from "./selectors/healthSelectors";
 import {selectVideoInfo} from "./selectors/videoSelectors";
 import {selectFaqInfo} from "./selectors/faqSelectors";
+import {selectGovernanceInfo} from "./selectors/governanceSelectors";
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -73,7 +74,8 @@ const mapState = (state) => ({
     victimInfo: selectVictimGroupInfo(state),
     healthInfo: selectHealthGroupInfo(state),
     videoInfo: selectVideoInfo(state),
-    faqInfo: selectFaqInfo(state)
+    faqInfo: selectFaqInfo(state),
+    governanceInfo: selectGovernanceInfo(state)
 });
 
 class App extends Component { 
@@ -91,7 +93,8 @@ class App extends Component {
             victimInfo,
             healthInfo,
             videoInfo, 
-            faqInfo
+            faqInfo,
+            governanceInfo
 
         } = this.props;
 
@@ -113,7 +116,7 @@ class App extends Component {
                         <PropsRoute path="/donate" component={Donate} dataGetter={donateInfo}>
                         
                         </PropsRoute>
-                        <PropsRoute path="/about-us" component={AboutUsHolder} />>
+                        <PropsRoute path="/about-us" component={AboutUsHolder} {...this.props} />
                         <PropsRoute path="/posts" component={Posts} />
                         <PropsRoute path="/accreditation" component={Accreditation} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
