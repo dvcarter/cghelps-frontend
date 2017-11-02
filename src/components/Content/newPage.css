@@ -66,8 +66,8 @@
         align-items: flex-end;
         -webkit-align-items: flex-end;
         -moz-align-items: flex-end;
-        height: 100%;
-        width: 100%;
+        height: 50vh;
+        width: auto;
     }
 
   .hero_0 {
@@ -86,10 +86,12 @@
         font-size: 150%;
         font-weight: 700;
         color: #fff;
-        margin-bottom: 30px;
+        margin-top: 100px;
     }
     .lowerTitleHolder_0 {
         margin: 0 auto;
+        margin-top: -5px;
+        margin-bottom: 20px;
         padding: 0 0 0 0;
         width: 100%;
         height: 10%;
@@ -125,6 +127,7 @@
         background-color: var(--colorSecondary);
     }
        .heading_0 {
+           text-align: center;
         width: 100%;
         height: 10%;
         font-size: 250%;
@@ -134,8 +137,9 @@
     }
     .lowerTitleHolder_0 {
         margin: 0 auto;
+        margin-bottom: 40px;
         padding: 0 0 0 0;
-        width: 50%;
+        width: 70%;
         height: 10%;
         color: #fff;
     }
