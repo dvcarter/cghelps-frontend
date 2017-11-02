@@ -7,7 +7,15 @@
   font-weight: normal;
   margin: 0 0 65px 0;
 }
-
+.chatArea {
+    margin-left: 5px;
+}
+.bubble {
+    height: auto;
+    width: 10%;
+    background-color: red;
+    display: none;
+}
 $navHeight: 80px;
 .bumper {
   height: 80px;
@@ -518,4 +526,10 @@ $lineHeight: 2px;
   }
 }
 
-
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: red;
+}

@@ -4,6 +4,7 @@ import {HashLink} from "react-router-hash-link"
 import PropTypes from "prop-types"
 import Svg from "react-svg-inline"
 import Logo from "./cg-logo.svg"
+import ChatBubble from "./../../content/assets/chatbubbles.png"
 import handleClickAway from "./handleClickAway.js"
 import styles from  "./header.css"
 
@@ -53,7 +54,8 @@ export default class Header extends Component {
                 <header className={styles.header}>
                         <div className={styles.supHeader}>
                             Do you need help? We're here for you 24 / 7.&nbsp;  
-                            <span>Call <strong><a href="tel:18002311127">1.800.231.1127</a></strong></span>
+                            <span>Call <strong><a href="tel:18002311127">1.800.231.1127 </a></strong></span>
+                       &nbsp; <strong>| Chat </strong> <Link to="/get-help/chat-with-us"><img className={styles.bubble} src={ChatBubble} /> </Link>
                         </div>
                         <div className={styles.bumper}/>
                         <div className={styles.navFixed}>

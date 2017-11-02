@@ -7,7 +7,19 @@
   font-weight: normal;
   margin: 0 0 65px 0;
 }
-
+.chatTime {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90px;
+    height: 50%;
+}
+.bubble {
+    margin: 5px 0 0 0; 
+    width: 30px;
+}
 $navHeight: 80px;
 .bumper {
   height: 80px;
