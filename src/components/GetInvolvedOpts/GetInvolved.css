@@ -485,6 +485,42 @@
         }
 
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:767px ) and (min-width:576px) {
+    .superHolder {
+        width: 100%;
+        height: auto;
+    }
+    .holder {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: red;
+    }
+
+    .options {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+    }
+
+    .imgs {
+        width: 20%;
+        height: 30%;
+    }
+    .description {
+        align-self: center;
+        height: auto;
+        width: 50%;
+        background-color: blue;
+    }
+
+}
+
+
 .button {
     background-color: #8b0000;
     font-size: 100%;
