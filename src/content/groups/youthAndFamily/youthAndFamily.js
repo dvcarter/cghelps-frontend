@@ -14,7 +14,7 @@ const youthAndFamily = [
       {
         "sub": {
           "subsubtitle": "Growth & Healing support group (Girls ages 13-17)",
-          "description": "This free 10-week empowerment group is for girls who have experienced sexual abuse, date rape, or incest. This group usually meets on Mondays. To register or learn more, call 1.248.451.2621."
+          "description": "This free 10-week empowerment group is for girls who have experienced sexual abuse, date rape, or incest. This group usually meets on Thursdays. To register or learn more, call 1.248.451.2621."
         }
       },
       {

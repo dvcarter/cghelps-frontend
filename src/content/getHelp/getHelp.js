@@ -45,7 +45,7 @@ const getHelp = [
         subsubtitle4: "Crisis Residential Unit",
         subdescription4: "We offer a short-term (1 to 14 day) voluntary alternative to inpatient psychiatric hospitalization for adults ready to actively participate in a trauma-informed, recovery focused treatment environment. Services include psychiatric medication review, group therapy, skills groups, recovery coaching, art therapy, and coordinated discharge planning. Note - Admission to the Crisis Residential Unit requires prior authorization through our Oakland Assessment Crisis Intervention Services (OACIS).",
         subsubtitle5: "Sober Support Unit",
-        subdescription5: "The Sober Support Unit is a 23-hour program designed to monitor individuals who need detoxification services and have no health risks associated with the withdrawal process. The Sobering Center will emphasize peer and social support programming while continuously monitoring medical condition. The goal of the program is de-escalation of the individual with counseling and appropriate follow up referrals. This is a voluntary program staffed by paramedics, peer support specialists and nurses."
+        subdescription5: "The Sober Support Unit is a 23-hour program designed to monitor individuals who need detoxification services and have no health risks associated with the withdrawal process. The Sobering Center will emphasize peer and social support programming while continuously monitoring medical condition. The goal of the program is de-escalation of the individual with counseling and appropriate follow up referrals. This is a voluntary program staffed by paramedics, peer support specialists, and nurses."
       
       
       },

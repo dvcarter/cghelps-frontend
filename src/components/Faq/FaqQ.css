@@ -413,6 +413,13 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) {
+    .superHolder {
+        height: 100%;
+        width: 100%;
+    }
+    .title {
+        margin-bottom: 100px;
+    }
     .holder {
         margin-top: -80px;
         height: 100%;
@@ -431,6 +438,9 @@
         height: 100%;
         margin-bottom: 80px;
     }
+    .title {
+        margin-bottom: 100px;
+    }
     .options {
         height: 200px;
         margin: -10px 0 -10px 0;
@@ -445,6 +455,9 @@
         height: 100%;
         margin-bottom: 80px;
     }
+    .title {
+        margin-bottom: 75px;
+    }
     .options {
         height: 200px;
         margin: 10px 0 10px 0;
@@ -457,6 +470,9 @@
         height: 100%;
         margin-bottom: 200px;
     }
+    .title {
+        margin-bottom: 50px;
+    }
     .options {
         height: 300px;
         margin: -10px 0 -10px 0;
@@ -468,6 +484,9 @@
         margin-top: -60px;
         height: 100%;
         margin-bottom: 200px;
+    }
+    .title {
+        margin-bottom: 75px;
     }
     .options {
         height: 300px;
