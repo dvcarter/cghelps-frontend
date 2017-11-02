@@ -29,7 +29,7 @@ const getHelpOpts = [
       {
         name: "visit-helps",
         title: "VISIT",
-        description: "You're also welcome to visit one of our Oakland County facilities to talk with us in person.",
+        description: "You're also welcome to visit our Oakland County facility to talk with us in person.",
         image: personPurple,
         btn: {
           label: "Find Crisis Center",

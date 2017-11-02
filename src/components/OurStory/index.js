@@ -27,13 +27,10 @@ const OurStory = () => {
                     Helping People Move from Crisis to Hope
                     <h4> Core Values </h4>
                      <ul>
-                        <li> Integrity </li>
-                        <li> Respect </li>
-                        <li> Compassion </li>
-                        <li> Excellence </li>
-                        <li> Collaboration </li>
-                        <li> Helpful </li>
-                        <li> Wellness </li>
+                        <li> <strong>Empowerment</strong> - maximizing the potential of all </li>
+                        <li> <strong>Collaboration</strong> - always working toward shared goals</li>
+                        <li><strong>Innovation</strong> - exploring new ways to positively impact our community </li>
+                        <li><strong> Diversity and Inclusivity</strong> - welcoming and respectful of people and ideas </li>
                     </ul>
                 </div>
 
