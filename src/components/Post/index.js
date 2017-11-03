@@ -43,7 +43,6 @@ class Post extends Component {
                            <div>
                             <h4> {post.date.replace(/T.*/, '')} </h4>
                              <div className={styles.description} dangerouslySetInnerHTML={{__html:post.content.rendered}} /> 
-                             <div> {post.categories} </div>
                            </div>
                                <Link to="/posts"> Back to Posts </Link>
                         </div>
