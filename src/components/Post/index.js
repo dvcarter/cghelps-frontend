@@ -19,29 +19,29 @@ class Post extends Component {
                                    Please <Link to="/posts">Click here</Link> to see our list of posts.
                                 </p>    
                         </div>
-                        
-                        
-                        
-                        
-                        
                         :
                         <div>
-                            <div
+                            { (post.acf.hero.sizes === undefined) ? <div className={sty_post.heading_0}> {post.title.rendered}</div> :
+                             
+                                <div
                                     className={ sty_post.hero_0 } 
                                     style={ {background: `#111 url(${post.acf.hero.sizes.large}) 50% 50% / cover`}}
                                 >   
                                     <div className={ sty_post.header_0 }>
                                         <div className={ sty_post.wrapper_0 }>
-                                            <div className={ sty_post.heading_0 }>{post.title.rendered} </div>
+                                            <div className={ sty_post.heading_0 }>
+                                                {post.title.rendered} 
+                                            </div>
                                             <div className={ sty_post.lowerTitleHolder_0}>
                                                 {/*{getHelps.heroSubtitle} */}
                                             </div>
                                         </div>
                                     </div>
-                            </div>
+                                </div>
+                                }
                             <h2> {post.title.rendered} </h2>
                            <div>
-                            <h4> {post.date} </h4>
+                            <h4> {post.date.replace(/T.*/, '')} </h4>
                              <div className={styles.description} dangerouslySetInnerHTML={{__html:post.content.rendered}} /> 
                              <div> {post.categories} </div>
                            </div>

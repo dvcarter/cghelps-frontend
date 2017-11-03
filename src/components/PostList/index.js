@@ -12,7 +12,9 @@ const PostList = ( {posts} ) => {
                 <div className={styles.holder}>
                     {posts.map((post, index) => 
                         <div className={styles.options} key={post.id}>
+                            { (post.acf.hero.sizes === undefined) ?<div />  :
                             <img className={styles.imgs} src={post.acf.hero.sizes.large} alt="nothing here" />
+                            }
                             <div className={styles.topics}>
                                     <h3 className={styles.subtitle}>{post.title.rendered}</h3>
                                     <div className={styles.description} dangerouslySetInnerHTML={{ __html: post.excerpt.rendered.replace(/[\[\]']+/g, '')}} />
