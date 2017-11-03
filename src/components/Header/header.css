@@ -17,8 +17,8 @@
     height: 50%;
 }
 .bubble {
-    margin: 5px 0 0 0; 
-    width: 30px;
+    margin: 5px 0 0 5px; 
+    width: 25px;
 }
 $navHeight: 80px;
 .bumper {

@@ -235,7 +235,7 @@
     }
     .standIn {
         width: 100%;
-        padding: 20px;
+        padding: 20px 50px 20px 50px;
         height: 350px;
     }
 
@@ -343,7 +343,7 @@
         .standIn {
             margin: -60px 0px 0 0px;
             width: 100%;
-            padding: 20px;
+            padding: 20px 40px 20px 40px;
             height: 350px;
         }
           .leadership {
@@ -482,7 +482,7 @@
             margin:0 15px 0 15px;
             height: 350px;
             width: 100%;
-            padding: 10px;
+            padding: 10px 40px 10px 40px;
         }
         .leadership {
             display: flex;
