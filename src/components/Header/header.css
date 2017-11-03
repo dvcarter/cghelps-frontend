@@ -447,6 +447,8 @@ $lineHeight: 2px;
     top: 0px;
     z-index: 10;
     padding: 0px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touchl
    
     }
     .open li, .open a {
@@ -467,8 +469,8 @@ $lineHeight: 2px;
     flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    height: 145vh;
-    overflow-y: scroll;
+    height: 125vh;
+    -webkit-overflow-y: scroll;
     overflow-x: hidden;
     overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
