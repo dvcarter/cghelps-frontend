@@ -17,3 +17,14 @@ export function loadPosts() {
         });
     };
 }
+
+export function loadPost(slug) {
+    return function(dispatch) {
+        return postAPI.getAllPosts().then(posts => {
+            posts.find((post,i) => { post.slug === slug})
+            dispatch(loadPostsSuccess(posts));
+        }).catch(error => {
+            throw(error);
+        });
+    }
+}

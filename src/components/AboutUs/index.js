@@ -65,7 +65,7 @@ const About = () => {
                         flexible spending account, paid time off, paid holidays, training and opportunities for
                         advancement, and retirement savings (403b).
                     <p>
-                        <a href="http://commongroundhelps.applicantpro.com" className={styles.careerlink}>
+                        <a href="https://csscg.sentrichr.com/" className={styles.careerlink}>
                         View our current openings >
                         </a>
                     </p>

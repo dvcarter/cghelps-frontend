@@ -13,8 +13,20 @@ class Post extends Component {
 
             return (
                 <div className={styles.superHolder_Post}>
-                    <div>
-                               <div
+                    { (post == undefined) ? 
+                        <div>
+                                <p>This post does not exist.
+                                   Please <Link to="/posts">Click here</Link> to see our list of posts.
+                                </p>    
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        :
+                        <div>
+                            <div
                                     className={ sty_post.hero_0 } 
                                     style={ {background: `#111 url(${post.acf.hero.sizes.large}) 50% 50% / cover`}}
                                 >   
@@ -28,14 +40,14 @@ class Post extends Component {
                                     </div>
                             </div>
                             <h2> {post.title.rendered} </h2>
-                           <div> 
+                           <div>
+                            <h4> {post.date} </h4>
                              <div className={styles.description} dangerouslySetInnerHTML={{__html:post.content.rendered}} /> 
                              <div> {post.categories} </div>
                            </div>
-                        </div>
-                        <div>
                                <Link to="/posts"> Back to Posts </Link>
                         </div>
+                        }
                     </div>
         )
     }
