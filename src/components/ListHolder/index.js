@@ -10,10 +10,9 @@ const ListHolder = ({ listHolder }) => {
                                     <div className={styles.boardPosition}>Board Chair</div>
                                     <div className={styles.boardHold}>
                                        <div className={styles.position}>
-                                            Kay White
+                                            Douglas Wright
                                         </div>
                                         <div className={styles.name}>
-                                            Community Volunteer
                                         </div>
                                     </div>
                             </div>
@@ -21,10 +20,9 @@ const ListHolder = ({ listHolder }) => {
                                     <div className={styles.boardPosition}>Chair-Elect</div>
                                     <div className={styles.boardHold}>
                                        <div className={styles.position}>
-                                            Doug Wright
+                                            Don Campbell
                                         </div>
                                         <div className={styles.name}>
-                                            Principal, Gordon Advisors, PC
                                         </div>
                                     </div>
                             </div>
@@ -35,18 +33,18 @@ const ListHolder = ({ listHolder }) => {
                                             Judy Christie
                                         </div>
                                         <div className={styles.name}>
-                                            Retired, Administrative Manager, US District Court
+                                        {/*  Retired, Administrative Manager, US District Court */}
                                         </div>
                                     </div>
                             </div>
                             <div className={styles.boardLeaders}>
-                                    <div className={styles.boardPosition}>Secretary</div>
+                                    <div className={styles.boardPosition}>Treasurer</div>
                                     <div className={styles.boardHold}>
                                        <div className={styles.position}>
-                                            Laurie Marshall
+                                            Gary Robb
                                         </div>
                                         <div className={styles.name}>
-                                            Financial Advisor, LJPR Financial Advisors
+                                        {/*Financial Advisor, LJPR Financial Advisors*/}
                                         </div>
                                     </div>
                             </div>
@@ -54,10 +52,10 @@ const ListHolder = ({ listHolder }) => {
                                     <div className={styles.boardPosition}>Immediate Past Chair</div>
                                     <div className={styles.boardHold}>
                                        <div className={styles.position}>
-                                            Cathy McNamara
+                                            Kay White
                                         </div>
                                         <div className={styles.name}>
-                                            Assurance Partner, BDO
+                                        {/* Assurance Partner, BDO */}
                                         </div>
                                     </div>
                             </div>

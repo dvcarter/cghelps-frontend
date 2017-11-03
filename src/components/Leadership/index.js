@@ -66,8 +66,52 @@ const Leadership = () => {
                         <li> <strong>Dr. Carmen Serpa</strong>, <em> Director of Medical Services </em></li>
                     </ul>
                 </div>
-                
-                <ListHolder />
+                <div className={styles.standIn2}>
+                    <ul className={styles.leadership2}>
+                        <h3 className={styles.pair}> Board of Trustees </h3>
+                        <li><strong> Douglas Wright</strong>, <em> Board Chair </em> </li>
+                        <li><strong> Don Campbell</strong>, <em> Chair-Elect </em> </li>
+                        <li><strong> Judy Christie</strong>, <em> Secretary </em> </li>
+                        <li><strong> Gary Robb</strong>, <em> Treasurer </em> </li>
+                        <li><strong> Kay White</strong>, <em> Immediate Past Chair </em></li>
+                        <li><strong> Barbara Belkiewicz</strong></li>
+                        <li><strong>David Boudreau</strong></li>
+                        <li><strong>Lyle Dahlberg</strong></li>
+                        <li><strong>Eric Dobrusin</strong></li>
+                        <li><strong>Fred Fechheimer</strong></li>
+                        <li><strong>James Kohlenberg, MD</strong></li>
+                        <li><strong>Darren Lubbers, PhD</strong></li>
+                        <li><strong>Lisa Mason</strong></li>
+                        <li><strong>Sharon R. McMurray</strong></li>
+                        <li><strong>Gregory Moore</strong></li>
+                        <li><strong>Tawana Nettles-Robinson</strong></li>
+                        <li><strong>Chris Ruen</strong></li>
+                        <li><strong>Doug Smith</strong></li>
+                        <li><strong>Alexandra Stan</strong></li>
+                        <li><strong>Colette Stimmell</strong></li>
+                        <li><strong>Kathy Walgren</strong></li>
+                        <li><strong>Kevin B. Williams</strong></li>
+                    </ul>
+                    <ul className={styles.leadership3}>
+                        <h3 className={styles.pair}> Advisory Board </h3>
+                        <li><strong>Maggie Allesee</strong></li>
+                        <li><strong>Richard Astrein</strong></li>
+                        <li><strong>Sheriff Michael Bouchard</strong></li>
+                        <li><strong>Jerry Cavellier</strong></li>
+                        <li><strong>Gary Dembs</strong></li>
+                        <li><strong>Joe Donovan</strong></li>
+                        <li><strong>John Erb</strong></li>
+                        <li><strong>Maxine Frankel</strong></li>
+                        <li><strong>Eugene Hartwig</strong></li>
+                        <li><strong>Eric Hawkins</strong></li>
+                        <li><strong>Howard Hertz</strong></li>
+                        <li><strong>Rita Margherio</strong></li>
+                        <li><strong>Hon. Fred Mester</strong></li>
+                        <li><strong>John Roberts</strong></li>
+                        <li><strong>Shelley Roberts</strong></li>
+                        <li><strong>Hon. Edward Sosnick</strong></li>
+                    </ul>
+                </div>
             </div>
         )
 }

@@ -47,13 +47,22 @@
     #mc-embedded-subscribe-form {
         margin: 0 30px 0 85px;
         padding: 0 10px 0 200px;
-        width: 65%;
-    } 
-    input#mce-EMAIL.email, input#mc-embedded-subscribe.button {
-        width: 100%;
-    }
-    input#mce-EMAIL {
         width: 90%;
+    } 
+    /*input#mce-EMAIL.email
+    input#mc-embedded-subscribe.button {
+        width: 100%!important;*/
+    
+    #mc_embed_signup {
+        width:90%!important;
+    }
+
+    #mce-EMAIL {
+        width: 90%;
+        background-color: red;
+    }
+    #mc-embedded-subscribe {
+        width: 90%!important;
     }
 }
 @media only screen and (max-width: 449px) {

@@ -128,7 +128,37 @@
         height: auto;
         width: 100%;
         padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
+
+    .leadership {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            height: 40%;
+        }
+        .standIn2 {
+            margin: -50px 15px 0 15px;*/
+            width: 100%;
+            height: 5%;
+            margin-bottom: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .leadership2 {
+            width: 50%;
+            height: 30%;
+        }
+        .leadership3 {
+            width: 50%;
+            height: 30%;
+        }
+
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -206,11 +236,40 @@
     .standIn {
         width: 100%;
         padding: 20px;
+        height: 350px;
     }
+
+    .leadership {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+        }
+        .standIn2 {
+            margin: -50px 15px 0 15px;*/
+            width: 100%;
+            height: 5%;
+            margin-bottom: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .leadership2 {
+            width: 50%;
+            height: 30%;
+        }
+        .leadership3 {
+            width: 50%;
+            height: 30%;
+        }
+
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .superHolder {
             height: 100%;
+            width: 100%;
             margin-top: 175px;
         }   
    
@@ -257,7 +316,7 @@
             -webkit-flex-direction: column;
             height: 550px;
             width: 100%;
-            margin: 15px 15px 0 15px;
+            margin: 15px 5px 0 5px;
             padding: 20px;
             border-bottom: 0.25px solid #dfe3ee;
         }
@@ -268,7 +327,7 @@
             margin: 0 10px 5px 0;
             border: 1px solid #dfe3ee;
         }
-        .description {
+        .descripton {
             width: 90%;
             padding: 0 10px 10px 10px;
             margin: 5px 0 5px 0;
@@ -282,10 +341,37 @@
             width: 100%;
         }
         .standIn {
-            margin: -60px 15px 0 15px;
+            margin: -60px 0px 0 0px;
             width: 100%;
             padding: 20px;
+            height: 350px;
         }
+          .leadership {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+        }   
+        .standIn2 {
+            margin: -50px 5px 0 5px;*/
+            width: 90%;
+            height: 5%; 
+            margin-bottom: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            x-overflow: hidden;
+        }   
+        .leadership2 {
+            width: 50%;
+            height: 30%;
+        }   
+        .leadership3 {
+            width: 50%;
+            height: 30%;
+        }
+
 }
 @media only screen and (min-width: 1200px) {
         .superHolder {
@@ -394,9 +480,35 @@
         }
         .standIn {
             margin:0 15px 0 15px;
+            height: 350px;
             width: 100%;
             padding: 10px;
         }
+        .leadership {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+        }
+        .standIn2 {
+            margin: -50px 15px 0 15px;*/
+            width: 100%;
+            height: 5%;
+            margin-bottom: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .leadership2 {
+            width: 50%;
+            height: 30%;
+        }
+        .leadership3 {
+            width: 50%;
+            height: 30%;
+        }
+
 
 }
 .button {
