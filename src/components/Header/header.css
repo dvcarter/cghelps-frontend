@@ -483,7 +483,7 @@ $lineHeight: 2px;
     _::-webkit-full-page-media, _:future, :root .navItems {
         margin-top: 80px;
         margin-bottom: 200px;
-        height: 2000px;
+        height: 1200px;
         padding-bottom: 200px;
         padding-top: 10px;
         z-index: -1;
