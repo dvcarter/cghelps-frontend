@@ -1,4 +1,10 @@
 @media only screen and  (max-width: 575px) {
+    .bigHolder {
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
     .title {
         display: flex;
         display: -webkit-flex;
@@ -64,6 +70,7 @@
         margin: 5px 0 5px 0;
     }
 
+
     .button {
         width: 75%;
         position: relative;
@@ -75,8 +82,62 @@
         display: inline-block;
         font-size: 1.25vh;
     }
+    .boxes {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    }
+    .box {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        height: 150px;
+        width: 250px;
+        margin: 5px 0 5px 5px;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: flex-end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: flex-end;
+        transition: all .2s ease-in-out;
+        color: #fff;
+    }
+    .box:hover {
+        transform: scale(1.05);
+    }
+
+      .locationLinks {
+            color: blue;
+            font-weight: 600;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px 0 10px;
+        }
+
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+   
+    .bigHolder {
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+    }   
+       
+ 
+    
     .title {
         display: flex;
         display: -webkit-flex;
@@ -201,10 +262,25 @@
         padding: 10px 20px;
         margin: 0 10px 50px 0;
     }
-
+    
+        .locationLinks {
+            color: blue;
+            font-weight: 600;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px 0 10px;
+        }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .bigHolder {
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
     .title {
         display: flex;
         display: -webkit-flex;
@@ -332,8 +408,24 @@
         margin: 0 0 80px 0;
     }
 
+        .locationLinks {
+            color: blue;
+            font-weight: 600;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px 0 10px;
+        }
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+       .bigHolder {
+            height: 100%;
+            width: 100%;
+            margin-top: 50px;
+        }   
+
+
         .title {
             display: flex;
             display: -webkit-flex;
@@ -465,6 +557,14 @@
             height: auto;
             width: 100%;
             margin: 0 0 10px 0;
+        }
+
+          .locationLinks {
+            color: blue;
+            font-weight: 600;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
         }
 }
 @media only screen and (min-width: 1200px) {
