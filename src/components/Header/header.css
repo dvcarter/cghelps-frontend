@@ -447,14 +447,12 @@ $lineHeight: 2px;
     top: 0px;
     z-index: 10;
     padding: 0px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
     }
-_::-webkit-full-page-media, _:future, :root .open {
+/*_::-webkit-full-page-media, _:future, :root .open {
     max-height: 100%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-}
+}*/
     .open li, .open a {
       width: 100%;
       display: block;
@@ -485,8 +483,6 @@ _::-webkit-full-page-media, _:future, :root .open {
     _::-webkit-full-page-media, _:future, :root .navItems {
         margin-top: 80px;
         margin-bottom: 200px;
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
         min-height: 100%;
         padding-bottom: 200px;
         padding-top: 10px;
