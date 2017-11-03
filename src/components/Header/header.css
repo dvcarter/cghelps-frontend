@@ -448,9 +448,9 @@ $lineHeight: 2px;
     z-index: 10;
     padding: 0px;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touchl
-   
+    -webkit-overflow-scrolling: touch;
     }
+
     .open li, .open a {
       width: 100%;
       display: block;
