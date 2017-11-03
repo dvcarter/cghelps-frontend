@@ -3,8 +3,8 @@ import family from "../../assets/youthfamily.jpg"
 const youthAndFamily = [
       {
         "hero": family,
-        "bigTitle": "This is a big title",
-        "lowerTitle": "This is the lower title",
+        "bigTitle": "Youth and Family",
+        "lowerTitle": "Finding Resources",
         "subtitle": "Workshops, Classes, & Support Groups",
         "sub": {
           "subsubtitle": "Becoming a Love & Logic Parent®",

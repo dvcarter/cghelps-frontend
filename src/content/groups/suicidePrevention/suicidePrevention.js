@@ -3,8 +3,8 @@ import hands from "../../assets/helpinghand.jpg"
       {
 
         "hero": hands,
-        "bigTitle": "This is the big title",
-        "lowerTitle": "This is the lower title",
+        "bigTitle": "Suicide Prevention",
+        "lowerTitle": "Finding Help",
         "subtitle": "Workshops, Classes, & Support Groups",
         "sub": {
           "subsubtitle": "Survivors of Suicide Loss Support Groups",

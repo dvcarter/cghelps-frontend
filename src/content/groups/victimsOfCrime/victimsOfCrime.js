@@ -3,8 +3,8 @@ import SeekHelp from "../../assets/seekhelp.jpg"
 const victimsOfCrime = [
       {
         "hero": SeekHelp,
-        "bigTitle": "This is a big title",
-        "lowerTitle": "This is the lower title",
+        "bigTitle": "Victims of Crime",
+        "lowerTitle": "Finding Support",
         "subtitle": "Support Groups",
         "sub": {
           "subsubtitle": "Survivors of Homicide Support Group",

@@ -20,7 +20,7 @@ class Post extends Component {
                                 </p>    
                         </div>
                         :
-                        <div>
+                        <div className={styles.bigHolder}>
                             { (post.acf.hero.sizes === undefined) ? <div className={sty_post.heading_0}> {post.title.rendered}</div> :
                              
                                 <div
@@ -39,12 +39,13 @@ class Post extends Component {
                                     </div>
                                 </div>
                                 }
-                            <h2> {post.title.rendered} </h2>
-                           <div>
+                            <div className={styles.title}> {post.title.rendered} </div>
+                           <div className={styles.holder}>
                             <h4> {post.date.replace(/T.*/, '')} </h4>
                              <div className={styles.description} dangerouslySetInnerHTML={{__html:post.content.rendered}} /> 
-                           </div>
-                               <Link to="/posts"> Back to Posts </Link>
+                        
+                               <Link to="/posts" className={styles.button}> Back to Posts </Link>
+                            </div>
                         </div>
                         }
                     </div>
