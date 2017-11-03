@@ -467,12 +467,11 @@ $lineHeight: 2px;
     flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    height: 130vh;
-    background-color: red;
+    height: 145vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    /*overflow-scrolling: touch;
-    -webkit-overflow-scrolling: touch;*/
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     width: 105%;
     padding-bottom: 300px;
     padding-top:300px;
