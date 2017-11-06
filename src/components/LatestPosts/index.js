@@ -14,8 +14,8 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Subtitle to Come </h4>
-                                    <div className={styles.descriptionArea}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   </div>
+                                    <h4 className={styles.subtitle}>Sober Support Unit</h4>
+                                    <div className={styles.descriptionArea}>The Sober Support Unit (SSU) is a 23-hour program designed to monitor individuals who need detoxification services and have no health risks associated with the withdrawal process... </div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
                         </div>
