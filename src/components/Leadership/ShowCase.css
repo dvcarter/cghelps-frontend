@@ -405,7 +405,7 @@
             -webkit-justify-content: center;
             align-items: center;
             -webkit-align-items: center;
-            margin-bottom: 50px;
+            margin-bottom: 75px;
             height: 20px;
             width: 100%;
             font-size: 275%;
@@ -430,7 +430,7 @@
             -webkit-justify-content: center;
             align-items: center;
             -webkit-align-items: center;
-            height: 1700px;
+            height: 1900px;
             width: 100%;
             /*background-color: #dfe3ee;*/
             margin: -190px 0 -120px 0;
@@ -446,9 +446,9 @@
             flex-direction: column;
             -webkit-flex-direction: rown;
             /*background-color: #f7f7f7; */
-            height: 450px;
+            height: 500px;
             width: 100%;
-            margin: 5px 15px 0 15px;
+            margin: 20px 15px 0 15px;
             padding: 0 20px 0 20px;
             /*border-bottom: 0.25px solid #dfe3ee;*/
             /*background-color: red;*/ 
@@ -456,7 +456,7 @@
         .topics {
             display: flex;
             flex-direction: row;
-            height: 250px;
+            height: 280px;
             width: 100%;
             /*background-color: blue;*/
         }
@@ -470,9 +470,9 @@
         }
         .imgs {
             height: 250px;
-            width: 300px;
-            margin: 0 10px 0 0;
-            padding: 20px;
+            width: 250px;
+            margin: 0 10px 0px 0;
+            padding: 10px;
            border: 1px solid #dfe3ee;
         }
         .description {
