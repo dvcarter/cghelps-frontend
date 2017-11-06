@@ -312,22 +312,6 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         justify-content: center;
-        macement {
-                    width: 50%;
-                            height: auto;
-                                    display: flex;
-                                            justify-content: center;
-                                                    align-items: center;
-                                                    
-                                                        }
-                                                            ul {
-                                                                        list-style-type: none;
-                                                                                margin-top: -10px;
-                                                                                    }
-                                                                                        li {
-                                                                                                    font-size: 12px;
-                                                                                                        }
-                                                                                                        rgin: 0 0 0 100px;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         align-items: center;
