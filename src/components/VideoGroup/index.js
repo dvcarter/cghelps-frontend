@@ -11,28 +11,28 @@ const VideoGroup =() => {
                     <div className={styles.video_0_2}>
                         <YouTube className={styles.video_0_2_} video="ibq3J5wOrJE" autoplay="0" rel="0" modest="1" fs="1" />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            When damage to his brain and both shoulders ended his hopes for a college wrestling scholarship, Anthony fell into a major depression and started struggling with self-harm issues – until Common Ground helped him find new hope.
                         </p>
                         <Link to="/success-stories/grupido">
-                            Click Here
+                            Watch Here
                         </Link>
                     </div>
                     <div className={styles.video_0_2}> 
                         <YouTube className={styles.video_0_2_} video="_J4u7Ygbudo" autoplay="0" rel="0" modest="1" fs="1" />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            After suffering with paranoid delusions, racing thoughts and misdiagnoses for over 20 years, Paul became homeless, and he lost all hope. That’s when he found Common Ground.
                         </p>
                         <Link to="/success-stories/lyons">
-                            Click Here
+                            Watch Here
                         </Link>
                     </div>
                     <div className={styles.video_0_2}>
                         <YouTube video="WRYJ8HSo2pw" autoplay="0" rel="0" modest="1" fs="1" />
                         <p>
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            When Terri’s 24-year old son, Nate died by suicide, her world fell apart. Faced with this unthinkable loss, Terri struggled to make it through each day. That is when she found Common Ground.
                         </p>
                         <Link to="/success-stories/terri">
-                            Click Here
+                            Watch Here
                         </Link>
                     </div>    
                 </div>
