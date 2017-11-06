@@ -35,7 +35,7 @@ const resourceOpts = [
           link: "/resources/victims-of-crime"
         }
       },
-      {
+     /* {
         subtitle: "Physical & Mental Health",
         image: health,
         description: "Is Someone you know experiencing a mental health or other type of crisis? Learn more about helpful programs and services available here in our community.",
@@ -43,6 +43,6 @@ const resourceOpts = [
           label: "Read more >>",
           link: "/resources/physical-and-mental-health"
         }
-      }
+      }*/
     ]
 export default resourceOpts
