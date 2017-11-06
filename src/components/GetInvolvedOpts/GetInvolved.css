@@ -536,7 +536,7 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:575px) {
-           uperHolder {
+    .superHolder {
         display: flex;/*
         justify-content: center;
         align-items: center;*/
