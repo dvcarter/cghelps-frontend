@@ -334,7 +334,10 @@
             flex-direction: column;
         }
          _::-webkit-full-page-media, _:future, :root .options {
-creen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 767px)
+             height: 33%;
+         }
+
+         .subtitle {
         text-align: center;
         height:10%;
         width: 100%;
