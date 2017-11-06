@@ -294,6 +294,13 @@
         background-color: var(--colorSecondary);
     }
 
+    @-moz-document url-prefix() {
+        .hero_0 {
+             margin: 0 auto;
+            height: 55vh;
+            width: 55vw; 
+        }
+    } 
    /*
     _:-ms-lang(x), .wrapper {
         display: -ms-flexbox;
