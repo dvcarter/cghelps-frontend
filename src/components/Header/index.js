@@ -158,6 +158,11 @@ export default class Header extends Component {
                                                         {"Physical & Mental Health support"}
                                                     </Link>
                                                 </li>*/}
+                                                <li>
+                                                    <Link to='/resources/community-resources' className={styles.link}>
+                                                        {"Community Resources"}
+                                                    </Link>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li className={styles.navItem}>

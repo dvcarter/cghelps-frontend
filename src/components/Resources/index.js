@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as  Router, Route, Switch } from "react-router-dom"
 import ResourceOpts from "../../components/ResourceOpts"
 import GroupOpts from "../../components/GroupOpts"
+import CommunityResources from "../../components/CommunityResources"
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -36,6 +37,7 @@ class Resources extends Component {
                     <PropsRoute path="/resources/youth-and-family" component={GroupOpts} getGroupInfo={youthAndFamily} />
                     <PropsRoute path="/resources/victims-of-crime" component={GroupOpts} getGroupInfo={victimsOfCrime} />
                     <PropsRoute path="/resources/physical-and-mental-health" component={GroupOpts} getGroupInfo={physicalAndMentalHealth} />
+                    <PropsRoute path="/resources/community-resources" component={CommunityResources} />
                 </Switch>
             </Route>
         ) 
