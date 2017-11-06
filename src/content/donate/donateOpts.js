@@ -2,6 +2,7 @@ import onlineDonate from "../assets/OnlineDonate_white.png"
 import telephoneDonate from "../assets/telephonedonate.png"
 import envelopeDonate from "../assets/envelope.png"
 import SeekHelp from "../assets/seekhelp.jpg"
+import downloadForm from "../assets/2013OnlineMailDonationForm.pdf"
 
 const donateOpts = [
       {
@@ -34,7 +35,7 @@ const donateOpts = [
         image: envelopeDonate,
         btn: {
           label: "Download Form",
-          link: "../assets/2013OnlineMailDonationForm.pdf"
+          link: downloadForm
         }
       }
 ]

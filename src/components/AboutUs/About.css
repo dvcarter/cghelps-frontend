@@ -40,6 +40,12 @@
         /*background-color: #dfe3ee;*/
     }
 
+    @-moz-document url-prefix() {
+        .holder {
+            height: auto;
+        }   
+    }  
+
     .options {
         display: flex;
         display: -webkit-flex;
@@ -172,6 +178,11 @@
     }
     _::-webkit-:not(:root:root), .holder {
         height: 300px;
+    }
+    @-moz-document url-prefix() {
+        .holder {
+            height: auto;
+        }
     }
     .options {
         display: flex;
