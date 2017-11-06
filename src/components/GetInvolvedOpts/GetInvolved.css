@@ -312,6 +312,22 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         justify-content: center;
+        macement {
+                    width: 50%;
+                            height: auto;
+                                    display: flex;
+                                            justify-content: center;
+                                                    align-items: center;
+                                                    
+                                                        }
+                                                            ul {
+                                                                        list-style-type: none;
+                                                                                margin-top: -10px;
+                                                                                    }
+                                                                                        li {
+                                                                                                    font-size: 12px;
+                                                                                                        }
+                                                                                                        rgin: 0 0 0 100px;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         align-items: center;
@@ -488,38 +504,154 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:767px ) and (min-width:576px) {
     .superHolder {
         width: 100%;
-        height: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 0;
     }
     .holder {
         height: auto;
         display: flex;
         justify-content: center;
         width: 100%;
-        background-color: red;
+        height: 50%;
+        margin: 0 0 0 0;
+        padding: 0;
     }
 
     .options {
-        height: auto;
+        height: 33%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: yellow;
+        margin: 0 0 0 0;
+        padding: 0;
     }
 
     .imgs {
-        width: 20%;
-        height: 30%;
+        width: 50%;
+        height: 50%;
     }
     .description {
         align-self: center;
         height: auto;
-        width: 50%;
-        background-color: blue;
+        width: 80%;
+    }
+    .topics {
+        height: auto;
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:575px) {
+           uperHolder {
+        display: flex;/*
+        justify-content: center;
+        align-items: center;*/
+        flex-direction: column;
+        width: 100%;
+    }
+
+      .title {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        text-align: center;
+        height: 30px;
+        width: 90%;
+        font-size: 175%;
+        margin-top: 10px;
+        padding-bottom: -40px;
+        color: #333;
+        font-weight: 300;
+    }
+
+
+
+    h3.subtitle {
+        font-weight: 500;
+        font-size: 150%;
+        margin-left: 10px;
+    }
+    
+    .holder {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: 30px 0 80px 0;
+        /*background-color: #dfe3ee;*/
+    }
+
+    .options {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        text-align: left;
+        /*background-color:#f7f7f7;*/
+        height: 33%;    
+        width: 100%;
+        padding: 40px 0 10px 0;
+        margin: 10px 15px 25px 15px;
+        border-bottom: 0.25px solid #dfe3ee;
+    }
+
+    .imgs {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        position: relative;
+        width: 100%;
+        padding: 0 10px 10px 10px;
+        margin: 5px 0 5px 0;
+    }
+
+    .button {
+        width: 200px;
+        position: relative;
+        margin: 5px 0 5px 0;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0.25vh;
+    }
+
+    .topics {
+        height: 100%;
+        width: 100%;
+    } 
+
+}
 
 .button {
     background-color: #8b0000;
