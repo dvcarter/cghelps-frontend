@@ -176,6 +176,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
+    
     .superHolder_0 {
         display: flex;
         justify-content: center;
@@ -348,7 +349,8 @@
         flex-direction: column;
         width: 100%;
     }  
-    
+    @-moz-document url-prefix() {
+    }
     .help {
         display: flex;
         display: -webkit-flex;
@@ -369,7 +371,11 @@
         height: 100%;
         width: 100%;
     }
-    
+   @-moz-document url-prefix() {
+       .help {
+           height: 30%;
+       }
+   }
       .title {
         display: flex;
         display: -webkit-flex;

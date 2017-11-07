@@ -16,8 +16,10 @@ const Testimonials = () => {
                     </Link>
                     <div className={styles.vidBox_0_2_0}>
                         <div className={styles.bigVid_0_2_0}>
-                            <Link className={styles.present1_link} to="/success-stories/grupido">
-                                <img src={grupido} alt="nothing here" className={styles.present1_0_2_0} />
+                            <Link to={"success-stories/grupido"} className={styles.linkedOut}>
+                                <div className={styles.headline}>
+                                    <span> Outpatient Counseling helped Anthony find new hope. </span>
+                                </div>
                             </Link>
                         </div>
                         <div className={styles.smallVids_0_2_0}> 
