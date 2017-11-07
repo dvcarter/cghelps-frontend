@@ -83,9 +83,9 @@ export default class Header extends Component {
                                             </Link>
                                             <ul className={styles.subNavItems}>
                                                 <li>
-                                                    <a href={'/get-help/chat-with-us'} className={styles.link}>
+                                                    <Link to='/get-help/chat-with-us' className={styles.link}>
                                                         {"Chat"}
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
                                                     <Link to='/visit' className={styles.link}>

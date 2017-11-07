@@ -4,6 +4,7 @@ import LatestPosts from "../LatestPosts";
 import Testimonials from "../Testimonials";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
+
 class HomePage extends Component {
 
 /*    constructor(props) {
