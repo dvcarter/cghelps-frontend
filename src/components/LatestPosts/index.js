@@ -14,8 +14,8 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Sober Support Unit</h4>
-                                    <div className={styles.descriptionArea}>The Sober Support Unit (SSU) is a 23-hour program designed to monitor individuals who need detoxification services and have no health risks associated with the withdrawal process... </div>
+                                    <h4 className={styles.subtitle}>Legal Clinic Closed Today</h4>
+                                    <div className={styles.descriptionArea}>Due to construction at the Administration building, the legal clinic will not be held on Tuesday, November 7<sup>th</sup>. It is still scheduled to occur at the Oakland County Law Library on Thursday, November 9<sup>th</sup>... </div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
                         </div>
