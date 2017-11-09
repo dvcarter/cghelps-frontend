@@ -13,166 +13,23 @@ const { DOM: {input, select, textarea} } = React
 //let VolunteerApplication = props => {
 
 class VolunteerApplication extends Component {
-    
-    constructor(props) {
-        super(props);
-        this.state = {
-            firstName: '',
-            lastName: '',
-            email: '',
-            streetAddress: '',
-            city: '',
-            state: '',
-            zipCode: '',
-            phone: '',
-            felonyArea: 'no',
-            volunteerApply: 'no',
-            internshipApply: 'no', 
-            weekdayMorning: 'no',
-            weekdayAfternoon: 'no',
-            weekdayEvening: 'no',
-            advancementWork: 'no',
-            communicationsWork: 'no',
-            outreachWork: 'no',
-            generalHelpWork: 'no',
-            legalClinic: 'no',
-            lobbyGreeterWork: 'no',
-            officeWork: 'no',
-            rccWork: 'no',
-            rhyWork: 'no',
-            creditValidation: 'no',
-            abortionFeelings: 'no',
-            domesticViolenceFeelings: 'no',
-            lGBTQFeelings: 'no',
-            religiousFeelings: 'no',
-            sexualAssaultFeelings: 'no',
-            substanceAbuseFeelings: 'no',
-            suicideFeelings: 'no',
-            traumaQuestionYN: 'no', 
-            attendingCounselingYN: 'no',
-            alert: {
-                show: false,
-                type: '',
-                text: ''
-            }
-        };
-        this.handleSubmit = this.handleSubmit.bind(this);
-    };
+   constructor() {
+       super();
+       this.state = {
+           isHidden: false
+       }
+       this.toggleHidden = this.toggleHidden.bind(this);
+   }
 
-    handleChange(key, event) {
-        this.setState({ [key]: event.target.value});
-    }
-
-    handleSubmit(event) {
-        event.preventDefault();
-
-        if (this.state.firstName === '' ||
-                this.state.lastName === '' ||
-                this.state.email === '' ||
-                this.state.streetAddress === '' ||
-                this.state.city === '' ||
-                this.state.state === '' ||
-                this.state.zipCode === '' ||
-                this.state.phone === '') { 
-            this.setState({ alert: { show: true, type: 'danger', text: 'Please fill out all fields.'} })
-                return;
-            }
-
-    const json = JSON.stringify({
-        'First Name': this.state.firstName,
-        'Last Name' : this.state.lastName,
-        'Email': this.state.email,
-        'Street Address': this.state.streetAddress,
-        'City': this.state.city,
-        'State': this.state.state,
-        'Zip Code': this.state.zipCode,
-        'Phone': this.state.phone,
-        'Felony convictions?': this.state.felonyArea,
-        'Volunteer app': this.state.volunteerApply,
-        'Internship app': this.state.internshipApply,
-        'Weekday Morning': this.state.weekdayMorning,
-        'Weekday Afternoon': this.state.weekdayAfternoon,
-        'Weekday Evening': this.state.weekdayEvening,
-        'Interest in working on Donor relations': this.state.advancementWork,
-        'Interest in working on Communications and Marketing': this.state.communicationsWork,
-        'Interest in working on Community Outreach': this.state.outreachWork,
-        'Interest in providing General Help': this.state.generalHelpWork,
-        'Interest in working with the Legal Clinic': this.state.legalClinic,
-        'Interest in working as a Lobby Greeter': this.state.lobbyGreeterWork,
-        'Interest in working on Office Work': this.state.officeWork,
-        'Interest in working with the Resource and Crisis Helpline': this.state.rccWork,
-        'Interest in working with the Runaway and Homeless Youth program': this.state.rhyWork,
-        'Interest in working on telephone based crisis line': this.state.telephoneInterest,
-        'Interest in working on online chat crisis line': this.state.chatInterest,
-        'Interest in working on telephone based text crisis line': this.state.textInterest,
-        'Interest in working in a face-to-face crisis support role': this.state.faceToFaceInterest,
-        'Personal or Professional knowledge': this.state.professionalKnowledge,
-        'Are you seeking student, community service, or any other credit?': this.state.creditValidation,
-        'Seeking Student, Community Service, or any other type of credit': this.state.credit,
-        'Why are you interested in doing crisis intervention at Common Ground?': this.state.motivation,
-        'Have you ever worked in crisis intervention or any type of counseling/therapy program?': this.state.counselingValidation,
-        'Please tell us when and where, and briefly describe the trainee program?': this.state.previousCounselingWork,
-        'Please briefly describe your primary reasons for applying to this program and tell us what you hope to gain': this.state.reasonsForApplying,
-        'Do you have particularly strong feelings about abortion?': this.state.abortionFeelings,
-        'Do you have particularly strong feelings about domestic violence?': this.state.domesticViolenceFeelings,
-        'Do you have particularly strong feelings about LGBTQ issues?': this.state.lGBTQFeelings,
-        'Do you have particularly strong feelings about religious issues?': this.state.religiousFeelings,
-        'Do you have particularly strong feelings about sexual assault?': this.state.sexualAssaultFeelings,
-        'Do you have particularly strong feelings about substance abuse?': this.state.substanceAbuseFeelings,
-        'Do you have particularly strong feelings about suicide?': this.state.suicideFeelings,
-        'Can you remain objective while interacting with someone who is currently facing any of these issues?': this.state.objectivityQuestion,
-        'Have you recently experienced a significant loss or trauma?': this.state.traumaQuestionYN,
-        'If yes, please describe.': this.state.traumaQuestion,
-        'Are you currently attending counseling/therapy?': this.state.attendingCounselingYN,
-        'If yes, have you discussed your potential involvement at Common Ground with your therapist?': this.state.attendingCounseling,
-        'What do you think would be easiest for you about working in crisis intervention?': this.state.easyCrisisIntervention,
-        'What do you think would be most difficult for you about working in crisis intervention?': this.state.hardCrisisIntervention,
-        'Crisis intervetion work can be stressful. What causes stress in your life, and how do you cope?': this.state.difficultQualities,
-        'What positive qualities do you bring to Common Ground?': this.state.positiveQualities,
-        'Please tell us about any volunteer experience and/or special skills you have to offer.': this.state.volunteerExperience,
-        _subject: '[Common Ground] Message Received',
-         _format: 'plain'
-         } );
-
-
-
-
-    this.setState({
-        alert: {show: true, type: 'info', text: 'Sending...'},
-        submitted: true}, this.sendFormData(json))
-    }
-
-    sendFormData(json) {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open('POST', 'https://formspree.io/dcarter@cghelps.org', true);
-        xmlhttp.setRequestHeader('Accept', 'application/json');
-        xmlhttp.setRequestHeader('Content-Type', 'application/json');
-
-        xmlhttp.send(json);
-
-        var _this = this;
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState < 4)
-                _this.setState({alert: {show: true, type: 'info', text: 'Loading...'} })
-            else if (xmlhttp.readyState === 4) {
-                _this.setState({ alert: { show: true, type: 'success', text: 'Your message has been sent!'}, 
-                    firstName: '', lastName: '', email: '', streetAddress: '', city: '', state: '', zipCode: '', phone: '', felonyArea: '', volunteerApply: '', internshipApply: '',
-                    weekdayMorning: '', weekdayAfternoon: '', weekdayEvening: '', professionalKnowledge: '', credit: ''});
-            window.location.href= '/thank-you';
-            }
-            else {
-                _this.setState({ alert: { show: true, type: 'danger', text: 'Sorry, there has been an error. Please send your message again!'
-                }
-                })
-            }
-        }
-    }
-    
+   toggleHidden() {
+       this.setState({
+           isHidden: !this.state.isHidden
+       });
+   }
     render() {
-    const { handleSubmit, hasRightSelection } = this.props
     return (
         <div className={styles.formHolder }>
-            <form className={styles.formFit} onSubmit={this.handleSubmit} method="POST" >
+            <form className={styles.formFit} action="https://formspree.io/dcarter@cghelps.org"  method="POST" >
             {/* Form Description */}
                 <div className={styles.description}> 
                     <h1 className={styles.title_2_2}> Volunteer Application </h1>
@@ -196,79 +53,60 @@ class VolunteerApplication extends Component {
                     <div className={styles.formGroup}>
                         <label htmlFor="firstName" className="col-form-label">First Name*</label>
                         <input name="first name" component="input" type="text" placeholder="First Name"
-                            value={this.state.firstName} 
-                            onChange={this.handleChange.bind(this, 'firstName')}
                         />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="lastName" className="col-form-label">Last Name*</label>
                         <input name="last name" component="input" type="text" placeholder="Last Name"
-                            value={this.state.lastName} 
-                            onChange={this.handleChange.bind(this, 'lastName')}
                         />
                     </div>
                 </div>
                 <div className={styles.formGroup}> 
                     <label htmlFor="email">Email*</label>
                     <input name="email" component="input" type="email" placeholder="Email address"
-                            value={this.state.email}
-                            onChange={this.handleChange.bind(this, 'email')}
                     />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="streetAddress">Street Address</label>
                     <input name="street address" component="input" type="text" placeholder="Street Address, Apt number" 
-                            value={this.state.streetAddress}
-                            onChange={this.handleChange.bind(this, 'streetAddress')}
                     />
                 </div>
                 <div className={styles.row}>
                     <div className={styles.formGroup}>
                         <label htmlFor="city">City</label>
                         <input name="city" component="input" type="text" placeholder="City"
-                            value={this.state.city}
-                            onChange={this.handleChange.bind(this, 'city')}
                         />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="state">State</label>
                         <input name="state" component="input" type="text" placeholder="State"
-                            value={this.state.state}
-                            onChange={this.handleChange.bind(this, 'state')}
                         />
                     </div>
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="zipCode">Zip Code</label>
                     <input name="zip code" component="input" type="text" placeholder="Zip Code"
-                            value={this.state.zipCode}
-                            onChange={this.handleChange.bind(this, 'zipCode')}
                     />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="phone"> Phone </label>
                     <input name="phone" component="input" type="text" placeholder="Phone"
-                            value={this.state.phone}
-                            onChange={this.handleChange.bind(this, 'phone')}
                     />
                 </div>
                 {/* radio button that shows/hides some options here */}
                  <div>
                     <p> Have you ever been convicted of a felony? </p>
                         <div>
-                            <input name="felonyArea" component="input" type="radio" 
+                            <input name="Have you ever been convicted of a felony?" component="input" type="radio" 
                                 value="yes"
-                                onChange={this.handleChange.bind(this, 'felonyArea')}
-                            
                             />
                             <label>
                                 Yes
                             </label>
                         </div>
                         <div>
-                            <input name="felonyArea" component="input" type="radio"
+                            <input name="Have you ever been convicted of a felony?" component="input" type="radio"
                                 value="no"
-                                onChange={this.handleChange.bind(this, 'felonyArea')}
                             />
                             <label>
                                 No
@@ -279,21 +117,19 @@ class VolunteerApplication extends Component {
                     <p> Which type of position are you applying for? </p>
                     <div>
                         <input
-                            name="Applyingposition"
+                            name="Which position are you applying for?"
                             component="input"
                             type="radio"
-                            value="yes"
-                            onChange={this.handleChange.bind(this, 'volunteerApply')}
+                            value="Volunteer"
                         />
                         <label> Volunteer </label>
                     </div>
                     <div>
                         <input
-                            name="Applyingposition"
+                            name="Which position are you applying for?"
                             component="input"
                             type="radio"
-                            value="yes"
-                            onChange={this.handleChange.bind(this, 'internshipApply')}
+                            value="Internship"
                         />
                         <label> Internship </label>
                     </div>
@@ -307,7 +143,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'weekdayMorning')}
                         />
                         <label htmlFor="volunteerTimes"> Weekday mornings </label>
                     </div>
@@ -318,7 +153,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'weekdayAfternoon')}
                         />
                         <label htmlFor="volunteerTimes"> Weekkday Afternoons </label>
                     </div>
@@ -329,7 +163,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'weekdayEvening')}
                         />
                         <label htmlFor="volunteerTimes"> Weekday Evenings </label>
                     </div>
@@ -337,13 +170,12 @@ class VolunteerApplication extends Component {
                 <div>
                     <p>  What type of work interests you? Check all that apply.* </p>
                     <div>
-                        < input
+                        <input
                              name="Interest in working on Business Advancement and Donor Relations"
                             id="workInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'advancedmentWork')}
                         />
                         <label htmlFor="workInterest"> Advancement & Donor Relations</label>
                     </div>
@@ -354,7 +186,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'communicationsWork')}
                         />
                         <label htmlFor="workInterest"> Communications & Marketing </label>
                     </div>
@@ -365,7 +196,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'outreachWork')}
                         />
                         <label htmlFor="workInterest"> Community Outreach </label>
                     </div>
@@ -376,7 +206,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'generalHelpWork')}
                         />
                         <label htmlFor="workInterest"> General Help </label>
                     </div>
@@ -387,7 +216,6 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'legalClinicWork')}
                         />
                         <label htmlFor="workInterest"> Legal Clinic </label>
                     </div>
@@ -398,120 +226,106 @@ class VolunteerApplication extends Component {
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'lobbyGreeterWork')}
                         />
                         <label htmlFor="workInterest"> Lobby Greeter </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Interest in working on Office Work"
                             id="workInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'officeWork')}
                         />
                         <label htmlFor="workInterest"> Office Work </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Interest in working with the Resource and Crisis Helpline"
                             id="workInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'rccWork')}
+                            onClick={this.toggleHidden }
                         />
                         <label htmlFor="workInterest"> Resource & Crisis Helpline </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Interest in working with the Runaway and Homeless Youth Programs"
                             id="workInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'rhyWork')}
                         />
                         <label htmlFor="workInterest"> Runaway & Homeless Youth Programs </label>
                     </div>
 
                 </div>
+                { this.state.isHidden && <div>
                  <div>
                     <p> Which type of crisis intervention and emotional support work interests you?
                         Select all that apply? </p>
                     <div>
-                        <Field 
-                            name="Telephone" 
+                        <input 
+                            name="Telephone crisis intervention and emotional support work interests you?" 
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'telephoneInterest')}
                         />
                         <label>Telephone</label>
                     </div>
                     <div>
-                        <Field 
-                            name="Chat" 
+                        <input 
+                            name="Chat crisis intervention and emotional support work interests you?" 
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
                             value="yes" 
-                            onChange={this.handleChange.bind(this, 'chatInterest')}
                         />
                         <label>Chat</label>
                     </div>
                     <div>
-                        <Field 
-                            name="Text" 
+                        <input 
+                            name="Text crisis intervention and emotional support work interests you?" 
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
                             value="yes" 
-                            onChange={this.handleChange.bind(this, 'textInterest')}
                         />
                         <label>Text</label>
                     </div>
                     <div>
-                        <Field 
-                            name="Face-to-Face"
+                        <input
+                            name="Face-to-Face crisis intervention and emotional support work interests you?"
                             id="volunteerArea"
                             component="input" 
                             type="checkbox" 
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'faceTofaceInterest')}
                         />
                         <label>Face-to-Face</label>
                     </div>
                 </div>
                 <div>
                     <p> Do you have personal and/or professional knowledge of topics such as domestic violence, mental health, suicide prevention, substance abuse, etc.? If so, please explain. </p>
-                    <Field name="professionalKnowledge" component="textarea" className={styles.boxWidth} 
-                        value={this.state.professionalKnowledge}
-                        onChange={this.handleChange.bind(this, 'professionalKnowledge')}
+                    <input name="Do you have personal and/or professional knowledge of topics such as domestic violence, mental health, suicide prevention, substance abuse, etc.?" type="textarea" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
-                    
                     <p> Are you seeking student credit, community service credit, or any other type of 
                         credit in exchange for your volunteer efforts </p>
                         <div>
-                            <Field name="quidProQuoValidation" component="input" type="radio" value="no" 
-                                onChange={this.handleChange.bind(this, "creditValidation")}
+                            <input name="Are you seeking student credit, community service credit, or any other credit?" component="input" type="radio" value="no" 
                             />
                             <label> No </label>
                         </div>
                         <div>
-                            <Field name="quidProQuoValidation" component="input" type="radio" value="yes" 
-                                onChange={this.handleChange.bind(this, "creditValidation")}
+                            <input name="Are you seeking student credit, community service credit, or any other credit?" component="input" type="radio" value="yes" 
                             />
                             <label> Yes  <span> if yes, please explain</span> </label>
                         </div>
-                        <Field name="quidProQuo" component="textarea" className={styles.boxWidth} 
-                            value={this.state.credit}
-                            onChange={this.handleChange.bind(this, 'credit')}
-                        
+                        <input name="What sort of  seeking student credit, community service credit, or any other credit will you be receiving?" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
@@ -519,119 +333,104 @@ class VolunteerApplication extends Component {
                     describe yourself and tell us what motivates you. Share a brief statement of your general
                     outlook on life, as well as any events you feel have significantly impacted your
                     personal development. (Do not provide a lengthy personal history.) </p>
-                    <Field name="motivation" component="textarea" className={styles.boxWidth} 
-                            value={this.state.motivation}
-                            onChange={this.handleChange.bind(this, 'motivation')}
+                    <input name="Why are you interested in doing crisis intervention work at Common Ground?" type="textarea" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
                     <p> Have you ever worked in crisis intervention or any type of counseling/therapy program
                     ?</p>
                     <div>
-                        <Field name="previousCounselingWork" component="input" type="radio" value="no" 
-                            onChange={this.handleChange.bind(this, 'counselingValidation')}
+                        <input name="previousCounselingWork" component="input" type="radio" value="no" 
                         />
                         <label> No </label>
                     </div>
                     <div>
-                        <Field name="previousCounselingWork" component="input" type="radio" value="yes" 
-                            onChange={this.handleChange.bind(this, 'counselingValidation')}
+                        <input name="previousCounselingWork" component="input" type="radio" value="yes" 
                         />
                         <label> Yes  If yes, please tell us when and where, briefly describe the 
                             trainee program </label>
                     </div>
                     <div>
-                        <Field name="previousCounselingWorkExplanation" component="textarea" className={styles.boxWidth} 
-                            value={this.state.previousCounselingWork}
-                            onChange={this.handleChange.bind(this, 'previousCounselingWork')}
+                        <input name="previousCounselingWorkExplanation" component="textarea" className={styles.boxWidth} 
                         />
                     </div>
                 </div>
                 <div>
                     <p> Please briefly summarize your primary reasons for applying to this program
                         and tell us what you hope to gain. </p>
-                    <Field name="reasonsForApplying" component="textarea" className={styles.boxWidth} 
-                        value={this.state.reasonsForApplying}
-                        onChange={this.handleChange.bind(this, 'reasonsForApplying')}    
+                    <input name="reasonsForApplying" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> Do you have particularly strong feelings about any of these issues? 
                         Select all that apply </p>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about Abortion issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'abortionFeelings')}
                         />  
                         <label htmlFor="issueInterest"> Abortion </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about Domestic Violence issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'domesticViolenceFeeings')}
                         />
                         <label htmlFor="issueInterest"> Domestic Violence </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about LGBTQ issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'lGBTQFeelings')}
                         />
                         <label htmlFor="issueInterest"> LGBTQ </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about Religious issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'religiousFeelings')}
                         />
                         <label htmlFor="issueInterest"> Religion </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about Sexual Assault issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'sexualAssaultFeelings')}
                         />
                         <label htmlFor="issueInterest"> Sexual Assault </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about Substance Abuse issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'substanceAbuseFeelings')}
                         />
                         <label htmlFor="issueInterest"> Substance Abuse </label>
                     </div>
                     <div>
-                        <Field
+                        <input
                             name="Strong feelings about Suicide issues"
                             id="issueInterest"
                             component="input"
                             type="checkbox"
                             value="yes"
-                            onChange={this.handleChange.bind(this, 'suicideFeelings')}
                         />
                         <label htmlFor="issueInterest"> Suicide </label>
                     </div>
@@ -641,123 +440,76 @@ class VolunteerApplication extends Component {
                         Can you remain objective while interacting with someone who is currently
                         facing any of these issues?
                     </p>
-                    <Field name="objectivityQuestion" component="textarea" className={styles.boxWidth} 
-                        value={this.state.objectivityQuestion}
-                        onChange={this.handleChange.bind(this, 'objectivityQuestion')}
+                    <input name="objectivityQuestion" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> Have you recently experienced a significant loss or trauma? </p>
                     <div>
-                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="no" 
-                            onChange={this.handleChange.bind(this, 'traumaQuestionYN')}
+                        <input name="closeEndedTraumaQuestion" component="input" type="radio" value="no" 
                         />
                         <label> No </label>
                     </div>
                     <div>
-                        <Field name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" 
-                            onChange={this.handleChange.bind(this, 'traumaQuestionYN')}
+                        <input name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" 
                         />
                         <label> Yes <span> If yes, please describe.</span> </label>
                     </div>
-                    <Field name="traumaQuestion" component="textarea" className={styles.boxWidth} 
-                            value={this.state.traumaQuestion}
-                            onChange={this.handleChange.bind(this, 'traumaQuestion')}
+                    <input name="traumaQuestion" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
                     <p> Are you currently attending counseling/therapy? </p>
                     <div>
-                        <Field name="attendingCounseling" component="input" type="radio" value="no" 
-                            onChange={this.handleChange.bind(this, 'attendingCounselingYN')}
+                        <input name="attendingCounseling" component="input" type="radio" value="no" 
                         />
                         <label> No </label>
                     </div>
                     <div>
-                        <Field name="attendingCounseling" component="input" type="radio" value="yes" 
-                            onChange={this.handleChange.bind(this, 'attendingCounselingYN')}
+                        <input name="attendingCounseling" component="input" type="radio" value="yes" 
                         />
                         <label> Yes <span> If yes, have you discussed your potential involvement at Common
                         Ground with your therapist? </span> </label>
                     </div>
-                    <Field name="counselingQuestioning" component="textarea" className={styles.boxWidth} 
-                            value={this.state.attendingCounseling}
-                            onChange={this.handleChange.bind(this, 'attendingCounseling')}
+                    <input name="counselingQuestioning" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
                     <p> What do you think would be easiest for you about working in crisis intervention? </p>
-                    <Field name="easistPartCrisisIntervention" component="textarea" className={styles.boxWidth} 
-                        value={this.state.easyCrisisIntervention}
-                        onChange={this.handleChange.bind(this, 'easyCrisisIntervention')}    
+                    <input name="easistPartCrisisIntervention" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> What do you think would be most difficult for you about working in crisis intervention? </p>
-                    <Field name="hardestPartCrisiIntervention" component="textarea" className={styles.boxWidth} 
-                        value={this.state.hardCrisisIntervention}
-                        onChange={this.handleChange.bind(this, 'hardCrisisIntervention')}
+                    <input name="hardestPartCrisiIntervention" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> Crisis intervention work can be stressful. What causes stress in your life, and how do you
                         cope?</p>
-                    <Field name="difficultQualities" component="textarea" className={styles.boxWidth} 
-                        value={this.state.difficultQualities}
-                        onChange={this.handleChange.bind(this, 'difficultQualities')}
+                    <input name="difficultQualities" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> What positive qualities do you bring to Common Ground? </p>
-                    <Field name="positiveQualities" component="textarea" className={styles.boxWidth}
-                        value={this.state.positiveQualities}
-                        onChange={this.handleChange.bind(this, 'positiveQualities')}
+                    <input name="positiveQualities" component="textarea" className={styles.boxWidth}
                     />
                 </div>
                 <div>
                     <p> Please tell us about any volunteer experience and/or special skills you have to offer. </p>
-                    <Field name="volunteerExperience" component="textarea" className={styles.boxWidth}
-                        value={this.state.volunteerExperience}
-                        onChange={this.handleChange.bind(this, 'volunteerExperience')}
+                    <input name="volunteerExperience" component="textarea" className={styles.boxWidth}
                     />
                 </div>
-                {(hasRightSelection === "face-to-face") &&
-                    <div>
-                        <p> This is a Hat </p>
-                    </div>
+                </div>
                 }
                 <input type="submit" value="Send" className={styles.buttonContact}/>
                     
             </div>
-                { this.state.alert.show &&
-                    <div className={ styles.alert_danger }>
-                    { this.state.alert.text }
-                    </div>
-                }
+                    <input type="hidden" name="_next" value="/thank-you" />
             </form>
         </div>
         )
     }
 }
-
-VolunteerApplication = reduxForm({
-    form: 'information',
-    enableReinitialize: true,
-    onSubmitSuccess: (dispatch) => {
-        console.log("Success!");
-        store.dispatch(push("/"));
-    },
-})(VolunteerApplication)
-
-const selector = formValueSelector('volunteerApplication')
-VolunteerApplication = connect(state => {
-    const hasRightSelection = selector(state, 'volunteerArea')
-    return {
-        hasRightSelection
-    }
-})(VolunteerApplication)
-
-
-
 
 export default VolunteerApplication;
