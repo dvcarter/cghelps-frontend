@@ -1,9 +1,4 @@
 import React, {Component} from "react"
-import { connect } from "react-redux"
-import { store } from "../../index.js"
-import { createBrowserHistory as hashHistory } from "history"
-import { push, replace } from "react-router-redux"
-import { Redirect } from "react-router-dom"
 import { Field, reduxForm, formValueSelector } from "redux-form"
 import styles from "./index.css"
 //import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -52,45 +47,45 @@ class VolunteerApplication extends Component {
                 <div className={styles.row}>
                     <div className={styles.formGroup}>
                         <label htmlFor="firstName" className="col-form-label">First Name*</label>
-                        <input name="first name" component="input" type="text" placeholder="First Name"
+                        <input name="First Name" component="input" type="text" placeholder="First Name"
                         />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="lastName" className="col-form-label">Last Name*</label>
-                        <input name="last name" component="input" type="text" placeholder="Last Name"
+                        <input name="Last Name" component="input" type="text" placeholder="Last Name"
                         />
                     </div>
                 </div>
                 <div className={styles.formGroup}> 
                     <label htmlFor="email">Email*</label>
-                    <input name="email" component="input" type="email" placeholder="Email address"
+                    <input name="Email" component="input" type="email" placeholder="Email address"
                     />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="streetAddress">Street Address</label>
-                    <input name="street address" component="input" type="text" placeholder="Street Address, Apt number" 
+                    <input name="Street Address" component="input" type="text" placeholder="Street Address, Apt number" 
                     />
                 </div>
                 <div className={styles.row}>
                     <div className={styles.formGroup}>
                         <label htmlFor="city">City</label>
-                        <input name="city" component="input" type="text" placeholder="City"
+                        <input name="City" component="input" type="text" placeholder="City"
                         />
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="state">State</label>
-                        <input name="state" component="input" type="text" placeholder="State"
+                        <input name="State" component="input" type="text" placeholder="State"
                         />
                     </div>
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="zipCode">Zip Code</label>
-                    <input name="zip code" component="input" type="text" placeholder="Zip Code"
+                    <input name="Zip Code" component="input" type="text" placeholder="Zip Code"
                     />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="phone"> Phone </label>
-                    <input name="phone" component="input" type="text" placeholder="Phone"
+                    <input name="Phone" component="input" type="text" placeholder="Phone"
                     />
                 </div>
                 {/* radio button that shows/hides some options here */}
@@ -309,7 +304,7 @@ class VolunteerApplication extends Component {
                 </div>
                 <div>
                     <p> Do you have personal and/or professional knowledge of topics such as domestic violence, mental health, suicide prevention, substance abuse, etc.? If so, please explain. </p>
-                    <input name="Do you have personal and/or professional knowledge of topics such as domestic violence, mental health, suicide prevention, substance abuse, etc.?" type="textarea" component="textarea" className={styles.boxWidth} 
+                    <textarea name="Do you have personal and/or professional knowledge of topics such as domestic violence, mental health, suicide prevention, substance abuse, etc.?" type="textarea" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
@@ -325,7 +320,7 @@ class VolunteerApplication extends Component {
                             />
                             <label> Yes  <span> if yes, please explain</span> </label>
                         </div>
-                        <input name="What sort of  seeking student credit, community service credit, or any other credit will you be receiving?" component="textarea" className={styles.boxWidth} 
+                        <textarea name="What sort of  seeking student credit, community service credit, or any other credit will you be receiving?" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
@@ -333,32 +328,33 @@ class VolunteerApplication extends Component {
                     describe yourself and tell us what motivates you. Share a brief statement of your general
                     outlook on life, as well as any events you feel have significantly impacted your
                     personal development. (Do not provide a lengthy personal history.) </p>
-                    <input name="Why are you interested in doing crisis intervention work at Common Ground?" type="textarea" component="textarea" className={styles.boxWidth} 
+                    <textarea name="Why are you interested in doing crisis intervention work at Common Ground?" type="textarea" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
                     <p> Have you ever worked in crisis intervention or any type of counseling/therapy program
                     ?</p>
                     <div>
-                        <input name="previousCounselingWork" component="input" type="radio" value="no" 
+                        <input name="Have you ever worked in crisis intervention or any type of counseling/therapy program?" component="input" type="radio" value="no" 
                         />
                         <label> No </label>
                     </div>
                     <div>
-                        <input name="previousCounselingWork" component="input" type="radio" value="yes" 
+                        <input name="Have you ever worked in crisis intervention or any type of counseling/therapy program?" component="input" type="radio" value="yes" 
                         />
                         <label> Yes  If yes, please tell us when and where, briefly describe the 
                             trainee program </label>
                     </div>
                     <div>
-                        <input name="previousCounselingWorkExplanation" component="textarea" className={styles.boxWidth} 
+                        <textarea name="Please briefly summarize your any type of counseling/therapy program you have worked on." component="textarea" className={styles.boxWidth} 
                         />
                     </div>
                 </div>
                 <div>
                     <p> Please briefly summarize your primary reasons for applying to this program
                         and tell us what you hope to gain. </p>
-                    <input name="reasonsForApplying" component="textarea" className={styles.boxWidth} 
+                    <textarea name="Please briefly summarize your primary reasons for applying to this program
+                        and tell us what you hope to gain." component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
@@ -440,64 +436,66 @@ class VolunteerApplication extends Component {
                         Can you remain objective while interacting with someone who is currently
                         facing any of these issues?
                     </p>
-                    <input name="objectivityQuestion" component="textarea" className={styles.boxWidth} 
+                    <textarea name="Please briefly describe your feelings about each issue you selected above.
+                        Can you remain objective while interacting with someone who is currently
+                        facing any of these issues?" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> Have you recently experienced a significant loss or trauma? </p>
                     <div>
-                        <input name="closeEndedTraumaQuestion" component="input" type="radio" value="no" 
+                        <input name="Have you recently experienced a significant loss or trauma?" component="input" type="radio" value="no" 
                         />
                         <label> No </label>
                     </div>
                     <div>
-                        <input name="closeEndedTraumaQuestion" component="input" type="radio" value="yes" 
+                        <input name="Have you recently experienced a significant loss or trauma? " component="input" type="radio" value="yes" 
                         />
                         <label> Yes <span> If yes, please describe.</span> </label>
                     </div>
-                    <input name="traumaQuestion" component="textarea" className={styles.boxWidth} 
+                    <textarea name="Please explain your experience with a trauma" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
                     <p> Are you currently attending counseling/therapy? </p>
                     <div>
-                        <input name="attendingCounseling" component="input" type="radio" value="no" 
+                        <input name="Are you currently attending counseling/therapy?" component="input" type="radio" value="no" 
                         />
                         <label> No </label>
                     </div>
                     <div>
-                        <input name="attendingCounseling" component="input" type="radio" value="yes" 
+                        <input name="Are you currently attending counseling/therapy?" component="input" type="radio" value="yes" 
                         />
                         <label> Yes <span> If yes, have you discussed your potential involvement at Common
                         Ground with your therapist? </span> </label>
                     </div>
-                    <input name="counselingQuestioning" component="textarea" className={styles.boxWidth} 
+                    <textarea name="have you discussed your potential involvement at Common
+                        Ground with your therapist?" component="textarea" className={styles.boxWidth} 
                         />
                 </div>
                 <div>
                     <p> What do you think would be easiest for you about working in crisis intervention? </p>
-                    <input name="easistPartCrisisIntervention" component="textarea" className={styles.boxWidth} 
+                    <textarea name="What do you think would be easiest for you about working in crisis intervention?" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> What do you think would be most difficult for you about working in crisis intervention? </p>
-                    <input name="hardestPartCrisiIntervention" component="textarea" className={styles.boxWidth} 
+                    <textarea name="What do you think would be most difficult for you about working in crisis intervention?" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
-                    <p> Crisis intervention work can be stressful. What causes stress in your life, and how do you
-                        cope?</p>
-                    <input name="difficultQualities" component="textarea" className={styles.boxWidth} 
+                    <p> Crisis intervention work can be stressful. What causes stress in your life, and how do you cope?</p>
+                    <textarea name="Crisis intervention work can be stressful. What causes stress in your life, and how do you cope?" component="textarea" className={styles.boxWidth} 
                     />
                 </div>
                 <div>
                     <p> What positive qualities do you bring to Common Ground? </p>
-                    <input name="positiveQualities" component="textarea" className={styles.boxWidth}
+                    <textarea name="What positive qualities do you bring to Common Ground?" component="textarea" className={styles.boxWidth}
                     />
                 </div>
                 <div>
                     <p> Please tell us about any volunteer experience and/or special skills you have to offer. </p>
-                    <input name="volunteerExperience" component="textarea" className={styles.boxWidth}
+                    <textarea name="Please tell us about any volunteer experience and/or special skills you have to offer." component="textarea" className={styles.boxWidth}
                     />
                 </div>
                 </div>
