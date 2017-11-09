@@ -24,7 +24,7 @@ class VolunteerApplication extends Component {
     render() {
     return (
         <div className={styles.formHolder }>
-            <form className={styles.formFit} action="https://formspree.io/dcarter@cghelps.org"  method="POST" >
+            <form className={styles.formFit} action="https://formspree.io/rgaddis@cghelps.org"  method="POST" >
             {/* Form Description */}
                 <div className={styles.description}> 
                     <h1 className={styles.title_2_2}> Volunteer Application </h1>
@@ -149,7 +149,7 @@ class VolunteerApplication extends Component {
                             type="checkbox"
                             value="yes"
                         />
-                        <label htmlFor="volunteerTimes"> Weekkday Afternoons </label>
+                        <label htmlFor="volunteerTimes"> Weekday Afternoons </label>
                     </div>
                     <div>
                         <input
@@ -160,6 +160,16 @@ class VolunteerApplication extends Component {
                             value="yes"
                         />
                         <label htmlFor="volunteerTimes"> Weekday Evenings </label>
+                    </div>
+                    <div>
+                        <input 
+                            name="Weekend availability"
+                            id="volunteerTimes"
+                            component="input"
+                            type="checkbox"
+                            value="yes"
+                        />
+                        <label htmlFor="volunteerTimes"> Weekends </label>
                     </div>
                 </div>
                 <div>
