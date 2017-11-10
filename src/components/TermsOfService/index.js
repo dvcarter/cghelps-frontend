@@ -1,4 +1,6 @@
 import React from "react"
+import {Link} from "react-router-dom"
+import privacyPolicy from "../../content/assets/MSHMIS_privacy_policy.pdf"
 
 const TermsOfService = () => {
     
@@ -44,7 +46,7 @@ const TermsOfService = () => {
     return (
         <div style={divStyle}> 
                 <div style={headerStyle}>Privacy Policy  </div>
-                <div style={linkStyle}><a href="./../assets/MSHMIS_privacy_policy.pdf">Pdf version</a></div>
+                <div style={linkStyle}><a href={privacyPolicy}>Pdf version</a></div>
                 <br />
                 <div style={titleStyle}>Michigan State Homeless Management Information System (MSHMIS) Privacy Notice</div>
                 <br />

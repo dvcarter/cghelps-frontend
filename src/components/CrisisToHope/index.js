@@ -43,7 +43,6 @@ You will come away with a better understanding of how critical Common Ground is 
 
                         </p>
                     </div>
-
             </div>
     )
 }

@@ -1,0 +1,118 @@
+
+.formHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.formFit {
+    width: 100%;
+    height: auto;
+    margin: 200px 0px 200px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.boxWidth {
+    /*min-height: 200px;
+    max-height: 500px;*/
+    /*min-width: 500px;
+    max-width: 80%;*/
+    min-width: 50vw;
+    height: 300px;
+    font-size: 125%;
+}
+.title_2_2 {
+    color: #333;
+    width: 100%;
+    margin: 0 5px 0 5px;
+}
+.description {
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 0 0;
+
+}
+
+.formProper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px 0 40px;
+    overflow-x: hidden;
+
+}
+.row {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formGroup:first-child, .formGroup:nth-child(5) {
+    width: 50%;
+    margin: 0 20px 0 0px;
+}
+.formGroup:nth-child(2), .formGroup:nth-child(6), .formGroup:nth-child(7) {
+    width: 50%;
+}
+
+input[type=text], input[type=email] {
+       width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+.buttonContact {
+        align-self: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #007acc;
+        border-radius: 8px;
+        color: #007acc;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 150%;    
+        width: 40%;
+        cursor: pointer;
+        transition: 0.3s ease;
+        background-color: #fff;
+    }   
+
+    .buttonContact:hover {
+        background-color: #007acc;
+        color: #fff;
+    }   
+
+
+.alert_info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+}
+.alert_success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+.alert_danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}

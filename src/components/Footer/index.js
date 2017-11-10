@@ -4,7 +4,7 @@ import styles from "./index.css"
 import FaceBook from "./facebook-logo.png"
 import LinkedIn from "./linkedin-logo.png"
 import Twitter from "./twitter-logo.png"
-
+import mcStyles from "../../index.global.css"
 
 const Footer = () => (
   <footer className={ styles.footer }>
@@ -38,11 +38,11 @@ const Footer = () => (
                 <h4><strong>Subscribe to our Newsletter</strong></h4>
                 Sign-up to have our quarterly communications delivered right to your inbox
                 
-                <div id="mc_embed_signup">
-                <form action="//commongroundhelps.us13.list-manage.com/subscribe/post?u=782d883598807592a7afafd27&amp;id=6ae736da35" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
-                    <div id="mc_embed_signup_scroll">
-                            <input type="email"  name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required/>
-                                    <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
+                <div id={mcStyles.mc_embed_signup}>
+                <form action="//commongroundhelps.us13.list-manage.com/subscribe/post?u=782d883598807592a7afafd27&amp;id=6ae736da35" method="post" id={mcStyles.mc_embedded_subscribe_form} name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                    <div id={mcStyles.mc_embed_signup_scroll}>
+                            <input type="email"  name="EMAIL"  id={mcStyles.mce_EMAIL} placeholder="email address" required/>
+                                    <input type="submit" value="Subscribe" name="subscribe" className={mcStyles.mc_button}/>
                                         </div>
                                         </form>
                                         </div>

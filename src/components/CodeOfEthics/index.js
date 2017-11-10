@@ -1,5 +1,6 @@
 import React from "react"
-
+import {Link} from "react-router-dom"
+import codeOfEthics from "../../content/assets/Code_of_Ethics.pdf"
 var headerStyle  = { 
     fontSize: "200%",
     fontWeight: "300",
@@ -37,7 +38,7 @@ const CodeOfEthics = () => {
     return (
         <div style={divStyle}>
             <div style={headerStyle}>Code of Ethics </div>
-            <div style={linkStyle}><a href="./../assets/Code_of_Ethics.pdf">Pdf version</a></div>
+            <div style={linkStyle}><a href={codeOfEthics}>Pdf version</a></div>
             <div style={titleStyle}> Policy </div>
             <br />
                 <ul><li>
