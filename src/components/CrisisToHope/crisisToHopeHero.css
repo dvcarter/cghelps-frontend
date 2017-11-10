@@ -459,6 +459,7 @@
 }
 
 
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) {
     /*.hero {
         margin: 0 auto;
@@ -473,21 +474,15 @@
         background-color: var(--colorSecondary);
     }
      .header {
-        width: 100%;
-        height: 100%;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: left;
-  -webkit-justify-content: left;
-  padding: 5rem 0;
-  padding: 10vh 0;
-  text-align: center;
-}
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 75vw;
+        height: 70vh;      
+    }
     .wrapper {
-        margin-top: -15px;
-        height: 61.75vh;
+        margin-top: 0;
+        height: 100%;
     }
     .heading {
         /*margin: 270px 0 0 0;*/
@@ -501,18 +496,22 @@
     .textBox {
         display: flex;
         align-items: flex-start;
+        justify-content: center;
         flex-direction: column;
         text-align: left;
-        margin: 40px 0 0 0;
+        margin: 1em 0 0 0;
         padding: 20px;
         height: 100%;
         width: 100%;
         color: #fff;
     }
     .purpleTitle {
-        width: 100%;
         font-size: 200%;
         font-weight: 600;
+    }
+
+    .textBox p {
+        width: 100%;
     }
     .datePlacement {
         width: 100%;
@@ -520,7 +519,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
     ul {
         list-style-type: none;
@@ -532,10 +530,257 @@
  
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:767px ) and (min-width:576px) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:1199px ) and (min-width:992px) {
+    .hero {
+    margin: 0 auto;
+    height: 77.4vh;
+    width: 85vw;
+    /* fallback, mainly visible when hero image is loading */
+    background-color: var(--colorSecondary);
+    /* fallback when there is no hero image */
+    }
+
+     .header {
+        width: 85vw;
+        height: 77.40vh;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: left;
+        -webkit-justify-content: left;
+        /*padding: 5rem 0;
+        padding: 10vh 0;*/
+        text-align: center;
+    }
+
+     .wrapper {
+        width: 40%;
+        height: 100%;
+        margin: 20px 0 0 0;
+    }
+    .heading {
+        /*margin: 270px 0 0 0;*/
+        display: flex;
+        height: 100%;
+        width: 100%;
+        color: ;
+        background-color: #482864;
+        background: rgba(72, 40, 100, 0.85);
+    }
+
+    div.heading {
+        color: #fff;
+    }
+    .textBox {
+        text-align: left;
+        margin: 100px 0 0 0;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+    }
+    h1 {
+        margin: 0 0 0 40px;
+        font-size: 175%;
+    }
+
+     .purpleTitle {
+        font-size: 200%;
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:991px ) and (min-width:768px) {
+    .hero {
+        margin: 0 auto;
+        height: 500px;
+        width: 100%;
+    }
+        .header {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: left;
+        -webkit-justify-content: left;
+        text-align: center;
+    }
+
+    .wrapper {
+        width: 40%;
+        height: 100%;
+        margin: 0px 0 0 0;
+    }
+
+    .heading {
+        display: flex;
+        height: 426.5px;
+        color: #fff;
+        margin-top: 73px;
+        background-color: #482864;
+        background:rgba(72, 40, 100, 0.85);
+    }
+    div.heading {
+        color: #fff;
+    }
+    .textBox {
+         display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+        margin: 1px 0 0 0;
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        color: #fff;
+    }
+
+    h1 {
+        margin: 0 0 -10px 40px;
+    }
+
+     .purpleTitle {
+        margin: 20px 0 -10px 0;
+        font-size: 150%;
+        font-weight: 600;
+    }
+
+    .textBox p {
+        width: 100%;
+    }
+    .datePlacement {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 }
 
 
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:767px ) and (min-width:576px) {
+    .hero {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: right;
+        -webkit-justify-content: right;
+        margin: 0 auto;
+        /*height:400px; */
+        width: 100%;
+        height: 500px;
+        background-color: var(--colorSecondary);
+    }
+        .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .textBox {
+           display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .textBox p {
+        width: 80%;
+    }
+
+    .purpleTitle {
+        font-size: 150%;
+        font-weight: 600;
+    }
+    .datePlacement {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: -10px;
+    }
+    li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:575px) {
+        .hero {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: right;
+        -webkit-justify-content: right;
+        margin: 0 auto;
+        /*height:400px; */
+        width: 100%;
+        height: 60vh;
+        background-color: var(--colorSecondary);
+    }
+        .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .textBox {
+           display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        margin: 40px 0 0 0;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .textBox p {
+        width: 80%;
+    }
+
+    .purpleTitle {
+        font-size: 150%;
+        font-weight: 600;
+    }
+
+    .datePlacement {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: -10px;
+    }
+    li {
+        font-size: 12px;
+    }
+
+}
 .heading, .lowerTitle {
   letter-spacing: 1px;
 }
