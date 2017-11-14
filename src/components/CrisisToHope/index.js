@@ -3,11 +3,12 @@ import PropTypes from "prop-types"
 import styles from "./CrisisToHope.css"
 import sty from "./crisisToHopeHero.css"
 import GetInvolved from "../../content/assets/getinvolved.jpg"
+import C2HForm from "../C2HForm"
 
 const CrisisToHope = () => {
     return (
             <div className={styles.superHero}>
-                       <div
+            {/* <div
                         className={ sty.hero } 
                         style={ {background: `#111 url(${GetInvolved}) 50% 50% / cover`}}
                     >   
@@ -32,16 +33,10 @@ const CrisisToHope = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>            
+                    </div>
+                    */}
                     <div className={styles.explanationHolder}>
-                        <p>
-                            We invite you to get to know Common Ground a little better!
-
-The presentation consists of inspirational stories that get to the heart of Common Ground's key impact areas: Responding to Crisis, Providing Safety and Advocacy, and Building Communities of Support.
-
-You will come away with a better understanding of how critical Common Ground is to our community. We Are not asking for contributions, but we will follow up with you a few days after the presentation to gather comments and feedback. It will easily be the best hour of your day.
-
-                        </p>
+                        <C2HForm />
                     </div>
             </div>
     )
