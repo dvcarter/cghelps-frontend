@@ -113,7 +113,7 @@ You will come away with a better understanding of how critical Common Ground is 
                 <div>
                 </div>
                     <input type="submit" value="Send" className={styles.buttonContact}/>
-                    <input type="hidden" name="_next" value="/thank-you" />
+                    <input type="hidden" name="_next" value="/thanks-for-registering" />
             </div>
         </form>
     </div>
