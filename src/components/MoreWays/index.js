@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
+import {Link} from "react-router-dom"
 import { connect } from "react-redux";
 import styles from "./MoreWays.css"
 import {selectMoreInfo} from "../../selectors/moreSelectors";
@@ -22,7 +23,10 @@ class MoreWays extends Component {
                                 <img className={styles.image} alt="image here" src={more.img} />
                                 <div className={styles.subtitle}> {more.title} </div>
                                 <div className={styles.descriptions}> {more.description} </div>
-                            </div>
+                                {(more.btn.link === null) ? '' :
+                                <a className={styles.moreWaysButton} href={more.btn.link}> {more.btn.label} </a>
+                                }    
+                        </div>
                         ))}
                     </div>
                 </div>
