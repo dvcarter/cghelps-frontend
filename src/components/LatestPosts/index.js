@@ -14,8 +14,8 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Legal Clinic in session Today!</h4>
-                                    <div className={styles.descriptionArea}>Due to construction at the Administration building, the legal clinic was not held on Tuesday, November 7<sup>th</sup>. It is still scheduled to occur at the Oakland County Law Library today, Thursday, November 9<sup>th</sup>... </div>
+                                    <h4 className={styles.subtitle}>Legal Clinic closed for Thanksgiving!</h4>
+                                    <div className={styles.descriptionArea}>Due to the Thanksgiving holiday, the legal clinic will not be help on Tuesday, November 21<sup>st</sup> and Thursday, November 23<sup>rd</sup>. It is still scheduled to be held on Tuesday, November 28<sup>th</sup>... </div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
                         </div>
