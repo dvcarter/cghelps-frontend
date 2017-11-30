@@ -76,10 +76,10 @@ class HomePage extends Component {
                         <div className={lineStyles.line}/>
                     </div>
                     <Testimonials />
-                    {/*<div className={lineStyles.center}>
+                    {/* <div className={lineStyles.center}>
                         <div className={lineStyles.line}/>
                     </div>
-                    <Impact /> 
+                    <Impact />
                     */}
                 </div>
             </div>
