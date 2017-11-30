@@ -33,7 +33,7 @@ const Fundraising = () => {
         <div style={divSty}>
             <div style={headerStyle}>Join our Mission Today! </div>
             <p style={paragraphStyle}>
-            We're always striving to increase awareness of Common Ground and our services. Help Spread the word at events throughout our community. 
+            We're always striving to increase awareness of Common Ground and our services. Help spread the word at events throughout our community. 
             please fill out the form below if you are interesting in helping us with our mission of <em> helping people move from crisis to hope.</em>
             </p>
             <ContactForm/>

@@ -19,7 +19,7 @@ class C2HForm extends Component {
 
 The presentation consists of inspirational stories that get to the heart of Common Ground's key impact areas: Responding to Crisis, Providing Safety and Advocacy, and Building Communities of Support.
 
-You will come away with a better understanding of how critical Common Ground is to our community. We Are not asking for contributions, but we will follow up with you a few days after the presentation to gather comments and feedback. It will easily be the best hour of your day. 
+You will come away with a better understanding of how critical Common Ground is to our community. We are not asking for contributions, but we will follow up with you a few days after the presentation to gather comments and feedback. It will easily be the best hour of your day. 
                     </p>
                     <p>
                     <em><strong>Questions about Crisis to Hope? Please call 248.451.3734

@@ -1,0 +1,106 @@
+#arrows.control-arrow {
+    background-color: red;
+}
+
+button.control-next {
+    background-color: blue !important;
+}
+
+
+.carouselHolder {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+    margin:-20px 0 0 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carouselHolder ul {
+    list-type: none;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselHolder li {
+    white-space: nowrap;
+}
+
+.carouselHolder button {
+    display: none;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 815px;
+    margin-right: -10px;
+    margin-left: -42.5px;
+    float: left;
+    background-color: red;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 850px;
+    margin-right: -60px;
+    float: left;
+    background-color: blue;
+}
+
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 800px;
+    margin-right: 0px;
+    float: left;
+    background-color: green;
+}
+.box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 800px;
+    margin-left: 0px;
+    float: left;
+    background-color: yellow;
+}
+
+.linkHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.box1 img {
+    height: auto;
+    width: 50%;
+    background-color: red;
+}
+
+.box2 img {
+    height: auto;
+    width: 50%;
+}
+.box3 img {
+    height: auto;
+    width: 50%;
+}
+.box4 img {
+    height: auto;
+    width: 50%;
+}

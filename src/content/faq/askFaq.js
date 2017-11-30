@@ -7,7 +7,7 @@ const askFaq = [
       {
         "name": "hours-faqr",
         "question": "What are your hours?",
-        "description": "Most services are provided 24/7. Crisis Chat and Text services are offered Monday-Friday 4:00pm-10:00pm"
+        "description": "Most services are provided 24/7. Crisis Chat and Text services are transitioning to 24/7, excluding holidays."
       },
       {
         "name": "transport-faqr",
@@ -47,7 +47,7 @@ const askFaq = [
       {
         "name": "medicalrecords-faqr",
         "question": "How do I obtain medical records?",
-        "description": "Medical Records Hours of Operation Monday-Friday 9am–5pm. Request for records can be made by calling 248-451-3783 and leaving a message. We check for messages twice daily, at 10:00am and at 2:00pm. All calls are returned within 24 hours."
+        "description": "Medical Records Hours of Operation Monday-Friday 9am–3:30pm for walk-ins and 8:30am-4:30pm if a call ahead is made. Request for records can be made by calling 248-451-3783 and leaving a message. We check for messages twice daily, at 10:00am and at 2:00pm. All calls are returned within 24 hours."
       },
       {
         "name": "lovedones-faqr",

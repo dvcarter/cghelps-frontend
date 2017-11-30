@@ -21,7 +21,7 @@ const donateOpts = [
       {
         name: "phone-donates",
         title: "By PHONE",
-        description: "We're happy to accept your gift by phone Monday through Friday from 8:30am to 5pm",
+        description: "We're happy to accept your gift by phone Monday through Friday from 8:30am to 4:30pm",
         image: telephoneDonate,
         btn: {
           label: "Call 248-456-8150",

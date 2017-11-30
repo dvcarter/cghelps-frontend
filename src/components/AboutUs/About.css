@@ -1,3 +1,13 @@
+.heroArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+}
+
+
 @media only screen and  (max-width: 575px) {
     .bigHolder {
         height: 100%;

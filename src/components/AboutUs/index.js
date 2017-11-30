@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import {HashLink as Link} from "react-router-hash-link"
 import styles from './About.css'
 //import OurStory from './ourstory.jpg'
+import HeroSlick from "../HeroSlick"
 
 const About = () => {
     return (
@@ -70,6 +71,9 @@ const About = () => {
                         </a>
                     </p>
                 </div>
+                {/*<div className={styles.heroArea}>
+                    <HeroSlick />
+                </div>*/}
             </div>
     )
 }

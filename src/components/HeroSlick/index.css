@@ -1,0 +1,79 @@
+.carouselHolder {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    margin: 20px auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.carouselHolder ul {
+    list-type: none;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselHolder li {
+    white-space: nowrap;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    float: left;
+    background-color: red;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    float: left;
+    background-color: blue;
+}
+
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    float: left;
+    background-color: green;
+}
+.box4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    float: left;
+    background-color: yellow;
+}
+/*
+.box1 img {
+    height: auto;
+    width: 50%;
+}
+.box2 img {
+    height: auto;
+    width: 50%;
+}
+.box3 img {
+    height: auto;
+    width: 50%;
+}
+.box4 img {
+    height: auto;
+    width: 50%;
+}*/
+

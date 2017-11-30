@@ -168,6 +168,13 @@
         margin: 30px 0 80px 0;
 
     }
+
+    _:default:not(:root:root), .availHolder {
+        margin-top: 200px;
+    }
+    _:default:not(:root:root), .holder {
+        margin-top: 200px;
+    }
     .midHolder {
         width: 100%;
     }
@@ -216,8 +223,8 @@
         display: none;
     } 
      .availability {
-            width: 80%;
-            margin: 0 20px 0 20px;
+            width: 100%;
+            margin: 0 0px 0 0px;
         }
 }
 
@@ -425,6 +432,17 @@
             height: 50%;
             width: 100%;
         }
+
+          .options:nth-child(3):hover::after {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1.25vh;
+            content: "click here";
+        } 
+        .options ul {
+            padding: 0px;
+        }
         .options {
             display: flex;
             display: -webkit-flex;
@@ -438,11 +456,12 @@
             -webkit-align-items: center;
             -moz-align-items: center;
             -ms-flex-align: center; 
-              flex-direction: row;
-            -webkit-flex-direction: row;
-            -moz-flex-flex-direction: row;
-            -ms-flex-direction: row;
+              flex-direction: column;
+            -webkit-flex-direction: column;
+            -moz-flex-flex-direction: column;
+            -ms-flex-direction: column;
             /* background-color: #f7f7f7; */
+            text-align: center;
             height: 150px;
             width: 25%;
             font-size: 1.75vh;
@@ -454,10 +473,20 @@
         }
 
         .options:hover {
-             transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            cursor: pointer;
+             transform: scale(1.02);
+             box-shadow: 0 0 40px rgba(0,0,0, .15);
+             z-index: 1000;
+             color: #ab1626;
+             font-weight: 700; 
+             cursor: pointer;
+        }
+
+        .options:nth-child(3):hover::after {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1.01vh;
+            content: "click here";
         }
         .imgs {
             width: 20%;
@@ -607,9 +636,17 @@
             font-size: 1vh;
         }
         .options:hover {
-            transform: scale(1.12);
+            transform: scale(1.02);
             cursor: pointer;
             font-size: 2vh;
+            box-shadow: 0 0 40px rgba(0,0,0, .15);
+            z-index: 1000;
+            color: #ab1626;
+            font-weight: 700;
+        }
+        .options:nth-child(3):hover::after {
+            text-align: center;
+            content: "click here";
         }
         .topics {
             display: flex;
