@@ -5,7 +5,7 @@ import sty from "./donateHero.css"
 import SustainOpts from "../SustainOpts"
 import MoreWays from "../MoreWays"
 //import SponsorThanks from "../SponsorThanks"
-import SponsorThanks from "../HeroCarousel";
+// import SponsorThanks from "../HeroCarousel";
 
 class Donate extends Component {
     render() {
