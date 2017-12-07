@@ -162,14 +162,15 @@
     }
 
     .hero_0 {
+        overflow: hidden;
         /*margin: 0 auto;
         /*width: 100%; 
         height: 65vh;
         width: 75vw;
         background-color: var(--colorSecondary);*/
         margin: 0 auto;
-        height: 400px;
-        width: 800px;
+        height: 500px;
+        width: 100%;
     }
 
        .heading_0 {
@@ -226,6 +227,7 @@
         width: 100%;
     }
     .hero_0 {
+    overflow: hidden;
     margin: 0 auto;
     height: 70vh;
     width: 75vw;
@@ -290,7 +292,8 @@
         height: 100%;
         width: 100%;
     }
-   .hero_0 { 
+   .hero_0 {
+       overflow: hidden; 
         margin: 0 50px 0 50px;
         /*height: 60vh;*/
         height: 70vh;
@@ -351,6 +354,7 @@
         width: 100%;
     }
    .hero_0 {
+       overflow: hidden; 
         margin: 0 50px 0 50px;
         /*height: 60vh;*/
         height: 70vh;

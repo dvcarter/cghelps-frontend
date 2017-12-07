@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./index.css";
 import {Link} from "react-router-dom";
+import Svg from "react-svg-inline"
+import num from "../../content/assets/88000.svg"
 
 const Impact = () => {
 
@@ -12,7 +14,21 @@ const Impact = () => {
                     </Link>
                     <div className={styles.infoHolder}>
                         <div className={styles.numbers}> 
-                            88,000
+                        {/*<Svg
+                                svg={num}
+                                draggable='false'
+                                height="55vh"
+                                width="55vw"
+                            />*/}
+                            <div className={styles.smallNum}>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                88,000
+                            </div>
                         </div>
                         <div>
                             Common Ground helps over <strong>88,000</strong> people each year

@@ -80,6 +80,22 @@
         -webkit-flex-direction: column;
         margin: 15px 0 20px 0;
     }
+
+     .underConstruction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.25vh;
+        height: 100px;
+        background-color: red;
+        color: #fff;
+        opacity: 0.5;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .title {
@@ -169,6 +185,22 @@
         -webkit-flex-direction: column;
         margin: 15px 0 20px 0;
     }
+
+     .underConstruction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.25vh;
+        height: 100px;
+        background-color: red;
+        color: #fff;
+        opacity: 0.5;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -255,6 +287,22 @@
         margin: 15px 0 20px 0;
     }
 
+     .underConstruction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.25vh;
+        height: 50px;
+        background-color: red;
+        color: #fff;
+        opacity: 0.5;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .title {
@@ -338,6 +386,22 @@
         -webkit-flex-direction: column;
         margin: 15px 0 20px 0;
     }
+
+     .underConstruction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.25vh;
+        height: 50px;
+        background-color: red;
+        color: #fff;
+        opacity: 0.5;
+        margin-bottom: 10px;
+        text-align: center;
+    } 
 
 }
 @media only screen and (min-width: 1200px) {
@@ -432,6 +496,21 @@
         margin: 15px 0 20px 0;
     }
 
+    .underConstruction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.25vh;
+        height: 50px;
+        background-color: red;
+        color: #fff;
+        opacity: 0.5;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 .holder *:not(:nth-child(1)) h3.subtitle{
     margin: -70px 0 -70px 0;

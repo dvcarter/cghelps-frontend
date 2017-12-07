@@ -23,7 +23,7 @@ const GroupOpts = ({ getGroupInfo }) => {
                         </div>
                     </div>
                 </div>
-
+                <div className={styles.underConstruction}> This page is currently under construction. If you need further assistance, please call 1-800-231-1127.</div>
                 <div className={styles.holder}>
                     {getGroupInfo.map((grouper) => (
                             <div className={styles.options}>

@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 @media screen and (min-width: 1200px) {
     .bigHolder {
         margin: 0 auto;
@@ -30,15 +31,31 @@
     }
 
     .numbers {
-        display: flex;
+       /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
         width: 100%;
         height: 300px;
-        background-color: #dfe3ee;
+        color: #ab162b;
+        background-image: url("./background.png");
+        background-repeat: repeat;
+        background-size: 100px 100px;
         margin: 0 0 10px 0;
         font-size: 15vw;
-        font-weight: 2000;
+        font-weight: bold;
+        font-family: 'Montsesrrat', sans-serif;
+    }
+    .smallNum {
+        text-align: center;
+        background-image: url("./bigred.png");
+        background-repeat: repeat;
+        background-position: center;
+        background-size: 100px 100px;
+        color: transparent;
+        -webkit-background-clip: text;
+        height: 100%;
+        width: 100%;
+        font-weight: 700;
     }
     .infographic {
         width: 100%;
@@ -99,17 +116,35 @@
         height: auto;
     }   
 
-    .numbers {
-        display:flex;
+   .numbers {
+       /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
         width: 80%;
         height: 300px;
-        background-color: #dfe3ee;
+        color: #ab162b;
+        background-image: url("./background.png");
+        background-repeat: repeat;
+        background-size: 200px 200px;
         margin: 0 0 10px 0;
-        font-size: 22vw;
-        font-weight: 1000;
+        font-size: 24vw;
+        font-weight: bold;
+        font-family: 'Montsesrrat', sans-serif;
     }   
+    .smallNum {
+        text-align: center;
+        background-image: url("./bigred.png");
+        background-repeat: repeat;
+        background-position: center;
+        background-size: 200px 200px;
+        color: transparent;
+        -webkit-background-clip: text;
+        height: 100%;
+        width: 100%;
+        font-weight: 700;
+    }   
+ 
+
     .infographic {
         width: 80%;
         height: 500px;

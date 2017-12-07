@@ -5,41 +5,22 @@ import Testimonials from "../Testimonials";
 import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
+import HeroSlick from "../HeroSlick";
 
-
+const heroStyle = {
+    backgroundColor: 'white'
+};
 class HomePage extends Component {
 
-/*    constructor(props) {
-       super(props)
-    }
-    
-    componentDidMount() {
-        const { id } = this.props.params
-        this.fetchFirstPost(id)
-    }
-
-    fetchFirstPost = async(id) => {
-        try {
-            const res = await fetch("http://testcommongroundhelps.org/wp-json/wp/v2/posts/?_embed")
-            const postO = await res.json()
-            this.setState({ postsO })
-        } catch (e) {
-            this.setState({ err: e.message })
-        }
-    }
-*/        
     render() {
-
-  //      const postsO = this.props.postsO;
-
         let getHelps = this.props.dataGetter.getHelpOpts[0];
         return (
 
             <div className={styles.superHolder_0}>
-                 <div
-                   className={ sty.hero_0 } 
-                    style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}}
-                 >   
+                <div
+                   className={ sty.hero_0 }
+                   /* style={heroStyle}> */
+                     style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}} >
                         <div className={ sty.header_0 }>
                             <div className={ sty.wrapper_0 }>
                                 <div className={ sty.heading_0 }>{getHelps.heroTitle}</div>
@@ -48,7 +29,8 @@ class HomePage extends Component {
                                 </div>
                             </div>
                         </div>
-                 </div>
+                   {/* <HeroSlick /> */}
+                 </div> 
                  <div className={styles.bigHolder}>
                     <div className={styles.title}> Get Help</div>
                     {/* <hr className={styles.topline} /> */}
@@ -76,11 +58,11 @@ class HomePage extends Component {
                         <div className={lineStyles.line}/>
                     </div>
                     <Testimonials />
-                    {/* <div className={lineStyles.center}>
+                    {/*<div className={lineStyles.center}>
                         <div className={lineStyles.line}/>
-                    </div>
-                    <Impact />
-                    */}
+                    </div>*/}
+                    {/* <Impact /> */}
+                    
                 </div>
             </div>
         )

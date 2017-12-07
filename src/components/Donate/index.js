@@ -5,7 +5,7 @@ import sty from "./donateHero.css"
 import SustainOpts from "../SustainOpts"
 import MoreWays from "../MoreWays"
 //import SponsorThanks from "../SponsorThanks"
-// import SponsorThanks from "../HeroCarousel";
+ import SponsorThanks from "../HeroCarousel";
 
 class Donate extends Component {
     render() {
@@ -62,12 +62,11 @@ class Donate extends Component {
             <SustainOpts />
             <div className={styles.line} />
             <MoreWays />
-            {/*
-            <div className={styles.line2} />
+            {/*<div className={styles.line2} />
             <div className={styles.heroArea}>
                 <div className={styles.title}> Heartfelt Thanks to You and our Corporate Sponsors </div>
                 <SponsorThanks />
-            </div>*/}
+            </div> */}
         </div>
             )
     }
