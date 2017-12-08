@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import ReactDOM from "react-dom"
 import {Link} from "react-router-dom"
-// import Slider from "react-slick"
+import Slider from "react-slick"
 import styles from "./index.css"
 import seekHelp from "../../content/assets/seekhelp.jpg"
 import getHelp from "../../content/assets/gethelp.jpg"
@@ -37,7 +37,7 @@ class HeroSlick extends Component {
  render() {
         var settings = {
                 dots: false,
-                infinite: true,
+                infinite: false,
                 speed: 800,
                 autoplay: true,
                 autoplaySpeed: 5000,
