@@ -17,6 +17,7 @@
         width: 80%;
         height: auto;
         margin: 0 50px 0 50px;
+        font-family:"mrs-eaves",Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif; 
     }
 
     .title {
@@ -50,3 +51,4 @@
             width: 100%;
             height: auto;
     }
+

@@ -28,14 +28,13 @@ class Post extends Component {
                                     style={ {background: `#111 url(${post.acf.hero.sizes.large}) 50% 50% / cover`}}
                                 >   
                                     <div className={ sty_post.header_0 }>
-                                        <div className={ sty_post.wrapper_0 }>
+                                            { /*<div className={ sty_post.wrapper_0 }>
                                             <div className={ sty_post.heading_0 }>
                                                 {post.title.rendered} 
                                             </div>
                                             <div className={ sty_post.lowerTitleHolder_0}>
-                                                {/*{getHelps.heroSubtitle} */}
                                             </div>
-                                        </div>
+                                        </div>*/}
                                     </div>
                                 </div>
                                 }
