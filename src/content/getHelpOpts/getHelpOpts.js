@@ -39,7 +39,7 @@ const getHelpOpts = [
       {
         name: "text-helps",
         title: "TEXT",
-        description: "If you're not ready to talk, you can use a mobile phone to text with us instead. Available from 4pm to 10pm Monday through Friday",
+        description: "If you're not ready to talk, you can use a mobile phone to text with us instead. Available 24/7* ",
         image: chatWhitePurple,
         btn: {
           label: "Text \"Hello\"",
@@ -49,7 +49,7 @@ const getHelpOpts = [
       {
         name: "chat-helps",
         title: "CHAT",
-        description: "From 4pm to 10pm Monday through Friday, you can use our online chat service",
+        description: "24 hours a day and 7 days a week, you can use our online chat service*",
         image: onlineChatWhite,
         btn: {
           label: "Chat Sign-in",

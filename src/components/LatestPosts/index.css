@@ -41,8 +41,10 @@
         margin: 0 0px 0 30px;
     }
     .subtitle {
-        margin: 5px 0 0 0;
+        margin: 5px 0 5px 0;
         height: 15px;
+        white-space:nowrap;
+        width: 100%;
     }
     .descriptionArea {
         margin: 10px 0 0 0;
@@ -98,6 +100,8 @@
     .subtitle {
         margin: 5px 0 0 0;
         height: 20px;
+        width: 100%;
+        white-space:nowrap;
     }
     .descriptionArea {
         margin: 5px 0 0 0;
@@ -150,8 +154,10 @@
     }
 
     .subtitle {
-        margin: 5px 0 0 0;
+        margin: 5px 0 5px 0;
         height: 20px;
+        white-space:nowrap;
+
     }
     .descriptionArea {
         margin: 5px 0 0 0;
@@ -204,8 +210,10 @@
     }   
     
     .subtitle {
-        margin: 5px 0 0 0;
-        height: 20px; 
+        margin: 10px 0 30px 0;
+        height: 1em; 
+        width: 100%;
+        white-space:nowrap;
     }   
     .descriptionArea {
         margin: 5px 0 0 0;

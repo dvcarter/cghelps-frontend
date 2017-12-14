@@ -51,7 +51,7 @@ class HomePage extends Component {
                         ))} 
                     </div>
                     <div className={lineStyles.center}>
-                        <div className={lineStyles.line} />
+                        <div className={lineStyles.line} id={lineStyles.firstLine} />
                     </div>
                     <LatestPosts />
                     <div className={lineStyles.center}>

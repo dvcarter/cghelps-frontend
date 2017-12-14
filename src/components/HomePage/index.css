@@ -9,6 +9,11 @@
 
 }
 
+#firstLine:before {
+    font-size: 1.25vh;
+    display: block;
+    content:"*Please be aware that chat and text may be intermittently unavailable as we transition to 24/7 coverage";
+}
 .center {
     display: flex;
     justify-content: center;

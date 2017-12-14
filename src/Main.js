@@ -19,6 +19,7 @@ import Resources from "./components/Resources";
 import Donate from "./components/Donate";
 import AboutUsHolder from "./components/AboutUsHolder";
 import Posts from "./components/Posts";
+//import NewsMedia from "./components/NewsMedia";
 import Accreditation from "./components/Accreditation";
 import Volunteer from "./components/VolunteerPage";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -119,6 +120,7 @@ class App extends Component {
                         </PropsRoute>
                         <PropsRoute path="/about-us" component={AboutUsHolder} {...this.props} />
                         <PropsRoute path="/posts" component={Posts} />
+                        {/*    <PropsRoute path="/news-and-media" component={NewsMedia} dataGetter={videoInfo} /> */}
                         <PropsRoute path="/accreditation" component={Accreditation} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
                         <PropsRoute path="/terms-of-service" component={PrivacyPolicy} />
