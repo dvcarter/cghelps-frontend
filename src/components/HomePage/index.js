@@ -5,7 +5,7 @@ import Testimonials from "../Testimonials";
 import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
-import HeroSlick from "../HeroSlick";
+//import HeroSlick from "../HeroSlick";
 
 const heroStyle = {
     backgroundColor: 'white'
