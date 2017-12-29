@@ -211,9 +211,9 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
         text-align: center;
-        height: 100px;
+        height: 30px;
         width: 90%;
-        font-size: 150px;
+        font-size: 275%;
         margin-top: 10px;
         margin-bottom: 100px;
         padding-bottom: -40px;
@@ -272,9 +272,9 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
         text-align: center;
-        height: 100px;
-        width: 100%;
-        font-size: 150% !important;
+        height: 30px;
+        width: 90%;
+        font-size: 275%;
         margin-top: 10px;
         margin-bottom: 100px;
         padding-bottom: -40px;

@@ -19,7 +19,7 @@ import Resources from "./components/Resources";
 import Donate from "./components/Donate";
 import AboutUsHolder from "./components/AboutUsHolder";
 import Posts from "./components/Posts";
-//import NewsMedia from "./components/NewsMedia";
+import NewsMedia from "./components/NewsMedia";
 import Accreditation from "./components/Accreditation";
 import Volunteer from "./components/VolunteerPage";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -28,6 +28,7 @@ import Copyright from "./components/Copyright";
 import TermsOfService from "./components/TermsOfService";
 import Contact from "./components/Contact";
 import NoMatch from "./components/NoMatch";
+import ProgramList from "./components/ProgramList";
 import ThankYou from "./components/ThankYou";
 import Thanks from "./components/C2HThankYou";
 import Footer from "./components/Footer";
@@ -120,7 +121,7 @@ class App extends Component {
                         </PropsRoute>
                         <PropsRoute path="/about-us" component={AboutUsHolder} {...this.props} />
                         <PropsRoute path="/posts" component={Posts} />
-                        {/*    <PropsRoute path="/news-and-media" component={NewsMedia} dataGetter={videoInfo} /> */}
+                           <PropsRoute path="/news-and-media" component={NewsMedia} dataGetter={videoInfo} />
                         <PropsRoute path="/accreditation" component={Accreditation} />
                         <PropsRoute path="/get-involved/volunteer" component={Volunteer} />
                         <PropsRoute path="/terms-of-service" component={PrivacyPolicy} />
@@ -130,7 +131,9 @@ class App extends Component {
                         <PropsRoute path="/contact" component={Contact} />
                         <PropsRoute path="/thank-you" component={ThankYou} />
                         <PropsRoute path="/thanks-for-registering" component={Thanks} />
+                        <PropsRoute path="/program-list" component={ProgramList} dataGetter={getHelpInfo} {...this.props} />
                         <PropsRoute component={NoMatch} />
+                        {/*<PropsRoute path="/program-list" component={ProgramList} dataGetter={getHelpInfo} {...this.props} /> */}
                     </Switch>
                     </ScrollToTop>
                 </Content>

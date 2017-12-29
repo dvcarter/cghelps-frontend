@@ -41,19 +41,20 @@
       align-items: center;
       -webkit-align-items: center;
       background-color: var(--colorSecondary);
+    overflow: hidden;
   }
 
      .wrapper {
         width: 100%;
-        height: 20vh;
-        margin: 45px 0 0 0;
+        height: 100%;
+        margin: 0 0 0 0;
     }
     .heading {
         /*margin: 270px 0 0 0;*/
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 60%;
+        height: 100vh;
         color: #fff;
         background-color: #482864;
         background: linear-gradient(to top, rgba(72, 40, 100, 0), rgba(72, 40,100, 1));
@@ -62,16 +63,33 @@
       div.heading {
         color: #fff;
     }  
-    .textBox {
+    .textBox, .textBox_carousel .textBox3, .textBoxFirst {
         text-align: left;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 60px 0 0 0;
         padding: 20px;
-        height: 60%;
-    }  
+        height: 100%;
+        width: 100%;
+    } 
+
+    .textBoxFirst {
+        margin: -50px 0 0 0;
+    }
+    .textBox {
+        margin: -80px 0 0 0;
+    }
+
+    .textBox_carousel, .textBox3 {
+        margin: 100px 0 0 0;
+        padding: 0 10px 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+ 
          .purpleTitle {
         font-size: 150%;
         font-weight: 600;
@@ -93,17 +111,118 @@
     }  
     .button {
         margin-top: 5px;
-        height: auto;
+        height: 30px;
+        text-align: center;
         width: 225px;
         border: none;
         border-radius: 8px;
         background-color: #fff;
         color: #8b0000;
-        padding: 12px 40px;
+        padding: 3px 20px;
         text-decoration: none;
         display: inline-block;
         font-size: 1.15vh;
         font-weight: bold;
+    }
+
+        .donateH1 {
+        margin: 50px 0 10px 0px;
+        color: #fff;
+        font-size: 4vh;
+    }
+    .donateUl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+        height: auto;
+        color: #fff;
+        font-size: 2vh !important;
+        position: static !important;
+    }
+    .donateLi {
+        height: 40%;
+        font-size: 1.25vh;
+        white-space: normal !important;
+    }
+    .donateP {
+        font-size: 1.25vh;
+    }
+    .textBox3 .donateP:nth-child(2) {
+        margin-top: -10px;
+    }
+    .textBox3 .donateP:nth-child(3)  {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    .textBox3 .donateP {
+        padding: 0 20px 0 20px;
+    }
+    .textBox3 .donateH1 {
+        margin-top: 150px;
+     }
+    .textBox .donateH1 {
+        margin-top: 200px;
+        margin-bottom: -10px;
+    }
+    .textBox_carousel .donateH1 {
+        margin-top: 150px;
+    }
+    .textBoxFirst .donateP {
+        padding: 0 10px 0 10px;
+    }
+    .textBoxFirst .donateH1 {
+        margin-top: 200px;
+    }
+    .textBox .datePlacement {
+        margin-bottom: -15px;
+    }
+    .textBox .datePlacement .dateHolder .dateLine:first-child {
+        margin-bottom: -10px;
+        font-size: 1.5vh;
+    }
+
+    _::-webkit-full-page-media, _:future, :root .donateUl {
+        height: 125px;
+    }
+         .movR {
+            font-size: 12px;
+            padding-right: 40px;
+            margin-bottom: -50px;
+            width: 100%;
+        }
+     @supports (-webkit-overflow-scrolling: touch) and (not (-ms-ime-align:auto))
+and (not (-moz-appearance:none))
+    {
+        .textBox_carousel .donateUl {
+            height: 50px;
+            margin: 50px 0 50px 0;
+        }
+        .textBox_carousel .donateH1 {
+            left: 40px;
+            height: auto;
+            width: 100%;
+            text-align: center;
+            margin: 75px -20px -30px 0;
+        }
+            .movR {
+            font-size: 12px;
+            padding-right: 20px;
+            margin-bottom: -50px;
+            width: 100%;
+        }
+        .textBox3 .donateH1 {
+            margin-top: 175px;
+        }
+        .textBox .donateH1 {
+            margin-top: 300px;   
+        }
+        .textBox_carousel .donateH1 {
+            margin-top: 150px;
+        }
+        .textBoxFirst .donateH1 {
+            margin-top: 300px;
+        }
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -143,15 +262,16 @@
     div.heading {
         color: #fff;
     }   
-    .textBox {
+    .textBox_carousel, .textBox, .textBox3, .textBoxFirst {
            display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         text-align: left;
-        margin: 40px 0 0 0;
+        margin: 80px 0 0 0;
         padding: 20px;
         height: 100%;
+        width: 100%;
     }   
          .purpleTitle {
         font-size: 150%;
@@ -175,17 +295,71 @@
     .button {
         align-self: center;
         margin-top: 5px;
-        height: auto;
+        height: 40px;
         width: 225px;
+        text-align: center;
         border: none;
         border-radius: 8px;
         background-color: #fff;
         color: #8b0000;
-        padding: 12px 40px;
+        padding: 10px 20px;
         text-decoration: none;
         display: inline-block;
         font-size: 1.15vh;
         font-weight: bold;
+    }
+    .textBox .button {
+            margin-top: 20px !important;
+            margin-bottom: 150px !important;
+            width: 250px
+        }
+
+    _::-webkit-full-page-media, _:future, :root .textBox .button {
+            margin-top: 20px !important;
+            margin-bottom: 150px !important;
+            width: 295px !important;
+            height: 40px !important;
+        }
+         .donateH1 {
+        margin: 10px 0 10px 0px;
+        color: #fff;
+    }
+    .donateUl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+        height: auto;
+        color: #fff;
+        font-size: 2vh !important;
+        position: static !important;
+    }
+    .donateLi {
+        height: 40%;
+        font-size: 1.25vh;
+        white-space: normal !important;
+    }
+    _::-webkit-full-page-media, _:future, :root .textBox_carousel .donateUl {
+        height:150px !important;
+        width: 100% !important;
+        font-size: 1.25vh;
+    }
+    .textBox3 .donateP:nth-child(2) {
+        margin-top: -10px;
+    }
+    .textBox3 .donateP:nth-child(3)  {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    .textBox .donateH1 {
+        margin-bottom: -10px;
+    }
+    .textBox .datePlacement {
+        margin-bottom: -15px;
+    }
+    .textBox .datePlacement .dateHolder .dateLine:first-child {
+        margin-bottom: -10px;
+        font-size: 1.5vh;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -227,11 +401,22 @@
         color: #fff;
         background-color: #482864;
         background: rgba(72, 40,100, 0.85);
-    }   
+    }  
+
+    @-moz-document url-prefix() {
+        .heading {
+            height: 500px;
+        }
+        .texBox, .textBoxFirst, .textBox_carousel, .textBox3 {
+            margin-top: 50px !important;
+        }
+        .donateH1 {
+        }
+    } 
     div.heading {
         color: #fff;
     }   
-    .textBox {
+    .textBox, .textBox3 {
          display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -268,6 +453,7 @@
     .button {
         align-self: center;
         margin-top: 5px;
+        text-align: center;
         height: auto;
         width: 225px;
         border: none;
@@ -280,6 +466,71 @@
         font-size: 1.15vh;
         font-weight: bold;
     }
+
+         .donateH1 {
+        margin: 10px 0 10px 40px;
+        color: #fff;
+    }
+        .textBox_carousel {
+        text-align: left;
+        margin: 0 0 0 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .textBoxFirst {
+        margin: 30px 0 0 0;
+    }
+    .donateUl {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+        height: auto;
+        color: #fff;
+        font-size: 2vh !important;
+        position: static !important;
+        margin-bottom: 20px;
+    }
+     .textBox_carousel .donateH1 {
+        margin-left: 50px;
+    }
+    _::-webkit-full-page-media, _:future, :root .donateUl {
+        margin-top: -10px !important;
+        height: 200px !important;
+    }
+
+    _::-webkit-full-page-media, _:future, :root .movR {
+        width: 100% !important;
+        text-align: center;
+    }
+    _::-webkit-full-page-media, _:future, :root .textBox_carousel .donateLi {
+        margin-top: 10px !important;
+    }
+    .donateLi {
+        height: 40%;
+        font-size: 1.25vh;
+        white-space: normal !important;
+    }
+    .donateP {
+        font-size: 1.25vh;
+        width: 100%;
+    }
+    .textBox_carousel .donateUl {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .textBox3 .donateP:nth-child(2) {
+        margin-top: -10px;
+    }
+    .textBox3 .donateP:nth-child(3)  {
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
@@ -310,7 +561,26 @@
         width: 40%;
         height: 1000px;
         margin: -45px 0 0 0;
-    }   
+    }
+    @-moz-document url-prefix() {
+        .header {
+            height: 100%;
+            padding: 0;
+          }
+            
+         .heading {
+            height: 100%;
+        }
+        .wrapper {
+            height: 1000px;
+       }
+        .textBoxFirst {
+            margin: 120px 0 0 0;
+        }
+        .textBox {
+            margin: 100px 0 0 0;
+        }
+    }    
     .heading {
         /*margin: 270px 0 0 0;*/
         display: flex;
@@ -324,7 +594,7 @@
     div.heading {
         color: #fff;
     }   
-    .textBox {
+    .textBox, .textBox3 {
         text-align: left;
         margin: 40px 0 0 0;
         padding: 20px;
@@ -335,16 +605,20 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-    }   
+    }  
+
+    .textBoxFirst {
+        margin-top: 60px;
+    } 
     h1 {
         margin: 0 0 0 40px;
-        font-size: 175%;
+        font-size: 150%;
     }  
 
      .purpleTitle {
-        font-size: 200%;
-        font-weight: 600;
+        font-size: 2.5vh;
     }
+    
     .datePlacement {
         width: 100%;
         height: auto;
@@ -364,9 +638,40 @@
     } 
     .dateHolder li {
         font-size: 1.1vh;
-    } 
+    }
+          .donateH1 {
+        margin: 20px 0 -10px 40px;
+        color: #fff;
+    }
+        .textBox_carousel {
+        text-align: left;
+        margin: 0 0 0 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+            
+    }   
+    .donateUl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+        height: auto;
+        color: #fff;
+        font-size: 2vh !important;
+        position: static !important;
+    }   
+    .donateLi {
+        height: 40%;
+        font-size: 1.25vh;
+        white-space: normal !important;
+    }
+    .donateP {
+        font-size: 1.25vh;
+        width: 100%;
+    }  
     .button {
-        margin-top: 25px;
+        margin-top: 50px;
         width: 150px;
     }
     .button {
@@ -374,16 +679,48 @@
         height: auto;
         width: 225px;
         border: none;
+        text-align: center;
         border-radius: 8px;
         background-color: #fff;
         color: #8b0000;
-        padding: 12px 40px;
+        padding: 10px 20px;
         text-decoration: none;
         display: inline-block;
         font-size: 1.2vh;
         font-weight: bold;
-        margin-top: -20px;
+        margin: 40px 0 0 40px;
     }
+     @-moz-document url-prefix() {
+        .header {
+            height: 100%;
+            padding: 0;
+          }    
+                 
+         .heading {
+            height: 100%;
+        }    
+        .wrapper {
+            height: 1000px;
+       }    
+        .textBoxFirst {
+            margin: 120px 0 0 0; 
+        }    
+        .textBox {
+            margin: 100px 0 0 0; 
+        } 
+        .textBox3 {
+            margin: 100px 0 0 0;
+        } 
+
+        .textBox_carousel {
+            margin: 100px 0 0 0;
+        }  
+    }
+    
+    .textBox_carousel .donateUl {
+        height: 150px;
+        margin-bottom: 20px;
+    }     
 }
 
 @media only screen and (min-width: 1200px) {
@@ -433,7 +770,7 @@
         margin-top: 0px;
         background-color: rgba(72, 40, 100, 0.85);
     }
-    .textBox {
+    .textBox, .textBoxFirst, .textBox3 {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -461,6 +798,11 @@
         position: static;
         list-style-type: none;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .dateLine {
         font-size: 12px;
@@ -469,6 +811,9 @@
         margin-right: 20px;
         margin-bottom: 10px;
 
+    }
+    .dateHolder .dateLine:first-child {
+        margin-bottom: -5px;
     }
     .lowerTitleHolder {
         width: 100%;
@@ -492,7 +837,69 @@
         font-size: 1.15vh;
         font-weight: bold;
         text-align: center;
-    }   
+    }  
+        .donateH1 {
+        width: 100%;
+        margin: 10px 0 0 0px;
+        color: #fff;
+        font-weight: 700;
+    }
+    .textBoxFirst .donateH1 {
+        margin: -10px 0 0 0;
+    }
+    li {
+        font-size: 12px;
+    }
+    .textBox_carousel {
+        text-align: left;
+        margin: 80px 0 0 0;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .donateUl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100% !important;
+        height: auto;
+        color: #fff;
+        font-size: 14px !important;
+        position: static !important;
+    }
+    .donateLi {
+        height: 40%;
+        font-size: 12px;
+        white-space: normal !important;
+    }
+    .textBox .donateH1 {
+        margin: -10px 0 0 0;
+    }
+    .textBox_carousel .donateH1 {
+        margin: 20px 0 0 40px;
+    }
+    .textBox3 .donateH1 {
+        margin: -10px 10px 0 0;
+    }
+    .textBox3 .donateP:first-child {
+        margin: 10px 0 0 0;
+    }
+    .textBox3 .donateP:nth-child(2) {
+        margin: 0px 0 0px 0;
+    }
+    .textBox3 .donateP:nth-child(3) {
+        margin: 0px 0 15px 0;
+    }
+    .donateP {
+        width: 100%;
+    }
+    
+    .textBox_carousel .donateUl {
+        height: 150px;
+        margin-bottom: 20px;
+    }    
 }
 
 
@@ -529,7 +936,7 @@
         width: 30%;
         background-color: rgba(72, 40, 100, 0.85);
     }
-    .textBox {
+    .textBox, .textBox3 {
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -611,7 +1018,7 @@
     div.heading {
         color: #fff;
     }
-    .textBox {
+    .textBox, .textBox3 {
         text-align: left;
         margin: 0 0 0 0;
         padding: 20px;
@@ -669,7 +1076,7 @@
     div.heading {
         color: #fff;
     }
-    .textBox {
+    .textBox, .textBox3 {
          display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -724,7 +1131,7 @@
         height: 100%;
     }
 
-      .textBox {
+      .textBox, .textBox3 {
            display: flex;
         align-items: center;
         justify-content: center;
@@ -781,7 +1188,7 @@
         height: 100%;
     }   
 
-      .textBox {
+      .textBox, .textBox3 {
            display: flex;
         align-items: center;
         justify-content: center;
@@ -831,4 +1238,8 @@
 .button:hover {
         color: #fff;
         background-color: #8b0000;
+}
+.buttonFill {
+    width: 100%;
+    height: auto;
 }

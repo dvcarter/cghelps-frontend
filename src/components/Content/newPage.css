@@ -121,9 +121,11 @@
         justify-content: center;
         -webkit-justify-content: center;
         margin: 0 auto;
-        height: 400px;
+        height: 52.5vh;
+        padding: 10vh 0;
         /*height:400px; */
         width: 100%;
+        overflow: hidden;
         background-color: var(--colorSecondary);
     }
        .heading_0 {

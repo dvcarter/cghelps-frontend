@@ -5,7 +5,7 @@ import Testimonials from "../Testimonials";
 import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
-//import HeroSlick from "../HeroSlick";
+import HeroSlick from "../HeroSlick";
 
 const heroStyle = {
     backgroundColor: 'white'
@@ -19,8 +19,8 @@ class HomePage extends Component {
             <div className={styles.superHolder_0}>
                 <div
                    className={ sty.hero_0 }
-                   /*style={heroStyle}>*/
-                   style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}} >
+                   style={heroStyle}>
+                   {/*style={ {background: `#111 url(${getHelps.hero}) 50% 50% / cover`}} >
                         <div className={ sty.header_0 }>
                             <div className={ sty.wrapper_0 }>
                                 <div className={ sty.heading_0 }>{getHelps.heroTitle}</div>
@@ -28,8 +28,8 @@ class HomePage extends Component {
                                         {getHelps.heroSubtitle}
                                 </div>
                             </div>
-                        </div>
-                        {/*<HeroSlick /> */}
+                        </div> */}
+                        <HeroSlick />
                  </div> 
                  <div className={styles.bigHolder}>
                     <div className={styles.title}> Get Help</div>
@@ -58,11 +58,12 @@ class HomePage extends Component {
                         <div className={lineStyles.line}/>
                     </div>
                     <Testimonials />
-                    {/*<div className={lineStyles.center}>
-                        <div className={lineStyles.line}/>
-                    </div>*/}
-                    {/* <Impact /> */}
-                    
+                    {/*
+                        <div className={lineStyles.center}>
+                            <div className={lineStyles.line}/>
+                        </div>
+                        <Impact />
+                    */}
                 </div>
             </div>
         )

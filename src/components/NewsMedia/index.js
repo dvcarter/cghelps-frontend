@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import { BrowserRouter as  Router, Route, Switch } from "react-router-dom"
-import VideoGroup from "../../components/VideoGroup"
-import SingleVideo from "../../components/SingleVideo"
+import VideoGroup from "../../components/MediaGroup"
+import SingleVideo from "../../components/SingleMedia"
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -25,9 +25,8 @@ class VideoHolder extends Component {
                <Route>
                     <Switch>
                         <PropsRoute exact path="/news-and-media" component={VideoGroup}/>
-                        <PropsRoute path="/news-and-media/mcnutt" component={SingleVideo} getVideo={getVideo[0]} />
-                        <PropsRoute path="/news-and-media/psa" component={SingleVideo} getVideo={getVideo[1]} />
-                        <PropsRoute path="/news-and-media/volunteer-promotion" component={SingleVideo} getVideo={getVideo[2]} />
+                        <PropsRoute path="/news-and-media/mcnutt" component={SingleVideo} getVideo={getVideo[3]} />
+                        <PropsRoute path="/news-and-media/psa" component={SingleVideo} getVideo={getVideo[4]} />
                     </Switch>
                 </Route>
         )
