@@ -7,7 +7,7 @@ import MediaQuery from "react-responsive"
 const SingleVideo =({getVideo}) => {
     return (
             <div className={styles.divHolder_0_2_1_0}>
-                <div className={styles.title_0_2_1_0}> {getVideo.title} </div>
+                <div className={styles.titleNew}> {getVideo.title} </div>
                 <div className={styles.videoGroup_0_2_1_0}>
                     <div className={styles.video_0_2_1_0}>
                         <YouTube className={styles.videoPt_0_2_1_0} video={getVideo.video} autoplay="0" rel="0" modest="1" fs="1" />

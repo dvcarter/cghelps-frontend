@@ -223,6 +223,10 @@ and (not (-moz-appearance:none))
         .textBoxFirst .donateH1 {
             margin-top: 300px;
         }
+
+        .textBox3 .button {
+            margin-top: 20px;
+        }
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -311,7 +315,8 @@ and (not (-moz-appearance:none))
     .textBox .button {
             margin-top: 20px !important;
             margin-bottom: 150px !important;
-            width: 250px
+            width: 295px;
+            height: 40px;
         }
 
     _::-webkit-full-page-media, _:future, :root .textBox .button {
@@ -343,6 +348,11 @@ and (not (-moz-appearance:none))
         height:150px !important;
         width: 100% !important;
         font-size: 1.25vh;
+    }
+    .textBoxFirst .donateP, .textBox3 .donateP {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .textBox3 .donateP:nth-child(2) {
         margin-top: -10px;
@@ -397,7 +407,7 @@ and (not (-moz-appearance:none))
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 100%;
+        height: 500px;
         color: #fff;
         background-color: #482864;
         background: rgba(72, 40,100, 0.85);
@@ -477,6 +487,7 @@ and (not (-moz-appearance:none))
         padding: 20px;
         display: flex;
         flex-direction: column;
+        width: 100%;
 
     }
 
@@ -521,7 +532,11 @@ and (not (-moz-appearance:none))
     }
     .textBox_carousel .donateUl {
         height: 150px;
+        width: 230px;
         margin-bottom: 20px;
+    }
+    .textBox_carousel .button {
+        margin-top: 20px;
     }
     .textBox3 .donateP:nth-child(2) {
         margin-top: -10px;
@@ -530,7 +545,10 @@ and (not (-moz-appearance:none))
         margin-top: -10px;
         margin-bottom: -10px;
     }
-
+    .donateH1 {
+        width: 230px;
+        height: auto;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
@@ -556,7 +574,7 @@ and (not (-moz-appearance:none))
         padding: 10vh 0;
         text-align: center;
     }    
-
+    _:-ms-lang(x), .header { height: 80vh; }
     .wrapper {
         width: 40%;
         height: 1000px;
@@ -973,7 +991,11 @@ and (not (-moz-appearance:none))
     .button {
         font-size: 95%;
     }
- 
+    .textBox .dateLine {
+        width: 100% !important;
+        height: auto;
+
+    } 
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:1199px ) and (min-width:992px) {
@@ -988,7 +1010,8 @@ and (not (-moz-appearance:none))
      
     .header {
         width: 85vw;
-        height: 77.40vh;
+        height: 80vh !important;
+        /*height: 77.40vh;*/
         display: flex;
         display: -webkit-flex;
         flex-direction: column;
@@ -1008,7 +1031,8 @@ and (not (-moz-appearance:none))
     .heading {
         /*margin: 270px 0 0 0;*/
         display: flex;
-        height: 100%;
+        height: 77.4vh;;
+        margin-top: -20px;
         width: 100%;
         color: ;
         background-color: #482864;
@@ -1036,7 +1060,17 @@ and (not (-moz-appearance:none))
         font-weight: 600;
     }
     
-    
+   .textBox_carousel, .textBoxFirst {
+       width: 100%;
+       height: 77.4vh;
+   }
+   .textBox3 .donateH1 {
+       width: 100%;
+   }
+   .texBox .donateUl {
+       width: 100%;
+       height: auto;
+   }
 
 }
 
@@ -1067,9 +1101,9 @@ and (not (-moz-appearance:none))
     }
     .heading {
         display: flex;
-        height: 426.5px;
+        height: 500px;
         color: #fff;
-        margin-top: -10px;
+        margin-top:-25px;
         background-color: #482864;
         background:rgba(72, 40, 100, 0.85);
     }
@@ -1107,6 +1141,12 @@ and (not (-moz-appearance:none))
         justify-content: center;
         align-items: center;
 
+    }
+    .textBox_carousel .button {
+    }
+    .textBox_carousel .donateUl,
+    .textBox_carousel .donateLi {
+        width: 100%;
     }
 
 }

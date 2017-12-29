@@ -2,6 +2,8 @@
     max-width: 100%;
     width: 100%;
 }*/
+
+
 @media only screen and (min-width: 1200px) {
     .heroImg {
         height: auto;
@@ -26,7 +28,6 @@ ul.slick-dots {
         height: 90vh;
         color: #fff;
         width: 40px;
-        margin: 0 0 0 0;
         display: block;
         z-index: 1;
         cursor: pointer;
@@ -92,9 +93,12 @@ ul.slick-dots {
 
       .carouselHolder ul[class*="slick-dots"] {
         padding: initial;
+        position: absolute;
         /*margin-left: calc(10%- 1vw);*/
         align-self: flex-start;
-        left: 45%;
+        left: 45%; 
+        top: 70%;
+        width: 400px;
     }
 
     .carouselHolder ul[class*="slick-dots"] li {
@@ -337,6 +341,7 @@ ul.slick-dots {
         /*margin-top: -44px;*/
         background: #fff;
     }
+
     .carouselHolder ul li button::before {
         content: "◦";
         font-size: 35px;
@@ -567,7 +572,10 @@ ul.slick-dots {
         margin-top: -44px;
         background: #fff;
     }
-   
+
+     _:-ms-lang(x), _:-webkit-full-screen, .carouselHolder li[class*="slick-active"] button::after  {
+            margin: -40px;
+        }
      ul.slick-dots {
         width: 100%;
     }
@@ -757,8 +765,8 @@ ul.slick-dots {
         cursor: pointer;
         background: none;
     }  
-
-     .carouselHolder ul[class*="slick-dots"] {
+   
+       .carouselHolder ul[class*="slick-dots"] {
         padding: initial;
         /*margin-left: calc(10%- 1vw);*/
         align-self: flex-start;
@@ -766,8 +774,7 @@ ul.slick-dots {
         top: 55%;
         width: 50vw;
         overflow: hidden;
-    }
-    
+    } 
        .carouselHolder ul li button::before {
         content: "◦";
         font-size: 35px;
@@ -1063,4 +1070,42 @@ and (not (-moz-appearance:none))
 
 .carouselHolder .slick-dots li button::before {
     content: "◦" !important;
+}
+
+div[class*="slick-slide"],
+div[class*="slick-slider"] div[class*="slick-track"],
+div[class*="slick-slider"] div[class*="slick-list"]
+{
+/*
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+/*
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  /*-webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px) 
+{
+    .carouselHolder ul[class*="slick-dots"] {
+        left: 42%;
+    }
+} 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:991px ) and (min-width:768px) {
+    .carouselHolder li[class*="slick-active"] button::after { margin-top:-22px; }
 }
