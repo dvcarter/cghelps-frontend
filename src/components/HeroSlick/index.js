@@ -1,7 +1,6 @@
 import React, {Component} from "react"
 import ReactDOM from "react-dom"
 import {Link} from "react-router-dom"
-import Slider from "react-slick"
 import styles from "./index.css"
 import PSA from "../../content/assets/psa.png"
 import seekHelp from "../../content/assets/seekhelp.jpg"
@@ -10,6 +9,9 @@ import health from "../../content/assets/health.jpg"
 import SSU from "../../content/assets/grouphero.jpg"
 import getInvolved from "../../content/assets/getinvolved.jpg"
 import sty from "./heroSliderIdentifier.css"
+
+var Slider = require('react-slick')
+
 
 function SampleNextArrow(props) {
   const {className, style, onClick} = props
