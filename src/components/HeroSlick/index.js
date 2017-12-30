@@ -43,8 +43,8 @@ class HeroSlick extends Component {
                 dots: true,
                 infinite: true,
                 speed: 800,
-                autoplay: false,
-                autoplaySpeed: 5000,
+                autoplay: true,
+                autoplaySpeed: 8000,
                 pauseOnHover: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -88,7 +88,7 @@ class HeroSlick extends Component {
                                                 <h1 className={sty.donateH1}> Donate </h1>
                                                     <ul className={sty.donateUl}><em> <span className={sty.movR}> Your gift can help us:</span></em>
                                                         <li className={sty.donateLi}>
-                                                            Expand the hours of hour Text and Chat Helpline services
+                                                            Expand the hours of our Text and Chat Helpline services
                                                         </li>
                                                         <li className={sty.donateLi}> Offer more of our specialized Support Groups </li>
                                                         <li className={sty.donateLi}> Add a Resource & Crisis Center location in southern Oakland County </li>
