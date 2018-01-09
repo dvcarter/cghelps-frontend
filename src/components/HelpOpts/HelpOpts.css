@@ -840,7 +840,7 @@ and (not (-moz-appearance:none)) {
         }
     }
     _::-webkit-full-page-media, _:future, :root .title {
-            margin: 20px 0 -10px 0;
+            margin: 100px 0 -10px 0;
     }
         .subtitle {
             font-size: 275%;

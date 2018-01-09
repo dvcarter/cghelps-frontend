@@ -43,6 +43,9 @@
       background-color: var(--colorSecondary);
     overflow: hidden;
   }
+  _::-webkit-full-page-media, _:future, :root .hero {
+                  height: 70vh;
+                      } 
 
      .wrapper {
         width: 100%;
@@ -224,8 +227,22 @@ and (not (-moz-appearance:none))
             margin-top: 300px;
         }
 
+        _::-webkit-full-page-media, _:future, :root .textBoxFirst .donateH1 {
+                        margin-top: 100px;
+        } 
+
+ _::-webkit-full-page-media, _:future, :root .textBox .donateH1 {
+                             margin-top: 100px;
+                                     }
+    _::-webkit-full-page-media, _:future, :root .textBox .button {
+           margin-top: 5px;                  
+           height: 50px;
+   }
         .textBox3 .button {
             margin-top: 20px;
+        }
+        _::-webkit-full-page-media, _:future, :root .textBox3 .button {
+           margin-top: 1px;     
         }
     }
 }

@@ -1024,6 +1024,12 @@ ul.slick-dots {
         overflow: hidden;
     }
 
+    _::-webkit-full-page-media, _:future, :root .carouselHolder ul[class*="slick-dots"] {
+                             top: 75%;
+                             left: 32%; 
+                             margin-top: -40px;
+    }
+
        .carouselHolder ul li button::before {
         content: "◦";
         font-size: 35px;
