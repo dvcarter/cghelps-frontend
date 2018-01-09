@@ -132,6 +132,7 @@
         margin: 50px 0 10px 0px;
         color: #fff;
         font-size: 4vh;
+        line-height: 35px;
     }
     .donateUl {
         display: flex;
@@ -215,7 +216,7 @@ and (not (-moz-appearance:none))
             width: 100%;
         }
         .textBox3 .donateH1 {
-            margin-top: 175px;
+            margin-top: 150px;
         }
         .textBox .donateH1 {
             margin-top: 300px;   
@@ -228,7 +229,7 @@ and (not (-moz-appearance:none))
         }
 
         _::-webkit-full-page-media, _:future, :root .textBoxFirst .donateH1 {
-                        margin-top: 100px;
+                        margin-top: 75px;
         } 
 
  _::-webkit-full-page-media, _:future, :root .textBox .donateH1 {
