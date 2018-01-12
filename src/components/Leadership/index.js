@@ -37,20 +37,6 @@ const Leadership = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={styles.options}> 
-                                <div className={styles.topics}>
-                                    <img className={styles.imgs} src={ heather}/>
-                                    <div className={styles.descriptor}>
-                                        <h3 className={styles.pair}> Aimee Nimeh, LMSW </h3>
-                                        <h5 className={styles.pair}> <em>Vice President of Programs & Services</em></h5>
-                                    </div>
-                                </div>
-                                <div className={styles.copy}>
-                                    <div className={styles.description}>
-                                          Nimeh is currently responsible for the administration and clinical oversight of every program and service Common Ground provides, including our psychiatric services, runaway and homeless youth services, and crime victim services. She has been dedicated to our mission since joining the organization as Director of Quality Assurance in 2011. Nimeh holds a BA and an MSW, both from the University of Michigan, and is also a graduate of the Arabic Language Institute at Jordan University. 
-                                    </div>
-                                </div>
-                            </div>
                 </div>
                 <div className={styles.standIn}> 
                     <h3 className={styles.pair}> Senior Leadership </h3>
@@ -64,6 +50,7 @@ const Leadership = () => {
                         <li> <strong>Kyle Glasgow</strong>, <em> Director of Mission Impact/Data Analysis </em></li>
                         <li> <strong>Kathryn Burgess</strong>, <em> Director of Nursing </em></li>
                         <li> <strong>Dr. Carmen Serpa</strong>, <em> Director of Medical Services </em></li>
+                        <li> <strong>Rosa Thomas</strong>, <em> Director of Innovation </em></li>
                     </ul>
                 </div>
                 <div className={styles.standIn2}>
