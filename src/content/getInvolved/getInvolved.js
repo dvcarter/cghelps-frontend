@@ -2,6 +2,7 @@ import groupVolunteer from "../assets/groupvolunteer.jpg";
 import bonding from "../assets/bonding.jpg";
 import sponsorships from "../assets/sponsorships.jpg";
 import GetInvolved from "../assets/getinvolved.jpg";
+import fundraising from "../assets/groupsupport.jpg";
 
 const getInvolved = [
       {
@@ -12,7 +13,7 @@ const getInvolved = [
         image: groupVolunteer,
         description: "We provide extensive training to qualified volunteers interested in staffing our Resource & Crisis Helpline or Youth Residential Programs.",
         btn: {
-          label: "volunteer",
+          label: "Volunteer",
           link: "volunteer",
         }
       },
@@ -33,7 +34,16 @@ const getInvolved = [
           label: "Become a Sponsor",
           link: "sponsorships"
         }
-      }
+      },
+    {
+        subtitle: "Consumer Feedback",
+        image: fundraising,
+        description: "Because the unique perspective of someone who has received services matters! We have been there and know first-hand the challenges of moving from a crisis to hope.",
+        btn: {
+            label: "Find out More",
+            link: "cacgroup"
+        }
+    }
     ]
 
 export default getInvolved

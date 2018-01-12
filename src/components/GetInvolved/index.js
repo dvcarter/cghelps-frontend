@@ -5,6 +5,7 @@ import Volunteer from "../../components/VolunteerApplication"
 import CrisisToHope from "../../components/CrisisToHope"
 import SponsorQuestions from "../../components/SponsorQuestions"
 import Fundraising from "../../components/Fundraising"
+import CACGroup from "../../components/CACGroup"
 
 const renderMergedProps = (component, ...rest) => {
     const finalProps = Object.assign({}, ...rest);
@@ -33,6 +34,7 @@ class GetInvolved extends Component {
                         <PropsRoute path="/get-involved/crisis-to-hope" component={CrisisToHope} />
                         <PropsRoute path="/get-involved/fundraising" component={Fundraising} />
                         <PropsRoute path="/get-involved/sponsorships" component={SponsorQuestions} />
+                        <PropsRoute path="/get-involved/cacgroup" component={CACGroup} />
                     </Switch>
                 </Route>
         )
