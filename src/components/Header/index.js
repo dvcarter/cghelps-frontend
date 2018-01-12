@@ -124,6 +124,11 @@ export default class Header extends Component {
                                                         {"Sponsorships"}
                                                     </Link>
                                                 </li>
+                                                <li>
+                                                    <Link to='/get-involved/cacgroup' className={styles.link}>
+                                                        {"Consumer Feedback"}
+                                                    </Link>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li className={styles.navItem}>
