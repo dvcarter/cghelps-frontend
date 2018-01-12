@@ -10,10 +10,15 @@ const Governance = ({ getGovernanceInfo }) => {
                         <div className={styles.options}>
                             <h3 className={styles.subtitle}> {dochold.subtitle}</h3>
                             <div className={styles.description}> {dochold.description}</div>
-                            <a href={dochold.btn.link} className={styles.docLink}>
+                            <a href={dochold.btn0.link} className={styles.docLink}>
                             
                                 <div>
-                                    {dochold.btn.label}
+                                    {dochold.btn0.label}
+                                </div>
+                            </a>
+                            <a href={dochold.btn1.link} className={styles.docLink}>
+                                <div> 
+                                    {dochold.btn1.label}
                                 </div>
                             </a>
                         </div>
