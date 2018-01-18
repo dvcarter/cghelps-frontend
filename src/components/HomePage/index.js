@@ -2,11 +2,11 @@ import React, {Component} from "react";
 import styles from  "../HelpOpts/HelpOpts.css";
 import LatestPosts from "../LatestPosts";
 import Testimonials from "../Testimonials";
-import Impact from "../Impact";
+//import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
 import HeroSlick from "../HeroSlick";
-// import D3Info from "../d3info";
+//import D3Info from "../d3info";
 
 const heroStyle = {
     backgroundColor: 'white'
@@ -63,9 +63,8 @@ class HomePage extends Component {
                         <div className={lineStyles.center}>
                             <div className={lineStyles.line}/>
                         </div>
-                        <Impact />
-                    */}
-                    {/*<D3Info /> */}
+                        <Impact /> */}
+                
                 </div>
             </div>
         )

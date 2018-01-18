@@ -3,6 +3,10 @@ import styles from "./index.css";
 import {Link} from "react-router-dom";
 import Svg from "react-svg-inline"
 import num from "../../content/assets/88000.svg"
+import JailDiversion from "../JailDiversion"
+import EmergencyBoarding from "../EmergencyBoarding"
+import ImprovingOutcomes from "../ImprovingOutcomes"
+import ReducingDistress from "../ReducingStress"
 
 const Impact = () => {
 
@@ -34,9 +38,10 @@ const Impact = () => {
                             Common Ground helps over <strong>88,000</strong> people each year
                         </div>
                         <div className={styles.infographic}> 
-                            <div className={styles.imgArea}>
-                                infographic 
-                            </div>
+                             <JailDiversion />
+                            {/*<EmergencyBoarding /> */}
+                            {/*<ImprovingOutcomes /> */}
+                            {/* <ReducingDistress /> */}
                             <Link to="/donate" className={styles.donateButton}>
                                 {"DONATE NOW"}
                             </Link>

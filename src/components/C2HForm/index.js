@@ -81,16 +81,6 @@ You will come away with a better understanding of how critical Common Ground is 
                     </p>
                     <div>
                         <input
-                            name="January 23rd 9-10am"
-                            id="volunteerTimes"
-                            component="input"
-                            type="checkbox"
-                            value="yes"
-                        />
-                        <label htmlFor="volunteerTimes"> Tuesday, January 23<sup>rd</sup> 9am-10am</label>
-                    </div>
-                    <div>
-                        <input
                             name="February 6th, 6-7pm"
                             id="volunteerTimes"
                             component="input"
