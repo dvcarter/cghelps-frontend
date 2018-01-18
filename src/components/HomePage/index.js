@@ -6,6 +6,7 @@ import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
 import HeroSlick from "../HeroSlick";
+// import D3Info from "../d3info";
 
 const heroStyle = {
     backgroundColor: 'white'
@@ -64,6 +65,7 @@ class HomePage extends Component {
                         </div>
                         <Impact />
                     */}
+                    {/*<D3Info /> */}
                 </div>
             </div>
         )
