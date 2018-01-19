@@ -28,7 +28,7 @@ const locations = [
         hash: "admin",
         subtitle: "Administration",
         address: "1410 S. Telegraph Rd, Bloomfield Hills, MI 48302",
-        description: "Home to Common Ground's administrative departments, this office also hosts Legal Clinic on Tuesday evenings beginning at 5pm. To learn more, please call 1-248-456-8150.",
+        description: "Home to Common Ground's administrative departments, this office also hosts Legal Clinic on Tuesday evenings beginning at 6pm. To learn more, please call 1-248-456-8150.",
         placement: {
           lat: 42.617848,
           lng: -83.317782,
