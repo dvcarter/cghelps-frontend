@@ -21,13 +21,18 @@
         /*margin: 0 40px 0 40px;*/
         text-align: center;
     }   
+    
+      img.placeholderBox {
+        background-color: white;
+    }   
     .placeholderBox {
         self-align: center;
         height: 200px;
-        width: 300px;
+        width: auto;
         background-color: #dfe3ee;
         margin: 10px 0 20px 0;
-    }   
+    } 
+    
     .bigSpanText {
         color: #8b0000;
         font-weight: 900;

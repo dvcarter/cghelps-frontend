@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./index.css"
+import Test from "../../content/assets/tester.png"
 
 const ImprovingOutcomes = () => {
     return (
@@ -7,7 +8,7 @@ const ImprovingOutcomes = () => {
 
                             <div className={styles.imgArea}>
                                 <div className={styles.infoCard}>
-                                    <div className={styles.placeholderBox} />
+                                    <img src={Test} className={styles.placeholderBox} />
                                     Common Ground treated <span className={styles.bigSpanText}>3,850</span>  people for mental health and crisis issues
                                 </div>
                                 <div className={styles.infoCard}>

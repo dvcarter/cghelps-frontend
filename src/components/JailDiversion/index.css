@@ -1,5 +1,5 @@
-
-
+ 
+@media only screen and (min-width: 1200px) {
 .imgArea {
         display: flex;
         justify-content: center;
@@ -20,17 +20,242 @@
         width: 350px;
         /*margin: 0 40px 0 40px;*/
         text-align: center;
-    }   
+    }  
+    img.placeholderBox {
+        background-color: white;
+    }
     .placeholderBox {
         self-align: center;
         height: 200px;
-        width: 300px;
-        background-color: #dfe3ee;
+        width: auto;
         margin: 10px 0 20px 0;
-    }   
+    }
+    .infoCard:nth-child(2) .placeholderBox img{
+        width: auto;
+        height: 150px;
+    }
+    .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
+        display: flex;
+        align-items: flex-end;
+    }
+    .infoCard:nth-child(3) .placeholderBox img {
+        height: 100px;
+        width: auto;
+    }
     .bigSpanText {
         color: #8b0000;
         font-weight: 900;
         font-size: 3.5vh;
     }   
+}
 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+      .imgArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+    }
+    .infoCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5vh;
+        color: #333;
+        background-color: white;
+        /*border: 1px solid #dfe3ee;*/
+        border-radius: 12px;
+        height: 300px;
+        width: 350px;
+        /*margin: 0 40px 0 40px;*/
+        text-align: center;
+    }
+    img.placeholderBox {
+        background-color: white;
+    }
+    .placeholderBox {
+        self-align: center;
+        height: 200px;
+        width: auto;
+        margin: 10px 0 20px 0;
+    }
+    .infoCard:nth-child(2) .placeholderBox img{
+        width: auto;
+        height: 150px;
+    }
+    .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
+        display: flex;
+        align-items: flex-end;
+    }
+    .infoCard:nth-child(3) .placeholderBox img {
+        height: 100px;
+        width: auto;
+    }
+    .bigSpanText {
+        color: #8b0000;
+        font-weight: 900;
+        font-size: 3.5vh;
+    }  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .imgArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+    }
+    .infoCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5vh;
+        color: #333;
+        background-color: white;
+        /*border: 1px solid #dfe3ee;*/
+        border-radius: 12px;
+        height: 300px;
+        width: 350px;
+        /*margin: 0 40px 0 40px;*/
+        text-align: center;
+    }
+    img.placeholderBox {
+        background-color: white;
+    }
+    .placeholderBox {
+        self-align: center;
+        height: 200px;
+        width: auto;
+        margin: 10px 0 20px 0;
+    }
+    .infoCard:nth-child(2) .placeholderBox img{
+        width: auto;
+        height: 150px;
+    }
+    .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
+        display: flex;
+        align-items: flex-end;
+    }
+    .infoCard:nth-child(3) .placeholderBox img {
+        height: 100px;
+        width: auto;
+    }
+    .bigSpanText {
+        color: #8b0000;
+        font-weight: 900;
+        font-size: 3.5vh;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .imgArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+    }
+    .infoCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5vh;
+        color: #333;
+        background-color: white;
+        /*border: 1px solid #dfe3ee;*/
+        border-radius: 12px;
+        height: 400px;
+        width: 350px;
+        /*margin: 0 40px 0 40px;*/
+        text-align: center;
+    }
+    img.placeholderBox {
+        background-color: white;
+    }
+    .placeholderBox {
+        self-align: center;
+        height: 200px;
+        width: auto;
+        margin: 10px 0 20px 0;
+    }
+    .infoCard:nth-child(2) .placeholderBox img{
+        width: auto;
+        height: 150px;
+    }
+    .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
+        display: flex;
+        align-items: flex-end;
+    }
+    .infoCard:nth-child(3) .placeholderBox img {
+        height: 100px;
+        width: auto;
+    }
+    .bigSpanText {
+        color: #8b0000;
+        font-weight: 900;
+        font-size: 3.5vh;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .imgArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .infoCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5vh;
+        color: #333;
+        background-color: white;
+        /*border: 1px solid #dfe3ee;*/
+        border-radius: 12px;
+        height: 350px;
+        width: 300px;
+        /*margin: 0 40px 0 40px;*/
+        text-align: center;
+        margin-top: 20px;
+    }
+    img.placeholderBox {
+        background-color: white;
+    }
+    .placeholderBox {
+        self-align: center;
+        height: 200px;
+        width: auto;
+        margin: 10px 0 20px 0;
+    }
+    .infoCard:nth-child(2) .placeholderBox img{
+        width: auto;
+        height: 150px;
+    }
+    .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
+        display: flex;
+        align-items: flex-end;
+    }
+    .infoCard:nth-child(3) .placeholderBox img {
+        height: 100px;
+        width: auto;
+    }
+    .bigSpanText {
+        color: #8b0000;
+        font-weight: 900;
+        font-size: 3.5vh;
+    }
+
+}
+
+.bigSpanText {
+    line-height: 50px;
+}

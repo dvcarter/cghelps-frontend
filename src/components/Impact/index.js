@@ -38,9 +38,9 @@ const Impact = () => {
                             Common Ground helps over <strong>88,000</strong> people each year
                         </div>
                         <div className={styles.infographic}> 
-                             <JailDiversion />
-                            {/*<EmergencyBoarding /> */}
-                            {/*<ImprovingOutcomes /> */}
+                            <JailDiversion />
+                            {/* <EmergencyBoarding /> */}
+                            {/* <ImprovingOutcomes />*/}
                             {/* <ReducingDistress /> */}
                             <Link to="/donate" className={styles.donateButton}>
                                 {"DONATE NOW"}
