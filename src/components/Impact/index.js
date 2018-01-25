@@ -31,7 +31,7 @@ const Impact = () => {
                                 <br />
                                 <br />
                                 <br />
-                                88,000
+                                <div className={styles.putItHere}></div>
                             </div>
                         </div>
                         <div>

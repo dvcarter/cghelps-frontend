@@ -1,4 +1,15 @@
- 
+
+
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1200px){}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 1199px) and (min-width: 992px) {}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 991px) and (min-width: 768px) {}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 767px) and (min-width: 576px) {}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 575px) {}
+
 @media only screen and (min-width: 1200px) {
 .imgArea {
         display: flex;
@@ -28,11 +39,12 @@
         self-align: center;
         height: 200px;
         width: auto;
-        margin: 10px 0 20px 0;
+        margin: 10px 0 10px 0;
     }
     .infoCard:nth-child(2) .placeholderBox img{
         width: auto;
         height: 150px;
+        margin-bottom: -10px;
     }
     .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
         display: flex;
@@ -46,7 +58,10 @@
         color: #8b0000;
         font-weight: 900;
         font-size: 3.5vh;
-    }   
+    } 
+    .infoCard:nth-child(2) .bigSpanText {
+        line-height: 25px;
+    }
 }
 
 
@@ -85,6 +100,7 @@
     .infoCard:nth-child(2) .placeholderBox img{
         width: auto;
         height: 150px;
+        margin-bottom: -15px;
     }
     .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
         display: flex;
@@ -98,7 +114,10 @@
         color: #8b0000;
         font-weight: 900;
         font-size: 3.5vh;
-    }  
+    }
+      .infoCard:nth-child(2) .bigSpanText {
+        line-height: 25px;
+    } 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -134,7 +153,8 @@
     }
     .infoCard:nth-child(2) .placeholderBox img{
         width: auto;
-        height: 150px;
+        height: 140px;
+        margin-bottom: -10px;
     }
     .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
         display: flex;
@@ -149,6 +169,10 @@
         font-weight: 900;
         font-size: 3.5vh;
     }
+
+      .infoCard:nth-child(2) .bigSpanText {
+        line-height: 25px;
+    } 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -174,18 +198,27 @@
         /*margin: 0 40px 0 40px;*/
         text-align: center;
     }
+    .JDtext {
+        width: 100%;
+        margin-top: -10px;
+    }
     img.placeholderBox {
         background-color: white;
     }
     .placeholderBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         self-align: center;
         height: 200px;
         width: auto;
-        margin: 10px 0 20px 0;
+        margin: 10px 0 10px 0;
+        text-align: center;
     }
     .infoCard:nth-child(2) .placeholderBox img{
         width: auto;
         height: 150px;
+        padding: 0 10px 0 20px;
     }
     .infoCard:nth-child(2) .placeholderBox, .infoCard:nth-child(3) .placeholderBox {
         display: flex;
@@ -194,6 +227,7 @@
     .infoCard:nth-child(3) .placeholderBox img {
         height: 100px;
         width: auto;
+        padding: 0 10px 0 30px;
     }
     .bigSpanText {
         color: #8b0000;
