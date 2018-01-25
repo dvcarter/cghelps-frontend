@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import styles from  "../HelpOpts/HelpOpts.css";
 import LatestPosts from "../LatestPosts";
 import Testimonials from "../Testimonials";
-import Impact from "../Impact";
+//import Impact from "../Impact";
 import sty from "../Content/newPage.css";
 import lineStyles from "./index.css";
 import HeroSlick from "../HeroSlick";
@@ -59,10 +59,10 @@ class HomePage extends Component {
                         <div className={lineStyles.line}/>
                     </div>
                     <Testimonials />
-                    <div className={lineStyles.center}>
+                    {/*<div className={lineStyles.center}>
                         <div className={lineStyles.line}/>
                     </div>
-                    <Impact />
+                    <Impact />*/}
                 
                 </div>
             </div>
