@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./index.css";
 import {Link} from "react-router-dom";
 import Svg from "react-svg-inline"
-import num from "../../content/assets/88000.svg"
+import num from "../../content/assets/88test.svg"
 import JailDiversion from "../JailDiversion"
 import EmergencyBoarding from "../EmergencyBoarding"
 import ImprovingOutcomes from "../ImprovingOutcomes"
@@ -17,14 +17,13 @@ const Impact = () => {
                         <h3> Our Impact </h3>
                     </Link>
                     <div className={styles.infoHolder}>
-                        <div className={styles.numbers}> 
-                        {/*<Svg
+                    {/* <div className={styles.numbers}> */}
+                        <Svg
+                                className={styles.svgFun}
                                 svg={num}
                                 draggable='false'
-                                height="55vh"
-                                width="55vw"
-                            />*/}
-                            <div className={styles.smallNum}>
+                            />
+                        {/*<div className={styles.smallNum}>
                                 <br />
                                 <br />
                                 <br />
@@ -32,8 +31,8 @@ const Impact = () => {
                                 <br />
                                 <br />
                                 <div className={styles.putItHere}></div>
-                            </div>
-                        </div>
+                            </div>*/}
+                    {/* </div>*/}
                         <div>
                             Common Ground helps over <strong>88,000</strong> people each year
                         </div>
