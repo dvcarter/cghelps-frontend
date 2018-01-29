@@ -33,7 +33,7 @@ const Impact = () => {
                                 <div className={styles.putItHere}></div>
                             </div>*/}
                     {/* </div>*/}
-                        <div>
+                        <div className={styles.onlyOnMobile}>
                             Common Ground helps over <strong>88,000</strong> people each year
                         </div>
                         <div className={styles.infographic}> 
