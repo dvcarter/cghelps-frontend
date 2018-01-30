@@ -13,7 +13,7 @@ const Impact = () => {
     return (
             <div className={styles.bigHolder}>
                <div className={styles.holder}> 
-                    <Link to='/posts'>
+                    <Link to='/#'>
                         <h3> Our Impact </h3>
                     </Link>
                     <div className={styles.infoHolder}>
