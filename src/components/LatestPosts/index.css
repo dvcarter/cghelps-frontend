@@ -17,6 +17,19 @@
         width: 100%;
         height: 300px;
     }
+    
+      @-moz-document url-prefix() {
+            .bigHolder {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+     
+            .holder {
+                width: 70%;
+            }
+     
+     }
 
     .postHolder {
         display: flex;
@@ -71,7 +84,21 @@
         /* background-color: red; */
         width: 100%;
         height: 300px;
-    }   
+    }  
+
+      
+      @-moz-document url-prefix() {
+            .bigHolder {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }   
+            
+            .holder {
+                width: 70%;
+            }   
+        
+     } 
 
     .postHolder {
         display: flex;

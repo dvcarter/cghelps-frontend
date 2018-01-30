@@ -208,6 +208,20 @@
         margin-bottom: 10px;
         margin-top: 15px;
     }
+
+     @-moz-document url-prefix() {
+            .bigHolder {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .help {
+                width: 80%;
+            }
+
+     }
+
     _:ms-lang(x), .help {
         margin-bottom: -1px;
     }
@@ -280,6 +294,8 @@
         background-color: #dfe3ee;
         width: 73%;
     }
+
+    
     _::-webkit-full-page-media, _:future, :root  .newLine {
         height: .25em;
         width: 70%;
@@ -371,14 +387,21 @@
         padding: 0;
         text-align: center;
         margin-bottom: 55px;
-        margin-top: 55px;
+        margin-top: 25px;
         height: 100%;
         width: 100%;
     }
    @-moz-document url-prefix() {
-       .help {
+      .bigHolder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        } 
+
+        .help {
            height: 30%;
-       }
+           width: 70%;
+        }
    }
       .title {
         display: flex;

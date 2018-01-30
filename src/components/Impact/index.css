@@ -292,6 +292,10 @@
             .svgFun {
                 margin: 0 20px 10px 270px;
             }
+
+            .holder {
+                height: 1000px;
+            }
         } 
     }
         .infographic {

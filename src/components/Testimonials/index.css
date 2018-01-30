@@ -48,6 +48,15 @@
         height: auto;
     }
 
+     
+      @-moz-document url-prefix() {
+            
+            .vidBox_0_2_0 {
+                width: 70%;
+            }   
+        
+     } 
+    
     .smallVids_0_2_0 {
         height: 300px;
         width: 45%;
@@ -158,6 +167,14 @@
         width: 100%;
         height: auto;
     }
+
+        @-moz-document url-prefix() {
+                
+            .vidBox_0_2_0 {
+                width: 70%;
+            }   
+                
+     } 
 
     .smallVids_0_2_0 {
         height: 300px;
