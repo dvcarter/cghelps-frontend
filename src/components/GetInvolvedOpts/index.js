@@ -21,8 +21,9 @@ const GetInvolvedOpts = ( {getInvolved} ) => {
                                         <div className={sty.datePlacement}>
                                                 <ul> 
                                                     <li> Tour Dates:</li>
-                                                    <li> February 6<sup>th</sup> 6-7pm </li>
                                                     <li> February 20<sup>th</sup> 9-10am </li>
+                                                    <li> March 10<sup>th</sup> 6-7pm </li>
+                                                    <li> April 6<sup>th</sup> 6-7pm </li>
                                                 </ul>
                                         </div>
                                         <button className={sty.button}><Link to="/get-involved/crisis-to-hope"> Register for a 'Crisis to Hope' Tour! </Link></button>

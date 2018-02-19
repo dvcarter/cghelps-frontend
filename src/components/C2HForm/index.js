@@ -81,16 +81,6 @@ You will come away with a better understanding of how critical Common Ground is 
                     </p>
                     <div>
                         <input
-                            name="February 6th, 6-7pm"
-                            id="volunteerTimes"
-                            component="input"
-                            type="checkbox"
-                            value="yes"
-                        />
-                        <label htmlFor="volunteerTimes"> Tuesday, February 6<sup>th</sup> 6pm-7pm</label>
-                    </div>
-                    <div>
-                        <input
                             name="February 20th, 9-10am"
                             id="volunteerTimes"
                             component="input"
@@ -98,6 +88,26 @@ You will come away with a better understanding of how critical Common Ground is 
                             value="yes"
                         />
                         <label htmlFor="volunteerTimes"> Tuesday, February 20<sup>th</sup> 9am-10am</label>
+                    </div>
+                    <div>
+                        <input
+                            name="March 6th, 6-7pm"
+                            id="volunteerTimes"
+                            component="input"
+                            type="checkbox"
+                            value="yes"
+                        />
+                        <label htmlFor="volunteerTimes"> Tuesday, March 6<sup>th</sup> 6pm-7pm</label>
+                    </div>
+                     <div>
+                        <input
+                            name="April 10th, 6-7pm"
+                            id="volunteerTimes"
+                            component="input"
+                            type="checkbox"
+                            value="yes"
+                        />  
+                        <label htmlFor="volunteerTimes"> Tuesday, April 10<sup>th</sup> 6pm-7pm</label>
                     </div>
                 </div>
                 <div>
