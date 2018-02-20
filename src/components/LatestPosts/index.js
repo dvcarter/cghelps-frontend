@@ -14,8 +14,8 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Legal Clinic is closed today.</h4>
-                                    <div className={styles.descriptionArea}> The Legal Clinic is closed today, February 13<sup>th</sup>, due to scheduling issues, but it will be in session on Thursday...</div>
+                                    <h4 className={styles.subtitle}>Legal Clinic is in session today.</h4>
+                                    <div className={styles.descriptionArea}> The Legal Clinic will be in session today, February 20<sup>th</sup>, from 6pm to 7:30pm,  and on Thursday, February 22<sup>nd</sup>...</div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
                         </div>

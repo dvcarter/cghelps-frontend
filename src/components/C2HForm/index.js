@@ -19,9 +19,16 @@ class C2HForm extends Component {
 
 The presentation consists of inspirational stories that get to the heart of Common Ground's key impact areas: Responding to Crisis, Providing Safety and Advocacy, and Building Communities of Support.
 
-You will come away with a better understanding of how critical Common Ground is to our community. We are not asking for contributions, but we will follow up with you a few days after the presentation to gather comments and feedback. It will easily be the best hour of your day. 
+You will come away with a better understanding of how critical Common Ground is to our community. We are not asking for contributions, but we will follow up with you a few days after the presentation to gather comments and feedback. It will easily be the best hour of your day. The address of our tour is below. After arriving at the Resource and Crisis center, you will have to sign in at the from desk and the Welcoming Specialist will direct you to the appropriate room. 
                     </p>
                     <p>
+                        <blockquote style={{textAlign: 'center'}}> 
+                        <a title="Click to be directed to directions from Google Maps" href="https://www.google.com/maps/place/Resource+and+Crisis+Center/@42.6556258,-83.3276319,18z/data=!3m1!4b1!4m5!3m4!1s0x8824be06245a06c3:0xd572f980fe3f5879!8m2!3d42.6556242!4d-83.326717" style={{textDecoration: 'none'}}>
+                            Resource and Crisis Center<br />
+                            1200 N. Telegraph Rd., <strong>Building 32 East </strong><br />
+                            Pontiac, MI 48341
+                        </a>
+                        </blockquote>
                     <em><strong>Questions about Crisis to Hope? Please call 248.451.3734
                         or email <span style={{color: 'red'}}><a href="mailto:vkennedy@commongroundhelps.org">vkennedy@commongroundhelps.org</a></span></strong></em>
                     </p>

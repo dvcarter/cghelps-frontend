@@ -18,8 +18,8 @@ const JailDiversion = () => {
                                         className={styles.placeholderBox}
                                         height='100%'
                                         /> */}
-                                <img src={Test} className={styles.placeholderBox} />
-                                   <p className={styles.JDtext}> <span className={styles.bigSpanText}>431</span> <br />people</p>
+                                    <img src={Test} className={styles.placeholderBox} />
+                                    <p className={styles.JDtext}> <span className={styles.bigSpanText}>431</span> <br />people</p>
                                 </div>
                                 <div className={styles.infoCard}>
                                    <div className={styles.placeholderBox}>
