@@ -201,6 +201,11 @@ export default class Header extends Component {
                                                     </Link>
                                                 </li>
                                                 <li>
+                                                    <Link to='/news-and-media' className={styles.link}>
+                                                        {"News & Media"}
+                                                    </Link>
+                                                </li>
+                                                <li>
                                                     <HashLink to='/about-us/#Careers' className={styles.link}>
                                                         {"Careers"}
                                                     </HashLink>
