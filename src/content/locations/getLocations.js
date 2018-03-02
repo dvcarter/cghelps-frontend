@@ -4,7 +4,7 @@ const locations = [
         hash: "rcc",
         subtitle: "Resource and Crisis Center",
         address: "1200 N. Telegraph Rd, Bldg #32E, Pontiac, MI 48341",
-        description: "We offer a short-term (1 to 14 day) voluntary alternative to inpatient psychiatric hospitalization for adults ready to actively participate in a trauma-informed, recovery focused treatment environment. Services include psychiatric medication review, group therapy, skills groups, recovery coaching, art therapy and coordinated discharge planning. Note - Admission to the Crisis Residential Unit requires prior authorization through our Oakland Assessment Crisis Intervention Service (OACIS). For general inquiries, please call 1-248-451-2600.",
+        description: "At our Resource & Crisis Center in Pontiac, Michigan, Common Ground provides trauma-informed, recovery focused, face-to-face assessment, crisis intervention and stabilization services to individuals, including children, 24 hours a day, seven days a week. We focus on problem-solving and assertive crisis resolution strategies tailored to each person's specific needs. Visit us today. For General information, please call 1-248-451-2600.",
         placement: {
           lat: 42.658122,
           lng: -83.330947,
