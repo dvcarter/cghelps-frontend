@@ -14,8 +14,8 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Legal Clinic is in session this week</h4>
-                                    <div className={styles.descriptionArea}> The Legal Clinic will be in session Tuesday, February 27<sup>th</sup>, from 6pm to 7:30pm, and on Thursday, March 1<sup>st</sup> from 11am-12:30pm...</div>
+                                    <h4 className={styles.subtitle}>Volunteers needed!</h4>
+                                    <div className={styles.descriptionArea}> The Resource and Crisis Helpline Spring Training will be starting soon. If you're interested in joining our team, please attend our next group interview...</div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
                         </div>
