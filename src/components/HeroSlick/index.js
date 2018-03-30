@@ -104,16 +104,18 @@ class HeroSlick extends Component {
                         </div>
                         <div className={styles.box3}>
                             <div 
-                                style={ {background: `#111 url(${SSU}) 50% 50% / cover` } }
+                                style={ {background: `#111 url(${getHelp}) 50% 50% / cover` } }
                                 className={styles.heroImg} >
                                    <div className={ sty.header }>
                                     <div className={ sty.wrapper }>
                                         <div className={ sty.heading }>
                                             <div className={sty.textBox3}>
-                                                <h1 className={sty.donateH1}> The Sober Support Unit (SSU)</h1>
-                                                    <p className={sty.donateP}> The Sober Support Unit is a 23-hour program designed to monitor individuals who need detoxification services and have no health risks associated with the withdrawal process. </p>
+                                                <h1 className={sty.donateH1}> Support for Parents of Nassar Survivors </h1>
+                                                    <p className={sty.donateP}> 
+                                                           Common Ground is offering a free 8-week long, closed support group that gives the parents of survivors the opportunity to connect, gain support and begin the healing process. Sessions will include information on trauma, emotions, legal implications and the healing process. 
+                                                    </p>
 
-                                                    <Link className={sty.button} to="/program-list"> Find out more </Link>
+                                                    <Link className={sty.button} to="/posts/common-ground-offers-support-group-for-parents-of-nassar-survivors"> Find out more </Link>
                                             </div>
                                         </div>
                                     </div>

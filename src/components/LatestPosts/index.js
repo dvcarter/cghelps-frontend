@@ -14,8 +14,14 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Volunteers needed!</h4>
-                                    <div className={styles.descriptionArea}> The Resource and Crisis Helpline Spring Training will be starting soon. If you're interested in joining our team, please attend our next group interview...</div>
+                                    <h4 className={styles.subtitle}>Support for Parents of Nassar Survivors</h4>
+                                    <div className={styles.descriptionArea}> 
+                                    	Common Ground is offering a free support group for the parents of Larry Nassar survivors. Nassar was recently convicted of multiple counts of criminal sexual conduct (CSC) for the abuse he inflicted on more than 265 women and girls 
+            
+            
+            
+            
+                                    ...</div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
                         </div>
