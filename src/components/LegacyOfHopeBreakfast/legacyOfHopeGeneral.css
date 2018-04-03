@@ -432,11 +432,11 @@
         text-align: center;
         height: 30px;
         width: 90%;
-        font-size: 175%;
-        margin-top: 10px;
+        font-size: 275%;
+        margin-top: -100px;
         padding-bottom: -40px;
-        color: #333;
-        font-weight: 300;
+        color: #000;
+        font-weight: 800;
     }   
 
  

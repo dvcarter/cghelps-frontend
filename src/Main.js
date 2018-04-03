@@ -32,7 +32,7 @@ import NoMatch from "./components/NoMatch";
 import ProgramList from "./components/ProgramList";
 import ThankYou from "./components/ThankYou";
 import Thanks from "./components/C2HThankYou";
-//import LegacyOfHope from "./components/LegacyOfHopeBreakfast";
+import LegacyOfHope from "./components/LegacyOfHopeBreakfast";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -130,7 +130,7 @@ class App extends Component {
                         <PropsRoute path="/copyright" component={Copyright} />
                         <PropsRoute path="/privacy-policy" component={TermsOfService} />
                         <PropsRoute path="/contact" component={Contact} />
-                        {/*<PropsRoute path="/legacyofhope" component={LegacyOfHope} />*/}
+                         <PropsRoute path="/legacyofhope" component={LegacyOfHope} />
                         <PropsRoute path="/thank-you" component={ThankYou} />
                         <PropsRoute path="/thanks-for-registering" component={Thanks} />
                         <PropsRoute path="/program-list" component={ProgramList} dataGetter={getHelpInfo} {...this.props} />
