@@ -18,17 +18,23 @@ const LegacyOfHopeBreakfast = () => {
                             </div>
                         </div>
                     </div> 
-						      <p> 
-                            Join us at our <em>Legacy of Hope Breakfast</em>
-                            <br/>Oakland Hills Country Club
-                            <br/>May 1<sup>st</sup>, 2018
-                            <br/>Doors open at 7:30am
-                            <br/>
-                            <br/>3951 W. Maple Rd
-                            <br/>Bloomfield Hills, MI 48301 
+                            <div className={sty.tinyInfoHold}>
+                                <p>Join us at our <em><strong>Legacy of Hope Breakfast </strong></em>
+                                 <br/>
+                                  at the Oakland Hills Country Club
+                                 on May 1<sup>st</sup>, 2018
+                                <br/> 
+                                 Doors open at <strong>7:30am</strong>
+                                 <br/>3951 W. Maple Rd
+                                 Bloomfield Hills, MI 48301 
+                                <br/>
                             </p>
-							<p> If you're not redirected to our registration page, please click the link below </p>
-				</div>
+                            </div>
+							 <div className={sty.tinyHolder}>
+                                If you're not redirected to our registration page, please click the link below 
+                                <button className={sty.button_1_0}><a href="https://www.eventbrite.com/e/legacy-of-hope-breakfast-benefit-2018-tickets-44796387200">Register Here </a></button>
+                            </div>
+                </div>
         </ReactRedirect>
     )
 }
