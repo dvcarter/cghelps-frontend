@@ -20,7 +20,7 @@ import hands from "../../assets/helpinghand.jpg"
       {
         "sub": {
           "subsubtitle": "2. Individual support sessions",
-          "description": "Available by appointment. They provide space for a person or a family to share their loss, learn about surviving the suicide loss of a loved one, and discover more about local and national resources. To register, call Ameila Lehto at (248) 451-2613 or to learn more, call our Resource & Crisis Helpline at (800) 231-1127."
+          "description": "Available by appointment. They provide space for a person or a family to share their loss, learn about surviving the suicide loss of a loved one, and discover more about local and national resources. To register, call Amelia Lehto at (248) 451-2613 or to learn more, call our Resource & Crisis Helpline at (800) 231-1127."
         }
       }
 //      {
