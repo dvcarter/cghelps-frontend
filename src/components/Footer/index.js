@@ -54,8 +54,8 @@ const Footer = () => (
         </div>
         <div className={styles.column2}>
             <p>
-                <h4><strong>Contact Information</strong></h4>
-                To reach our administrative office,
+                <h4><a href="http://www.commongroundhelps.org/contact/"><strong>Contact Information</strong></a></h4>
+                To reach our administrative office for not crisis situations or if you would like to file a complaint,
                 please call <strong><a href="tel:2484568150">248.456.8150</a></strong> or
                 email <strong><a href="mailto:askcommonground@commongroundhelps.org">askcommonground@commongroundhelps.org</a></strong>
                 </p>
