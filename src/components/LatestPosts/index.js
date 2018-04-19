@@ -14,10 +14,9 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Legal Clinic is closed today</h4>
+                                    <h4 className={styles.subtitle}>Sign up for our Crisis to Hope Tour</h4>
                                     <div className={styles.descriptionArea}> 
-                                       The Legal Clinic is closed today, April 10<sup>th</sup>, due to scheduling issues, but it will be in session on Thursday, April 12<sup>th</sup>  
-            
+                                    We invite you to get to know Common Ground a little better! The presentation consists of inspirational stories that get to the heart of Common Ground's 
             
             
                                     ...</div>
