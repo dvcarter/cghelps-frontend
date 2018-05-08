@@ -21,7 +21,6 @@ const GetInvolvedOpts = ( {getInvolved} ) => {
                                         <div className={sty.datePlacement}>
                                                 <ul> 
                                                     <li> Tour Dates:</li>
-                                                    <li> Tuesday,  April 10<sup>th</sup> 6-7pm </li>
                                                     <li> Wednesday, June 20<sup>th</sup> 6-7pm </li>
                                                     <li> Wednesday, July 18<sup>th</sup> 6-7pm </li>
                                                 </ul>
