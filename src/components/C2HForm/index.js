@@ -88,16 +88,6 @@ You will come away with a better understanding of how critical Common Ground is 
                     </p>
                      <div>
                         <input
-                            name="June 20th, 6-7pm"
-                            id="volunteerTimes"
-                            component="input"
-                            type="checkbox"
-                            value="yes"
-                        />  
-                        <label htmlFor="volunteerTimes"> Wednesday, June 20<sup>th</sup> 6pm-7pm</label>
-                    </div>
-                    <div>
-                        <input
                             name="July 18th, 6-7pm"
                             id="volunteerTimes"
                             component="input"
@@ -106,6 +96,36 @@ You will come away with a better understanding of how critical Common Ground is 
                         />  
                         <label htmlFor="volunteerTimes"> Wednesday, July 18<sup>th</sup> 6pm-7pm</label>
                     </div>
+                    <div>
+                        <input
+                            name="August 15th, 6-7pm"
+                            id="volunteerTimes"
+                            component="input"
+                            type="checkbox"
+                            value="yes"
+                        />  
+                        <label htmlFor="volunteerTimes"> Wednesday, August 15<sup>th</sup> 6pm-7pm</label>
+                    </div>
+                    <div>
+                        <input
+                            name="September 19th, 6-7pm"
+                            id="volunteerTimes"
+                            component="input"
+                            type="checkbox"
+                            value="yes"
+                        />  
+                        <label htmlFor="volunteerTimes"> Wednesday, September 19<sup>th</sup> 6pm-7pm</label>
+                    </div>
+                    <div>
+                        <input
+                            name="October 17th, 6-7pm"
+                            id="volunteerTimes"
+                            component="input"
+                            type="checkbox"
+                            value="yes"
+                        />  
+                        <label htmlFor="volunteerTimes"> Wednesday, October 17<sup>th</sup> 6pm-7pm</label>
+                    </div> 
                 </div>
                 <div>
                 </div>

@@ -136,8 +136,9 @@ class HeroSlick extends Component {
                                                     <div className={sty.datePlacement}>
                                                         <ul className={sty.dateHolder} style ={ {position:`static`, backgroundColor: `none`}}> 
                                                                 <li className={sty.dateLine}> Tour Dates:</li>
-                                                                <li className={sty.dateLine}> Wednesday, June 20<sup>th</sup> 6-7pm </li>
                                                                 <li className={sty.dateLine}> Wednesday, July 18<sup>th</sup> 6-7pm </li>
+                                                                <li className={sty.dateLine}> Wednesday, August 15<sup>th</sup> 6-7pm </li>
+                                                                <li className={sty.dateLine}> Wednesday, September 19<sup>th</sup> 6-7pm </li>
                                                         </ul>
                                                     </div>
                                                     <Link className={sty.button} to="/get-involved/crisis-to-hope"> Register for a 'Crisis to Hope' Tour! </Link>
