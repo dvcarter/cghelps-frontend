@@ -48,7 +48,6 @@ const Leadership = () => {
                         <li> <strong>Marc Wiliford</strong>, <em> Director of Finance </em></li>
                         <li> <strong>Todd Reid</strong>, <em> Director of OACIS </em></li>
                         <li> <strong>Kyle Glasgow</strong>, <em> Director of Mission Impact/Data Analysis </em></li>
-                        <li> <strong>Kathryn Burdess</strong>, <em> Director of Nursing </em></li>
                         <li> <strong>Dr. Carmen Serpa</strong>, <em> Director of Medical Services </em></li>
                         <li> <strong>Rosa Thomas</strong>, <em> Director of Innovation </em></li>
                     </ul>
