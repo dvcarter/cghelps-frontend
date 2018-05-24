@@ -14,9 +14,9 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Sign up for our Crisis to Hope Tour</h4>
+                                    <h4 className={styles.subtitle}>Volunteers needed!</h4>
                                     <div className={styles.descriptionArea}> 
-           We invite you to get to know Common Ground a little better! The presentation consists of inspirational stories that get to the heart of Common Ground’s... 
+                                    We host an informational orientation on the 1st Wednesday of every month at 6pm. Stop in at the Resource and Crisis Center (address listed below) to find out more about volunteering...
                                     </div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
