@@ -14,9 +14,10 @@ const LatestPosts = () => {
                             {/* {posts.title.rendered} */}
                                 <img className={styles.standInImg} src={bird} alt="" />
                                 <div className={styles.textArea}> 
-                                    <h4 className={styles.subtitle}>Volunteers needed!</h4>
+                                    <h4 className={styles.subtitle}>Legal Clinic closed due to Memorial Day</h4>
                                     <div className={styles.descriptionArea}> 
-                                    We host an informational orientation on the 1st Wednesday of every month at 6pm. Stop in at the Resource and Crisis Center (address listed below) to find out more about volunteering...
+                                        Due to the Memorial Day holiday, Legal Clinic is closed today, May 29<sup>th</sup>. It will be in session on Thursday, May 31<sup>st</sup>...
+            
                                     </div>
                                 <Link to="/posts"> Read more </Link>
                                 </div>
