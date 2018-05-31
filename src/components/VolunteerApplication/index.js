@@ -24,7 +24,7 @@ class VolunteerApplication extends Component {
     render() {
     return (
         <div className={styles.formHolder }>
-            <form className={styles.formFit} action="https://formspree.io/mhope@commongroundhelps.org"  method="POST" >
+            <form className={styles.formFit} action="https://formspree.io/rgaddis@cghelps.org"  method="POST" >
             {/* Form Description */}
                 <div className={styles.description}> 
                     <h1 className={styles.title_2_2}> Volunteer Application </h1>
